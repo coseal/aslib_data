@@ -24,17 +24,17 @@ Marius Lindauer - University of Freiburg, Germany
 
 # Authors
 
-Bernd Bischl - University of Dortmund
-Pascal Kerschke - University of Münster
-Lars Kotthoff - Cork Constraint Computation Centre
-Marius Lindauer - University of Freiburg
-Yuri Malitsky - IBM Thomas J. Watson Research Center
-Alexandre Frechette - University of British Columbia
-Holger Hoos - University of British Columbia
-Frank Hutter - University of Freiburg
-Kevin Leyton-Brown - University of British Columbia
-Kevin Tierney - University of Paderborn
-Joaquin Vanschoren - Eindhoven University of Technology
+* Bernd Bischl - University of Dortmund
+* Pascal Kerschke - University of Münster
+* Lars Kotthoff - Cork Constraint Computation Centre
+* Marius Lindauer - University of Freiburg
+* Yuri Malitsky - IBM Thomas J. Watson Research Center
+* Alexandre Frechette - University of British Columbia
+* Holger Hoos - University of British Columbia
+* Frank Hutter - University of Freiburg
+* Kevin Leyton-Brown - University of British Columbia
+* Kevin Tierney - University of Paderborn
+* Joaquin Vanschoren - Eindhoven University of Technology
 
 # License
 
