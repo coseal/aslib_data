@@ -1,0 +1,15 @@
+scenario_id : MACHINE-LEARNING-UCI-WEKA-DEFAULTS
+performance_measures : predictive_accuracy, root_mean_squared_error, mean_absolute_error, build_cpu_time, build_memory
+maximize : true, false, false, false, false
+performance_type : solution_quality, solution_quality, solution_quality, runtime, solution_quality
+algorithm_cutoff_time : 25920 
+algorithm_cutoff_memory : 900
+features_cutoff_time : ?
+features_cutoff_memory : ?
+features_deterministic : DefaultAccuracy, EntropyClass, EquivalentNumberOfFeatures, LandMarker1NN, LandMarker1Rule, LandmarkerNaiveBayes, MStatisticDegreesOfFreedom, MutualInformationMean, NoiseToSignalRatio, NumberOfClasses, NumberOfFeatures, NumberOfInstances, NumberOfInstancesWithMissingValues, NumberOfMissingValues, NumberOfNumericFeatures, NumberOfSymbolicFeatures 
+features_stochastic :
+algorithms_deterministic : weka.ADTree(1.2), weka.AODE(1.8.2.3), weka.AttributeSelectedClassifier(1.16.2.4), weka.BayesNet(1.21.2.4), weka.ClassificationViaRegression(1.20), weka.DecisionStump(1.18), weka.DecisionTable(1.29.2.1), weka.FilteredClassifier(1.20.2.2), weka.HyperPipes(1.15), weka.IB1(1.13.2.1), weka.IBk(1.32), weka.Id3(1.14.2.1, weka.J48(1.2)), weka.LBR(1.4.2.2), weka.LMT(1.2.2.1), weka.LWL(1.12), weka.Logistic(1.32), weka.MultilayerPerceptron(1.2), weka.NBTree(1.3.2.1), weka.NNge(1.2.2.1), weka.NaiveBayes(1.16), weka.NaiveBayesSimple(1.13.2.2), weka.NaiveBayesUpdateable(1.4), weka.OneR(1.17), weka.OrdinalClassClassifier(1.0), weka.Prism(1.17), weka.RandomForest(1.6), weka.Ridor(1.12), weka.SimpleLogistic(1.5.2.1), weka.SMO(1.53.2.2), weka.VFI(1.9), weka.Vote(1.7), weka.ZeroR(1.11)
+algorithms_stochastic : weka.AdaBoostM1(1.24.2.3),weka.Bagging(1.31.2.2),weka.CVParameterSelection(1.27.2.3),weka.ConjunctiveRule(1.10),weka.Decorate(1.3.2.1),weka.JRip(1.14),weka.LogitBoost(1.33),weka.MultiBoostAB(1.6.2.2),weka.MultiClassClassifier(1.37.2.2),weka.MultiScheme(1.18.2.1),weka.PART(1.2.2.1),weka.RBFNetwork(1.4),weka.REPTree(1.19.2.2),weka.RacedIncrementalLogitBoost(1.4.2.2),weka.RandomTree(1.8.2.2),weka.Stacking(1.23.2.1),weka.StackingC(1.8)
+number_of_feature_steps: 1
+feature_step all_feats: DefaultAccuracy, EntropyClass, EquivalentNumberOfFeatures, LandMarker1NN, LandMarker1Rule, LandmarkerNaiveBayes, MStatisticDegreesOfFreedom, MutualInformationMean, NoiseToSignalRatio, NumberOfClasses, NumberOfFeatures, NumberOfInstances, NumberOfInstancesWithMissingValues, NumberOfMissingValues, NumberOfNumericFeatures, NumberOfSymbolicFeatures 
+

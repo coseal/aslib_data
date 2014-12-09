@@ -1,0 +1,15 @@
+scenario_id: MAXSAT12-PMS
+performance_measures: runtime
+maximize: false
+performance_type: runtime
+algorithm_cutoff_time: 2100
+algorithm_cutoff_memory: ?
+features_cutoff_time: 500
+features_cutoff_memory: ?
+features_deterministic: numVars, numClauses, perc_soft, soft_mean, soft_std, soft_min, soft_max, var_clauses_ratio, vcg_var_mean, vcg_var_std, vcg_var_min, vcg_var_max, vcg_var_spread, vcg_cls_mean, vcg_cls_std, vcg_cls_min, vcg_cls_max, vcg_cls_spread, pnr_var_mean, pnr_var_std, pnr_var_min, pnr_var_max, pnr_var_spread, pnr_cls_mean, pnr_cls_std, pnr_cls_min, pnr_cls_max, pnr_cls_spread, unary, binary, trinary, horn_mean, horn_std, horn_min, horn_max, horn_spread, horn
+features_stochastic: 
+algorithms_deterministic: akmaxsat_ls, akmaxsat, DSWPM1_924, pwbo2.1, qmaxsat0.21comp, qmaxsat0.21g2comp
+algorithms_stochastic: 
+number_of_feature_steps: 1
+feature_step group_basics: numVars, numClauses, perc_soft, soft_mean, soft_std, soft_min, soft_max, var_clauses_ratio, vcg_var_mean, vcg_var_std, vcg_var_min, vcg_var_max, vcg_var_spread, vcg_cls_mean, vcg_cls_std, vcg_cls_min, vcg_cls_max, vcg_cls_spread, pnr_var_mean, pnr_var_std, pnr_var_min, pnr_var_max, pnr_var_spread, pnr_cls_mean, pnr_cls_std, pnr_cls_min, pnr_cls_max, pnr_cls_spread, unary, binary, trinary, horn_mean, horn_std, horn_min, horn_max, horn_spread, horn
+default_steps: group_basics
