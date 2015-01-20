@@ -4,7 +4,7 @@
 @ATTRIBUTE repetition NUMERIC
 @ATTRIBUTE algorithm {bprolog,fzn2smt,g12cpx,g12fd,g12lazyfd,g12mip,gecode,izplus,minisatid,mistral,ortools}
 @ATTRIBUTE solved NUMERIC
-@ATTRIBUTE time NUMERIC
+@ATTRIBUTE runtime NUMERIC
 @ATTRIBUTE runstatus {ok,timeout,other}
 
 @DATA
