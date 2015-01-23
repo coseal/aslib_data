@@ -2,6 +2,8 @@ source: An Algorithm Selection Benchmark for the Container Pre-Marshalling Probl
 authors: K. Tierney and Y. Malitsky (features) / K. Tierney and D. Pacino and S. Voss (algorithms)
 translator in coseal format: K. Tierney
 
+This is an extension of the 2013 premarshalling dataset that includes more features and a set of test instances. 
+
 There are three sets of features:
 
 feature_values.arff contains the full set of features from iteration 2 of our latent feature analysis (LFA) process (see paper)
