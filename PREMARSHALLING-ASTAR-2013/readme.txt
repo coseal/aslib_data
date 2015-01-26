@@ -12,5 +12,9 @@ feature_values_orig.arff containers the features used in PREMARHSALLING-ASTAR-20
 
 We also provide test data with an identical naming scheme (see _test). 
 
-The features for the pre-marshalling problem are all extremely easy and fast to compute, thus the feature_costs.arff file has been omitted, as it would be time 0 for every feature (regardless of using original, iteration 1 or iteration 2 features)
+The features for the pre-marshalling problem are all extremely easy and fast to
+compute, thus the feature_costs.arff file has been omitted, as it would be time
+0 for every feature (regardless of using original, iteration 1 or iteration 2
+features).
 
+The feature computation code is available at https://bitbucket.org/eusorpb/cpmp-as
