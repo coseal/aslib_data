@@ -22,8 +22,8 @@ Precisely:
   
   
 The data does not distinguish between timeouts, out-of-memory, crashes, or other
-issues: just the "other" runstatus is set when a solver gives no answer on 
-before the timeout expires. Thus, the runstatus will be in {ok, other}.
+issues: just the "other" runstatus is set when a solver gives no answer before 
+the timeout expires. Thus, the runstatus will be in {ok, other}.
 
 
 Features
