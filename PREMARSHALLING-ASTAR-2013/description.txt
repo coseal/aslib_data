@@ -6,12 +6,67 @@ algorithm_cutoff_time: 3600
 algorithm_cutoff_memory: 5120
 features_cutoff_time: 30
 features_cutoff_memory: 512
-features_deterministic: stacks,tiers,stack-tier-ratio,container-density,empty-stack-pct,overstowing-stack-pct,overstowing-2cont-stack-pct,group-same-min,group-same-max,group-same-mean,group-same-stdev,top-good-min,top-good-max,top-good-mean,top-good-stdev,overstowage-pct,bflb,left-density,tier-weighted-groups,avg-l1-top-left-lg-group,cont-empty-grt-estack,pct-bottom-pct-on-top
+features_deterministic:
+    - stacks
+    - tiers
+    - stack-tier-ratio
+    - container-density
+    - empty-stack-pct
+    - overstowing-stack-pct
+    - overstowing-2cont-stack-pct
+    - group-same-min
+    - group-same-max
+    - group-same-mean
+    - group-same-stdev
+    - top-good-min
+    - top-good-max
+    - top-good-mean
+    - top-good-stdev
+    - overstowage-pct
+    - bflb
+    - left-density
+    - tier-weighted-groups
+    - avg-l1-top-left-lg-group
+    - cont-empty-grt-estack
+    - pct-bottom-pct-on-top
 features_stochastic: 
-algorithms_deterministic: astar-symmulgt-transmul, astar-symmullt-transmul, idastar-symmulgt-transmul, idastar-symmullt-transmul
+algorithms_deterministic:
+    - astar-symmulgt-transmul
+    - astar-symmullt-transmul
+    - idastar-symmulgt-transmul
+    - idastar-symmullt-transmul
 algorithms_stochastic:
 number_of_feature_steps: 3
-feature_step orig: stacks,tiers,stack-tier-ratio,container-density,empty-stack-pct,overstowing-stack-pct,group-same-min,group-same-max,group-same-mean,group-same-stdev,top-good-min,top-good-max,top-good-mean,top-good-stdev,overstowage-pct,bflb
-feature_step lfa1: left-density,tier-weighted-groups,avg-l1-top-left-lg-group,cont-empty-grt-estack
-feature_step lfa2: overstowing-2cont-stack-pct,pct-bottom-pct-on-top
-default_steps: orig,lfa1,lfa2
+feature_steps:
+    orig:
+        provides:
+            - stacks
+            - tiers
+            - stack-tier-ratio
+            - container-density
+            - empty-stack-pct
+            - overstowing-stack-pct
+            - group-same-min
+            - group-same-max
+            - group-same-mean
+            - group-same-stdev
+            - top-good-min
+            - top-good-max
+            - top-good-mean
+            - top-good-stdev
+            - overstowage-pct
+            - bflb
+    lfa1: 
+        provides:
+            - left-density
+            - tier-weighted-groups
+            - avg-l1-top-left-lg-group
+            - cont-empty-grt-estack
+    lfa2:
+        provides:
+            - overstowing-2cont-stack-pct
+            - pct-bottom-pct-on-top
+default_steps:
+    - orig
+    - lfa1
+    - lfa2
