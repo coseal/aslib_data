@@ -1,6 +1,6 @@
-scenario_id: CSP-MZN-2013
+scenario_id: COP-MZN-2013
 performance_measures:
-    - solved
+    - score
     - runtime
 maximize:
     - true
@@ -8,7 +8,7 @@ maximize:
 performance_type:
     - solution_quality
     - runtime
-algorithm_cutoff_time: 1800
+algorithm_cutoff_time: 900
 algorithm_cutoff_memory: "?"
 features_cutoff_time: 900
 features_cutoff_memory: "?"
@@ -21,6 +21,7 @@ algorithms_deterministic:
     - g12mip
     - gecode
     - izplus
+    - jacop
     - minisatid
     - mistral
     - ortools

@@ -24,7 +24,9 @@ Marius Lindauer - University of Freiburg, Germany
 
 # Authors
 
+* Roberto Amadini - University of Bologna
 * Bernd Bischl - University of Dortmund
+* Barry Hurley - Insight Centre for Data Analytics, Cork, Ireland
 * Pascal Kerschke - University of Münster
 * Lars Kotthoff - Insight Centre for Data Analytics, Cork, Ireland
 * Marius Lindauer - University of Freiburg
@@ -33,6 +35,7 @@ Marius Lindauer - University of Freiburg, Germany
 * Holger Hoos - University of British Columbia
 * Frank Hutter - University of Freiburg
 * Kevin Leyton-Brown - University of British Columbia
+* Jacopo Mauro - University of Bologna
 * Kevin Tierney - University of Paderborn
 * Joaquin Vanschoren - Eindhoven University of Technology
 
