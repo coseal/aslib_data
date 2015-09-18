@@ -1,7 +1,10 @@
 scenario_id: QBF-2011
-performance_measures: runtime
-maximize: false
-performance_type: runtime
+performance_measures: 
+    - runtime
+maximize: 
+    - false
+performance_type: 
+    - runtime
 algorithm_cutoff_time: 3600
 algorithm_cutoff_memory: 16384
 features_cutoff_time: "?"
@@ -111,4 +114,5 @@ feature_steps:
             - WOCCEP_WOCCE
             - WOCCEP_WOCCP
             - WOCCFN_WOCCN
-default_steps: all_feats
+default_steps: 
+    - all_feats

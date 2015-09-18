@@ -1,7 +1,10 @@
 scenario_id: PROTEUS-2014
-performance_measures: runtime
-maximize: false
-performance_type: runtime
+performance_measures: 
+    - runtime
+maximize: 
+    - false
+performance_type: 
+    - runtime
 algorithm_cutoff_time: 3600
 algorithm_cutoff_memory: 2000
 features_cutoff_time: 900
@@ -438,4 +441,5 @@ feature_steps:
             - directorder_cluster-coeff-entropy
             - directorder_HORNY-VAR-max
             - directorder_reducedClauses
-default_steps: csp
+default_steps: 
+    - csp

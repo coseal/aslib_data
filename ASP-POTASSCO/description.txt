@@ -1,7 +1,10 @@
 scenario_id: ASP-POTASSCO
-performance_measures: runtime
-maximize: false
-performance_type: runtime
+performance_measures: 
+    - runtime
+maximize: 
+    - false
+performance_type: 
+    - runtime
 algorithm_cutoff_time: 600
 algorithm_cutoff_memory: "?"
 features_cutoff_time: 600

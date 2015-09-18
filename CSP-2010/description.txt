@@ -1,7 +1,10 @@
 scenario_id: CSP-2010
-performance_measures: runtime
-maximize: false
-performance_type: runtime
+performance_measures: 
+    - runtime
+maximize: 
+    - false
+performance_type: 
+    - runtime
 algorithm_cutoff_time: 5000
 algorithm_cutoff_memory: 4096
 features_cutoff_time: "?"
@@ -188,4 +191,5 @@ feature_steps:
             - stats_literal_tightness_100
             - stats_literal_tightness_mean
             - stats_literal_tightness_coeff_of_variation 
-default_steps: all_feats
+default_steps: 
+     - all_feats

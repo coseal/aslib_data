@@ -1,7 +1,10 @@
 scenario_id: MAXSAT12-PMS
-performance_measures: runtime
-maximize: false
-performance_type: runtime
+performance_measures: 
+    - runtime
+maximize: 
+    - false
+performance_type: 
+    - runtime
 algorithm_cutoff_time: 2100
 algorithm_cutoff_memory: "?"
 features_cutoff_time: 500
@@ -94,4 +97,5 @@ feature_steps:
             - horn_max
             - horn_spread
             - horn
-default_steps: group_basics
+default_steps: 
+    - group_basics
