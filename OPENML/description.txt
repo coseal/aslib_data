@@ -1,119 +1,119 @@
 scenario_id: OPENML
 features_deterministic:
-- f1
-- f2
-- f3
-- f4
-- f5
-- f6
-- f7
-- f8
-- f9
-- f10
-- f11
-- f12
-- f13
-- f14
-- f15
-- f16
-- f17
-- f18
-- f19
-- f20
-- f21
-- f22
-- f23
-- f24
-- f25
-- f26
-- f27
-- f28
-- f29
-- f30
-- f31
-- f32
-- f33
-- f34
-- f35
-- f36
-- f37
-- f38
-- f39
-- f40
-- f41
-- f42
-- f43
-- f44
-- f45
-- f46
-- f47
-- f48
-- f49
-- f50
-- f51
-- f52
-- f53
-- f54
-- f55
-- f56
-- f57
-- f58
-- f59
-- f60
-- f61
-- f62
-- f63
-- f64
-- f65
-- f66
-- f67
-- f68
-- f69
-- f70
-- f71
-- f72
-- f73
-- f74
-- f75
-- f76
-- f77
-- f78
-- f79
-- f80
-- f81
-- f82
-- f83
-- f84
-- f85
-- f86
-- f87
-- f88
-- f89
-- f90
-- f91
-- f92
-- f93
-- f94
-- f95
-- f96
-- f97
-- f98
-- f99
-- f100
-- f101
-- f102
-- f103
-- f104
-- f105
-- f106
-- f107
-- f108
-- f109
-- f110
-- f111
-- f112
-- f113
-- f114
+- ClassCount
+- ClassEntropy
+- DecisionStumpAUC
+- DecisionStumpErrRate
+- DecisionStumpKappa
+- DefaultAccuracy
+- DefaultTargetNominal
+- DefaultTargetNumerical
+- Dimensionality
+- EquivalentNumberOfAtts
+- HoeffdingAdwin.changes
+- HoeffdingAdwin.warnings
+- HoeffdingDDM.changes
+- HoeffdingDDM.warnings
+- IncompleteInstanceCount
+- InstanceCount
+- J48.00001.AUC
+- J48.00001.ErrRate
+- J48.00001.kappa
+- J48.00001.Kappa
+- J48.0001.AUC
+- J48.0001.ErrRate
+- J48.0001.kappa
+- J48.0001.Kappa
+- J48.001.AUC
+- J48.001.ErrRate
+- J48.001.kappa
+- J48.001.Kappa
+- JRipAUC
+- JRipErrRate
+- JRipKappa
+- kNN_1NAUC
+- kNN_1NErrRate
+- kNN_1NKappa
+- kNN_2NAUC
+- kNN_2NErrRate
+- kNN_2NKappa
+- kNN_3NAUC
+- kNN_3NErrRate
+- kNN_3NKappa
+- MajorityClassSize
+- MaxNominalAttDistinctValues
+- MeanAttributeEntropy
+- MeanKurtosisOfNumericAtts
+- MeanMeansOfNumericAtts
+- MeanMutualInformation
+- MeanNominalAttDistinctValues
+- MeanSkewnessOfNumericAtts
+- MeanStdDevOfNumericAtts
+- MinNominalAttDistinctValues
+- MinorityClassSize
+- NaiveBayesAdwin.changes
+- NaiveBayesAdwin.warnings
+- NaiveBayesAUC
+- NaiveBayesDdm.changes
+- NaiveBayesDdm.warnings
+- NaiveBayesErrRate
+- NaiveBayesKappa
+- NBAUC
+- NBErrRate
+- NBKappa
+- NBTreeAUC
+- NBTreeErrRate
+- NBTreeKappa
+- NegativePercentage
+- NoiseToSignalRatio
+- NumAttributes
+- NumberOfClasses
+- NumberOfFeatures
+- NumberOfInstances
+- NumberOfInstancesWithMissingValues
+- NumberOfMissingValues
+- NumberOfNumericFeatures
+- NumberOfSymbolicFeatures
+- NumBinaryAtts
+- NumMissingValues
+- NumNominalAtts
+- NumNumericAtts
+- PercentageOfBinaryAtts
+- PercentageOfMissingValues
+- PercentageOfNominalAtts
+- PercentageOfNumericAtts
+- PositivePercentage
+- RandomTreeDepth1AUC
+- RandomTreeDepth1ErrRate
+- RandomTreeDepth1Kappa
+- RandomTreeDepth2AUC
+- RandomTreeDepth2ErrRate
+- RandomTreeDepth2Kappa
+- RandomTreeDepth3AUC
+- RandomTreeDepth3ErrRate
+- RandomTreeDepth3Kappa
+- REPTreeDepth1AUC
+- REPTreeDepth1ErrRate
+- REPTreeDepth1Kappa
+- REPTreeDepth2AUC
+- REPTreeDepth2ErrRate
+- REPTreeDepth2Kappa
+- REPTreeDepth3AUC
+- REPTreeDepth3ErrRate
+- REPTreeDepth3Kappa
+- SimpleLogisticAUC
+- SimpleLogisticErrRate
+- SimpleLogisticKappa
+- StdvNominalAttDistinctValues
+- SVMe1AUC
+- SVMe1ErrRate
+- SVMe1Kappa
+- SVMe2AUC
+- SVMe2ErrRate
+- SVMe2Kappa
+- SVMe3AUC
+- SVMe3ErrRate
+- SVMe3Kappa
 features_stochastic: []
 algorithms_deterministic:
 - 1068_weka.classifiers.trees.J48 -- -C 0.25 -M 2
@@ -241,346 +241,346 @@ features_cutoff_time: '?'
 features_cutoff_memory: '?'
 number_of_feature_steps: 114
 default_steps:
-- f1
-- f2
-- f3
-- f4
-- f5
-- f6
-- f7
-- f8
-- f9
-- f10
-- f11
-- f12
-- f13
-- f14
-- f15
-- f16
-- f17
-- f18
-- f19
-- f20
-- f21
-- f22
-- f23
-- f24
-- f25
-- f26
-- f27
-- f28
-- f29
-- f30
-- f31
-- f32
-- f33
-- f34
-- f35
-- f36
-- f37
-- f38
-- f39
-- f40
-- f41
-- f42
-- f43
-- f44
-- f45
-- f46
-- f47
-- f48
-- f49
-- f50
-- f51
-- f52
-- f53
-- f54
-- f55
-- f56
-- f57
-- f58
-- f59
-- f60
-- f61
-- f62
-- f63
-- f64
-- f65
-- f66
-- f67
-- f68
-- f69
-- f70
-- f71
-- f72
-- f73
-- f74
-- f75
-- f76
-- f77
-- f78
-- f79
-- f80
-- f81
-- f82
-- f83
-- f84
-- f85
-- f86
-- f87
-- f88
-- f89
-- f90
-- f91
-- f92
-- f93
-- f94
-- f95
-- f96
-- f97
-- f98
-- f99
-- f100
-- f101
-- f102
-- f103
-- f104
-- f105
-- f106
-- f107
-- f108
-- f109
-- f110
-- f111
-- f112
-- f113
-- f114
+- ClassCount
+- ClassEntropy
+- DecisionStumpAUC
+- DecisionStumpErrRate
+- DecisionStumpKappa
+- DefaultAccuracy
+- DefaultTargetNominal
+- DefaultTargetNumerical
+- Dimensionality
+- EquivalentNumberOfAtts
+- HoeffdingAdwin.changes
+- HoeffdingAdwin.warnings
+- HoeffdingDDM.changes
+- HoeffdingDDM.warnings
+- IncompleteInstanceCount
+- InstanceCount
+- J48.00001.AUC
+- J48.00001.ErrRate
+- J48.00001.kappa
+- J48.00001.Kappa
+- J48.0001.AUC
+- J48.0001.ErrRate
+- J48.0001.kappa
+- J48.0001.Kappa
+- J48.001.AUC
+- J48.001.ErrRate
+- J48.001.kappa
+- J48.001.Kappa
+- JRipAUC
+- JRipErrRate
+- JRipKappa
+- kNN_1NAUC
+- kNN_1NErrRate
+- kNN_1NKappa
+- kNN_2NAUC
+- kNN_2NErrRate
+- kNN_2NKappa
+- kNN_3NAUC
+- kNN_3NErrRate
+- kNN_3NKappa
+- MajorityClassSize
+- MaxNominalAttDistinctValues
+- MeanAttributeEntropy
+- MeanKurtosisOfNumericAtts
+- MeanMeansOfNumericAtts
+- MeanMutualInformation
+- MeanNominalAttDistinctValues
+- MeanSkewnessOfNumericAtts
+- MeanStdDevOfNumericAtts
+- MinNominalAttDistinctValues
+- MinorityClassSize
+- NaiveBayesAdwin.changes
+- NaiveBayesAdwin.warnings
+- NaiveBayesAUC
+- NaiveBayesDdm.changes
+- NaiveBayesDdm.warnings
+- NaiveBayesErrRate
+- NaiveBayesKappa
+- NBAUC
+- NBErrRate
+- NBKappa
+- NBTreeAUC
+- NBTreeErrRate
+- NBTreeKappa
+- NegativePercentage
+- NoiseToSignalRatio
+- NumAttributes
+- NumberOfClasses
+- NumberOfFeatures
+- NumberOfInstances
+- NumberOfInstancesWithMissingValues
+- NumberOfMissingValues
+- NumberOfNumericFeatures
+- NumberOfSymbolicFeatures
+- NumBinaryAtts
+- NumMissingValues
+- NumNominalAtts
+- NumNumericAtts
+- PercentageOfBinaryAtts
+- PercentageOfMissingValues
+- PercentageOfNominalAtts
+- PercentageOfNumericAtts
+- PositivePercentage
+- RandomTreeDepth1AUC
+- RandomTreeDepth1ErrRate
+- RandomTreeDepth1Kappa
+- RandomTreeDepth2AUC
+- RandomTreeDepth2ErrRate
+- RandomTreeDepth2Kappa
+- RandomTreeDepth3AUC
+- RandomTreeDepth3ErrRate
+- RandomTreeDepth3Kappa
+- REPTreeDepth1AUC
+- REPTreeDepth1ErrRate
+- REPTreeDepth1Kappa
+- REPTreeDepth2AUC
+- REPTreeDepth2ErrRate
+- REPTreeDepth2Kappa
+- REPTreeDepth3AUC
+- REPTreeDepth3ErrRate
+- REPTreeDepth3Kappa
+- SimpleLogisticAUC
+- SimpleLogisticErrRate
+- SimpleLogisticKappa
+- StdvNominalAttDistinctValues
+- SVMe1AUC
+- SVMe1ErrRate
+- SVMe1Kappa
+- SVMe2AUC
+- SVMe2ErrRate
+- SVMe2Kappa
+- SVMe3AUC
+- SVMe3ErrRate
+- SVMe3Kappa
 feature_steps:
-  f1:
-    provides: f1
-  f2:
-    provides: f2
-  f3:
-    provides: f3
-  f4:
-    provides: f4
-  f5:
-    provides: f5
-  f6:
-    provides: f6
-  f7:
-    provides: f7
-  f8:
-    provides: f8
-  f9:
-    provides: f9
-  f10:
-    provides: f10
-  f11:
-    provides: f11
-  f12:
-    provides: f12
-  f13:
-    provides: f13
-  f14:
-    provides: f14
-  f15:
-    provides: f15
-  f16:
-    provides: f16
-  f17:
-    provides: f17
-  f18:
-    provides: f18
-  f19:
-    provides: f19
-  f20:
-    provides: f20
-  f21:
-    provides: f21
-  f22:
-    provides: f22
-  f23:
-    provides: f23
-  f24:
-    provides: f24
-  f25:
-    provides: f25
-  f26:
-    provides: f26
-  f27:
-    provides: f27
-  f28:
-    provides: f28
-  f29:
-    provides: f29
-  f30:
-    provides: f30
-  f31:
-    provides: f31
-  f32:
-    provides: f32
-  f33:
-    provides: f33
-  f34:
-    provides: f34
-  f35:
-    provides: f35
-  f36:
-    provides: f36
-  f37:
-    provides: f37
-  f38:
-    provides: f38
-  f39:
-    provides: f39
-  f40:
-    provides: f40
-  f41:
-    provides: f41
-  f42:
-    provides: f42
-  f43:
-    provides: f43
-  f44:
-    provides: f44
-  f45:
-    provides: f45
-  f46:
-    provides: f46
-  f47:
-    provides: f47
-  f48:
-    provides: f48
-  f49:
-    provides: f49
-  f50:
-    provides: f50
-  f51:
-    provides: f51
-  f52:
-    provides: f52
-  f53:
-    provides: f53
-  f54:
-    provides: f54
-  f55:
-    provides: f55
-  f56:
-    provides: f56
-  f57:
-    provides: f57
-  f58:
-    provides: f58
-  f59:
-    provides: f59
-  f60:
-    provides: f60
-  f61:
-    provides: f61
-  f62:
-    provides: f62
-  f63:
-    provides: f63
-  f64:
-    provides: f64
-  f65:
-    provides: f65
-  f66:
-    provides: f66
-  f67:
-    provides: f67
-  f68:
-    provides: f68
-  f69:
-    provides: f69
-  f70:
-    provides: f70
-  f71:
-    provides: f71
-  f72:
-    provides: f72
-  f73:
-    provides: f73
-  f74:
-    provides: f74
-  f75:
-    provides: f75
-  f76:
-    provides: f76
-  f77:
-    provides: f77
-  f78:
-    provides: f78
-  f79:
-    provides: f79
-  f80:
-    provides: f80
-  f81:
-    provides: f81
-  f82:
-    provides: f82
-  f83:
-    provides: f83
-  f84:
-    provides: f84
-  f85:
-    provides: f85
-  f86:
-    provides: f86
-  f87:
-    provides: f87
-  f88:
-    provides: f88
-  f89:
-    provides: f89
-  f90:
-    provides: f90
-  f91:
-    provides: f91
-  f92:
-    provides: f92
-  f93:
-    provides: f93
-  f94:
-    provides: f94
-  f95:
-    provides: f95
-  f96:
-    provides: f96
-  f97:
-    provides: f97
-  f98:
-    provides: f98
-  f99:
-    provides: f99
-  f100:
-    provides: f100
-  f101:
-    provides: f101
-  f102:
-    provides: f102
-  f103:
-    provides: f103
-  f104:
-    provides: f104
-  f105:
-    provides: f105
-  f106:
-    provides: f106
-  f107:
-    provides: f107
-  f108:
-    provides: f108
-  f109:
-    provides: f109
-  f110:
-    provides: f110
-  f111:
-    provides: f111
-  f112:
-    provides: f112
-  f113:
-    provides: f113
-  f114:
-    provides: f114
+  ClassCount:
+    provides: ClassCount
+  ClassEntropy:
+    provides: ClassEntropy
+  DecisionStumpAUC:
+    provides: DecisionStumpAUC
+  DecisionStumpErrRate:
+    provides: DecisionStumpErrRate
+  DecisionStumpKappa:
+    provides: DecisionStumpKappa
+  DefaultAccuracy:
+    provides: DefaultAccuracy
+  DefaultTargetNominal:
+    provides: DefaultTargetNominal
+  DefaultTargetNumerical:
+    provides: DefaultTargetNumerical
+  Dimensionality:
+    provides: Dimensionality
+  EquivalentNumberOfAtts:
+    provides: EquivalentNumberOfAtts
+  HoeffdingAdwin.changes:
+    provides: HoeffdingAdwin.changes
+  HoeffdingAdwin.warnings:
+    provides: HoeffdingAdwin.warnings
+  HoeffdingDDM.changes:
+    provides: HoeffdingDDM.changes
+  HoeffdingDDM.warnings:
+    provides: HoeffdingDDM.warnings
+  IncompleteInstanceCount:
+    provides: IncompleteInstanceCount
+  InstanceCount:
+    provides: InstanceCount
+  J48.00001.AUC:
+    provides: J48.00001.AUC
+  J48.00001.ErrRate:
+    provides: J48.00001.ErrRate
+  J48.00001.kappa:
+    provides: J48.00001.kappa
+  J48.00001.Kappa:
+    provides: J48.00001.Kappa
+  J48.0001.AUC:
+    provides: J48.0001.AUC
+  J48.0001.ErrRate:
+    provides: J48.0001.ErrRate
+  J48.0001.kappa:
+    provides: J48.0001.kappa
+  J48.0001.Kappa:
+    provides: J48.0001.Kappa
+  J48.001.AUC:
+    provides: J48.001.AUC
+  J48.001.ErrRate:
+    provides: J48.001.ErrRate
+  J48.001.kappa:
+    provides: J48.001.kappa
+  J48.001.Kappa:
+    provides: J48.001.Kappa
+  JRipAUC:
+    provides: JRipAUC
+  JRipErrRate:
+    provides: JRipErrRate
+  JRipKappa:
+    provides: JRipKappa
+  kNN_1NAUC:
+    provides: kNN_1NAUC
+  kNN_1NErrRate:
+    provides: kNN_1NErrRate
+  kNN_1NKappa:
+    provides: kNN_1NKappa
+  kNN_2NAUC:
+    provides: kNN_2NAUC
+  kNN_2NErrRate:
+    provides: kNN_2NErrRate
+  kNN_2NKappa:
+    provides: kNN_2NKappa
+  kNN_3NAUC:
+    provides: kNN_3NAUC
+  kNN_3NErrRate:
+    provides: kNN_3NErrRate
+  kNN_3NKappa:
+    provides: kNN_3NKappa
+  MajorityClassSize:
+    provides: MajorityClassSize
+  MaxNominalAttDistinctValues:
+    provides: MaxNominalAttDistinctValues
+  MeanAttributeEntropy:
+    provides: MeanAttributeEntropy
+  MeanKurtosisOfNumericAtts:
+    provides: MeanKurtosisOfNumericAtts
+  MeanMeansOfNumericAtts:
+    provides: MeanMeansOfNumericAtts
+  MeanMutualInformation:
+    provides: MeanMutualInformation
+  MeanNominalAttDistinctValues:
+    provides: MeanNominalAttDistinctValues
+  MeanSkewnessOfNumericAtts:
+    provides: MeanSkewnessOfNumericAtts
+  MeanStdDevOfNumericAtts:
+    provides: MeanStdDevOfNumericAtts
+  MinNominalAttDistinctValues:
+    provides: MinNominalAttDistinctValues
+  MinorityClassSize:
+    provides: MinorityClassSize
+  NaiveBayesAdwin.changes:
+    provides: NaiveBayesAdwin.changes
+  NaiveBayesAdwin.warnings:
+    provides: NaiveBayesAdwin.warnings
+  NaiveBayesAUC:
+    provides: NaiveBayesAUC
+  NaiveBayesDdm.changes:
+    provides: NaiveBayesDdm.changes
+  NaiveBayesDdm.warnings:
+    provides: NaiveBayesDdm.warnings
+  NaiveBayesErrRate:
+    provides: NaiveBayesErrRate
+  NaiveBayesKappa:
+    provides: NaiveBayesKappa
+  NBAUC:
+    provides: NBAUC
+  NBErrRate:
+    provides: NBErrRate
+  NBKappa:
+    provides: NBKappa
+  NBTreeAUC:
+    provides: NBTreeAUC
+  NBTreeErrRate:
+    provides: NBTreeErrRate
+  NBTreeKappa:
+    provides: NBTreeKappa
+  NegativePercentage:
+    provides: NegativePercentage
+  NoiseToSignalRatio:
+    provides: NoiseToSignalRatio
+  NumAttributes:
+    provides: NumAttributes
+  NumberOfClasses:
+    provides: NumberOfClasses
+  NumberOfFeatures:
+    provides: NumberOfFeatures
+  NumberOfInstances:
+    provides: NumberOfInstances
+  NumberOfInstancesWithMissingValues:
+    provides: NumberOfInstancesWithMissingValues
+  NumberOfMissingValues:
+    provides: NumberOfMissingValues
+  NumberOfNumericFeatures:
+    provides: NumberOfNumericFeatures
+  NumberOfSymbolicFeatures:
+    provides: NumberOfSymbolicFeatures
+  NumBinaryAtts:
+    provides: NumBinaryAtts
+  NumMissingValues:
+    provides: NumMissingValues
+  NumNominalAtts:
+    provides: NumNominalAtts
+  NumNumericAtts:
+    provides: NumNumericAtts
+  PercentageOfBinaryAtts:
+    provides: PercentageOfBinaryAtts
+  PercentageOfMissingValues:
+    provides: PercentageOfMissingValues
+  PercentageOfNominalAtts:
+    provides: PercentageOfNominalAtts
+  PercentageOfNumericAtts:
+    provides: PercentageOfNumericAtts
+  PositivePercentage:
+    provides: PositivePercentage
+  RandomTreeDepth1AUC:
+    provides: RandomTreeDepth1AUC
+  RandomTreeDepth1ErrRate:
+    provides: RandomTreeDepth1ErrRate
+  RandomTreeDepth1Kappa:
+    provides: RandomTreeDepth1Kappa
+  RandomTreeDepth2AUC:
+    provides: RandomTreeDepth2AUC
+  RandomTreeDepth2ErrRate:
+    provides: RandomTreeDepth2ErrRate
+  RandomTreeDepth2Kappa:
+    provides: RandomTreeDepth2Kappa
+  RandomTreeDepth3AUC:
+    provides: RandomTreeDepth3AUC
+  RandomTreeDepth3ErrRate:
+    provides: RandomTreeDepth3ErrRate
+  RandomTreeDepth3Kappa:
+    provides: RandomTreeDepth3Kappa
+  REPTreeDepth1AUC:
+    provides: REPTreeDepth1AUC
+  REPTreeDepth1ErrRate:
+    provides: REPTreeDepth1ErrRate
+  REPTreeDepth1Kappa:
+    provides: REPTreeDepth1Kappa
+  REPTreeDepth2AUC:
+    provides: REPTreeDepth2AUC
+  REPTreeDepth2ErrRate:
+    provides: REPTreeDepth2ErrRate
+  REPTreeDepth2Kappa:
+    provides: REPTreeDepth2Kappa
+  REPTreeDepth3AUC:
+    provides: REPTreeDepth3AUC
+  REPTreeDepth3ErrRate:
+    provides: REPTreeDepth3ErrRate
+  REPTreeDepth3Kappa:
+    provides: REPTreeDepth3Kappa
+  SimpleLogisticAUC:
+    provides: SimpleLogisticAUC
+  SimpleLogisticErrRate:
+    provides: SimpleLogisticErrRate
+  SimpleLogisticKappa:
+    provides: SimpleLogisticKappa
+  StdvNominalAttDistinctValues:
+    provides: StdvNominalAttDistinctValues
+  SVMe1AUC:
+    provides: SVMe1AUC
+  SVMe1ErrRate:
+    provides: SVMe1ErrRate
+  SVMe1Kappa:
+    provides: SVMe1Kappa
+  SVMe2AUC:
+    provides: SVMe2AUC
+  SVMe2ErrRate:
+    provides: SVMe2ErrRate
+  SVMe2Kappa:
+    provides: SVMe2Kappa
+  SVMe3AUC:
+    provides: SVMe3AUC
+  SVMe3ErrRate:
+    provides: SVMe3ErrRate
+  SVMe3Kappa:
+    provides: SVMe3Kappa
