@@ -1,0 +1,586 @@
+scenario_id: OPENML
+features_deterministic:
+- f1
+- f2
+- f3
+- f4
+- f5
+- f6
+- f7
+- f8
+- f9
+- f10
+- f11
+- f12
+- f13
+- f14
+- f15
+- f16
+- f17
+- f18
+- f19
+- f20
+- f21
+- f22
+- f23
+- f24
+- f25
+- f26
+- f27
+- f28
+- f29
+- f30
+- f31
+- f32
+- f33
+- f34
+- f35
+- f36
+- f37
+- f38
+- f39
+- f40
+- f41
+- f42
+- f43
+- f44
+- f45
+- f46
+- f47
+- f48
+- f49
+- f50
+- f51
+- f52
+- f53
+- f54
+- f55
+- f56
+- f57
+- f58
+- f59
+- f60
+- f61
+- f62
+- f63
+- f64
+- f65
+- f66
+- f67
+- f68
+- f69
+- f70
+- f71
+- f72
+- f73
+- f74
+- f75
+- f76
+- f77
+- f78
+- f79
+- f80
+- f81
+- f82
+- f83
+- f84
+- f85
+- f86
+- f87
+- f88
+- f89
+- f90
+- f91
+- f92
+- f93
+- f94
+- f95
+- f96
+- f97
+- f98
+- f99
+- f100
+- f101
+- f102
+- f103
+- f104
+- f105
+- f106
+- f107
+- f108
+- f109
+- f110
+- f111
+- f112
+- f113
+- f114
+features_stochastic: []
+algorithms_deterministic:
+- 1068_weka.classifiers.trees.J48 -- -C 0.25 -M 2
+- 1071_weka.classifiers.rules.OneR -- -B 6
+- 1073_weka.classifiers.rules.PART -- -M 2 -C 0.25 -Q 1
+- 1074_weka.classifiers.rules.OLM -- -R 0 -C 1 -U 0
+- 1076_weka.classifiers.trees.SimpleCart -- -M 2.0 -N 5 -C 1.0 -S 1
+- 1078_weka.classifiers.trees.RandomTree -- -K 0 -M 1.0 -V 0.001 -S 1
+- 1079_weka.classifiers.trees.RandomForest -- -I 100 -K 0 -S 1 -num-slots 1
+- 1084_weka.classifiers.trees.J48graft -- -C 0.25 -M 2
+- 1087_weka.classifiers.trees.HoeffdingTree -- -L 2 -S 1 -E 1.0E-7 -H 0.05 -M 0.01
+  -G 200.0 -N 0.0
+- 1088_weka.classifiers.trees.FT -- -I 15 -F 0 -M 15 -W 0.0
+- 1090_weka.classifiers.trees.DecisionStump
+- 1094_weka.classifiers.rules.JRip -- -F 3 -N 2.0 -O 2 -S 1
+- 1096_weka.classifiers.rules.DecisionTable -- -X 1 -S \weka.attributeSelection.BestFirst
+  -D 1 -N 5\
+- 1098_weka.classifiers.rules.ConjunctiveRule -- -N 3 -M 2.0 -P -1 -S 1
+- 1101_weka.classifiers.misc.InputMappedClassifier -- -I -trim -W weka.classifiers.rules.ZeroR
+- 1102_weka.classifiers.misc.OSDL -- -C MED -S 0.5
+- 1104_weka.classifiers.lazy.IB1
+- 1105_weka.classifiers.lazy.IBk -- -K 1 -W 0 -A \weka.core.neighboursearch.LinearNNSearch
+  -A \\\weka.core.EuclideanDistance -R first-last\\\\
+- 1105_weka.classifiers.lazy.IBk -- -K 3 -W 0 -A \weka.core.neighboursearch.LinearNNSearch
+  -A \\\weka.core.EuclideanDistance -R first-last\\\\
+- 1105_weka.classifiers.lazy.IBk -- -K 5 -W 0 -A \weka.core.neighboursearch.LinearNNSearch
+  -A \\\weka.core.EuclideanDistance -R first-last\\\\
+- 1107_weka.classifiers.lazy.LBR
+- 1108_weka.classifiers.lazy.LWL -- -U 0 -K -1 -A \weka.core.neighboursearch.LinearNNSearch
+  -A \\\weka.core.EuclideanDistance -R first-last\\\\ -W weka.classifiers.trees.DecisionStump
+- 1109_weka.classifiers.functions.GaussianProcesses -- -L 1.0 -N 0 -K \weka.classifiers.functions.supportVector.PolyKernel
+  -E 1.0 -C 250007\
+- 1112_weka.classifiers.functions.LibLINEAR -- -S 1 -C 1.0 -E 0.001 -B 1.0
+- 1112_weka.classifiers.functions.LibLINEAR -- -S 1 -C 1.0 -E 0.01 -B 1.0
+- 1114_weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1
+- 1117_weka.classifiers.functions.RBFClassifier -- -N 2 -R 0.01 -L 1.0E-6 -C 2 -P
+  1 -E 1 -S 1
+- 1120_weka.classifiers.functions.SGD -- -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S
+  1
+- 1154_weka.classifiers.bayes.NaiveBayes
+- 1155_weka.classifiers.meta.FilteredClassifier -- -F \weka.filters.unsupervised.attribute.Standardize
+  \ -W weka.classifiers.bayes.NaiveBayes
+- 1160_weka.classifiers.meta.AttributeSelectedClassifier -- -E \weka.attributeSelection.PrincipalComponents
+  -R 0.95 -A 5\ -S \weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1\
+  -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+- 1163_weka.classifiers.meta.FilteredClassifier -- -F \weka.filters.unsupervised.attribute.PrincipalComponents
+  -R 0.95 -A 5 -M -1\ -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+- 1168_weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.K2
+  -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+- 1172_weka.classifiers.functions.LibSVM -- -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M
+  40.0 -C 1.0 -E 0.001 -P 0.1 -model /Users/joa/Downloads/weka-3-7-12 -seed 1
+- 1173_weka.classifiers.bayes.HNB
+- 1177_weka.classifiers.functions.SimpleLogistic -- -I 0 -M 500 -H 50 -W 0.0
+- 1178_weka.classifiers.functions.SMO -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W
+  1 -K \weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007\
+- 1179_weka.classifiers.functions.SMO -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W
+  1 -K \weka.classifiers.functions.supportVector.RBFKernel -G 0.01 -C 250007\
+- 1181_weka.classifiers.functions.Winnow -- -I 1 -A 2.0 -B 0.5 -H -1.0 -W 2.0 -S 1
+- 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+- 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
+- 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
+- 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
+- 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
+- 1183_weka.classifiers.meta.AttributeSelectedClassifier -- -E \weka.attributeSelection.CfsSubsetEval
+  -P 1 -E 1\ -S \weka.attributeSelection.BestFirst -D 1 -N 5\ -W weka.classifiers.trees.J48
+  -- -C 0.25 -M 2
+- 1185_weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree
+  -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+- 1185_weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 160 -W weka.classifiers.trees.REPTree
+  -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+- 1185_weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.REPTree
+  -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+- 1186_weka.classifiers.meta.Dagging -- -F 10 -S 1 -W weka.classifiers.trees.DecisionStump
+- 1188_weka.classifiers.meta.END -- -S 1 -I 10 -W weka.classifiers.meta.nestedDichotomies.ND
+  -- -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+- 1190_weka.classifiers.meta.Grading -- -X 10 -M \weka.classifiers.rules.ZeroR \ -S
+  1 -num-slots 1 -B \weka.classifiers.rules.ZeroR \
+- 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
+  -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+- 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
+  -Z 3.0 -O 1 -E 1 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
+- 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
+  -Z 3.0 -O 1 -E 1 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
+- 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
+  -Z 3.0 -O 1 -E 1 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
+- 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
+  -Z 3.0 -O 1 -E 1 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
+- 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+- 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
+- 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
+- 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
+- 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
+- 1193_weka.classifiers.meta.RacedIncrementalLogitBoost -- -C 500 -M 2000 -V 1000
+  -P 1 -S 1 -W weka.classifiers.trees.DecisionStump
+- 1194_weka.classifiers.meta.RandomSubSpace -- -P 0.5 -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.REPTree
+  -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+- 1194_weka.classifiers.meta.RandomSubSpace -- -P 0.5 -S 1 -num-slots 1 -I 40 -W weka.classifiers.trees.REPTree
+  -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+- 1194_weka.classifiers.meta.RandomSubSpace -- -P 0.5 -S 1 -num-slots 1 -I 80 -W weka.classifiers.trees.REPTree
+  -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+- 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+- 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
+- 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
+- 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
+- 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
+- 1196_weka.classifiers.meta.RotationForest -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+  -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.25
+  -M 2
+- 1196_weka.classifiers.meta.RotationForest -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+  -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.J48 -- -C 0.25
+  -M 2
+- 1196_weka.classifiers.meta.RotationForest -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+  -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 40 -W weka.classifiers.trees.J48 -- -C 0.25
+  -M 2
+- 1199_weka.classifiers.trees.ADTree -- -B 10 -E -3 -S 1
+- 1244_weka.classifiers.meta.FilteredClassifier -- -F \weka.filters.supervised.attribute.Discretize
+  -R first-last -precision 6\ -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+algorithms_stochastic: []
+performance_measures: acc
+performance_type: quality
+maximize: yes
+algorithm_cutoff_time: '?'
+algorithm_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_cutoff_memory: '?'
+number_of_feature_steps: 114
+default_steps:
+- f1
+- f2
+- f3
+- f4
+- f5
+- f6
+- f7
+- f8
+- f9
+- f10
+- f11
+- f12
+- f13
+- f14
+- f15
+- f16
+- f17
+- f18
+- f19
+- f20
+- f21
+- f22
+- f23
+- f24
+- f25
+- f26
+- f27
+- f28
+- f29
+- f30
+- f31
+- f32
+- f33
+- f34
+- f35
+- f36
+- f37
+- f38
+- f39
+- f40
+- f41
+- f42
+- f43
+- f44
+- f45
+- f46
+- f47
+- f48
+- f49
+- f50
+- f51
+- f52
+- f53
+- f54
+- f55
+- f56
+- f57
+- f58
+- f59
+- f60
+- f61
+- f62
+- f63
+- f64
+- f65
+- f66
+- f67
+- f68
+- f69
+- f70
+- f71
+- f72
+- f73
+- f74
+- f75
+- f76
+- f77
+- f78
+- f79
+- f80
+- f81
+- f82
+- f83
+- f84
+- f85
+- f86
+- f87
+- f88
+- f89
+- f90
+- f91
+- f92
+- f93
+- f94
+- f95
+- f96
+- f97
+- f98
+- f99
+- f100
+- f101
+- f102
+- f103
+- f104
+- f105
+- f106
+- f107
+- f108
+- f109
+- f110
+- f111
+- f112
+- f113
+- f114
+feature_steps:
+  f1:
+    provides: f1
+  f2:
+    provides: f2
+  f3:
+    provides: f3
+  f4:
+    provides: f4
+  f5:
+    provides: f5
+  f6:
+    provides: f6
+  f7:
+    provides: f7
+  f8:
+    provides: f8
+  f9:
+    provides: f9
+  f10:
+    provides: f10
+  f11:
+    provides: f11
+  f12:
+    provides: f12
+  f13:
+    provides: f13
+  f14:
+    provides: f14
+  f15:
+    provides: f15
+  f16:
+    provides: f16
+  f17:
+    provides: f17
+  f18:
+    provides: f18
+  f19:
+    provides: f19
+  f20:
+    provides: f20
+  f21:
+    provides: f21
+  f22:
+    provides: f22
+  f23:
+    provides: f23
+  f24:
+    provides: f24
+  f25:
+    provides: f25
+  f26:
+    provides: f26
+  f27:
+    provides: f27
+  f28:
+    provides: f28
+  f29:
+    provides: f29
+  f30:
+    provides: f30
+  f31:
+    provides: f31
+  f32:
+    provides: f32
+  f33:
+    provides: f33
+  f34:
+    provides: f34
+  f35:
+    provides: f35
+  f36:
+    provides: f36
+  f37:
+    provides: f37
+  f38:
+    provides: f38
+  f39:
+    provides: f39
+  f40:
+    provides: f40
+  f41:
+    provides: f41
+  f42:
+    provides: f42
+  f43:
+    provides: f43
+  f44:
+    provides: f44
+  f45:
+    provides: f45
+  f46:
+    provides: f46
+  f47:
+    provides: f47
+  f48:
+    provides: f48
+  f49:
+    provides: f49
+  f50:
+    provides: f50
+  f51:
+    provides: f51
+  f52:
+    provides: f52
+  f53:
+    provides: f53
+  f54:
+    provides: f54
+  f55:
+    provides: f55
+  f56:
+    provides: f56
+  f57:
+    provides: f57
+  f58:
+    provides: f58
+  f59:
+    provides: f59
+  f60:
+    provides: f60
+  f61:
+    provides: f61
+  f62:
+    provides: f62
+  f63:
+    provides: f63
+  f64:
+    provides: f64
+  f65:
+    provides: f65
+  f66:
+    provides: f66
+  f67:
+    provides: f67
+  f68:
+    provides: f68
+  f69:
+    provides: f69
+  f70:
+    provides: f70
+  f71:
+    provides: f71
+  f72:
+    provides: f72
+  f73:
+    provides: f73
+  f74:
+    provides: f74
+  f75:
+    provides: f75
+  f76:
+    provides: f76
+  f77:
+    provides: f77
+  f78:
+    provides: f78
+  f79:
+    provides: f79
+  f80:
+    provides: f80
+  f81:
+    provides: f81
+  f82:
+    provides: f82
+  f83:
+    provides: f83
+  f84:
+    provides: f84
+  f85:
+    provides: f85
+  f86:
+    provides: f86
+  f87:
+    provides: f87
+  f88:
+    provides: f88
+  f89:
+    provides: f89
+  f90:
+    provides: f90
+  f91:
+    provides: f91
+  f92:
+    provides: f92
+  f93:
+    provides: f93
+  f94:
+    provides: f94
+  f95:
+    provides: f95
+  f96:
+    provides: f96
+  f97:
+    provides: f97
+  f98:
+    provides: f98
+  f99:
+    provides: f99
+  f100:
+    provides: f100
+  f101:
+    provides: f101
+  f102:
+    provides: f102
+  f103:
+    provides: f103
+  f104:
+    provides: f104
+  f105:
+    provides: f105
+  f106:
+    provides: f106
+  f107:
+    provides: f107
+  f108:
+    provides: f108
+  f109:
+    provides: f109
+  f110:
+    provides: f110
+  f111:
+    provides: f111
+  f112:
+    provides: f112
+  f113:
+    provides: f113
+  f114:
+    provides: f114
