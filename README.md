@@ -13,22 +13,22 @@ The ASlib consists of algorithm selection scenarios from a many different domain
 
 # Contact
 
-Bernd Bischl - University of Dortmund, Germany
-<bischl@statistik.tu-dortmund.de>
+Bernd Bischl -- Ludwig-Maximilians-University Munich, Germany
+<bernd.bischl@stat.uni-muenchen.de>
 
-Lars Kotthoff - Insight Centre for Data Analytics, Cork, Ireland
-<lars.kotthoff@insight-centre.org>
+Lars Kotthoff -- University of British Columbia, Canada
+<larsko@cs.ubc.ca>
 
-Marius Lindauer - University of Freiburg, Germany
+Marius Lindauer -- University of Freiburg, Germany
 <lindauer@informatik.uni-freiburg.de>
 
 # Authors
 
 * Roberto Amadini - University of Bologna
-* Bernd Bischl - University of Dortmund
+* Bernd Bischl - Ludwig-Maximilians-University Munich
 * Barry Hurley - Insight Centre for Data Analytics, Cork, Ireland
 * Pascal Kerschke - University of Münster
-* Lars Kotthoff - Insight Centre for Data Analytics, Cork, Ireland
+* Lars Kotthoff - University of British Columbia
 * Marius Lindauer - University of Freiburg
 * Yuri Malitsky - IBM Thomas J. Watson Research Center
 * Alexandre Frechette - University of British Columbia
