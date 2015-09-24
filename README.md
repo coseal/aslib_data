@@ -9,7 +9,7 @@ The problem of algorithm selection is attracting increasing attention from resea
 
 We present a standardized format for representing algorithm selection scenarios and an algorithm selection library, ASlib, that contains a growing number of data sets from the literature. Our format has been designed to be able to express a wide variety of different scenarios.
 
-The ASlib consists of algorithm selection scenarios from a many different domains, such as SAT, CSP, ASP and more. For the formal definition of the format, please see **aslib.net**
+The ASlib consists of algorithm selection scenarios from a many different domains, such as SAT, CSP, ASP and more. For the formal definition of the format, please see [aslib.net](http://www.aslib.net/).
 
 # Contact
 
