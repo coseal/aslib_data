@@ -90,7 +90,7 @@ feature_steps:
     - cluster-coeff-entropy
     - CG-featuretime
 features_cutoff_memory: '?'
-features_cutoff_time: '?'
+features_cutoff_time: '60'
 features_deterministic:
 - nvarsOrig
 - nclausesOrig
