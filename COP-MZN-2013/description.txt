@@ -1,13 +1,13 @@
 scenario_id: COP-MZN-2013
 performance_measures:
+    - runtime
     - score
-    - runtime
 maximize:
-    - true
     - false
+    - true
 performance_type:
-    - solution_quality
     - runtime
+    - solution_quality
 algorithm_cutoff_time: 900
 algorithm_cutoff_memory: "?"
 features_cutoff_time: 900
