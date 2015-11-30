@@ -1,20 +1,200 @@
 scenario_id: BBOB-MASTER-THESIS-2013
-performance_measures: evals, ERT, relERT
-maximize: false, false, false
-performance_type: runtime, runtime, runtime
+performance_measures:
+    - evals
+    - ERT
+    - relERT
+maximize:
+    - false
+    - false
+    - false
+performance_type:
+    - runtime
+    - runtime
+    - runtime
 algorithm_cutoff_time: ?
 algorithm_cutoff_memory: ?
 features_cutoff_time: ?
 features_cutoff_memory: ?
-features_deterministic: dim, fid, iid
-features_stochastic: approx.linear_ar2, approx.linear_min_coef, approx.linear_max_coef, approx.lineari_ar2, approx.quadratic_ar2, approx.quadratic_cond, approx.quadratici_ar2, convex.convex_p, convex.linear_p, convex.linear_dev, distr.skewness, distr.kurtosis, distr.number_of_peaks, levelset.lda_mmce_10, levelset.qda_mmce_10, levelset.mda_mmce_10, levelset.lda_vs_qda_10, levelset.lda_mmce_25, levelset.qda_mmce_25, levelset.mda_mmce_25, levelset.lda_vs_qda_25, levelset.lda_mmce_50, levelset.qda_mmce_50, levelset.mda_mmce_50, levelset.lda_vs_qda_50, ls.n_local_optima, ls.best_to_mean_contrast, ls.best_basin_size, ls.mean_other_basin_size, ls.worst_basin_size, ls.min_feval, ls.lq_feval, ls.med_feval, ls.uq_feval, ls.max_feval, numderiv.grad_norm_min, numderiv.grad_norm_lq, numderiv.grad_norm_med, numderiv.grad_norm_uq, numderiv.grad_norm_max, numderiv.grad_scale_min, numderiv.grad_scale_lq, numderiv.grad_scale_med, numderiv.grad_scale_uq, numderiv.grad_scale_max, numderiv.hessian_cond_min, numderiv.hessian_cond_lq, numderiv.hessian_cond_med, numderiv.hessian_cond_uq, numderiv.hessian_cond_max
-algorithms_deterministic: bfgs
-algorithms_stochastic: cmaes, deoptim, genoud, gensa, pso, random
+features_deterministic:
+    - dim
+    - fid
+    - iid
+features_stochastic:
+    - approx.linear_ar2
+    - approx.linear_min_coef
+    - approx.linear_max_coef
+    - approx.lineari_ar2
+    - approx.quadratic_ar2
+    - approx.quadratic_cond
+    - approx.quadratici_ar2
+    - convex.convex_p
+    - convex.linear_p
+    - convex.linear_dev
+    - distr.skewness
+    - distr.kurtosis
+    - distr.number_of_peaks
+    - levelset.lda_mmce_10
+    - levelset.qda_mmce_10
+    - levelset.mda_mmce_10
+    - levelset.lda_vs_qda_10
+    - levelset.lda_mmce_25
+    - levelset.qda_mmce_25
+    - levelset.mda_mmce_25
+    - levelset.lda_vs_qda_25
+    - levelset.lda_mmce_50
+    - levelset.qda_mmce_50
+    - levelset.mda_mmce_50
+    - levelset.lda_vs_qda_50
+    - ls.n_local_optima
+    - ls.best_to_mean_contrast
+    - ls.best_basin_size
+    - ls.mean_other_basin_size
+    - ls.worst_basin_size
+    - ls.min_feval
+    - ls.lq_feval
+    - ls.med_feval
+    - ls.uq_feval
+    - ls.max_feval
+    - numderiv.grad_norm_min
+    - numderiv.grad_norm_lq
+    - numderiv.grad_norm_med
+    - numderiv.grad_norm_uq
+    - numderiv.grad_norm_max
+    - numderiv.grad_scale_min
+    - numderiv.grad_scale_lq
+    - numderiv.grad_scale_med
+    - numderiv.grad_scale_uq
+    - numderiv.grad_scale_max
+    - numderiv.hessian_cond_min
+    - numderiv.hessian_cond_lq
+    - numderiv.hessian_cond_med
+    - numderiv.hessian_cond_uq
+    - numderiv.hessian_cond_max
+algorithms_deterministic:
+    - bfgs
+algorithms_stochastic:
+    - cmaes
+    - deoptim
+    - genoud
+    - gensa
+    - pso
+    - random
 number_of_feature_steps: 7
-feature_step initial_design: dim, fid, iid, approx.linear_ar2, approx.linear_min_coef, approx.linear_max_coef, approx.lineari_ar2, approx.quadratic_ar2, approx.quadratic_cond, approx.quadratici_ar2, convex.convex_p, convex.linear_p, convex.linear_dev, distr.skewness, distr.kurtosis, distr.number_of_peaks, levelset.lda_mmce_10, levelset.qda_mmce_10, levelset.mda_mmce_10, levelset.lda_vs_qda_10, levelset.lda_mmce_25, levelset.qda_mmce_25, levelset.mda_mmce_25, levelset.lda_vs_qda_25, levelset.lda_mmce_50, levelset.qda_mmce_50, levelset.mda_mmce_50, levelset.lda_vs_qda_50, ls.n_local_optima, ls.best_to_mean_contrast, ls.best_basin_size, ls.mean_other_basin_size, ls.worst_basin_size, ls.min_feval, ls.lq_feval, ls.med_feval, ls.uq_feval, ls.max_feval, numderiv.grad_norm_min, numderiv.grad_norm_lq, numderiv.grad_norm_med, numderiv.grad_norm_uq, numderiv.grad_norm_max, numderiv.grad_scale_min, numderiv.grad_scale_lq, numderiv.grad_scale_med, numderiv.grad_scale_uq, numderiv.grad_scale_max, numderiv.hessian_cond_min, numderiv.hessian_cond_lq, numderiv.hessian_cond_med, numderiv.hessian_cond_uq, numderiv.hessian_cond_max
-feature_step meta: approx.linear_ar2, approx.linear_min_coef, approx.linear_max_coef, approx.lineari_ar2, approx.quadratic_ar2, approx.quadratic_cond, approx.quadratici_ar2
-feature_step convexity: convex.convex_p, convex.linear_p, convex.linear_dev
-feature_step y_distr: distr.skewness, distr.kurtosis, distr.number_of_peaks
-feature_step levelset: levelset.lda_mmce_10, levelset.qda_mmce_10, levelset.mda_mmce_10, levelset.lda_vs_qda_10, levelset.lda_mmce_25, levelset.qda_mmce_25, levelset.mda_mmce_25, levelset.lda_vs_qda_25, levelset.lda_mmce_50, levelset.qda_mmce_50, levelset.mda_mmce_50, levelset.lda_vs_qda_50
-feature_step local_search: ls.n_local_optima, ls.best_to_mean_contrast, ls.best_basin_size, ls.mean_other_basin_size, ls.worst_basin_size, ls.min_feval, ls.lq_feval, ls.med_feval, ls.uq_feval, ls.max_feval
-feature_step curvature: numderiv.grad_norm_min, numderiv.grad_norm_lq, numderiv.grad_norm_med, numderiv.grad_norm_uq, numderiv.grad_norm_max, numderiv.grad_scale_min, numderiv.grad_scale_lq, numderiv.grad_scale_med, numderiv.grad_scale_uq, numderiv.grad_scale_max, numderiv.hessian_cond_min, numderiv.hessian_cond_lq, numderiv.hessian_cond_med, numderiv.hessian_cond_uq, numderiv.hessian_cond_max
+feature_steps:
+    initial_design:
+        provides:
+            - dim
+            - fid
+            - iid
+            - approx.linear_ar2
+            - approx.linear_min_coef
+            - approx.linear_max_coef
+            - approx.lineari_ar2
+            - approx.quadratic_ar2
+            - approx.quadratic_cond
+            - approx.quadratici_ar2
+            - convex.convex_p
+            - convex.linear_p
+            - convex.linear_dev
+            - distr.skewness
+            - distr.kurtosis
+            - distr.number_of_peaks
+            - levelset.lda_mmce_10
+            - levelset.qda_mmce_10
+            - levelset.mda_mmce_10
+            - levelset.lda_vs_qda_10
+            - levelset.lda_mmce_25
+            - levelset.qda_mmce_25
+            - levelset.mda_mmce_25
+            - levelset.lda_vs_qda_25
+            - levelset.lda_mmce_50
+            - levelset.qda_mmce_50
+            - levelset.mda_mmce_50
+            - levelset.lda_vs_qda_50
+            - ls.n_local_optima
+            - ls.best_to_mean_contrast
+            - ls.best_basin_size
+            - ls.mean_other_basin_size
+            - ls.worst_basin_size
+            - ls.min_feval
+            - ls.lq_feval
+            - ls.med_feval
+            - ls.uq_feval
+            - ls.max_feval
+            - numderiv.grad_norm_min
+            - numderiv.grad_norm_lq
+            - numderiv.grad_norm_med
+            - numderiv.grad_norm_uq
+            - numderiv.grad_norm_max
+            - numderiv.grad_scale_min
+            - numderiv.grad_scale_lq
+            - numderiv.grad_scale_med
+            - numderiv.grad_scale_uq
+            - numderiv.grad_scale_max
+            - numderiv.hessian_cond_min
+            - numderiv.hessian_cond_lq
+            - numderiv.hessian_cond_med
+            - numderiv.hessian_cond_uq
+            - numderiv.hessian_cond_max
+    meta:
+        provides:
+            - approx.linear_ar2
+            - approx.linear_min_coef
+            - approx.linear_max_coef
+            - approx.lineari_ar2
+            - approx.quadratic_ar2
+            - approx.quadratic_cond
+            - approx.quadratici_ar2
+    convexity:
+        provides:
+            - convex.convex_p
+            - convex.linear_p
+            - convex.linear_dev
+    y_distr:
+        provides:
+            - distr.skewness
+            - distr.kurtosis
+            - distr.number_of_peaks
+    levelset:
+        provides:
+            - levelset.lda_mmce_10
+            - levelset.qda_mmce_10
+            - levelset.mda_mmce_10
+            - levelset.lda_vs_qda_10
+            - levelset.lda_mmce_25
+            - levelset.qda_mmce_25
+            - levelset.mda_mmce_25
+            - levelset.lda_vs_qda_25
+            - levelset.lda_mmce_50
+            - levelset.qda_mmce_50
+            - levelset.mda_mmce_50
+            - levelset.lda_vs_qda_50
+    local_search:
+        provides:
+            - ls.n_local_optima
+            - ls.best_to_mean_contrast
+            - ls.best_basin_size
+            - ls.mean_other_basin_size
+            - ls.worst_basin_size
+            - ls.min_feval
+            - ls.lq_feval
+            - ls.med_feval
+            - ls.uq_feval
+            - ls.max_feval
+    curvature:
+        provides:
+            - numderiv.grad_norm_min
+            - numderiv.grad_norm_lq
+            - numderiv.grad_norm_med
+            - numderiv.grad_norm_uq
+            - numderiv.grad_norm_max
+            - numderiv.grad_scale_min
+            - numderiv.grad_scale_lq
+            - numderiv.grad_scale_med
+            - numderiv.grad_scale_uq
+            - numderiv.grad_scale_max
+            - numderiv.hessian_cond_min
+            - numderiv.hessian_cond_lq
+            - numderiv.hessian_cond_med
+            - numderiv.hessian_cond_uq
+            - numderiv.hessian_cond_max

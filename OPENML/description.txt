@@ -1,237 +1,237 @@
 scenario_id: OPENML
 features_deterministic:
-- ClassCount
-- ClassEntropy
-- DecisionStumpAUC
-- DecisionStumpErrRate
-- DecisionStumpKappa
-- DefaultAccuracy
-- DefaultTargetNominal
-- DefaultTargetNumerical
-- Dimensionality
-- EquivalentNumberOfAtts
-- HoeffdingAdwin.changes
-- HoeffdingAdwin.warnings
-- HoeffdingDDM.changes
-- HoeffdingDDM.warnings
-- IncompleteInstanceCount
-- InstanceCount
-- J48.00001.AUC
-- J48.00001.ErrRate
-- J48.00001.kappa
-- J48.00001.Kappa
-- J48.0001.AUC
-- J48.0001.ErrRate
-- J48.0001.kappa
-- J48.0001.Kappa
-- J48.001.AUC
-- J48.001.ErrRate
-- J48.001.kappa
-- J48.001.Kappa
-- JRipAUC
-- JRipErrRate
-- JRipKappa
-- kNN_1NAUC
-- kNN_1NErrRate
-- kNN_1NKappa
-- kNN_2NAUC
-- kNN_2NErrRate
-- kNN_2NKappa
-- kNN_3NAUC
-- kNN_3NErrRate
-- kNN_3NKappa
-- MajorityClassSize
-- MaxNominalAttDistinctValues
-- MeanAttributeEntropy
-- MeanKurtosisOfNumericAtts
-- MeanMeansOfNumericAtts
-- MeanMutualInformation
-- MeanNominalAttDistinctValues
-- MeanSkewnessOfNumericAtts
-- MeanStdDevOfNumericAtts
-- MinNominalAttDistinctValues
-- MinorityClassSize
-- NaiveBayesAdwin.changes
-- NaiveBayesAdwin.warnings
-- NaiveBayesAUC
-- NaiveBayesDdm.changes
-- NaiveBayesDdm.warnings
-- NaiveBayesErrRate
-- NaiveBayesKappa
-- NBAUC
-- NBErrRate
-- NBKappa
-- NBTreeAUC
-- NBTreeErrRate
-- NBTreeKappa
-- NegativePercentage
-- NoiseToSignalRatio
-- NumAttributes
-- NumberOfClasses
-- NumberOfFeatures
-- NumberOfInstances
-- NumberOfInstancesWithMissingValues
-- NumberOfMissingValues
-- NumberOfNumericFeatures
-- NumberOfSymbolicFeatures
-- NumBinaryAtts
-- NumMissingValues
-- NumNominalAtts
-- NumNumericAtts
-- PercentageOfBinaryAtts
-- PercentageOfMissingValues
-- PercentageOfNominalAtts
-- PercentageOfNumericAtts
-- PositivePercentage
-- RandomTreeDepth1AUC
-- RandomTreeDepth1ErrRate
-- RandomTreeDepth1Kappa
-- RandomTreeDepth2AUC
-- RandomTreeDepth2ErrRate
-- RandomTreeDepth2Kappa
-- RandomTreeDepth3AUC
-- RandomTreeDepth3ErrRate
-- RandomTreeDepth3Kappa
-- REPTreeDepth1AUC
-- REPTreeDepth1ErrRate
-- REPTreeDepth1Kappa
-- REPTreeDepth2AUC
-- REPTreeDepth2ErrRate
-- REPTreeDepth2Kappa
-- REPTreeDepth3AUC
-- REPTreeDepth3ErrRate
-- REPTreeDepth3Kappa
-- SimpleLogisticAUC
-- SimpleLogisticErrRate
-- SimpleLogisticKappa
-- StdvNominalAttDistinctValues
-- SVMe1AUC
-- SVMe1ErrRate
-- SVMe1Kappa
-- SVMe2AUC
-- SVMe2ErrRate
-- SVMe2Kappa
-- SVMe3AUC
-- SVMe3ErrRate
-- SVMe3Kappa
-features_stochastic: []
+    - ClassCount
+    - ClassEntropy
+    - DecisionStumpAUC
+    - DecisionStumpErrRate
+    - DecisionStumpKappa
+    - DefaultAccuracy
+    - DefaultTargetNominal
+    - DefaultTargetNumerical
+    - Dimensionality
+    - EquivalentNumberOfAtts
+    - HoeffdingAdwin.changes
+    - HoeffdingAdwin.warnings
+    - HoeffdingDDM.changes
+    - HoeffdingDDM.warnings
+    - IncompleteInstanceCount
+    - InstanceCount
+    - J48.00001.AUC
+    - J48.00001.ErrRate
+    - J48.00001.kappa
+    - J48.00001.Kappa
+    - J48.0001.AUC
+    - J48.0001.ErrRate
+    - J48.0001.kappa
+    - J48.0001.Kappa
+    - J48.001.AUC
+    - J48.001.ErrRate
+    - J48.001.kappa
+    - J48.001.Kappa
+    - JRipAUC
+    - JRipErrRate
+    - JRipKappa
+    - kNN_1NAUC
+    - kNN_1NErrRate
+    - kNN_1NKappa
+    - kNN_2NAUC
+    - kNN_2NErrRate
+    - kNN_2NKappa
+    - kNN_3NAUC
+    - kNN_3NErrRate
+    - kNN_3NKappa
+    - MajorityClassSize
+    - MaxNominalAttDistinctValues
+    - MeanAttributeEntropy
+    - MeanKurtosisOfNumericAtts
+    - MeanMeansOfNumericAtts
+    - MeanMutualInformation
+    - MeanNominalAttDistinctValues
+    - MeanSkewnessOfNumericAtts
+    - MeanStdDevOfNumericAtts
+    - MinNominalAttDistinctValues
+    - MinorityClassSize
+    - NaiveBayesAdwin.changes
+    - NaiveBayesAdwin.warnings
+    - NaiveBayesAUC
+    - NaiveBayesDdm.changes
+    - NaiveBayesDdm.warnings
+    - NaiveBayesErrRate
+    - NaiveBayesKappa
+    - NBAUC
+    - NBErrRate
+    - NBKappa
+    - NBTreeAUC
+    - NBTreeErrRate
+    - NBTreeKappa
+    - NegativePercentage
+    - NoiseToSignalRatio
+    - NumAttributes
+    - NumberOfClasses
+    - NumberOfFeatures
+    - NumberOfInstances
+    - NumberOfInstancesWithMissingValues
+    - NumberOfMissingValues
+    - NumberOfNumericFeatures
+    - NumberOfSymbolicFeatures
+    - NumBinaryAtts
+    - NumMissingValues
+    - NumNominalAtts
+    - NumNumericAtts
+    - PercentageOfBinaryAtts
+    - PercentageOfMissingValues
+    - PercentageOfNominalAtts
+    - PercentageOfNumericAtts
+    - PositivePercentage
+    - RandomTreeDepth1AUC
+    - RandomTreeDepth1ErrRate
+    - RandomTreeDepth1Kappa
+    - RandomTreeDepth2AUC
+    - RandomTreeDepth2ErrRate
+    - RandomTreeDepth2Kappa
+    - RandomTreeDepth3AUC
+    - RandomTreeDepth3ErrRate
+    - RandomTreeDepth3Kappa
+    - REPTreeDepth1AUC
+    - REPTreeDepth1ErrRate
+    - REPTreeDepth1Kappa
+    - REPTreeDepth2AUC
+    - REPTreeDepth2ErrRate
+    - REPTreeDepth2Kappa
+    - REPTreeDepth3AUC
+    - REPTreeDepth3ErrRate
+    - REPTreeDepth3Kappa
+    - SimpleLogisticAUC
+    - SimpleLogisticErrRate
+    - SimpleLogisticKappa
+    - StdvNominalAttDistinctValues
+    - SVMe1AUC
+    - SVMe1ErrRate
+    - SVMe1Kappa
+    - SVMe2AUC
+    - SVMe2ErrRate
+    - SVMe2Kappa
+    - SVMe3AUC
+    - SVMe3ErrRate
+    - SVMe3Kappa
+features_stochastic:
 algorithms_deterministic:
-- 1068_weka.classifiers.trees.J48 -- -C 0.25 -M 2
-- 1071_weka.classifiers.rules.OneR -- -B 6
-- 1073_weka.classifiers.rules.PART -- -M 2 -C 0.25 -Q 1
-- 1074_weka.classifiers.rules.OLM -- -R 0 -C 1 -U 0
-- 1076_weka.classifiers.trees.SimpleCart -- -M 2.0 -N 5 -C 1.0 -S 1
-- 1078_weka.classifiers.trees.RandomTree -- -K 0 -M 1.0 -V 0.001 -S 1
-- 1079_weka.classifiers.trees.RandomForest -- -I 100 -K 0 -S 1 -num-slots 1
-- 1084_weka.classifiers.trees.J48graft -- -C 0.25 -M 2
-- 1087_weka.classifiers.trees.HoeffdingTree -- -L 2 -S 1 -E 1.0E-7 -H 0.05 -M 0.01
-  -G 200.0 -N 0.0
-- 1088_weka.classifiers.trees.FT -- -I 15 -F 0 -M 15 -W 0.0
-- 1090_weka.classifiers.trees.DecisionStump
-- 1094_weka.classifiers.rules.JRip -- -F 3 -N 2.0 -O 2 -S 1
-- 1096_weka.classifiers.rules.DecisionTable -- -X 1 -S \weka.attributeSelection.BestFirst
-  -D 1 -N 5\
-- 1098_weka.classifiers.rules.ConjunctiveRule -- -N 3 -M 2.0 -P -1 -S 1
-- 1101_weka.classifiers.misc.InputMappedClassifier -- -I -trim -W weka.classifiers.rules.ZeroR
-- 1102_weka.classifiers.misc.OSDL -- -C MED -S 0.5
-- 1104_weka.classifiers.lazy.IB1
-- 1105_weka.classifiers.lazy.IBk -- -K 1 -W 0 -A \weka.core.neighboursearch.LinearNNSearch
-  -A \\\weka.core.EuclideanDistance -R first-last\\\\
-- 1105_weka.classifiers.lazy.IBk -- -K 3 -W 0 -A \weka.core.neighboursearch.LinearNNSearch
-  -A \\\weka.core.EuclideanDistance -R first-last\\\\
-- 1105_weka.classifiers.lazy.IBk -- -K 5 -W 0 -A \weka.core.neighboursearch.LinearNNSearch
-  -A \\\weka.core.EuclideanDistance -R first-last\\\\
-- 1107_weka.classifiers.lazy.LBR
-- 1108_weka.classifiers.lazy.LWL -- -U 0 -K -1 -A \weka.core.neighboursearch.LinearNNSearch
-  -A \\\weka.core.EuclideanDistance -R first-last\\\\ -W weka.classifiers.trees.DecisionStump
-- 1109_weka.classifiers.functions.GaussianProcesses -- -L 1.0 -N 0 -K \weka.classifiers.functions.supportVector.PolyKernel
-  -E 1.0 -C 250007\
-- 1112_weka.classifiers.functions.LibLINEAR -- -S 1 -C 1.0 -E 0.001 -B 1.0
-- 1112_weka.classifiers.functions.LibLINEAR -- -S 1 -C 1.0 -E 0.01 -B 1.0
-- 1114_weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1
-- 1117_weka.classifiers.functions.RBFClassifier -- -N 2 -R 0.01 -L 1.0E-6 -C 2 -P
-  1 -E 1 -S 1
-- 1120_weka.classifiers.functions.SGD -- -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S
-  1
-- 1154_weka.classifiers.bayes.NaiveBayes
-- 1155_weka.classifiers.meta.FilteredClassifier -- -F \weka.filters.unsupervised.attribute.Standardize
-  \ -W weka.classifiers.bayes.NaiveBayes
-- 1160_weka.classifiers.meta.AttributeSelectedClassifier -- -E \weka.attributeSelection.PrincipalComponents
-  -R 0.95 -A 5\ -S \weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1\
-  -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
-- 1163_weka.classifiers.meta.FilteredClassifier -- -F \weka.filters.unsupervised.attribute.PrincipalComponents
-  -R 0.95 -A 5 -M -1\ -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
-- 1168_weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.K2
-  -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
-- 1172_weka.classifiers.functions.LibSVM -- -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M
-  40.0 -C 1.0 -E 0.001 -P 0.1 -model /Users/joa/Downloads/weka-3-7-12 -seed 1
-- 1173_weka.classifiers.bayes.HNB
-- 1177_weka.classifiers.functions.SimpleLogistic -- -I 0 -M 500 -H 50 -W 0.0
-- 1178_weka.classifiers.functions.SMO -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W
-  1 -K \weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007\
-- 1179_weka.classifiers.functions.SMO -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W
-  1 -K \weka.classifiers.functions.supportVector.RBFKernel -G 0.01 -C 250007\
-- 1181_weka.classifiers.functions.Winnow -- -I 1 -A 2.0 -B 0.5 -H -1.0 -W 2.0 -S 1
-- 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
-- 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
-- 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
-- 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
-- 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
-- 1183_weka.classifiers.meta.AttributeSelectedClassifier -- -E \weka.attributeSelection.CfsSubsetEval
-  -P 1 -E 1\ -S \weka.attributeSelection.BestFirst -D 1 -N 5\ -W weka.classifiers.trees.J48
-  -- -C 0.25 -M 2
-- 1185_weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree
-  -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
-- 1185_weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 160 -W weka.classifiers.trees.REPTree
-  -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
-- 1185_weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.REPTree
-  -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
-- 1186_weka.classifiers.meta.Dagging -- -F 10 -S 1 -W weka.classifiers.trees.DecisionStump
-- 1188_weka.classifiers.meta.END -- -S 1 -I 10 -W weka.classifiers.meta.nestedDichotomies.ND
-  -- -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
-- 1190_weka.classifiers.meta.Grading -- -X 10 -M \weka.classifiers.rules.ZeroR \ -S
-  1 -num-slots 1 -B \weka.classifiers.rules.ZeroR \
-- 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
-  -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
-- 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
-  -Z 3.0 -O 1 -E 1 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
-- 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
-  -Z 3.0 -O 1 -E 1 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
-- 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
-  -Z 3.0 -O 1 -E 1 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
-- 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
-  -Z 3.0 -O 1 -E 1 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
-- 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
-- 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
-- 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
-- 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
-- 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
-- 1193_weka.classifiers.meta.RacedIncrementalLogitBoost -- -C 500 -M 2000 -V 1000
-  -P 1 -S 1 -W weka.classifiers.trees.DecisionStump
-- 1194_weka.classifiers.meta.RandomSubSpace -- -P 0.5 -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.REPTree
-  -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
-- 1194_weka.classifiers.meta.RandomSubSpace -- -P 0.5 -S 1 -num-slots 1 -I 40 -W weka.classifiers.trees.REPTree
-  -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
-- 1194_weka.classifiers.meta.RandomSubSpace -- -P 0.5 -S 1 -num-slots 1 -I 80 -W weka.classifiers.trees.REPTree
-  -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
-- 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
-- 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
-- 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
-- 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
-- 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
-- 1196_weka.classifiers.meta.RotationForest -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
-  -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.25
-  -M 2
-- 1196_weka.classifiers.meta.RotationForest -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
-  -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.J48 -- -C 0.25
-  -M 2
-- 1196_weka.classifiers.meta.RotationForest -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
-  -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 40 -W weka.classifiers.trees.J48 -- -C 0.25
-  -M 2
-- 1199_weka.classifiers.trees.ADTree -- -B 10 -E -3 -S 1
-- 1244_weka.classifiers.meta.FilteredClassifier -- -F \weka.filters.supervised.attribute.Discretize
-  -R first-last -precision 6\ -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
-algorithms_stochastic: []
+    - 1068_weka.classifiers.trees.J48 -- -C 0.25 -M 2
+    - 1071_weka.classifiers.rules.OneR -- -B 6
+    - 1073_weka.classifiers.rules.PART -- -M 2 -C 0.25 -Q 1
+    - 1074_weka.classifiers.rules.OLM -- -R 0 -C 1 -U 0
+    - 1076_weka.classifiers.trees.SimpleCart -- -M 2.0 -N 5 -C 1.0 -S 1
+    - 1078_weka.classifiers.trees.RandomTree -- -K 0 -M 1.0 -V 0.001 -S 1
+    - 1079_weka.classifiers.trees.RandomForest -- -I 100 -K 0 -S 1 -num-slots 1
+    - 1084_weka.classifiers.trees.J48graft -- -C 0.25 -M 2
+    - 1087_weka.classifiers.trees.HoeffdingTree -- -L 2 -S 1 -E 1.0E-7 -H 0.05 -M 0.01
+      -G 200.0 -N 0.0
+    - 1088_weka.classifiers.trees.FT -- -I 15 -F 0 -M 15 -W 0.0
+    - 1090_weka.classifiers.trees.DecisionStump
+    - 1094_weka.classifiers.rules.JRip -- -F 3 -N 2.0 -O 2 -S 1
+    - 1096_weka.classifiers.rules.DecisionTable -- -X 1 -S \weka.attributeSelection.BestFirst
+      -D 1 -N 5\
+    - 1098_weka.classifiers.rules.ConjunctiveRule -- -N 3 -M 2.0 -P -1 -S 1
+    - 1101_weka.classifiers.misc.InputMappedClassifier -- -I -trim -W weka.classifiers.rules.ZeroR
+    - 1102_weka.classifiers.misc.OSDL -- -C MED -S 0.5
+    - 1104_weka.classifiers.lazy.IB1
+    - 1105_weka.classifiers.lazy.IBk -- -K 1 -W 0 -A \weka.core.neighboursearch.LinearNNSearch
+      -A \\\weka.core.EuclideanDistance -R first-last\\\\
+    - 1105_weka.classifiers.lazy.IBk -- -K 3 -W 0 -A \weka.core.neighboursearch.LinearNNSearch
+      -A \\\weka.core.EuclideanDistance -R first-last\\\\
+    - 1105_weka.classifiers.lazy.IBk -- -K 5 -W 0 -A \weka.core.neighboursearch.LinearNNSearch
+      -A \\\weka.core.EuclideanDistance -R first-last\\\\
+    - 1107_weka.classifiers.lazy.LBR
+    - 1108_weka.classifiers.lazy.LWL -- -U 0 -K -1 -A \weka.core.neighboursearch.LinearNNSearch
+      -A \\\weka.core.EuclideanDistance -R first-last\\\\ -W weka.classifiers.trees.DecisionStump
+    - 1109_weka.classifiers.functions.GaussianProcesses -- -L 1.0 -N 0 -K \weka.classifiers.functions.supportVector.PolyKernel
+      -E 1.0 -C 250007\
+    - 1112_weka.classifiers.functions.LibLINEAR -- -S 1 -C 1.0 -E 0.001 -B 1.0
+    - 1112_weka.classifiers.functions.LibLINEAR -- -S 1 -C 1.0 -E 0.01 -B 1.0
+    - 1114_weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1
+    - 1117_weka.classifiers.functions.RBFClassifier -- -N 2 -R 0.01 -L 1.0E-6 -C 2 -P
+      1 -E 1 -S 1
+    - 1120_weka.classifiers.functions.SGD -- -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S
+      1
+    - 1154_weka.classifiers.bayes.NaiveBayes
+    - 1155_weka.classifiers.meta.FilteredClassifier -- -F \weka.filters.unsupervised.attribute.Standardize
+      \ -W weka.classifiers.bayes.NaiveBayes
+    - 1160_weka.classifiers.meta.AttributeSelectedClassifier -- -E \weka.attributeSelection.PrincipalComponents
+      -R 0.95 -A 5\ -S \weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1\
+      -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+    - 1163_weka.classifiers.meta.FilteredClassifier -- -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 0.95 -A 5 -M -1\ -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+    - 1168_weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.K2
+      -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+    - 1172_weka.classifiers.functions.LibSVM -- -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M
+      40.0 -C 1.0 -E 0.001 -P 0.1 -model /Users/joa/Downloads/weka-3-7-12 -seed 1
+    - 1173_weka.classifiers.bayes.HNB
+    - 1177_weka.classifiers.functions.SimpleLogistic -- -I 0 -M 500 -H 50 -W 0.0
+    - 1178_weka.classifiers.functions.SMO -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W
+      1 -K \weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007\
+    - 1179_weka.classifiers.functions.SMO -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W
+      1 -K \weka.classifiers.functions.supportVector.RBFKernel -G 0.01 -C 250007\
+    - 1181_weka.classifiers.functions.Winnow -- -I 1 -A 2.0 -B 0.5 -H -1.0 -W 2.0 -S 1
+    - 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+    - 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
+    - 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
+    - 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
+    - 1182_weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
+    - 1183_weka.classifiers.meta.AttributeSelectedClassifier -- -E \weka.attributeSelection.CfsSubsetEval
+      -P 1 -E 1\ -S \weka.attributeSelection.BestFirst -D 1 -N 5\ -W weka.classifiers.trees.J48
+      -- -C 0.25 -M 2
+    - 1185_weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    - 1185_weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 160 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    - 1185_weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    - 1186_weka.classifiers.meta.Dagging -- -F 10 -S 1 -W weka.classifiers.trees.DecisionStump
+    - 1188_weka.classifiers.meta.END -- -S 1 -I 10 -W weka.classifiers.meta.nestedDichotomies.ND
+      -- -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+    - 1190_weka.classifiers.meta.Grading -- -X 10 -M \weka.classifiers.rules.ZeroR \ -S
+      1 -num-slots 1 -B \weka.classifiers.rules.ZeroR \
+    - 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
+      -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+    - 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
+      -Z 3.0 -O 1 -E 1 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
+    - 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
+      -Z 3.0 -O 1 -E 1 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
+    - 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
+      -Z 3.0 -O 1 -E 1 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
+    - 1191_weka.classifiers.meta.LogitBoost -- -P 100 -L -1.7976931348623157E308 -H 1.0
+      -Z 3.0 -O 1 -E 1 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
+    - 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+    - 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
+    - 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
+    - 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
+    - 1192_weka.classifiers.meta.MultiBoostAB -- -C 3 -P 100 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
+    - 1193_weka.classifiers.meta.RacedIncrementalLogitBoost -- -C 500 -M 2000 -V 1000
+      -P 1 -S 1 -W weka.classifiers.trees.DecisionStump
+    - 1194_weka.classifiers.meta.RandomSubSpace -- -P 0.5 -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    - 1194_weka.classifiers.meta.RandomSubSpace -- -P 0.5 -S 1 -num-slots 1 -I 40 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    - 1194_weka.classifiers.meta.RandomSubSpace -- -P 0.5 -S 1 -num-slots 1 -I 80 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    - 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+    - 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
+    - 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
+    - 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
+    - 1195_weka.classifiers.meta.RealAdaBoost -- -P 100 -H 1.0 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
+    - 1196_weka.classifiers.meta.RotationForest -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.25
+      -M 2
+    - 1196_weka.classifiers.meta.RotationForest -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.J48 -- -C 0.25
+      -M 2
+    - 1196_weka.classifiers.meta.RotationForest -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 40 -W weka.classifiers.trees.J48 -- -C 0.25
+      -M 2
+    - 1199_weka.classifiers.trees.ADTree -- -B 10 -E -3 -S 1
+    - 1244_weka.classifiers.meta.FilteredClassifier -- -F \weka.filters.supervised.attribute.Discretize
+      -R first-last -precision 6\ -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+algorithms_stochastic:
 performance_measures: acc
 performance_type: quality
 maximize: yes
@@ -241,346 +241,460 @@ features_cutoff_time: '?'
 features_cutoff_memory: '?'
 number_of_feature_steps: 114
 default_steps:
-- ClassCount
-- ClassEntropy
-- DecisionStumpAUC
-- DecisionStumpErrRate
-- DecisionStumpKappa
-- DefaultAccuracy
-- DefaultTargetNominal
-- DefaultTargetNumerical
-- Dimensionality
-- EquivalentNumberOfAtts
-- HoeffdingAdwin.changes
-- HoeffdingAdwin.warnings
-- HoeffdingDDM.changes
-- HoeffdingDDM.warnings
-- IncompleteInstanceCount
-- InstanceCount
-- J48.00001.AUC
-- J48.00001.ErrRate
-- J48.00001.kappa
-- J48.00001.Kappa
-- J48.0001.AUC
-- J48.0001.ErrRate
-- J48.0001.kappa
-- J48.0001.Kappa
-- J48.001.AUC
-- J48.001.ErrRate
-- J48.001.kappa
-- J48.001.Kappa
-- JRipAUC
-- JRipErrRate
-- JRipKappa
-- kNN_1NAUC
-- kNN_1NErrRate
-- kNN_1NKappa
-- kNN_2NAUC
-- kNN_2NErrRate
-- kNN_2NKappa
-- kNN_3NAUC
-- kNN_3NErrRate
-- kNN_3NKappa
-- MajorityClassSize
-- MaxNominalAttDistinctValues
-- MeanAttributeEntropy
-- MeanKurtosisOfNumericAtts
-- MeanMeansOfNumericAtts
-- MeanMutualInformation
-- MeanNominalAttDistinctValues
-- MeanSkewnessOfNumericAtts
-- MeanStdDevOfNumericAtts
-- MinNominalAttDistinctValues
-- MinorityClassSize
-- NaiveBayesAdwin.changes
-- NaiveBayesAdwin.warnings
-- NaiveBayesAUC
-- NaiveBayesDdm.changes
-- NaiveBayesDdm.warnings
-- NaiveBayesErrRate
-- NaiveBayesKappa
-- NBAUC
-- NBErrRate
-- NBKappa
-- NBTreeAUC
-- NBTreeErrRate
-- NBTreeKappa
-- NegativePercentage
-- NoiseToSignalRatio
-- NumAttributes
-- NumberOfClasses
-- NumberOfFeatures
-- NumberOfInstances
-- NumberOfInstancesWithMissingValues
-- NumberOfMissingValues
-- NumberOfNumericFeatures
-- NumberOfSymbolicFeatures
-- NumBinaryAtts
-- NumMissingValues
-- NumNominalAtts
-- NumNumericAtts
-- PercentageOfBinaryAtts
-- PercentageOfMissingValues
-- PercentageOfNominalAtts
-- PercentageOfNumericAtts
-- PositivePercentage
-- RandomTreeDepth1AUC
-- RandomTreeDepth1ErrRate
-- RandomTreeDepth1Kappa
-- RandomTreeDepth2AUC
-- RandomTreeDepth2ErrRate
-- RandomTreeDepth2Kappa
-- RandomTreeDepth3AUC
-- RandomTreeDepth3ErrRate
-- RandomTreeDepth3Kappa
-- REPTreeDepth1AUC
-- REPTreeDepth1ErrRate
-- REPTreeDepth1Kappa
-- REPTreeDepth2AUC
-- REPTreeDepth2ErrRate
-- REPTreeDepth2Kappa
-- REPTreeDepth3AUC
-- REPTreeDepth3ErrRate
-- REPTreeDepth3Kappa
-- SimpleLogisticAUC
-- SimpleLogisticErrRate
-- SimpleLogisticKappa
-- StdvNominalAttDistinctValues
-- SVMe1AUC
-- SVMe1ErrRate
-- SVMe1Kappa
-- SVMe2AUC
-- SVMe2ErrRate
-- SVMe2Kappa
-- SVMe3AUC
-- SVMe3ErrRate
-- SVMe3Kappa
+    - ClassCount
+    - ClassEntropy
+    - DecisionStumpAUC
+    - DecisionStumpErrRate
+    - DecisionStumpKappa
+    - DefaultAccuracy
+    - DefaultTargetNominal
+    - DefaultTargetNumerical
+    - Dimensionality
+    - EquivalentNumberOfAtts
+    - HoeffdingAdwin.changes
+    - HoeffdingAdwin.warnings
+    - HoeffdingDDM.changes
+    - HoeffdingDDM.warnings
+    - IncompleteInstanceCount
+    - InstanceCount
+    - J48.00001.AUC
+    - J48.00001.ErrRate
+    - J48.00001.kappa
+    - J48.00001.Kappa
+    - J48.0001.AUC
+    - J48.0001.ErrRate
+    - J48.0001.kappa
+    - J48.0001.Kappa
+    - J48.001.AUC
+    - J48.001.ErrRate
+    - J48.001.kappa
+    - J48.001.Kappa
+    - JRipAUC
+    - JRipErrRate
+    - JRipKappa
+    - kNN_1NAUC
+    - kNN_1NErrRate
+    - kNN_1NKappa
+    - kNN_2NAUC
+    - kNN_2NErrRate
+    - kNN_2NKappa
+    - kNN_3NAUC
+    - kNN_3NErrRate
+    - kNN_3NKappa
+    - MajorityClassSize
+    - MaxNominalAttDistinctValues
+    - MeanAttributeEntropy
+    - MeanKurtosisOfNumericAtts
+    - MeanMeansOfNumericAtts
+    - MeanMutualInformation
+    - MeanNominalAttDistinctValues
+    - MeanSkewnessOfNumericAtts
+    - MeanStdDevOfNumericAtts
+    - MinNominalAttDistinctValues
+    - MinorityClassSize
+    - NaiveBayesAdwin.changes
+    - NaiveBayesAdwin.warnings
+    - NaiveBayesAUC
+    - NaiveBayesDdm.changes
+    - NaiveBayesDdm.warnings
+    - NaiveBayesErrRate
+    - NaiveBayesKappa
+    - NBAUC
+    - NBErrRate
+    - NBKappa
+    - NBTreeAUC
+    - NBTreeErrRate
+    - NBTreeKappa
+    - NegativePercentage
+    - NoiseToSignalRatio
+    - NumAttributes
+    - NumberOfClasses
+    - NumberOfFeatures
+    - NumberOfInstances
+    - NumberOfInstancesWithMissingValues
+    - NumberOfMissingValues
+    - NumberOfNumericFeatures
+    - NumberOfSymbolicFeatures
+    - NumBinaryAtts
+    - NumMissingValues
+    - NumNominalAtts
+    - NumNumericAtts
+    - PercentageOfBinaryAtts
+    - PercentageOfMissingValues
+    - PercentageOfNominalAtts
+    - PercentageOfNumericAtts
+    - PositivePercentage
+    - RandomTreeDepth1AUC
+    - RandomTreeDepth1ErrRate
+    - RandomTreeDepth1Kappa
+    - RandomTreeDepth2AUC
+    - RandomTreeDepth2ErrRate
+    - RandomTreeDepth2Kappa
+    - RandomTreeDepth3AUC
+    - RandomTreeDepth3ErrRate
+    - RandomTreeDepth3Kappa
+    - REPTreeDepth1AUC
+    - REPTreeDepth1ErrRate
+    - REPTreeDepth1Kappa
+    - REPTreeDepth2AUC
+    - REPTreeDepth2ErrRate
+    - REPTreeDepth2Kappa
+    - REPTreeDepth3AUC
+    - REPTreeDepth3ErrRate
+    - REPTreeDepth3Kappa
+    - SimpleLogisticAUC
+    - SimpleLogisticErrRate
+    - SimpleLogisticKappa
+    - StdvNominalAttDistinctValues
+    - SVMe1AUC
+    - SVMe1ErrRate
+    - SVMe1Kappa
+    - SVMe2AUC
+    - SVMe2ErrRate
+    - SVMe2Kappa
+    - SVMe3AUC
+    - SVMe3ErrRate
+    - SVMe3Kappa
 feature_steps:
   ClassCount:
-    provides: ClassCount
+    provides:
+        - ClassCount
   ClassEntropy:
-    provides: ClassEntropy
+    provides:
+        - ClassEntropy
   DecisionStumpAUC:
-    provides: DecisionStumpAUC
+    provides:
+        - DecisionStumpAUC
   DecisionStumpErrRate:
-    provides: DecisionStumpErrRate
+    provides:
+        - DecisionStumpErrRate
   DecisionStumpKappa:
-    provides: DecisionStumpKappa
+    provides:
+        - DecisionStumpKappa
   DefaultAccuracy:
-    provides: DefaultAccuracy
+    provides:
+        - DefaultAccuracy
   DefaultTargetNominal:
-    provides: DefaultTargetNominal
+    provides:
+        - DefaultTargetNominal
   DefaultTargetNumerical:
-    provides: DefaultTargetNumerical
+    provides:
+        - DefaultTargetNumerical
   Dimensionality:
-    provides: Dimensionality
+    provides:
+        - Dimensionality
   EquivalentNumberOfAtts:
-    provides: EquivalentNumberOfAtts
+    provides:
+        - EquivalentNumberOfAtts
   HoeffdingAdwin.changes:
-    provides: HoeffdingAdwin.changes
+    provides:
+        - HoeffdingAdwin.changes
   HoeffdingAdwin.warnings:
-    provides: HoeffdingAdwin.warnings
+    provides:
+        - HoeffdingAdwin.warnings
   HoeffdingDDM.changes:
-    provides: HoeffdingDDM.changes
+    provides:
+        - HoeffdingDDM.changes
   HoeffdingDDM.warnings:
-    provides: HoeffdingDDM.warnings
+    provides:
+        - HoeffdingDDM.warnings
   IncompleteInstanceCount:
-    provides: IncompleteInstanceCount
+    provides:
+        - IncompleteInstanceCount
   InstanceCount:
-    provides: InstanceCount
+    provides:
+        - InstanceCount
   J48.00001.AUC:
-    provides: J48.00001.AUC
+    provides:
+        - J48.00001.AUC
   J48.00001.ErrRate:
-    provides: J48.00001.ErrRate
+    provides:
+        - J48.00001.ErrRate
   J48.00001.kappa:
-    provides: J48.00001.kappa
+    provides:
+        - J48.00001.kappa
   J48.00001.Kappa:
-    provides: J48.00001.Kappa
+    provides:
+        - J48.00001.Kappa
   J48.0001.AUC:
-    provides: J48.0001.AUC
+    provides:
+        - J48.0001.AUC
   J48.0001.ErrRate:
-    provides: J48.0001.ErrRate
+    provides:
+        - J48.0001.ErrRate
   J48.0001.kappa:
-    provides: J48.0001.kappa
+    provides:
+        - J48.0001.kappa
   J48.0001.Kappa:
-    provides: J48.0001.Kappa
+    provides:
+        - J48.0001.Kappa
   J48.001.AUC:
-    provides: J48.001.AUC
+    provides:
+        - J48.001.AUC
   J48.001.ErrRate:
-    provides: J48.001.ErrRate
+    provides:
+        - J48.001.ErrRate
   J48.001.kappa:
-    provides: J48.001.kappa
+    provides:
+        - J48.001.kappa
   J48.001.Kappa:
-    provides: J48.001.Kappa
+    provides:
+        - J48.001.Kappa
   JRipAUC:
-    provides: JRipAUC
+    provides:
+        - JRipAUC
   JRipErrRate:
-    provides: JRipErrRate
+    provides:
+        - JRipErrRate
   JRipKappa:
-    provides: JRipKappa
+    provides:
+        - JRipKappa
   kNN_1NAUC:
-    provides: kNN_1NAUC
+    provides:
+        - kNN_1NAUC
   kNN_1NErrRate:
-    provides: kNN_1NErrRate
+    provides:
+        - kNN_1NErrRate
   kNN_1NKappa:
-    provides: kNN_1NKappa
+    provides:
+        - kNN_1NKappa
   kNN_2NAUC:
-    provides: kNN_2NAUC
+    provides:
+        - kNN_2NAUC
   kNN_2NErrRate:
-    provides: kNN_2NErrRate
+    provides:
+        - kNN_2NErrRate
   kNN_2NKappa:
-    provides: kNN_2NKappa
+    provides:
+        - kNN_2NKappa
   kNN_3NAUC:
-    provides: kNN_3NAUC
+    provides:
+        - kNN_3NAUC
   kNN_3NErrRate:
-    provides: kNN_3NErrRate
+    provides:
+        - kNN_3NErrRate
   kNN_3NKappa:
-    provides: kNN_3NKappa
+    provides:
+        - kNN_3NKappa
   MajorityClassSize:
-    provides: MajorityClassSize
+    provides:
+        - MajorityClassSize
   MaxNominalAttDistinctValues:
-    provides: MaxNominalAttDistinctValues
+    provides:
+        - MaxNominalAttDistinctValues
   MeanAttributeEntropy:
-    provides: MeanAttributeEntropy
+    provides:
+        - MeanAttributeEntropy
   MeanKurtosisOfNumericAtts:
-    provides: MeanKurtosisOfNumericAtts
+    provides:
+        - MeanKurtosisOfNumericAtts
   MeanMeansOfNumericAtts:
-    provides: MeanMeansOfNumericAtts
+    provides:
+        - MeanMeansOfNumericAtts
   MeanMutualInformation:
-    provides: MeanMutualInformation
+    provides:
+        - MeanMutualInformation
   MeanNominalAttDistinctValues:
-    provides: MeanNominalAttDistinctValues
+    provides:
+        - MeanNominalAttDistinctValues
   MeanSkewnessOfNumericAtts:
-    provides: MeanSkewnessOfNumericAtts
+    provides:
+        - MeanSkewnessOfNumericAtts
   MeanStdDevOfNumericAtts:
-    provides: MeanStdDevOfNumericAtts
+    provides:
+        - MeanStdDevOfNumericAtts
   MinNominalAttDistinctValues:
-    provides: MinNominalAttDistinctValues
+    provides:
+        - MinNominalAttDistinctValues
   MinorityClassSize:
-    provides: MinorityClassSize
+    provides:
+        - MinorityClassSize
   NaiveBayesAdwin.changes:
-    provides: NaiveBayesAdwin.changes
+    provides:
+        - NaiveBayesAdwin.changes
   NaiveBayesAdwin.warnings:
-    provides: NaiveBayesAdwin.warnings
+    provides:
+        - NaiveBayesAdwin.warnings
   NaiveBayesAUC:
-    provides: NaiveBayesAUC
+    provides:
+        - NaiveBayesAUC
   NaiveBayesDdm.changes:
-    provides: NaiveBayesDdm.changes
+    provides:
+        - NaiveBayesDdm.changes
   NaiveBayesDdm.warnings:
-    provides: NaiveBayesDdm.warnings
+    provides:
+        - NaiveBayesDdm.warnings
   NaiveBayesErrRate:
-    provides: NaiveBayesErrRate
+    provides:
+        - NaiveBayesErrRate
   NaiveBayesKappa:
-    provides: NaiveBayesKappa
+    provides:
+        - NaiveBayesKappa
   NBAUC:
-    provides: NBAUC
+    provides:
+        - NBAUC
   NBErrRate:
-    provides: NBErrRate
+    provides:
+        - NBErrRate
   NBKappa:
-    provides: NBKappa
+    provides:
+        - NBKappa
   NBTreeAUC:
-    provides: NBTreeAUC
+    provides:
+        - NBTreeAUC
   NBTreeErrRate:
-    provides: NBTreeErrRate
+    provides:
+        - NBTreeErrRate
   NBTreeKappa:
-    provides: NBTreeKappa
+    provides:
+        - NBTreeKappa
   NegativePercentage:
-    provides: NegativePercentage
+    provides:
+        - NegativePercentage
   NoiseToSignalRatio:
-    provides: NoiseToSignalRatio
+    provides:
+        - NoiseToSignalRatio
   NumAttributes:
-    provides: NumAttributes
+    provides:
+        - NumAttributes
   NumberOfClasses:
-    provides: NumberOfClasses
+    provides:
+        - NumberOfClasses
   NumberOfFeatures:
-    provides: NumberOfFeatures
+    provides:
+        - NumberOfFeatures
   NumberOfInstances:
-    provides: NumberOfInstances
+    provides:
+        - NumberOfInstances
   NumberOfInstancesWithMissingValues:
-    provides: NumberOfInstancesWithMissingValues
+    provides:
+        - NumberOfInstancesWithMissingValues
   NumberOfMissingValues:
-    provides: NumberOfMissingValues
+    provides:
+        - NumberOfMissingValues
   NumberOfNumericFeatures:
-    provides: NumberOfNumericFeatures
+    provides:
+        - NumberOfNumericFeatures
   NumberOfSymbolicFeatures:
-    provides: NumberOfSymbolicFeatures
+    provides:
+        - NumberOfSymbolicFeatures
   NumBinaryAtts:
-    provides: NumBinaryAtts
+    provides:
+        - NumBinaryAtts
   NumMissingValues:
-    provides: NumMissingValues
+    provides:
+        - NumMissingValues
   NumNominalAtts:
-    provides: NumNominalAtts
+    provides:
+        - NumNominalAtts
   NumNumericAtts:
-    provides: NumNumericAtts
+    provides:
+        - NumNumericAtts
   PercentageOfBinaryAtts:
-    provides: PercentageOfBinaryAtts
+    provides:
+        - PercentageOfBinaryAtts
   PercentageOfMissingValues:
-    provides: PercentageOfMissingValues
+    provides:
+        - PercentageOfMissingValues
   PercentageOfNominalAtts:
-    provides: PercentageOfNominalAtts
+    provides:
+        - PercentageOfNominalAtts
   PercentageOfNumericAtts:
-    provides: PercentageOfNumericAtts
+    provides:
+        - PercentageOfNumericAtts
   PositivePercentage:
-    provides: PositivePercentage
+    provides:
+        - PositivePercentage
   RandomTreeDepth1AUC:
-    provides: RandomTreeDepth1AUC
+    provides:
+        - RandomTreeDepth1AUC
   RandomTreeDepth1ErrRate:
-    provides: RandomTreeDepth1ErrRate
+    provides:
+        - RandomTreeDepth1ErrRate
   RandomTreeDepth1Kappa:
-    provides: RandomTreeDepth1Kappa
+    provides:
+        - RandomTreeDepth1Kappa
   RandomTreeDepth2AUC:
-    provides: RandomTreeDepth2AUC
+    provides:
+        - RandomTreeDepth2AUC
   RandomTreeDepth2ErrRate:
-    provides: RandomTreeDepth2ErrRate
+    provides:
+        - RandomTreeDepth2ErrRate
   RandomTreeDepth2Kappa:
-    provides: RandomTreeDepth2Kappa
+    provides:
+        - RandomTreeDepth2Kappa
   RandomTreeDepth3AUC:
-    provides: RandomTreeDepth3AUC
+    provides:
+        - RandomTreeDepth3AUC
   RandomTreeDepth3ErrRate:
-    provides: RandomTreeDepth3ErrRate
+    provides:
+        - RandomTreeDepth3ErrRate
   RandomTreeDepth3Kappa:
-    provides: RandomTreeDepth3Kappa
+    provides:
+        - RandomTreeDepth3Kappa
   REPTreeDepth1AUC:
-    provides: REPTreeDepth1AUC
+    provides:
+        - REPTreeDepth1AUC
   REPTreeDepth1ErrRate:
-    provides: REPTreeDepth1ErrRate
+    provides:
+        - REPTreeDepth1ErrRate
   REPTreeDepth1Kappa:
-    provides: REPTreeDepth1Kappa
+    provides:
+        - REPTreeDepth1Kappa
   REPTreeDepth2AUC:
-    provides: REPTreeDepth2AUC
+    provides:
+        - REPTreeDepth2AUC
   REPTreeDepth2ErrRate:
-    provides: REPTreeDepth2ErrRate
+    provides:
+        - REPTreeDepth2ErrRate
   REPTreeDepth2Kappa:
-    provides: REPTreeDepth2Kappa
+    provides:
+        - REPTreeDepth2Kappa
   REPTreeDepth3AUC:
-    provides: REPTreeDepth3AUC
+    provides:
+        - REPTreeDepth3AUC
   REPTreeDepth3ErrRate:
-    provides: REPTreeDepth3ErrRate
+    provides:
+        - REPTreeDepth3ErrRate
   REPTreeDepth3Kappa:
-    provides: REPTreeDepth3Kappa
+    provides:
+        - REPTreeDepth3Kappa
   SimpleLogisticAUC:
-    provides: SimpleLogisticAUC
+    provides:
+        - SimpleLogisticAUC
   SimpleLogisticErrRate:
-    provides: SimpleLogisticErrRate
+    provides:
+        - SimpleLogisticErrRate
   SimpleLogisticKappa:
-    provides: SimpleLogisticKappa
+    provides:
+        - SimpleLogisticKappa
   StdvNominalAttDistinctValues:
-    provides: StdvNominalAttDistinctValues
+    provides:
+        - StdvNominalAttDistinctValues
   SVMe1AUC:
-    provides: SVMe1AUC
+    provides:
+        - SVMe1AUC
   SVMe1ErrRate:
-    provides: SVMe1ErrRate
+    provides:
+        - SVMe1ErrRate
   SVMe1Kappa:
-    provides: SVMe1Kappa
+    provides:
+        - SVMe1Kappa
   SVMe2AUC:
-    provides: SVMe2AUC
+    provides:
+        - SVMe2AUC
   SVMe2ErrRate:
-    provides: SVMe2ErrRate
+    provides:
+        - SVMe2ErrRate
   SVMe2Kappa:
-    provides: SVMe2Kappa
+    provides:
+        - SVMe2Kappa
   SVMe3AUC:
-    provides: SVMe3AUC
+    provides:
+        - SVMe3AUC
   SVMe3ErrRate:
-    provides: SVMe3ErrRate
+    provides:
+        - SVMe3ErrRate
   SVMe3Kappa:
-    provides: SVMe3Kappa
+    provides:
+        - SVMe3Kappa
