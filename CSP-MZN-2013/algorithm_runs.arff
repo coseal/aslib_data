@@ -2,10 +2,10 @@
 
 @ATTRIBUTE instance_id STRING
 @ATTRIBUTE repetition NUMERIC
-@ATTRIBUTE algorithm {bprolog,fzn2smt,g12cpx,g12fd,g12lazyfd,g12mip,gecode,izplus,minisatid,mistral,ortools}
-@ATTRIBUTE solved NUMERIC
+@ATTRIBUTE algorithm {bprolog, fzn2smt, g12cpx, g12fd, g12lazyfd, g12mip, gecode, izplus, minisatid, mistral, ortools}
 @ATTRIBUTE runtime NUMERIC
-@ATTRIBUTE runstatus {ok,timeout,other}
+@ATTRIBUTE solved NUMERIC
+@ATTRIBUTE runstatus {ok, timeout, memout, not_applicable, crash, other}
 
 @DATA
 normalized-fapp06-0500-1.xml.mzn_AND_NODATA,1,izplus,0,1800,timeout
