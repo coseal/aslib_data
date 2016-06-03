@@ -1,4 +1,4 @@
-source: An Algorithm Selection Benchmark for the Container Pre-Marshalling Problem
+source: An Algorithm Selection Benchmark for the Container Pre-Marshalling Problem (CPMP)
 authors: K. Tierney and Y. Malitsky (features) / K. Tierney and D. Pacino and S. Voss (algorithms)
 translator in coseal format: K. Tierney
 
@@ -18,3 +18,5 @@ compute, thus the feature_costs.arff file has been omitted, as it would be time
 features).
 
 The feature computation code is available at https://bitbucket.org/eusorpb/cpmp-as
+
+Note: previously the scenario was called PREMARSHALLING-ASTAR-2015. To save same space, we renamed the scenario.
