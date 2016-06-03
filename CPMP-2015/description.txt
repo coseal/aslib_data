@@ -1,4 +1,4 @@
-scenario_id: PREMARSHALLING-ASTAR-2015
+scenario_id: CPMP-2015
 performance_measures: 
     - runtime
 maximize: 
