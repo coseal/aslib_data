@@ -1,0 +1,152 @@
+algorithm_cutoff_memory: '?'
+algorithm_cutoff_time: 2
+algorithms_deterministic:
+- S1
+- S2
+- S3
+- S4
+- S5
+- C1
+- C2
+- C3
+- C4
+- C5
+- C6
+- MATLS
+- DH
+- M3
+- M4
+- M3B
+- M4B
+- CS2SA
+- RLS
+- EA
+- SH
+algorithms_stochastic: ''
+default_steps:
+- ALL
+feature_steps:
+  ALL:
+    provides:
+    - CAPACITYOFKNAPSACK
+    - DIMENSION
+    - KNAPSACKDATATYPE
+    - NUMBEROFITEMS
+    - ITEMSPERCITY
+    - RENTINGRATIO
+    - MAXSPEED
+    - MINSPEED
+    - angle_min
+    - angle_mean
+    - angle_median
+    - angle_max
+    - angle_sd
+    - centroid_centroid_x
+    - centroid_centroid_y
+    - centroid_min_distance_to_centroid
+    - centroid_mean_distance_to_centroid
+    - centroid_max_distance_to_centroid
+    - cluster_01pct_number_of_clusters
+    - cluster_01pct_mean_distance_to_centroid
+    - cluster_05pct_number_of_clusters
+    - cluster_05pct_mean_distance_to_centroid
+    - cluster_10pct_number_of_clusters
+    - cluster_10pct_mean_distance_to_centroid
+    - chull_area
+    - chull_points_on_hull
+    - distance_min
+    - distance_mean
+    - distance_median
+    - distance_max
+    - distance_sd
+    - distance_distances_shorter_mean_distance
+    - distance_distinct_distances
+    - distance_mode_frequency
+    - distance_mode_quantity
+    - distance_mode_mean
+    - distance_mean_tour_length
+    - modes_number
+    - mst_depth_min
+    - mst_depth_mean
+    - mst_depth_median
+    - mst_depth_max
+    - mst_depth_sd
+    - mst_dists_min
+    - mst_dists_mean
+    - mst_dists_median
+    - mst_dists_max
+    - mst_dists_sd
+    - mst_dists_sum
+    - nnds_min
+    - nnds_mean
+    - nnds_median
+    - nnds_max
+    - nnds_sd
+    - nnds_varcoef
+features_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_deterministic:
+- CAPACITYOFKNAPSACK
+- DIMENSION
+- KNAPSACKDATATYPE
+- NUMBEROFITEMS
+- ITEMSPERCITY
+- RENTINGRATIO
+- MAXSPEED
+- MINSPEED
+- angle_min
+- angle_mean
+- angle_median
+- angle_max
+- angle_sd
+- centroid_centroid_x
+- centroid_centroid_y
+- centroid_min_distance_to_centroid
+- centroid_mean_distance_to_centroid
+- centroid_max_distance_to_centroid
+- cluster_01pct_number_of_clusters
+- cluster_01pct_mean_distance_to_centroid
+- cluster_05pct_number_of_clusters
+- cluster_05pct_mean_distance_to_centroid
+- cluster_10pct_number_of_clusters
+- cluster_10pct_mean_distance_to_centroid
+- chull_area
+- chull_points_on_hull
+- distance_min
+- distance_mean
+- distance_median
+- distance_max
+- distance_sd
+- distance_distances_shorter_mean_distance
+- distance_distinct_distances
+- distance_mode_frequency
+- distance_mode_quantity
+- distance_mode_mean
+- distance_mean_tour_length
+- modes_number
+- mst_depth_min
+- mst_depth_mean
+- mst_depth_median
+- mst_depth_max
+- mst_depth_sd
+- mst_dists_min
+- mst_dists_mean
+- mst_dists_median
+- mst_dists_max
+- mst_dists_sd
+- mst_dists_sum
+- nnds_min
+- nnds_mean
+- nnds_median
+- nnds_max
+- nnds_sd
+- nnds_varcoef
+features_stochastic: ''
+maximize:
+- 'true'
+number_of_feature_steps: 1
+performance_measures:
+- solution_quality
+performance_type:
+- solution_quality
+scenario_id: TTP-2016
