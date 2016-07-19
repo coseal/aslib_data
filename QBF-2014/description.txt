@@ -68,7 +68,7 @@ performance_measures:
 performance_type:
 - runtime
 maximize:
-- no
+- false
 algorithm_cutoff_time: 900.0
 algorithm_cutoff_memory: '?'
 features_cutoff_time: '?'
