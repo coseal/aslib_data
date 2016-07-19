@@ -115,7 +115,7 @@ features_deterministic:
 - f_37
 features_stochastic: ''
 maximize:
-- 'false'
+- false
 number_of_feature_steps: 1
 performance_measures:
 - runtime
