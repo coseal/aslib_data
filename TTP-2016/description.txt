@@ -143,7 +143,7 @@ features_deterministic:
 - nnds_varcoef
 features_stochastic: ''
 maximize:
-- 'true'
+- true
 number_of_feature_steps: 1
 performance_measures:
 - solution_quality
