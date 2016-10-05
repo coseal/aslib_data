@@ -35,10 +35,10 @@ performance_type:
     - solution_quality
     - solution_quality
     - solution_quality
-algorithm_cutoff_time: "300000"
-algorithm_cutoff_memory: "8000"
-features_cutoff_time: "300000"
-features_cutoff_memory: "8000"
+algorithm_cutoff_time: 300000
+algorithm_cutoff_memory: 8000
+features_cutoff_time: 300000
+features_cutoff_memory: 8000
 algorithms_deterministic:
     - 378
     - 385
