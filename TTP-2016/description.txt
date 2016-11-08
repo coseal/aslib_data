@@ -1,6 +1,9 @@
 algorithm_cutoff_memory: '?'
-algorithm_cutoff_time: 2
+algorithm_cutoff_time: 600
 algorithms_deterministic:
+- SH
+- DH
+algorithms_stochastic: 
 - S1
 - S2
 - S3
@@ -13,7 +16,6 @@ algorithms_deterministic:
 - C5
 - C6
 - MATLS
-- DH
 - M3
 - M4
 - M3B
@@ -21,8 +23,6 @@ algorithms_deterministic:
 - CS2SA
 - RLS
 - EA
-- SH
-algorithms_stochastic: ''
 default_steps:
 - ALL
 feature_steps:
