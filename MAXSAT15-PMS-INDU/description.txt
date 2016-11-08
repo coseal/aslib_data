@@ -1,36 +1,5 @@
 algorithm_cutoff_memory: '?'
 algorithm_cutoff_time: 1800.0
-algorithms_deterministic:
-- ahms-1.68
-- maxino-kdyn
-- QMSAT15UC
-- WPM3-2015-co
-- LMHS-C
-- CCEHC2akms
-- CCLS2akms
-- Open-WBO
-- WMaxSatz+
-- ratselfax-cnf
-- ILP-2015
-- QMSAT14
-- optiriss-sel
-- msUZK-pp
-- msUZK-nopp
-- ahms-ls-1.68
-- toysat
-- Open-WBO-R
-- ahms-1.55
-- LMHS-I
-- Open-WBO-L
-- maxino-k16
-- WMaxSatz09
-- mscg2015b
-- mscg2015a
-- MaxHS
-- ahms-ls-1.55
-- toysat_ls
-- optiriss-def
-algorithms_stochastic: ''
 default_steps:
 - ALL
 feature_steps:
@@ -116,6 +85,94 @@ features_deterministic:
 features_stochastic: ''
 maximize:
 - false
+metainfo_algorithms:
+  CCEHC2akms:
+    configuration: ''
+    deterministic: true
+  CCLS2akms:
+    configuration: ''
+    deterministic: true
+  ILP-2015:
+    configuration: ''
+    deterministic: true
+  LMHS-C:
+    configuration: ''
+    deterministic: true
+  LMHS-I:
+    configuration: ''
+    deterministic: true
+  MaxHS:
+    configuration: ''
+    deterministic: true
+  Open-WBO:
+    configuration: ''
+    deterministic: true
+  Open-WBO-L:
+    configuration: ''
+    deterministic: true
+  Open-WBO-R:
+    configuration: ''
+    deterministic: true
+  QMSAT14:
+    configuration: ''
+    deterministic: true
+  QMSAT15UC:
+    configuration: ''
+    deterministic: true
+  WMaxSatz+:
+    configuration: ''
+    deterministic: true
+  WMaxSatz09:
+    configuration: ''
+    deterministic: true
+  WPM3-2015-co:
+    configuration: ''
+    deterministic: true
+  ahms-1.55:
+    configuration: ''
+    deterministic: true
+  ahms-1.68:
+    configuration: ''
+    deterministic: true
+  ahms-ls-1.55:
+    configuration: ''
+    deterministic: true
+  ahms-ls-1.68:
+    configuration: ''
+    deterministic: true
+  maxino-k16:
+    configuration: ''
+    deterministic: true
+  maxino-kdyn:
+    configuration: ''
+    deterministic: true
+  msUZK-nopp:
+    configuration: ''
+    deterministic: true
+  msUZK-pp:
+    configuration: ''
+    deterministic: true
+  mscg2015a:
+    configuration: ''
+    deterministic: true
+  mscg2015b:
+    configuration: ''
+    deterministic: true
+  optiriss-def:
+    configuration: ''
+    deterministic: true
+  optiriss-sel:
+    configuration: ''
+    deterministic: true
+  ratselfax-cnf:
+    configuration: ''
+    deterministic: true
+  toysat:
+    configuration: ''
+    deterministic: true
+  toysat_ls:
+    configuration: ''
+    deterministic: true
 number_of_feature_steps: 1
 performance_measures:
 - runtime

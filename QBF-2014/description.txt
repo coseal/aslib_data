@@ -1,79 +1,5 @@
-scenario_id: QBF-2014
-features_deterministic:
-- EXIST_VARS
-- FORALL_VARS
-- TOTAL_VARS
-- CLAUSES
-- LITERALS
-- EXIST_SET
-- FORALL_SET
-- TOTAL_SET
-- UNARY_CLAUSES
-- BINARY_CLAUSES
-- TERNARY_MORE_CLAUSES
-- POS_HORN
-- NEG_HORN
-- EXIST_LIT_PER_CLAUSE
-- FORALL_LIT_PER_CLAUSE
-- EXIST_VARS_PER_SET
-- FORALL_POS_LITS_PER_CLAUSE
-- FORALL_NEG_LITS_PER_CLAUSE
-- OCCS_POS_NO_PER_VAR
-- OCCS_FORALL_NO_PER_VAR
-- OCCS_FORALL_POS_NO_PER_VAR
-- W_OCCS_POS_NO_PER_VAR
-- W_OCCS_FORALL_NO_PER_VAR
-- W_OCCS_FORALL_POS_NO_PER_VAR
-- W_PRODUCTS
-- LITN_LIT
-- LITEP_LIT
-- LITEN_LITE
-- LITEN_LITN
-- LITFN_LIT
-- LITFP_LITFN
-- OCCP_OCCN
-- OCCE_OCC
-- OCCEN_OCC
-- OCCFP_OCCF
-- OCCEN_OCCE
-- OCCEN_OCCN
-- OCCFP_OCCFN
-- TERMORE_CLAUSE
-- NEG_HORN_CLAUSE
-- WOCCN_WOCC
-- WOCCEP_WOCC
-- WOCCFN_WOCC
-- WOCCEP_WOCCE
-- WOCCEP_WOCCP
-- WOCCFN_WOCCN
-features_stochastic: []
-algorithms_deterministic:
-- cbdepqbf
-- hiqqer3
-- dual_ooq13
-- xbdepqbf
-- bcghostq
-- pre_dual_ooq13
-- rareqs
-- ghostq
-- hiqqer1
-- sqube
-- depqbf
-- cghostq
-- ooq13
-- brareqs
-algorithms_stochastic: []
-performance_measures:
-- runtime
-performance_type:
-- runtime
-maximize:
-- false
-algorithm_cutoff_time: 900.0
 algorithm_cutoff_memory: '?'
-features_cutoff_time: '?'
-features_cutoff_memory: '?'
-number_of_feature_steps: 1.0
+algorithm_cutoff_time: 900.0
 default_steps:
 - default
 feature_steps:
@@ -125,3 +51,104 @@ feature_steps:
     - WOCCEP_WOCCE
     - WOCCEP_WOCCP
     - WOCCFN_WOCCN
+features_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_deterministic:
+- EXIST_VARS
+- FORALL_VARS
+- TOTAL_VARS
+- CLAUSES
+- LITERALS
+- EXIST_SET
+- FORALL_SET
+- TOTAL_SET
+- UNARY_CLAUSES
+- BINARY_CLAUSES
+- TERNARY_MORE_CLAUSES
+- POS_HORN
+- NEG_HORN
+- EXIST_LIT_PER_CLAUSE
+- FORALL_LIT_PER_CLAUSE
+- EXIST_VARS_PER_SET
+- FORALL_POS_LITS_PER_CLAUSE
+- FORALL_NEG_LITS_PER_CLAUSE
+- OCCS_POS_NO_PER_VAR
+- OCCS_FORALL_NO_PER_VAR
+- OCCS_FORALL_POS_NO_PER_VAR
+- W_OCCS_POS_NO_PER_VAR
+- W_OCCS_FORALL_NO_PER_VAR
+- W_OCCS_FORALL_POS_NO_PER_VAR
+- W_PRODUCTS
+- LITN_LIT
+- LITEP_LIT
+- LITEN_LITE
+- LITEN_LITN
+- LITFN_LIT
+- LITFP_LITFN
+- OCCP_OCCN
+- OCCE_OCC
+- OCCEN_OCC
+- OCCFP_OCCF
+- OCCEN_OCCE
+- OCCEN_OCCN
+- OCCFP_OCCFN
+- TERMORE_CLAUSE
+- NEG_HORN_CLAUSE
+- WOCCN_WOCC
+- WOCCEP_WOCC
+- WOCCFN_WOCC
+- WOCCEP_WOCCE
+- WOCCEP_WOCCP
+- WOCCFN_WOCCN
+features_stochastic: []
+maximize:
+- false
+metainfo_algorithms:
+  bcghostq:
+    configuration: ''
+    deterministic: true
+  brareqs:
+    configuration: ''
+    deterministic: true
+  cbdepqbf:
+    configuration: ''
+    deterministic: true
+  cghostq:
+    configuration: ''
+    deterministic: true
+  depqbf:
+    configuration: ''
+    deterministic: true
+  dual_ooq13:
+    configuration: ''
+    deterministic: true
+  ghostq:
+    configuration: ''
+    deterministic: true
+  hiqqer1:
+    configuration: ''
+    deterministic: true
+  hiqqer3:
+    configuration: ''
+    deterministic: true
+  ooq13:
+    configuration: ''
+    deterministic: true
+  pre_dual_ooq13:
+    configuration: ''
+    deterministic: true
+  rareqs:
+    configuration: ''
+    deterministic: true
+  sqube:
+    configuration: ''
+    deterministic: true
+  xbdepqbf:
+    configuration: ''
+    deterministic: true
+number_of_feature_steps: 1.0
+performance_measures:
+- runtime
+performance_type:
+- runtime
+scenario_id: QBF-2014

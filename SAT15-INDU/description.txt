@@ -1,35 +1,5 @@
 algorithm_cutoff_memory: '?'
 algorithm_cutoff_time: 3600.0
-algorithms_deterministic:
-- abcdSAT
-- minisat_BCD
-- or-tools
-- GlueMiniSat_2.2.10
-- CCAglucose2015
-- multi-sat-g2_0
-- multi-sat-g2_2
-- ratselfax_cnf_215_final
-- BreakIDGlucose2
-- Lingeling_sr15bal
-- Lingeling_sr15baq
-- GlueMiniSat_2.2.10-5
-- glucose-default
-- glueminisat-Actmini
-- riss_505_2
-- riss_505_1
-- Glucose_nbSatRsltn
-- Nigma-1.2.86
-- Nigma-1.2.87
-- Glucose_nbSat
-- COMiniSatPS_Main_Sequence
-- COMiniSatPS_Subdwarf
-- satUZK-seq
-- ADS-cryptominisat
-- ADS-cryptominisat-autotune
-- ADS-dccaSatToRiss
-- ADS-glucose-adapt
-- ADS-glucose-community-switching
-algorithms_stochastic: ''
 default_steps:
 - ALL
 feature_steps:
@@ -149,6 +119,91 @@ features_deterministic:
 features_stochastic: ''
 maximize:
 - false
+metainfo_algorithms:
+  ADS-cryptominisat:
+    configuration: ''
+    deterministic: true
+  ADS-cryptominisat-autotune:
+    configuration: ''
+    deterministic: true
+  ADS-dccaSatToRiss:
+    configuration: ''
+    deterministic: true
+  ADS-glucose-adapt:
+    configuration: ''
+    deterministic: true
+  ADS-glucose-community-switching:
+    configuration: ''
+    deterministic: true
+  BreakIDGlucose2:
+    configuration: ''
+    deterministic: true
+  CCAglucose2015:
+    configuration: ''
+    deterministic: true
+  COMiniSatPS_Main_Sequence:
+    configuration: ''
+    deterministic: true
+  COMiniSatPS_Subdwarf:
+    configuration: ''
+    deterministic: true
+  Glucose_nbSat:
+    configuration: ''
+    deterministic: true
+  Glucose_nbSatRsltn:
+    configuration: ''
+    deterministic: true
+  GlueMiniSat_2.2.10:
+    configuration: ''
+    deterministic: true
+  GlueMiniSat_2.2.10-5:
+    configuration: ''
+    deterministic: true
+  Lingeling_sr15bal:
+    configuration: ''
+    deterministic: true
+  Lingeling_sr15baq:
+    configuration: ''
+    deterministic: true
+  Nigma-1.2.86:
+    configuration: ''
+    deterministic: true
+  Nigma-1.2.87:
+    configuration: ''
+    deterministic: true
+  abcdSAT:
+    configuration: ''
+    deterministic: true
+  glucose-default:
+    configuration: ''
+    deterministic: true
+  glueminisat-Actmini:
+    configuration: ''
+    deterministic: true
+  minisat_BCD:
+    configuration: ''
+    deterministic: true
+  multi-sat-g2_0:
+    configuration: ''
+    deterministic: true
+  multi-sat-g2_2:
+    configuration: ''
+    deterministic: true
+  or-tools:
+    configuration: ''
+    deterministic: true
+  ratselfax_cnf_215_final:
+    configuration: ''
+    deterministic: true
+  riss_505_1:
+    configuration: ''
+    deterministic: true
+  riss_505_2:
+    configuration: ''
+    deterministic: true
+  satUZK-seq:
+    configuration: ''
+    deterministic: true
 number_of_feature_steps: 1
 performance_measures:
 - runtime
