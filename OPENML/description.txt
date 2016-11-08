@@ -837,5 +837,5 @@ metainfo_algorithms:
     deterministic: true
 number_of_feature_steps: 114
 performance_measures: acc
-performance_type: quality
+performance_type: solution_quality
 scenario_id: OPENML
