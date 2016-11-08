@@ -1,4 +1,4 @@
-@relation dd
+@relation ALGORITHM_RUNS_OPENML
 @attribute instance_id string
 @attribute repetition numeric
 @attribute algorithm string

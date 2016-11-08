@@ -1,4 +1,4 @@
-@relation R_data_frame
+@relation FEATURES_RUNSTATUS_OPENML
 
 @attribute instance_id STRING
 @attribute repetition numeric
