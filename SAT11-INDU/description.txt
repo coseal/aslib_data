@@ -1,41 +1,13 @@
-scenario_id: SAT11-INDU
-performance_measures: 
-    - runtime
-maximize: 
-    - false
-performance_type: 
-    - runtime
+algorithm_cutoff_memory: '?'
 algorithm_cutoff_time: 5000
-algorithm_cutoff_memory: "?"
-features_cutoff_time: 5000
-features_cutoff_memory: "?"
-algorithms_deterministic:
-    - RestartSAT_B95
-    - glueminisat_2.2.5
-    - SAT09referencesolverprecosat_236
-    - minisathackcir_minisat_2011-05-13_simp_
-    - minisathackreferenceminisat_2.2.0
-    - minisathackEBMiniSAT_2011-03-02
-    - minisathackcontrasat_2011-03-02
-    - minisathackLR_GL_SHR_2011-03-02
-    - minisathackMiniSAT_2.2.0-agile-26
-    - SAT09referencesolverglucose_1.0
-    - glucose_2
-    - EBGlucose_1.0
-    - Lingeling_587f_fixed_
-    - minisathackminisat_psm_2011-04-01
-    - CryptoMiniSat_Strange-Night2-st_fixed_
-    - rcl_2011-04-01
-    - MPhaseSAT64_2011-05-14_fixed_
-    - QuteRSat_2011-05-12_fixed_ 
-algorithms_stochastic: 
-features_deterministic:
-    - nvarsOrig
-    - nclausesOrig
-    - nvars
-    - nclauses
-    - reducedVars
-    - reducedClauses
+default_steps:
+- Pre
+- Basic
+- KLB
+- CG
+feature_steps:
+  Basic:
+    provides:
     - vars_clauses_ratio
     - POSNEG_RATIO_CLAUSE_mean
     - POSNEG_RATIO_CLAUSE_coeff_variation
@@ -50,6 +22,33 @@ features_deterministic:
     - UNARY
     - BINARYp
     - TRINARYp
+    requires:
+    - Pre
+  CG:
+    provides:
+    - CG_mean
+    - CG_coeff_variation
+    - CG_min
+    - CG_max
+    - CG_entropy
+    - cluster_coeff_mean
+    - cluster_coeff_coeff_variation
+    - cluster_coeff_min
+    - cluster_coeff_max
+    - cluster_coeff_entropy
+    requires:
+    - Pre
+  DIAMETER:
+    provides:
+    - DIAMETER_mean
+    - DIAMETER_coeff_variation
+    - DIAMETER_min
+    - DIAMETER_max
+    - DIAMETER_entropy
+    requires:
+    - Pre
+  KLB:
+    provides:
     - VCG_VAR_mean
     - VCG_VAR_coeff_variation
     - VCG_VAR_min
@@ -70,21 +69,18 @@ features_deterministic:
     - VG_coeff_variation
     - VG_min
     - VG_max
-    - CG_mean
-    - CG_coeff_variation
-    - CG_min
-    - CG_max
-    - CG_entropy
-    - cluster_coeff_mean
-    - cluster_coeff_coeff_variation
-    - cluster_coeff_min
-    - cluster_coeff_max
-    - cluster_coeff_entropy
-    - DIAMETER_mean
-    - DIAMETER_coeff_variation
-    - DIAMETER_min
-    - DIAMETER_max
-    - DIAMETER_entropy
+    requires:
+    - Pre
+  Pre:
+    provides:
+    - nvarsOrig
+    - nclausesOrig
+    - nvars
+    - nclauses
+    - reducedVars
+    - reducedClauses
+  cl:
+    provides:
     - cl_num_mean
     - cl_num_coeff_variation
     - cl_num_min
@@ -103,6 +99,46 @@ features_deterministic:
     - cl_size_q75
     - cl_size_q25
     - cl_size_q50
+    requires:
+    - Pre
+  lobjois:
+    provides:
+    - lobjois_mean_depth_over_vars
+    - lobjois_log_num_nodes_over_vars
+    requires:
+    - Pre
+  ls_gsat:
+    provides:
+    - gsat_BestSolution_Mean
+    - gsat_BestSolution_CoeffVariance
+    - gsat_FirstLocalMinStep_Mean
+    - gsat_FirstLocalMinStep_CoeffVariance
+    - gsat_FirstLocalMinStep_Median
+    - gsat_FirstLocalMinStep_Q10
+    - gsat_FirstLocalMinStep_Q90
+    - gsat_BestAvgImprovement_Mean
+    - gsat_BestAvgImprovement_CoeffVariance
+    - gsat_FirstLocalMinRatio_Mean
+    - gsat_FirstLocalMinRatio_CoeffVariance
+    requires:
+    - Pre
+  ls_saps:
+    provides:
+    - saps_BestSolution_Mean
+    - saps_BestSolution_CoeffVariance
+    - saps_FirstLocalMinStep_Mean
+    - saps_FirstLocalMinStep_CoeffVariance
+    - saps_FirstLocalMinStep_Median
+    - saps_FirstLocalMinStep_Q10
+    - saps_FirstLocalMinStep_Q90
+    - saps_BestAvgImprovement_Mean
+    - saps_BestAvgImprovement_CoeffVariance
+    - saps_FirstLocalMinRatio_Mean
+    - saps_FirstLocalMinRatio_CoeffVariance
+    requires:
+    - Pre
+  sp:
+    provides:
     - SP_bias_mean
     - SP_bias_coeff_variation
     - SP_bias_min
@@ -121,188 +157,187 @@ features_deterministic:
     - SP_unconstraint_q75
     - SP_unconstraint_q25
     - SP_unconstraint_q50
-    - saps_BestSolution_Mean
-    - saps_BestSolution_CoeffVariance
-    - saps_FirstLocalMinStep_Mean
-    - saps_FirstLocalMinStep_CoeffVariance
-    - saps_FirstLocalMinStep_Median
-    - saps_FirstLocalMinStep_Q10
-    - saps_FirstLocalMinStep_Q90
-    - saps_BestAvgImprovement_Mean
-    - saps_BestAvgImprovement_CoeffVariance
-    - saps_FirstLocalMinRatio_Mean
-    - saps_FirstLocalMinRatio_CoeffVariance
-    - gsat_BestSolution_Mean
-    - gsat_BestSolution_CoeffVariance
-    - gsat_FirstLocalMinStep_Mean
-    - gsat_FirstLocalMinStep_CoeffVariance
-    - gsat_FirstLocalMinStep_Median
-    - gsat_FirstLocalMinStep_Q10
-    - gsat_FirstLocalMinStep_Q90
-    - gsat_BestAvgImprovement_Mean
-    - gsat_BestAvgImprovement_CoeffVariance
-    - gsat_FirstLocalMinRatio_Mean
-    - gsat_FirstLocalMinRatio_CoeffVariance
-    - lobjois_mean_depth_over_vars
-    - lobjois_log_num_nodes_over_vars
-features_stochastic: 
-number_of_feature_steps: 10
-feature_steps:
-    Pre:
-      provides:
-        - nvarsOrig
-        - nclausesOrig
-        - nvars
-        - nclauses
-        - reducedVars
-        - reducedClauses
-    Basic:
-      requires: 
-        - Pre
-      provides:
-        - vars_clauses_ratio
-        - POSNEG_RATIO_CLAUSE_mean
-        - POSNEG_RATIO_CLAUSE_coeff_variation
-        - POSNEG_RATIO_CLAUSE_min
-        - POSNEG_RATIO_CLAUSE_max
-        - POSNEG_RATIO_CLAUSE_entropy
-        - VCG_CLAUSE_mean
-        - VCG_CLAUSE_coeff_variation
-        - VCG_CLAUSE_min
-        - VCG_CLAUSE_max
-        - VCG_CLAUSE_entropy
-        - UNARY
-        - BINARYp
-        - TRINARYp
-    KLB:
-      requires: 
-        - Pre
-      provides:
-        - VCG_VAR_mean
-        - VCG_VAR_coeff_variation
-        - VCG_VAR_min
-        - VCG_VAR_max
-        - VCG_VAR_entropy
-        - POSNEG_RATIO_VAR_mean
-        - POSNEG_RATIO_VAR_stdev
-        - POSNEG_RATIO_VAR_min
-        - POSNEG_RATIO_VAR_max
-        - POSNEG_RATIO_VAR_entropy
-        - HORNY_VAR_mean
-        - HORNY_VAR_coeff_variation
-        - HORNY_VAR_min
-        - HORNY_VAR_max
-        - HORNY_VAR_entropy
-        - horn_clauses_fraction
-        - VG_mean
-        - VG_coeff_variation
-        - VG_min
-        - VG_max
-    CG:
-      requires: 
-        - Pre
-      provides: 
-        - CG_mean
-        - CG_coeff_variation
-        - CG_min
-        - CG_max
-        - CG_entropy
-        - cluster_coeff_mean
-        - cluster_coeff_coeff_variation
-        - cluster_coeff_min
-        - cluster_coeff_max
-        - cluster_coeff_entropy
-    DIAMETER:
-      requires: 
-        - Pre
-      provides: 
-        - DIAMETER_mean
-        - DIAMETER_coeff_variation
-        - DIAMETER_min
-        - DIAMETER_max
-        - DIAMETER_entropy
-    cl:
-      requires: 
-        - Pre
-      provides:
-        - cl_num_mean
-        - cl_num_coeff_variation
-        - cl_num_min
-        - cl_num_max
-        - cl_num_q90
-        - cl_num_q10
-        - cl_num_q75
-        - cl_num_q25
-        - cl_num_q50
-        - cl_size_mean
-        - cl_size_coeff_variation
-        - cl_size_min
-        - cl_size_max
-        - cl_size_q90
-        - cl_size_q10
-        - cl_size_q75
-        - cl_size_q25
-        - cl_size_q50
-    sp:
-      requires: 
-        - Pre
-      provides:
-        - SP_bias_mean
-        - SP_bias_coeff_variation
-        - SP_bias_min
-        - SP_bias_max
-        - SP_bias_q90
-        - SP_bias_q10
-        - SP_bias_q75
-        - SP_bias_q25
-        - SP_bias_q50
-        - SP_unconstraint_mean
-        - SP_unconstraint_coeff_variation
-        - SP_unconstraint_min
-        - SP_unconstraint_max
-        - SP_unconstraint_q90
-        - SP_unconstraint_q10
-        - SP_unconstraint_q75
-        - SP_unconstraint_q25
-        - SP_unconstraint_q50
-    ls_saps:
-      requires: 
-        - Pre
-      provides:
-        - saps_BestSolution_Mean
-        - saps_BestSolution_CoeffVariance
-        - saps_FirstLocalMinStep_Mean
-        - saps_FirstLocalMinStep_CoeffVariance
-        - saps_FirstLocalMinStep_Median
-        - saps_FirstLocalMinStep_Q10
-        - saps_FirstLocalMinStep_Q90
-        - saps_BestAvgImprovement_Mean
-        - saps_BestAvgImprovement_CoeffVariance
-        - saps_FirstLocalMinRatio_Mean
-        - saps_FirstLocalMinRatio_CoeffVariance
-    ls_gsat:
-      requires: 
-        - Pre
-      provides:
-        - gsat_BestSolution_Mean
-        - gsat_BestSolution_CoeffVariance
-        - gsat_FirstLocalMinStep_Mean
-        - gsat_FirstLocalMinStep_CoeffVariance
-        - gsat_FirstLocalMinStep_Median
-        - gsat_FirstLocalMinStep_Q10
-        - gsat_FirstLocalMinStep_Q90
-        - gsat_BestAvgImprovement_Mean
-        - gsat_BestAvgImprovement_CoeffVariance
-        - gsat_FirstLocalMinRatio_Mean
-        - gsat_FirstLocalMinRatio_CoeffVariance
-    lobjois:
-      requires: 
-        - Pre
-      provides:
-        - lobjois_mean_depth_over_vars
-        - lobjois_log_num_nodes_over_vars
-default_steps: 
+    requires:
     - Pre
-    - Basic
-    - KLB
-    - CG
+features_cutoff_memory: '?'
+features_cutoff_time: 5000
+features_deterministic:
+- nvarsOrig
+- nclausesOrig
+- nvars
+- nclauses
+- reducedVars
+- reducedClauses
+- vars_clauses_ratio
+- POSNEG_RATIO_CLAUSE_mean
+- POSNEG_RATIO_CLAUSE_coeff_variation
+- POSNEG_RATIO_CLAUSE_min
+- POSNEG_RATIO_CLAUSE_max
+- POSNEG_RATIO_CLAUSE_entropy
+- VCG_CLAUSE_mean
+- VCG_CLAUSE_coeff_variation
+- VCG_CLAUSE_min
+- VCG_CLAUSE_max
+- VCG_CLAUSE_entropy
+- UNARY
+- BINARYp
+- TRINARYp
+- VCG_VAR_mean
+- VCG_VAR_coeff_variation
+- VCG_VAR_min
+- VCG_VAR_max
+- VCG_VAR_entropy
+- POSNEG_RATIO_VAR_mean
+- POSNEG_RATIO_VAR_stdev
+- POSNEG_RATIO_VAR_min
+- POSNEG_RATIO_VAR_max
+- POSNEG_RATIO_VAR_entropy
+- HORNY_VAR_mean
+- HORNY_VAR_coeff_variation
+- HORNY_VAR_min
+- HORNY_VAR_max
+- HORNY_VAR_entropy
+- horn_clauses_fraction
+- VG_mean
+- VG_coeff_variation
+- VG_min
+- VG_max
+- CG_mean
+- CG_coeff_variation
+- CG_min
+- CG_max
+- CG_entropy
+- cluster_coeff_mean
+- cluster_coeff_coeff_variation
+- cluster_coeff_min
+- cluster_coeff_max
+- cluster_coeff_entropy
+- DIAMETER_mean
+- DIAMETER_coeff_variation
+- DIAMETER_min
+- DIAMETER_max
+- DIAMETER_entropy
+- cl_num_mean
+- cl_num_coeff_variation
+- cl_num_min
+- cl_num_max
+- cl_num_q90
+- cl_num_q10
+- cl_num_q75
+- cl_num_q25
+- cl_num_q50
+- cl_size_mean
+- cl_size_coeff_variation
+- cl_size_min
+- cl_size_max
+- cl_size_q90
+- cl_size_q10
+- cl_size_q75
+- cl_size_q25
+- cl_size_q50
+- SP_bias_mean
+- SP_bias_coeff_variation
+- SP_bias_min
+- SP_bias_max
+- SP_bias_q90
+- SP_bias_q10
+- SP_bias_q75
+- SP_bias_q25
+- SP_bias_q50
+- SP_unconstraint_mean
+- SP_unconstraint_coeff_variation
+- SP_unconstraint_min
+- SP_unconstraint_max
+- SP_unconstraint_q90
+- SP_unconstraint_q10
+- SP_unconstraint_q75
+- SP_unconstraint_q25
+- SP_unconstraint_q50
+- saps_BestSolution_Mean
+- saps_BestSolution_CoeffVariance
+- saps_FirstLocalMinStep_Mean
+- saps_FirstLocalMinStep_CoeffVariance
+- saps_FirstLocalMinStep_Median
+- saps_FirstLocalMinStep_Q10
+- saps_FirstLocalMinStep_Q90
+- saps_BestAvgImprovement_Mean
+- saps_BestAvgImprovement_CoeffVariance
+- saps_FirstLocalMinRatio_Mean
+- saps_FirstLocalMinRatio_CoeffVariance
+- gsat_BestSolution_Mean
+- gsat_BestSolution_CoeffVariance
+- gsat_FirstLocalMinStep_Mean
+- gsat_FirstLocalMinStep_CoeffVariance
+- gsat_FirstLocalMinStep_Median
+- gsat_FirstLocalMinStep_Q10
+- gsat_FirstLocalMinStep_Q90
+- gsat_BestAvgImprovement_Mean
+- gsat_BestAvgImprovement_CoeffVariance
+- gsat_FirstLocalMinRatio_Mean
+- gsat_FirstLocalMinRatio_CoeffVariance
+- lobjois_mean_depth_over_vars
+- lobjois_log_num_nodes_over_vars
+features_stochastic: null
+maximize:
+- false
+metainfo_algorithms:
+  CryptoMiniSat_Strange-Night2-st_fixed_:
+    configuration: ''
+    deterministic: true
+  EBGlucose_1.0:
+    configuration: ''
+    deterministic: true
+  Lingeling_587f_fixed_:
+    configuration: ''
+    deterministic: true
+  MPhaseSAT64_2011-05-14_fixed_:
+    configuration: ''
+    deterministic: true
+  QuteRSat_2011-05-12_fixed_:
+    configuration: ''
+    deterministic: true
+  RestartSAT_B95:
+    configuration: ''
+    deterministic: true
+  SAT09referencesolverglucose_1.0:
+    configuration: ''
+    deterministic: true
+  SAT09referencesolverprecosat_236:
+    configuration: ''
+    deterministic: true
+  glucose_2:
+    configuration: ''
+    deterministic: true
+  glueminisat_2.2.5:
+    configuration: ''
+    deterministic: true
+  minisathackEBMiniSAT_2011-03-02:
+    configuration: ''
+    deterministic: true
+  minisathackLR_GL_SHR_2011-03-02:
+    configuration: ''
+    deterministic: true
+  minisathackMiniSAT_2.2.0-agile-26:
+    configuration: ''
+    deterministic: true
+  minisathackcir_minisat_2011-05-13_simp_:
+    configuration: ''
+    deterministic: true
+  minisathackcontrasat_2011-03-02:
+    configuration: ''
+    deterministic: true
+  minisathackminisat_psm_2011-04-01:
+    configuration: ''
+    deterministic: true
+  minisathackreferenceminisat_2.2.0:
+    configuration: ''
+    deterministic: true
+  rcl_2011-04-01:
+    configuration: ''
+    deterministic: true
+number_of_feature_steps: 10
+performance_measures:
+- runtime
+performance_type:
+- runtime
+scenario_id: SAT11-INDU
