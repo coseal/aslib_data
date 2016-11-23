@@ -1,0 +1,243 @@
+scenario_id: BNSL-2016
+performance_measures:
+    - runtime
+maximize:
+    - false
+performance_type:
+    - runtime
+algorithm_cutoff_time: 7200
+algorithm_cutoff_memory: 30000
+features_cutoff_time: 10
+features_cutoff_memory: '?'
+number_of_feature_steps: 7
+feature_steps:
+    basic:
+        provides:
+            - Variable-Count
+            - VPOPS-Mean
+    basic_extended:
+        provides:
+            - POPS-Count
+            - PSS-Maximum
+            - PSS-Mean
+            - PSS-Standard-Deviation
+            - VPOPS-Maximum
+            - VPOPS-Standard-Deviation
+    lower_bounding:
+        provides:
+            - Pattern-database-lower-bound-In-degree-Maximum
+            - Pattern-database-lower-bound-In-degree-Mean
+            - Pattern-database-lower-bound-In-degree-Standard-Deviation
+            - Pattern-database-lower-bound-Leaf-Count
+            - Pattern-database-lower-bound-NTC-Count
+            - Pattern-database-lower-bound-NTC-Max
+            - Pattern-database-lower-bound-NTC-Mean
+            - Pattern-database-lower-bound-NTC-Standard-Deviation
+            - Pattern-database-lower-bound-Out-degree-Maximum
+            - Pattern-database-lower-bound-Out-degree-Mean
+            - Pattern-database-lower-bound-Out-degree-Standard-Deviation
+            - Pattern-database-lower-bound-Root-Count
+            - Pattern-database-lower-bound-Total-Degree-Maximum
+            - Pattern-database-lower-bound-Total-Degree-Mean
+            - Pattern-database-lower-bound-Total-Degree-Standard-Deviation
+            - Simple-lower-bound-In-degree-Maximum
+            - Simple-lower-bound-In-degree-Mean
+            - Simple-lower-bound-In-degree-Standard-Deviation
+            - Simple-lower-bound-Leaf-Count
+            - Simple-lower-bound-NTC-Count
+            - Simple-lower-bound-NTC-Max
+            - Simple-lower-bound-NTC-Mean
+            - Simple-lower-bound-NTC-Standard-Deviation
+            - Simple-lower-bound-Out-degree-Maximum
+            - Simple-lower-bound-Out-degree-Mean
+            - Simple-lower-bound-Out-degree-Standard-Deviation
+            - Simple-lower-bound-Root-Count
+            - Simple-lower-bound-Total-Degree-Maximum
+            - Simple-lower-bound-Total-Degree-Mean
+            - Simple-lower-bound-Total-Degree-Standard-Deviation
+    greedy_probing:
+        provides:
+            - Greedy-hill-climbing-Error-bound
+            - Greedy-hill-climbing-In-degree-Maximum
+            - Greedy-hill-climbing-In-degree-Mean
+            - Greedy-hill-climbing-In-degree-Standard-Deviation
+            - Greedy-hill-climbing-Leaf-Count
+            - Greedy-hill-climbing-Out-degree-Maximum
+            - Greedy-hill-climbing-Out-degree-Mean
+            - Greedy-hill-climbing-Out-degree-Standard-Deviation
+            - Greedy-hill-climbing-Root-Count
+            - Greedy-hill-climbing-Total-Degree-Maximum
+            - Greedy-hill-climbing-Total-Degree-Mean
+            - Greedy-hill-climbing-Total-Degree-Standard-Deviation
+    A*_probing:
+        provides:
+            - Anytime-window-A*-Error-bound
+            - Anytime-window-A*-In-degree-Maximum
+            - Anytime-window-A*-In-degree-Mean
+            - Anytime-window-A*-In-degree-Standard-Deviation
+            - Anytime-window-A*-Leaf-Count
+            - Anytime-window-A*-Out-degree-Maximum
+            - Anytime-window-A*-Out-degree-Mean
+            - Anytime-window-A*-Out-degree-Standard-Deviation
+            - Anytime-window-A*-Root-Count
+            - Anytime-window-A*-Total-Degree-Maximum
+            - Anytime-window-A*-Total-Degree-Mean
+            - Anytime-window-A*-Total-Degree-Standard-Deviation
+    ILP_probing:
+        provides:
+            - GOBNILP-Error-bound
+            - GOBNILP-In-degree-Maximum
+            - GOBNILP-In-degree-Mean
+            - GOBNILP-In-degree-Standard-Deviation
+            - GOBNILP-Leaf-Count
+            - GOBNILP-Out-degree-Maximum
+            - GOBNILP-Out-degree-Mean
+            - GOBNILP-Out-degree-Standard-Deviation
+            - GOBNILP-Root-Count
+            - GOBNILP-Total-Degree-Maximum
+            - GOBNILP-Total-Degree-Mean
+            - GOBNILP-Total-Degree-Standard-Deviation
+    CP_probing:
+        provides:
+            - CPBayes-Error-bound
+            - CPBayes-In-degree-Maximum
+            - CPBayes-In-degree-Mean
+            - CPBayes-In-degree-Standard-Deviation
+            - CPBayes-Leaf-Count
+            - CPBayes-Out-degree-Maximum
+            - CPBayes-Out-degree-Mean
+            - CPBayes-Out-degree-Standard-Deviation
+            - CPBayes-Root-Count
+            - CPBayes-Total-Degree-Maximum
+            - CPBayes-Total-Degree-Mean
+            - CPBayes-Total-Degree-Standard-Deviation
+default_steps:
+    - basic
+    - basic_extended
+    - lower_bounding
+    - greedy_probing
+    - A*_probing
+    - ILP_probing
+    - CP_probing
+features_deterministic:
+    - Variable-Count
+    - VPOPS-Mean
+    - POPS-Count
+    - PSS-Maximum
+    - PSS-Mean
+    - PSS-Standard-Deviation
+    - VPOPS-Maximum
+    - VPOPS-Standard-Deviation
+    - Pattern-database-lower-bound-In-degree-Maximum
+    - Pattern-database-lower-bound-In-degree-Mean
+    - Pattern-database-lower-bound-In-degree-Standard-Deviation
+    - Pattern-database-lower-bound-Leaf-Count
+    - Pattern-database-lower-bound-NTC-Count
+    - Pattern-database-lower-bound-NTC-Max
+    - Pattern-database-lower-bound-NTC-Mean
+    - Pattern-database-lower-bound-NTC-Standard-Deviation
+    - Pattern-database-lower-bound-Out-degree-Maximum
+    - Pattern-database-lower-bound-Out-degree-Mean
+    - Pattern-database-lower-bound-Out-degree-Standard-Deviation
+    - Pattern-database-lower-bound-Root-Count
+    - Pattern-database-lower-bound-Total-Degree-Maximum
+    - Pattern-database-lower-bound-Total-Degree-Mean
+    - Pattern-database-lower-bound-Total-Degree-Standard-Deviation
+    - Simple-lower-bound-In-degree-Maximum
+    - Simple-lower-bound-In-degree-Mean
+    - Simple-lower-bound-In-degree-Standard-Deviation
+    - Simple-lower-bound-Leaf-Count
+    - Simple-lower-bound-NTC-Count
+    - Simple-lower-bound-NTC-Max
+    - Simple-lower-bound-NTC-Mean
+    - Simple-lower-bound-NTC-Standard-Deviation
+    - Simple-lower-bound-Out-degree-Maximum
+    - Simple-lower-bound-Out-degree-Mean
+    - Simple-lower-bound-Out-degree-Standard-Deviation
+    - Simple-lower-bound-Root-Count
+    - Simple-lower-bound-Total-Degree-Maximum
+    - Simple-lower-bound-Total-Degree-Mean
+    - Simple-lower-bound-Total-Degree-Standard-Deviation
+features_stochastic:
+    - Greedy-hill-climbing-Error-bound
+    - Greedy-hill-climbing-In-degree-Maximum
+    - Greedy-hill-climbing-In-degree-Mean
+    - Greedy-hill-climbing-In-degree-Standard-Deviation
+    - Greedy-hill-climbing-Leaf-Count
+    - Greedy-hill-climbing-Out-degree-Maximum
+    - Greedy-hill-climbing-Out-degree-Mean
+    - Greedy-hill-climbing-Out-degree-Standard-Deviation
+    - Greedy-hill-climbing-Root-Count
+    - Greedy-hill-climbing-Total-Degree-Maximum
+    - Greedy-hill-climbing-Total-Degree-Mean
+    - Greedy-hill-climbing-Total-Degree-Standard-Deviation
+    - Anytime-window-A*-Error-bound
+    - Anytime-window-A*-In-degree-Maximum
+    - Anytime-window-A*-In-degree-Mean
+    - Anytime-window-A*-In-degree-Standard-Deviation
+    - Anytime-window-A*-Leaf-Count
+    - Anytime-window-A*-Out-degree-Maximum
+    - Anytime-window-A*-Out-degree-Mean
+    - Anytime-window-A*-Out-degree-Standard-Deviation
+    - Anytime-window-A*-Root-Count
+    - Anytime-window-A*-Total-Degree-Maximum
+    - Anytime-window-A*-Total-Degree-Mean
+    - Anytime-window-A*-Total-Degree-Standard-Deviation
+    - GOBNILP-Error-bound
+    - GOBNILP-In-degree-Maximum
+    - GOBNILP-In-degree-Mean
+    - GOBNILP-In-degree-Standard-Deviation
+    - GOBNILP-Leaf-Count
+    - GOBNILP-Out-degree-Maximum
+    - GOBNILP-Out-degree-Mean
+    - GOBNILP-Out-degree-Standard-Deviation
+    - GOBNILP-Root-Count
+    - GOBNILP-Total-Degree-Maximum
+    - GOBNILP-Total-Degree-Mean
+    - GOBNILP-Total-Degree-Standard-Deviation
+    - CPBayes-Error-bound
+    - CPBayes-In-degree-Maximum
+    - CPBayes-In-degree-Mean
+    - CPBayes-In-degree-Standard-Deviation
+    - CPBayes-Leaf-Count
+    - CPBayes-Out-degree-Maximum
+    - CPBayes-Out-degree-Mean
+    - CPBayes-Out-degree-Standard-Deviation
+    - CPBayes-Root-Count
+    - CPBayes-Total-Degree-Maximum
+    - CPBayes-Total-Degree-Mean
+    - CPBayes-Total-Degree-Standard-Deviation
+metainfo_algorithms:
+  astar-ec:
+    configuration: ""
+    deterministic: true
+  astar-ed3:
+    configuration: ""
+    deterministic: true
+  astar-comp:
+    configuration: ""
+    deterministic: true
+  cpbayes:
+    configuration: ""
+    deterministic: true
+  ilp-141:
+    configuration: ""
+    deterministic: true
+  ilp-141-nc:
+    configuration: ""
+    deterministic: true
+  ilp-162:
+    configuration: ""
+    deterministic: true
+  ilp-162-nc:
+    configuration: ""
+    deterministic: true
+algorithms_deterministic:
+  - astar-ec
+  - astar-ed3
+  - astar-comp
+  - cpbayes
+  - ilp-141
+  - ilp-141-nc
+  - ilp-162
+  - ilp-162-nc
