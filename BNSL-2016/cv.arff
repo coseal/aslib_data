@@ -1,4 +1,4 @@
-@RELATION bn-portfolio
+@RELATION CV_BNSL-2016
 
 @ATTRIBUTE instance_id STRING
 @ATTRIBUTE repetition NUMERIC
