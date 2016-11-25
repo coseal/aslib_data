@@ -1,28 +1,69 @@
 algorithm_cutoff_memory: '?'
 algorithm_cutoff_time: 600
-algorithms_deterministic:
-- SH
-- DH
-algorithms_stochastic: 
-- S1
-- S2
-- S3
-- S4
-- S5
-- C1
-- C2
-- C3
-- C4
-- C5
-- C6
-- MATLS
-- M3
-- M4
-- M3B
-- M4B
-- CS2SA
-- RLS
-- EA
+metainfo_algorithms:
+  SH:
+    configuration: ""
+    deterministic: true
+  DH:
+    configuration: ""
+    deterministic: true
+  S1:
+    configuration: ""
+    deterministic: false
+  S2:
+    configuration: ""
+    deterministic: false
+  S3:
+    configuration: ""
+    deterministic: false
+  S4:
+    configuration: ""
+    deterministic: false
+  S5:
+    configuration: ""
+    deterministic: false
+  C1:
+    configuration: ""
+    deterministic: false
+  C2:
+    configuration: ""
+    deterministic: false
+  C3:
+    configuration: ""
+    deterministic: false
+  C4:
+    configuration: ""
+    deterministic: false
+  C5:
+    configuration: ""
+    deterministic: false                
+  C6:
+    configuration: ""
+    deterministic: false
+  MATLS:
+    configuration: ""
+    deterministic: false
+  M3:
+    configuration: ""
+    deterministic: false
+  M4:
+    configuration: ""
+    deterministic: false
+  M3B:
+    configuration: ""
+    deterministic: false
+  M4B:
+    configuration: ""
+    deterministic: false
+  CS2SA:
+    configuration: ""
+    deterministic: false
+  RLS:
+    configuration: ""
+    deterministic: false
+  EA:
+    configuration: ""
+    deterministic: false                    
 default_steps:
 - ALL
 feature_steps:
