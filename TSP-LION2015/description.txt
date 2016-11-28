@@ -133,12 +133,19 @@ features_stochastic:
     - popavgmed
     - popavgavg
     - popavgmax
-algorithms_deterministic: 
-algorithms_stochastic:
-    - eax
-    - lkh
-    - eax.restart
-    - lkh.restart
+metainfo_algorithms:
+  eax:
+    configuration: ""
+    deterministic: false
+  lkh:
+    configuration: ""
+    deterministic: false
+  eax.restart:
+    configuration: ""
+    deterministic: false
+  lkh.restart:
+    configuration: ""
+    deterministic: false                
 number_of_feature_steps: 4
 feature_steps:
     ubc_cheap:
