@@ -36,16 +36,29 @@ features_deterministic:
 - lad.values.removed.max
 - lad.time
 features_stochastic: []
-algorithms_deterministic:
-- lad
-- supplementallad
-- vf2
-- glasgow1
-- glasgow2
-- glasgow3
-- glasgow4
-algorithms_stochastic: []
-performance_measures: time
+metainfo_algorithms:
+  lad:
+    configuration: ""
+    deterministic: true
+  supplementallad:
+    configuration: ""
+    deterministic: true
+  vf2:
+    configuration: ""
+    deterministic: true
+  glasgow1:
+    configuration: ""
+    deterministic: true
+  glasgow2:
+    configuration: ""
+    deterministic: true
+  glasgow3:
+    configuration: ""
+    deterministic: true
+  glasgow4:
+    configuration: ""
+    deterministic: true                    
+performance_measures: runtime
 performance_type: runtime
 maximize: no
 algorithm_cutoff_time: 1.0e+08
