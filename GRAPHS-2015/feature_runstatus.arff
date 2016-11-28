@@ -1,12 +1,12 @@
-@relation R_data_frame
+@relation FEATURE_RUNSTATUS_GRAPHS-2015
 
 @attribute instance_id string
 @attribute repetition numeric
-@attribute cheap_pattern {ok}
-@attribute cheap_target {ok}
-@attribute distance_pattern {ok}
-@attribute distance_target {ok}
-@attribute lad_features {ok,presolved}
+@attribute cheap_pattern {ok, timeout, memout, not_applicable, crash, other}
+@attribute cheap_target {ok, timeout, memout, not_applicable, crash, other}
+@attribute distance_pattern {ok, timeout, memout, not_applicable, crash, other}
+@attribute distance_target {ok, timeout, memout, not_applicable, crash, other}
+@attribute lad_features {ok, timeout, memout, not_applicable, crash, other}
 
 @data
 A.01,1,ok,ok,ok,ok,ok

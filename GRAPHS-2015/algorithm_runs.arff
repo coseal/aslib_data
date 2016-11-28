@@ -1,10 +1,10 @@
-@relation R_data_frame
+@relation ALGORITHM_RUNS_GRAPHS-2015
 
 @attribute instance_id string
 @attribute algorithm string
 @attribute time numeric
 @attribute repetition numeric
-@attribute runstatus {ok,timeout}
+@attribute runstatus {ok, timeout, memout, not_applicable, crash, other}
 
 @data
 F.04,lad,387,1,ok
