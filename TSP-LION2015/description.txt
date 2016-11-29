@@ -135,16 +135,16 @@ features_stochastic:
     - popavgmax
 metainfo_algorithms:
   eax:
-    configuration: ""
+    configuration: "1 <outfile> 100 30 <infile> <optimal_tour> 3600 <seed>"
     deterministic: false
   lkh:
-    configuration: ""
+    configuration: "RUNS = 1 SEED = <seed> OPTIMUM = <optimal_tour> MAX_TRIALS = 100000000"
     deterministic: false
   eax.restart:
-    configuration: ""
+    configuration: "1 <outfile> 100 30 <infile> <optimal_tour> 3600 <seed>"
     deterministic: false
   lkh.restart:
-    configuration: ""
+    configuration: "RUNS = 1 SEED = <seed> OPTIMUM = <optimal_tour> MAX_TRIALS = 100000000"
     deterministic: false                
 number_of_feature_steps: 4
 default_steps: ubc_cheap
