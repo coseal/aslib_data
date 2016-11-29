@@ -147,6 +147,7 @@ metainfo_algorithms:
     configuration: ""
     deterministic: false                
 number_of_feature_steps: 4
+default_steps: ubc_all, tspmeta, eax_probing
 feature_steps:
     ubc_cheap:
         provides: num_nodes
