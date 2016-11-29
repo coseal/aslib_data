@@ -2,11 +2,11 @@
 
 @attribute instance_id string
 @attribute repetition numeric
-@attribute cheap_pattern {ok, timeout, memout, not_applicable, crash, other}
-@attribute cheap_target {ok, timeout, memout, not_applicable, crash, other}
-@attribute distance_pattern {ok, timeout, memout, not_applicable, crash, other}
-@attribute distance_target {ok, timeout, memout, not_applicable, crash, other}
-@attribute lad_features {ok, timeout, memout, not_applicable, crash, other}
+@attribute cheap_pattern {ok, timeout, memout, presolved, crash, other}
+@attribute cheap_target {ok, timeout, memout, presolved, crash, other}
+@attribute distance_pattern {ok, timeout, memout, presolved, crash, other}
+@attribute distance_target {ok, timeout, memout, presolved, crash, other}
+@attribute lad_features {ok, timeout, memout, presolved, crash, other}
 
 @data
 A.01,1,ok,ok,ok,ok,ok
