@@ -2,4 +2,4 @@ Source: Kotthoff, Lars, Ciaran McCreesh, and Christine Solnon. “Portfolios of 
 Translator in coseal format: Lars Kotthoff
 
 The dataset contains performance data on algorithms to identify subgraph
-isomorphisms.
+isomorphisms. Runtime values are in milliseconds.
