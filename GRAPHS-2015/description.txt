@@ -1,0 +1,120 @@
+scenario_id: GRAPHS-2015
+features_deterministic:
+- cheap.pattern.time
+- cheap.pattern.vertices
+- cheap.pattern.edges
+- cheap.pattern.loops
+- cheap.pattern.meandeg
+- cheap.pattern.maxdeg
+- cheap.pattern.degisfixed
+- cheap.pattern.density
+- cheap.target.time
+- cheap.target.vertices
+- cheap.target.edges
+- cheap.target.loops
+- cheap.target.meandeg
+- cheap.target.maxdeg
+- cheap.target.degisfixed
+- cheap.target.density
+- distance.pattern.time
+- distance.pattern.isconnected
+- distance.pattern.meandistance
+- distance.pattern.maxdistance
+- distance.pattern.proportiondistancege2
+- distance.pattern.proportiondistancege3
+- distance.pattern.proportiondistancege4
+- distance.target.time
+- distance.target.isconnected
+- distance.target.meandistance
+- distance.target.maxdistance
+- distance.target.proportiondistancege2
+- distance.target.proportiondistancege3
+- distance.target.proportiondistancege4
+- lad.values.removed
+- lad.values.removed.percent
+- lad.values.removed.min
+- lad.values.removed.max
+- lad.time
+features_stochastic: []
+metainfo_algorithms:
+  lad:
+    configuration: ""
+    deterministic: true
+  supplementallad:
+    configuration: ""
+    deterministic: true
+  vf2:
+    configuration: ""
+    deterministic: true
+  glasgow1:
+    configuration: ""
+    deterministic: true
+  glasgow2:
+    configuration: ""
+    deterministic: true
+  glasgow3:
+    configuration: ""
+    deterministic: true
+  glasgow4:
+    configuration: ""
+    deterministic: true                    
+performance_measures: runtime
+performance_type: runtime
+maximize: no
+algorithm_cutoff_time: 1.0e+08
+algorithm_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_cutoff_memory: '?'
+number_of_feature_steps: 5
+default_steps:
+- cheap_pattern
+- cheap_target
+- distance_pattern
+- distance_target
+- lad_features
+feature_steps:
+  cheap_pattern:
+    provides:
+    - cheap.pattern.time
+    - cheap.pattern.vertices
+    - cheap.pattern.edges
+    - cheap.pattern.loops
+    - cheap.pattern.meandeg
+    - cheap.pattern.maxdeg
+    - cheap.pattern.degisfixed
+    - cheap.pattern.density
+  cheap_target:
+    provides:
+    - cheap.target.time
+    - cheap.target.vertices
+    - cheap.target.edges
+    - cheap.target.loops
+    - cheap.target.meandeg
+    - cheap.target.maxdeg
+    - cheap.target.degisfixed
+    - cheap.target.density
+  distance_pattern:
+    provides:
+    - distance.pattern.time
+    - distance.pattern.isconnected
+    - distance.pattern.meandistance
+    - distance.pattern.maxdistance
+    - distance.pattern.proportiondistancege2
+    - distance.pattern.proportiondistancege3
+    - distance.pattern.proportiondistancege4
+  distance_target:
+    provides:
+    - distance.target.time
+    - distance.target.isconnected
+    - distance.target.meandistance
+    - distance.target.maxdistance
+    - distance.target.proportiondistancege2
+    - distance.target.proportiondistancege3
+    - distance.target.proportiondistancege4
+  lad_features:
+    provides:
+    - lad.values.removed
+    - lad.values.removed.percent
+    - lad.values.removed.min
+    - lad.values.removed.max
+    - lad.time
