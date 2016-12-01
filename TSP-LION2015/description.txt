@@ -147,10 +147,12 @@ metainfo_algorithms:
     configuration: "RUNS = 1 SEED = <seed> OPTIMUM = <optimal_tour> MAX_TRIALS = 100000000"
     deterministic: false                
 number_of_feature_steps: 4
-default_steps: ubc_cheap
+default_steps: 
+     - ubc_cheap
 feature_steps:
     ubc_cheap:
-        provides: num_nodes
+        provides: 
+            - num_nodes
             - cost_matrix_avg
             - cost_matrix_std
             - cost_matrix_skew
