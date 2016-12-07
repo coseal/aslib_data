@@ -1,0 +1,39 @@
+@relation FEATURES_RUNSTATUS_MUSIC_2016
+
+@attribute instance_id STRING
+@attribute repetition numeric
+@attribute all {ok, timeout, memout, not_applicable, crash, other}
+
+@data
+5017,1,ok
+5018,1,ok
+5019,1,ok
+5020,1,ok
+5021,1,ok
+5022,1,ok
+5023,1,ok
+5024,1,ok
+5025,1,ok
+5026,1,ok
+5027,1,ok
+5028,1,ok
+5029,1,ok
+5030,1,ok
+5031,1,ok
+5032,1,ok
+5001,1,ok
+5002,1,ok
+5003,1,ok
+5004,1,ok
+5005,1,ok
+5006,1,ok
+5007,1,ok
+5008,1,ok
+5009,1,ok
+5010,1,ok
+5011,1,ok
+5012,1,ok
+5013,1,ok
+5014,1,ok
+5015,1,ok
+5016,1,ok
