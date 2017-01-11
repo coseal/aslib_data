@@ -17,7 +17,7 @@
 @attribute DecisionStumpKappa {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute DefaultAccuracy {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute Dimensionality {ok, timeout, memout, presolved, crash, other, unknown}
-@attribute EquivalentNumberOfAtts {ok,other}
+@attribute EquivalentNumberOfAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute HoeffdingAdwin.changes {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute HoeffdingAdwin.warnings {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute HoeffdingDDM.changes {ok, timeout, memout, presolved, crash, other, unknown}
@@ -36,24 +36,24 @@
 @attribute kNN1NKappa {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MajorityClassPercentage {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MajorityClassSize {ok, timeout, memout, presolved, crash, other, unknown}
-@attribute MaxAttributeEntropy {ok,other}
+@attribute MaxAttributeEntropy {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MaxKurtosisOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MaxMeansOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
-@attribute MaxMutualInformation {ok,other}
+@attribute MaxMutualInformation {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MaxNominalAttDistinctValues {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MaxSkewnessOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MaxStdDevOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MeanAttributeEntropy {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MeanKurtosisOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MeanMeansOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
-@attribute MeanMutualInformation {ok,other}
+@attribute MeanMutualInformation {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MeanNominalAttDistinctValues {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MeanSkewnessOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MeanStdDevOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
-@attribute MinAttributeEntropy {ok,other}
+@attribute MinAttributeEntropy {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MinKurtosisOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MinMeansOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
-@attribute MinMutualInformation {ok,other}
+@attribute MinMutualInformation {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MinNominalAttDistinctValues {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MinorityClassPerentage {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute MinorityClassSize {ok, timeout, memout, presolved, crash, other, unknown}
@@ -66,7 +66,7 @@
 @attribute NaiveBayesDdm.warnings {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute NaiveBayesErrRate {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute NaiveBayesKappa {ok, timeout, memout, presolved, crash, other, unknown}
-@attribute NoiseToSignalRatio {ok,other}
+@attribute NoiseToSignalRatio {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute NumberOfBinaryFeatures {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute NumberOfClasses {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute NumberOfFeatures {ok, timeout, memout, presolved, crash, other, unknown}
@@ -80,22 +80,22 @@
 @attribute PercentageOfMissingValues {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute PercentageOfNumericFeatures {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute PercentageOfSymbolicFeatures {ok, timeout, memout, presolved, crash, other, unknown}
-@attribute Quartile1AttributeEntropy {ok,other}
+@attribute Quartile1AttributeEntropy {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute Quartile1KurtosisOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute Quartile1MeansOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
-@attribute Quartile1MutualInformation {ok,other}
+@attribute Quartile1MutualInformation {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute Quartile1SkewnessOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute Quartile1StdDevOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
-@attribute Quartile2AttributeEntropy {ok,other}
+@attribute Quartile2AttributeEntropy {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute Quartile2KurtosisOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute Quartile2MeansOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
-@attribute Quartile2MutualInformation {ok,other}
+@attribute Quartile2MutualInformation {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute Quartile2SkewnessOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute Quartile2StdDevOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
-@attribute Quartile3AttributeEntropy {ok,other}
+@attribute Quartile3AttributeEntropy {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute Quartile3KurtosisOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute Quartile3MeansOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
-@attribute Quartile3MutualInformation {ok,other}
+@attribute Quartile3MutualInformation {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute Quartile3SkewnessOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute Quartile3StdDevOfNumericAtts {ok, timeout, memout, presolved, crash, other, unknown}
 @attribute RandomTreeDepth1AUC {ok, timeout, memout, presolved, crash, other, unknown}
@@ -202,6 +202,7 @@ X184_kropt,1,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,o
 X186_braziltourism,1,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok
 X187_wine,1,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,other,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,other,ok,ok,other,ok,ok,ok,ok,ok,ok,other,ok,ok,ok,other,ok,ok,other,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,other,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,other,ok,ok,other,ok,ok,other,ok,ok,other,ok,ok,other,ok,ok,other,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok
 X188_eucalyptus,1,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok
+X18_mfeat.morphological,1,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,other,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,other,ok,ok,other,ok,ok,ok,ok,ok,ok,other,ok,ok,ok,other,ok,ok,other,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,other,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,other,ok,ok,other,ok,ok,other,ok,ok,other,ok,ok,other,ok,ok,other,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok
 X1_anneal,1,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok
 X20_mfeat.pixel,1,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok
 X21_car,1,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok,ok

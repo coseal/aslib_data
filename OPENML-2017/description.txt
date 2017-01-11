@@ -117,287 +117,330 @@ features_deterministic:
 - StdvNominalAttDistinctValues
 features_stochastic: []
 metainfo_algorithms:
-  X1068.weka.classifiers.trees.J48.....C.0.25..M.2:
+  1068_weka.classifiers.trees.J48_1:
+    configuration: -- -C 0.25 -M 2
+    deterministic: yes
+  1069_weka.classifiers.rules.ZeroR_2:
     configuration: ''
     deterministic: yes
-  X1069.weka.classifiers.rules.ZeroR:
+  1070_weka.classifiers.rules.Ridor_3:
+    configuration: -- -F 3 -S 1 -N 2.0
+    deterministic: yes
+  1071_weka.classifiers.rules.OneR_4:
+    configuration: -- -B 6
+    deterministic: yes
+  1073_weka.classifiers.rules.PART_5:
+    configuration: -- -M 2 -C 0.25 -Q 1
+    deterministic: yes
+  1074_weka.classifiers.rules.OLM_6:
+    configuration: -- -R 0 -C 1 -U 0
+    deterministic: yes
+  1075_weka.classifiers.rules.NNge_7:
+    configuration: -- -G 5 -I 5
+    deterministic: yes
+  1076_weka.classifiers.trees.SimpleCart_8:
+    configuration: -- -M 2.0 -N 5 -C 1.0 -S 1
+    deterministic: yes
+  1077_weka.classifiers.trees.REPTree_9:
+    configuration: -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    deterministic: yes
+  1078_weka.classifiers.trees.RandomTree_10:
+    configuration: -- -K 0 -M 1.0 -V 0.001 -S 1
+    deterministic: yes
+  1080_weka.classifiers.trees.NBTree_11:
     configuration: ''
     deterministic: yes
-  X1070.weka.classifiers.rules.Ridor.....F.3..S.1..N.2.0:
+  1082_weka.classifiers.trees.LMT_12:
+    configuration: -- -I -1 -M 15 -W 0.0
+    deterministic: yes
+  1084_weka.classifiers.trees.J48graft_13:
+    configuration: -- -C 0.25 -M 2
+    deterministic: yes
+  1087_weka.classifiers.trees.HoeffdingTree_14:
+    configuration: -- -L 2 -S 1 -E 1.0E-7 -H 0.05 -M 0.01 -G 200.0 -N 0.0
+    deterministic: yes
+  1088_weka.classifiers.trees.FT_15:
+    configuration: -- -I 15 -F 0 -M 15 -W 0.0
+    deterministic: yes
+  1090_weka.classifiers.trees.DecisionStump_16:
     configuration: ''
     deterministic: yes
-  X1071.weka.classifiers.rules.OneR.....B.6:
+  1091_weka.classifiers.trees.BFTree_17:
+    configuration: -- -M 2 -N 5 -C 1.0 -P POSTPRUNED -S 1
+    deterministic: yes
+  1094_weka.classifiers.rules.JRip_18:
+    configuration: -- -F 3 -N 2.0 -O 2 -S 1
+    deterministic: yes
+  1096_weka.classifiers.rules.DecisionTable_19:
+    configuration: -- -X 1 -S \weka.attributeSelection.BestFirst -D 1 -N 5\
+    deterministic: yes
+  1098_weka.classifiers.rules.ConjunctiveRule_20:
+    configuration: -- -N 3 -M 2.0 -P -1 -S 1
+    deterministic: yes
+  1099_weka.classifiers.misc.CHIRP_21:
+    configuration: -- -V 7 -S 1
+    deterministic: yes
+  1100_weka.classifiers.misc.HyperPipes_22:
     configuration: ''
     deterministic: yes
-  X1073.weka.classifiers.rules.PART.....M.2..C.0.25..Q.1:
+  1101_weka.classifiers.misc.InputMappedClassifier_23:
+    configuration: -- -I -trim -W weka.classifiers.rules.ZeroR
+    deterministic: yes
+  1103_weka.classifiers.misc.VFI_24:
+    configuration: -- -B 0.6
+    deterministic: yes
+  1104_weka.classifiers.lazy.IB1_25:
     configuration: ''
     deterministic: yes
-  X1074.weka.classifiers.rules.OLM.....R.0..C.1..U.0:
+  1105_weka.classifiers.lazy.IBk_26:
+    configuration: -- -K 1 -W 0 -A \weka.core.neighboursearch.LinearNNSearch -A \\\weka.core.EuclideanDistance
+      -R first-last\\\\
+    deterministic: yes
+  1105_weka.classifiers.lazy.IBk_27:
+    configuration: -- -K 3 -W 0 -A \weka.core.neighboursearch.LinearNNSearch -A \\\weka.core.EuclideanDistance
+      -R first-last\\\\
+    deterministic: yes
+  1105_weka.classifiers.lazy.IBk_28:
+    configuration: -- -K 5 -W 0 -A \weka.core.neighboursearch.LinearNNSearch -A \\\weka.core.EuclideanDistance
+      -R first-last\\\\
+    deterministic: yes
+  1106_weka.classifiers.lazy.KStar_29:
+    configuration: -- -B 20 -M a
+    deterministic: yes
+  1108_weka.classifiers.lazy.LWL_30:
+    configuration: -- -U 0 -K -1 -A \weka.core.neighboursearch.LinearNNSearch -A \\\weka.core.EuclideanDistance
+      -R first-last\\\\ -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1111_weka.classifiers.functions.KernelLogisticRegression_31:
+    configuration: -- -S 1 -K \weka.classifiers.functions.supportVector.PolyKernel
+      -E 1.0 -C 250007\ -L 0.01 -P 1 -E 1
+    deterministic: yes
+  1112_weka.classifiers.functions.LibLINEAR_32:
+    configuration: -- -S 1 -C 1.0 -E 0.001 -B 1.0
+    deterministic: yes
+  1112_weka.classifiers.functions.LibLINEAR_33:
+    configuration: -- -S 1 -C 1.0 -E 0.01 -B 1.0
+    deterministic: yes
+  1114_weka.classifiers.functions.Logistic_34:
+    configuration: -- -R 1.0E-8 -M -1
+    deterministic: yes
+  1117_weka.classifiers.functions.RBFClassifier_35:
+    configuration: -- -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 1
+    deterministic: yes
+  1120_weka.classifiers.functions.SGD_36:
+    configuration: -- -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S 1
+    deterministic: yes
+  1154_weka.classifiers.bayes.NaiveBayes_37:
     configuration: ''
     deterministic: yes
-  X1075.weka.classifiers.rules.NNge.....G.5..I.5:
-    configuration: ''
+  1155_weka.classifiers.meta.FilteredClassifier_38:
+    configuration: -- -F \weka.filters.unsupervised.attribute.Standardize \ -W weka.classifiers.bayes.NaiveBayes
     deterministic: yes
-  X1076.weka.classifiers.trees.SimpleCart.....M.2.0..N.5..C.1.0..S.1:
-    configuration: ''
+  1160_weka.classifiers.meta.AttributeSelectedClassifier_39:
+    configuration: -- -E \weka.attributeSelection.PrincipalComponents -R 0.95 -A 5\
+      -S \weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1\ -W weka.classifiers.trees.J48
+      -- -C 0.25 -M 2
     deterministic: yes
-  X1077.weka.classifiers.trees.REPTree.....M.2..V.0.001..N.3..S.1..L..1..I.0.0:
-    configuration: ''
+  1163_weka.classifiers.meta.FilteredClassifier_40:
+    configuration: -- -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 0.95 -A 5 -M -1\ -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
     deterministic: yes
-  X1078.weka.classifiers.trees.RandomTree.....K.0..M.1.0..V.0.001..S.1:
-    configuration: ''
+  1165_weka.classifiers.bayes.AveragedNDependenceEstimators.A1DE_41:
+    configuration: -- -F 1 -M 1.0
     deterministic: yes
-  X1080.weka.classifiers.trees.NBTree:
-    configuration: ''
+  1166_weka.classifiers.bayes.AveragedNDependenceEstimators.A2DE_42:
+    configuration: -- -F 1 -M 1.0
     deterministic: yes
-  X1082.weka.classifiers.trees.LMT.....I..1..M.15..W.0.0:
-    configuration: ''
+  1168_weka.classifiers.bayes.BayesNet_43:
+    configuration: -- -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S
+      BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
     deterministic: yes
-  X1084.weka.classifiers.trees.J48graft.....C.0.25..M.2:
-    configuration: ''
+  1172_weka.classifiers.functions.LibSVM_44:
+    configuration: -- -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001
+      -P 0.1 -model /Users/joa/Downloads/weka-3-7-12 -seed 1
     deterministic: yes
-  X1087.weka.classifiers.trees.HoeffdingTree.....L.2..S.1..E.1.0E.7..H.0.05..M.0.01..G.200.0..N.0.0:
-    configuration: ''
+  1174_weka.classifiers.functions.KernelLogisticRegression_45:
+    configuration: -- -S 1 -K \weka.classifiers.functions.supportVector.RBFKernel
+      -G 0.01 -C 250007\ -L 0.01 -P 1 -E 1
     deterministic: yes
-  X1088.weka.classifiers.trees.FT.....I.15..F.0..M.15..W.0.0:
-    configuration: ''
+  1177_weka.classifiers.functions.SimpleLogistic_46:
+    configuration: -- -I 0 -M 500 -H 50 -W 0.0
     deterministic: yes
-  X1090.weka.classifiers.trees.DecisionStump:
-    configuration: ''
+  1178_weka.classifiers.functions.SMO_47:
+    configuration: -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K \weka.classifiers.functions.supportVector.PolyKernel
+      -E 1.0 -C 250007\
     deterministic: yes
-  X1091.weka.classifiers.trees.BFTree.....M.2..N.5..C.1.0..P.POSTPRUNED..S.1:
-    configuration: ''
+  1179_weka.classifiers.functions.SMO_48:
+    configuration: -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K \weka.classifiers.functions.supportVector.RBFKernel
+      -G 0.01 -C 250007\
     deterministic: yes
-  X1094.weka.classifiers.rules.JRip.....F.3..N.2.0..O.2..S.1:
-    configuration: ''
+  1180_weka.classifiers.functions.SPegasos_49:
+    configuration: -- -F 0 -L 1.0E-4 -E 500
     deterministic: yes
-  X1096.weka.classifiers.rules.DecisionTable.....X.1..S..weka.attributeSelection.BestFirst..D.1..N.5.:
-    configuration: ''
+  1182_weka.classifiers.meta.AdaBoostM1_50:
+    configuration: -- -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1098.weka.classifiers.rules.ConjunctiveRule.....N.3..M.2.0..P..1..S.1:
-    configuration: ''
+  1182_weka.classifiers.meta.AdaBoostM1_51:
+    configuration: -- -P 100 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1099.weka.classifiers.misc.CHIRP.....V.7..S.1:
-    configuration: ''
+  1182_weka.classifiers.meta.AdaBoostM1_52:
+    configuration: -- -P 100 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1100.weka.classifiers.misc.HyperPipes:
-    configuration: ''
+  1182_weka.classifiers.meta.AdaBoostM1_53:
+    configuration: -- -P 100 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1101.weka.classifiers.misc.InputMappedClassifier.....I..trim..W.weka.classifiers.rules.ZeroR:
-    configuration: ''
+  1182_weka.classifiers.meta.AdaBoostM1_54:
+    configuration: -- -P 100 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1103.weka.classifiers.misc.VFI.....B.0.6:
-    configuration: ''
+  1183_weka.classifiers.meta.AttributeSelectedClassifier_55:
+    configuration: -- -E \weka.attributeSelection.CfsSubsetEval -P 1 -E 1\ -S \weka.attributeSelection.BestFirst
+      -D 1 -N 5\ -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
     deterministic: yes
-  X1104.weka.classifiers.lazy.IB1:
-    configuration: ''
+  1185_weka.classifiers.meta.Bagging_56:
+    configuration: -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
     deterministic: yes
-  ? X1105.weka.classifiers.lazy.IBk.....K.1..W.0..A..weka.core.neighboursearch.LinearNNSearch..A....weka.core.EuclideanDistance..R.first.last....
-  : configuration: ''
+  1185_weka.classifiers.meta.Bagging_57:
+    configuration: -- -P 100 -S 1 -num-slots 1 -I 160 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
     deterministic: yes
-  ? X1105.weka.classifiers.lazy.IBk.....K.3..W.0..A..weka.core.neighboursearch.LinearNNSearch..A....weka.core.EuclideanDistance..R.first.last....
-  : configuration: ''
+  1185_weka.classifiers.meta.Bagging_58:
+    configuration: -- -P 100 -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
     deterministic: yes
-  ? X1105.weka.classifiers.lazy.IBk.....K.5..W.0..A..weka.core.neighboursearch.LinearNNSearch..A....weka.core.EuclideanDistance..R.first.last....
-  : configuration: ''
+  1185_weka.classifiers.meta.Bagging_59:
+    configuration: -- -P 100 -S 1 -num-slots 1 -I 40 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
     deterministic: yes
-  X1106.weka.classifiers.lazy.KStar.....B.20..M.a:
-    configuration: ''
+  1185_weka.classifiers.meta.Bagging_60:
+    configuration: -- -P 100 -S 1 -num-slots 1 -I 80 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
     deterministic: yes
-  ? X1108.weka.classifiers.lazy.LWL.....U.0..K..1..A..weka.core.neighboursearch.LinearNNSearch..A....weka.core.EuclideanDistance..R.first.last......W.weka.classifiers.trees.DecisionStump
-  : configuration: ''
+  1186_weka.classifiers.meta.Dagging_61:
+    configuration: -- -F 10 -S 1 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  ? X1111.weka.classifiers.functions.KernelLogisticRegression.....S.1..K..weka.classifiers.functions.supportVector.PolyKernel..E.1.0..C.250007...L.0.01..P.1..E.1
-  : configuration: ''
+  1187_weka.classifiers.meta.Decorate_62:
+    configuration: -- -E 15 -R 1.0 -S 1 -I 50 -W weka.classifiers.trees.J48 -- -C
+      0.25 -M 2
     deterministic: yes
-  X1112.weka.classifiers.functions.LibLINEAR.....S.1..C.1.0..E.0.001..B.1.0:
-    configuration: ''
+  1188_weka.classifiers.meta.END_63:
+    configuration: -- -S 1 -I 10 -W weka.classifiers.meta.nestedDichotomies.ND --
+      -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
     deterministic: yes
-  X1112.weka.classifiers.functions.LibLINEAR.....S.1..C.1.0..E.0.01..B.1.0:
-    configuration: ''
+  1190_weka.classifiers.meta.Grading_64:
+    configuration: -- -X 10 -M \weka.classifiers.rules.ZeroR \ -S 1 -num-slots 1 -B
+      \weka.classifiers.rules.ZeroR \
     deterministic: yes
-  X1114.weka.classifiers.functions.Logistic.....R.1.0E.8..M..1:
-    configuration: ''
+  1191_weka.classifiers.meta.LogitBoost_65:
+    configuration: -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S
+      1 -I 10 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1117.weka.classifiers.functions.RBFClassifier.....N.2..R.0.01..L.1.0E.6..C.2..P.1..E.1..S.1:
-    configuration: ''
+  1191_weka.classifiers.meta.LogitBoost_66:
+    configuration: -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S
+      1 -I 160 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1120.weka.classifiers.functions.SGD.....F.0..L.0.01..R.1.0E.4..E.500..C.0.001..S.1:
-    configuration: ''
+  1191_weka.classifiers.meta.LogitBoost_67:
+    configuration: -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S
+      1 -I 20 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1154.weka.classifiers.bayes.NaiveBayes:
-    configuration: ''
+  1191_weka.classifiers.meta.LogitBoost_68:
+    configuration: -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S
+      1 -I 40 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  ? X1155.weka.classifiers.meta.FilteredClassifier.....F..weka.filters.unsupervised.attribute.Standardize....W.weka.classifiers.bayes.NaiveBayes
-  : configuration: ''
+  1191_weka.classifiers.meta.LogitBoost_69:
+    configuration: -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S
+      1 -I 80 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  ? X1160.weka.classifiers.meta.AttributeSelectedClassifier.....E..weka.attributeSelection.PrincipalComponents..R.0.95..A.5...S..weka.attributeSelection.Ranker..T..1.7976931348623157E308..N..1...W.weka.classifiers.trees.J48.....C.0.25..M.2
-  : configuration: ''
+  1192_weka.classifiers.meta.MultiBoostAB_70:
+    configuration: -- -C 3 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  ? X1163.weka.classifiers.meta.FilteredClassifier.....F..weka.filters.unsupervised.attribute.PrincipalComponents..R.0.95..A.5..M..1...W.weka.classifiers.trees.J48.....C.0.25..M.2
-  : configuration: ''
+  1192_weka.classifiers.meta.MultiBoostAB_71:
+    configuration: -- -C 3 -P 100 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1165.weka.classifiers.bayes.AveragedNDependenceEstimators.A1DE.....F.1..M.1.0:
-    configuration: ''
+  1192_weka.classifiers.meta.MultiBoostAB_72:
+    configuration: -- -C 3 -P 100 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1166.weka.classifiers.bayes.AveragedNDependenceEstimators.A2DE.....F.1..M.1.0:
-    configuration: ''
+  1192_weka.classifiers.meta.MultiBoostAB_73:
+    configuration: -- -C 3 -P 100 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  ? X1168.weka.classifiers.bayes.BayesNet.....D..Q.weka.classifiers.bayes.net.search.local.K2.....P.1..S.BAYES..E.weka.classifiers.bayes.net.estimate.SimpleEstimator.....A.0.5
-  : configuration: ''
+  1192_weka.classifiers.meta.MultiBoostAB_74:
+    configuration: -- -C 3 -P 100 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  ? X1172.weka.classifiers.functions.LibSVM.....S.0..K.2..D.3..G.0.0..R.0.0..N.0.5..M.40.0..C.1.0..E.0.001..P.0.1..model..Users.joa.Downloads.weka.3.7.12..seed.1
-  : configuration: ''
+  1193_weka.classifiers.meta.RacedIncrementalLogitBoost_75:
+    configuration: -- -C 500 -M 2000 -V 1000 -P 1 -S 1 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  ? X1174.weka.classifiers.functions.KernelLogisticRegression.....S.1..K..weka.classifiers.functions.supportVector.RBFKernel..G.0.01..C.250007...L.0.01..P.1..E.1
-  : configuration: ''
+  1194_weka.classifiers.meta.RandomSubSpace_76:
+    configuration: -- -P 0.5 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
     deterministic: yes
-  X1177.weka.classifiers.functions.SimpleLogistic.....I.0..M.500..H.50..W.0.0:
-    configuration: ''
+  1194_weka.classifiers.meta.RandomSubSpace_77:
+    configuration: -- -P 0.5 -S 1 -num-slots 1 -I 160 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
     deterministic: yes
-  ? X1178.weka.classifiers.functions.SMO.....C.1.0..L.0.001..P.1.0E.12..N.0..V..1..W.1..K..weka.classifiers.functions.supportVector.PolyKernel..E.1.0..C.250007.
-  : configuration: ''
+  1194_weka.classifiers.meta.RandomSubSpace_78:
+    configuration: -- -P 0.5 -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
     deterministic: yes
-  ? X1179.weka.classifiers.functions.SMO.....C.1.0..L.0.001..P.1.0E.12..N.0..V..1..W.1..K..weka.classifiers.functions.supportVector.RBFKernel..G.0.01..C.250007.
-  : configuration: ''
+  1194_weka.classifiers.meta.RandomSubSpace_79:
+    configuration: -- -P 0.5 -S 1 -num-slots 1 -I 40 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
     deterministic: yes
-  X1180.weka.classifiers.functions.SPegasos.....F.0..L.1.0E.4..E.500:
-    configuration: ''
+  1194_weka.classifiers.meta.RandomSubSpace_80:
+    configuration: -- -P 0.5 -S 1 -num-slots 1 -I 80 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
     deterministic: yes
-  X1182.weka.classifiers.meta.AdaBoostM1.....P.100..S.1..I.10..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
+  1195_weka.classifiers.meta.RealAdaBoost_81:
+    configuration: -- -P 100 -H 1.0 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1182.weka.classifiers.meta.AdaBoostM1.....P.100..S.1..I.160..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
+  1195_weka.classifiers.meta.RealAdaBoost_82:
+    configuration: -- -P 100 -H 1.0 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1182.weka.classifiers.meta.AdaBoostM1.....P.100..S.1..I.20..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
+  1195_weka.classifiers.meta.RealAdaBoost_83:
+    configuration: -- -P 100 -H 1.0 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1182.weka.classifiers.meta.AdaBoostM1.....P.100..S.1..I.40..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
+  1195_weka.classifiers.meta.RealAdaBoost_84:
+    configuration: -- -P 100 -H 1.0 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  X1182.weka.classifiers.meta.AdaBoostM1.....P.100..S.1..I.80..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
+  1195_weka.classifiers.meta.RealAdaBoost_85:
+    configuration: -- -P 100 -H 1.0 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
     deterministic: yes
-  ? X1183.weka.classifiers.meta.AttributeSelectedClassifier.....E..weka.attributeSelection.CfsSubsetEval..P.1..E.1...S..weka.attributeSelection.BestFirst..D.1..N.5...W.weka.classifiers.trees.J48.....C.0.25..M.2
-  : configuration: ''
+  1196_weka.classifiers.meta.RotationForest_86:
+    configuration: -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.J48 --
+      -C 0.25 -M 2
     deterministic: yes
-  ? X1185.weka.classifiers.meta.Bagging.....P.100..S.1..num.slots.1..I.10..W.weka.classifiers.trees.REPTree.....M.2..V.0.001..N.3..S.1..L..1..I.0.0
-  : configuration: ''
+  1196_weka.classifiers.meta.RotationForest_87:
+    configuration: -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 160 -W weka.classifiers.trees.J48 --
+      -C 0.25 -M 2
     deterministic: yes
-  ? X1185.weka.classifiers.meta.Bagging.....P.100..S.1..num.slots.1..I.160..W.weka.classifiers.trees.REPTree.....M.2..V.0.001..N.3..S.1..L..1..I.0.0
-  : configuration: ''
+  1196_weka.classifiers.meta.RotationForest_88:
+    configuration: -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.J48 --
+      -C 0.25 -M 2
     deterministic: yes
-  ? X1185.weka.classifiers.meta.Bagging.....P.100..S.1..num.slots.1..I.20..W.weka.classifiers.trees.REPTree.....M.2..V.0.001..N.3..S.1..L..1..I.0.0
-  : configuration: ''
+  1196_weka.classifiers.meta.RotationForest_89:
+    configuration: -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 40 -W weka.classifiers.trees.J48 --
+      -C 0.25 -M 2
     deterministic: yes
-  ? X1185.weka.classifiers.meta.Bagging.....P.100..S.1..num.slots.1..I.40..W.weka.classifiers.trees.REPTree.....M.2..V.0.001..N.3..S.1..L..1..I.0.0
-  : configuration: ''
+  1196_weka.classifiers.meta.RotationForest_90:
+    configuration: -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 80 -W weka.classifiers.trees.J48 --
+      -C 0.25 -M 2
     deterministic: yes
-  ? X1185.weka.classifiers.meta.Bagging.....P.100..S.1..num.slots.1..I.80..W.weka.classifiers.trees.REPTree.....M.2..V.0.001..N.3..S.1..L..1..I.0.0
-  : configuration: ''
+  1197_weka.classifiers.rules.FURIA_91:
+    configuration: -- -F 3 -N 2.0 -O 2 -S 1 -p 0 -s 0
     deterministic: yes
-  X1186.weka.classifiers.meta.Dagging.....F.10..S.1..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
+  1199_weka.classifiers.trees.ADTree_92:
+    configuration: -- -B 10 -E -3 -S 1
     deterministic: yes
-  X1187.weka.classifiers.meta.Decorate.....E.15..R.1.0..S.1..I.50..W.weka.classifiers.trees.J48.....C.0.25..M.2:
-    configuration: ''
+  1200_weka.classifiers.trees.LADTree_93:
+    configuration: -- -B 10
     deterministic: yes
-  ? X1188.weka.classifiers.meta.END.....S.1..I.10..W.weka.classifiers.meta.nestedDichotomies.ND.....S.1..W.weka.classifiers.trees.J48.....C.0.25..M.2
-  : configuration: ''
-    deterministic: yes
-  ? X1190.weka.classifiers.meta.Grading.....X.10..M..weka.classifiers.rules.ZeroR....S.1..num.slots.1..B..weka.classifiers.rules.ZeroR..
-  : configuration: ''
-    deterministic: yes
-  ? X1191.weka.classifiers.meta.LogitBoost.....P.100..L..1.7976931348623157E308..H.1.0..Z.3.0..O.1..E.1..S.1..I.10..W.weka.classifiers.trees.DecisionStump
-  : configuration: ''
-    deterministic: yes
-  ? X1191.weka.classifiers.meta.LogitBoost.....P.100..L..1.7976931348623157E308..H.1.0..Z.3.0..O.1..E.1..S.1..I.160..W.weka.classifiers.trees.DecisionStump
-  : configuration: ''
-    deterministic: yes
-  ? X1191.weka.classifiers.meta.LogitBoost.....P.100..L..1.7976931348623157E308..H.1.0..Z.3.0..O.1..E.1..S.1..I.20..W.weka.classifiers.trees.DecisionStump
-  : configuration: ''
-    deterministic: yes
-  ? X1191.weka.classifiers.meta.LogitBoost.....P.100..L..1.7976931348623157E308..H.1.0..Z.3.0..O.1..E.1..S.1..I.40..W.weka.classifiers.trees.DecisionStump
-  : configuration: ''
-    deterministic: yes
-  ? X1191.weka.classifiers.meta.LogitBoost.....P.100..L..1.7976931348623157E308..H.1.0..Z.3.0..O.1..E.1..S.1..I.80..W.weka.classifiers.trees.DecisionStump
-  : configuration: ''
-    deterministic: yes
-  X1192.weka.classifiers.meta.MultiBoostAB.....C.3..P.100..S.1..I.10..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
-    deterministic: yes
-  X1192.weka.classifiers.meta.MultiBoostAB.....C.3..P.100..S.1..I.160..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
-    deterministic: yes
-  X1192.weka.classifiers.meta.MultiBoostAB.....C.3..P.100..S.1..I.20..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
-    deterministic: yes
-  X1192.weka.classifiers.meta.MultiBoostAB.....C.3..P.100..S.1..I.40..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
-    deterministic: yes
-  X1192.weka.classifiers.meta.MultiBoostAB.....C.3..P.100..S.1..I.80..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
-    deterministic: yes
-  ? X1193.weka.classifiers.meta.RacedIncrementalLogitBoost.....C.500..M.2000..V.1000..P.1..S.1..W.weka.classifiers.trees.DecisionStump
-  : configuration: ''
-    deterministic: yes
-  ? X1194.weka.classifiers.meta.RandomSubSpace.....P.0.5..S.1..num.slots.1..I.10..W.weka.classifiers.trees.REPTree.....M.2..V.0.001..N.3..S.1..L..1..I.0.0
-  : configuration: ''
-    deterministic: yes
-  ? X1194.weka.classifiers.meta.RandomSubSpace.....P.0.5..S.1..num.slots.1..I.160..W.weka.classifiers.trees.REPTree.....M.2..V.0.001..N.3..S.1..L..1..I.0.0
-  : configuration: ''
-    deterministic: yes
-  ? X1194.weka.classifiers.meta.RandomSubSpace.....P.0.5..S.1..num.slots.1..I.20..W.weka.classifiers.trees.REPTree.....M.2..V.0.001..N.3..S.1..L..1..I.0.0
-  : configuration: ''
-    deterministic: yes
-  ? X1194.weka.classifiers.meta.RandomSubSpace.....P.0.5..S.1..num.slots.1..I.40..W.weka.classifiers.trees.REPTree.....M.2..V.0.001..N.3..S.1..L..1..I.0.0
-  : configuration: ''
-    deterministic: yes
-  ? X1194.weka.classifiers.meta.RandomSubSpace.....P.0.5..S.1..num.slots.1..I.80..W.weka.classifiers.trees.REPTree.....M.2..V.0.001..N.3..S.1..L..1..I.0.0
-  : configuration: ''
-    deterministic: yes
-  X1195.weka.classifiers.meta.RealAdaBoost.....P.100..H.1.0..S.1..I.10..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
-    deterministic: yes
-  X1195.weka.classifiers.meta.RealAdaBoost.....P.100..H.1.0..S.1..I.160..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
-    deterministic: yes
-  X1195.weka.classifiers.meta.RealAdaBoost.....P.100..H.1.0..S.1..I.20..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
-    deterministic: yes
-  X1195.weka.classifiers.meta.RealAdaBoost.....P.100..H.1.0..S.1..I.40..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
-    deterministic: yes
-  X1195.weka.classifiers.meta.RealAdaBoost.....P.100..H.1.0..S.1..I.80..W.weka.classifiers.trees.DecisionStump:
-    configuration: ''
-    deterministic: yes
-  ? X1196.weka.classifiers.meta.RotationForest.....G.3..H.3..P.50..F..weka.filters.unsupervised.attribute.PrincipalComponents..R.1.0..A.5..M..1...S.1..num.slots.1..I.10..W.weka.classifiers.trees.J48.....C.0.25..M.2
-  : configuration: ''
-    deterministic: yes
-  ? X1196.weka.classifiers.meta.RotationForest.....G.3..H.3..P.50..F..weka.filters.unsupervised.attribute.PrincipalComponents..R.1.0..A.5..M..1...S.1..num.slots.1..I.160..W.weka.classifiers.trees.J48.....C.0.25..M.2
-  : configuration: ''
-    deterministic: yes
-  ? X1196.weka.classifiers.meta.RotationForest.....G.3..H.3..P.50..F..weka.filters.unsupervised.attribute.PrincipalComponents..R.1.0..A.5..M..1...S.1..num.slots.1..I.20..W.weka.classifiers.trees.J48.....C.0.25..M.2
-  : configuration: ''
-    deterministic: yes
-  ? X1196.weka.classifiers.meta.RotationForest.....G.3..H.3..P.50..F..weka.filters.unsupervised.attribute.PrincipalComponents..R.1.0..A.5..M..1...S.1..num.slots.1..I.40..W.weka.classifiers.trees.J48.....C.0.25..M.2
-  : configuration: ''
-    deterministic: yes
-  ? X1196.weka.classifiers.meta.RotationForest.....G.3..H.3..P.50..F..weka.filters.unsupervised.attribute.PrincipalComponents..R.1.0..A.5..M..1...S.1..num.slots.1..I.80..W.weka.classifiers.trees.J48.....C.0.25..M.2
-  : configuration: ''
-    deterministic: yes
-  X1197.weka.classifiers.rules.FURIA.....F.3..N.2.0..O.2..S.1..p.0..s.0:
-    configuration: ''
-    deterministic: yes
-  X1199.weka.classifiers.trees.ADTree.....B.10..E..3..S.1:
-    configuration: ''
-    deterministic: yes
-  X1200.weka.classifiers.trees.LADTree.....B.10:
-    configuration: ''
-    deterministic: yes
-  ? X1244.weka.classifiers.meta.FilteredClassifier.....F..weka.filters.supervised.attribute.Discretize..R.first.last..precision.6...W.weka.classifiers.trees.J48.....C.0.25..M.2
-  : configuration: ''
+  1244_weka.classifiers.meta.FilteredClassifier_94:
+    configuration: -- -F \weka.filters.supervised.attribute.Discretize -R first-last
+      -precision 6\ -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
     deterministic: yes
 performance_measures:
 - acc
