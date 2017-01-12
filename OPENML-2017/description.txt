@@ -1,4 +1,4 @@
-scenario_id: openml
+scenario_id: OPENML-2017
 features_deterministic:
 - CfsSubsetEval_DecisionStumpAUC
 - CfsSubsetEval_DecisionStumpErrRate
