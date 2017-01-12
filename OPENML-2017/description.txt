@@ -445,7 +445,7 @@ metainfo_algorithms:
 performance_measures:
 - acc
 performance_type:
-- quality
+- solution_quality
 maximize:
 - yes
 algorithm_cutoff_time: '?'
