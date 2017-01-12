@@ -571,232 +571,347 @@ default_steps:
 - StdvNominalAttDistinctValues
 feature_steps:
   CfsSubsetEval_DecisionStumpAUC:
-    provides: CfsSubsetEval_DecisionStumpAUC
+    provides: 
+      - CfsSubsetEval_DecisionStumpAUC
   CfsSubsetEval_DecisionStumpErrRate:
-    provides: CfsSubsetEval_DecisionStumpErrRate
+    provides: 
+      - CfsSubsetEval_DecisionStumpErrRate
   CfsSubsetEval_DecisionStumpKappa:
-    provides: CfsSubsetEval_DecisionStumpKappa
+    provides: 
+      - CfsSubsetEval_DecisionStumpKappa
   CfsSubsetEval_kNN1NAUC:
-    provides: CfsSubsetEval_kNN1NAUC
+    provides: 
+      - CfsSubsetEval_kNN1NAUC
   CfsSubsetEval_kNN1NErrRate:
-    provides: CfsSubsetEval_kNN1NErrRate
+    provides: 
+      - CfsSubsetEval_kNN1NErrRate
   CfsSubsetEval_kNN1NKappa:
-    provides: CfsSubsetEval_kNN1NKappa
+    provides: 
+      - CfsSubsetEval_kNN1NKappa
   CfsSubsetEval_NaiveBayesAUC:
-    provides: CfsSubsetEval_NaiveBayesAUC
+    provides: 
+      - CfsSubsetEval_NaiveBayesAUC
   CfsSubsetEval_NaiveBayesErrRate:
-    provides: CfsSubsetEval_NaiveBayesErrRate
+    provides: 
+      - CfsSubsetEval_NaiveBayesErrRate
   CfsSubsetEval_NaiveBayesKappa:
-    provides: CfsSubsetEval_NaiveBayesKappa
+    provides: 
+      - CfsSubsetEval_NaiveBayesKappa
   ClassEntropy:
-    provides: ClassEntropy
+    provides: 
+      - ClassEntropy
   DecisionStumpAUC:
-    provides: DecisionStumpAUC
+    provides: 
+      - DecisionStumpAUC
   DecisionStumpErrRate:
-    provides: DecisionStumpErrRate
+    provides: 
+      - DecisionStumpErrRate
   DecisionStumpKappa:
-    provides: DecisionStumpKappa
+    provides: 
+      - DecisionStumpKappa
   DefaultAccuracy:
-    provides: DefaultAccuracy
+    provides: 
+      - DefaultAccuracy
   Dimensionality:
-    provides: Dimensionality
+    provides: 
+      - Dimensionality
   EquivalentNumberOfAtts:
-    provides: EquivalentNumberOfAtts
+    provides: 
+      - EquivalentNumberOfAtts
   HoeffdingAdwin.changes:
-    provides: HoeffdingAdwin.changes
+    provides: 
+      - HoeffdingAdwin.changes
   HoeffdingAdwin.warnings:
-    provides: HoeffdingAdwin.warnings
+    provides: 
+      - HoeffdingAdwin.warnings
   HoeffdingDDM.changes:
-    provides: HoeffdingDDM.changes
+    provides: 
+      - HoeffdingDDM.changes
   HoeffdingDDM.warnings:
-    provides: HoeffdingDDM.warnings
+    provides: 
+      - HoeffdingDDM.warnings
   J48.00001.AUC:
-    provides: J48.00001.AUC
+    provides: 
+      - J48.00001.AUC
   J48.00001.ErrRate:
-    provides: J48.00001.ErrRate
+    provides: 
+      - J48.00001.ErrRate
   J48.00001.Kappa:
-    provides: J48.00001.Kappa
+    provides: 
+      - J48.00001.Kappa
   J48.0001.AUC:
-    provides: J48.0001.AUC
+    provides: 
+      - J48.0001.AUC
   J48.0001.ErrRate:
-    provides: J48.0001.ErrRate
+    provides: 
+      - J48.0001.ErrRate
   J48.0001.Kappa:
-    provides: J48.0001.Kappa
+    provides: 
+      - J48.0001.Kappa
   J48.001.AUC:
-    provides: J48.001.AUC
+    provides: 
+      - J48.001.AUC
   J48.001.ErrRate:
-    provides: J48.001.ErrRate
+    provides: 
+      - J48.001.ErrRate
   J48.001.Kappa:
-    provides: J48.001.Kappa
+    provides: 
+      - J48.001.Kappa
   kNN1NAUC:
-    provides: kNN1NAUC
+    provides: 
+      - kNN1NAUC
   kNN1NErrRate:
-    provides: kNN1NErrRate
+    provides: 
+      - kNN1NErrRate
   kNN1NKappa:
-    provides: kNN1NKappa
+    provides: 
+      - kNN1NKappa
   MajorityClassPercentage:
-    provides: MajorityClassPercentage
+    provides: 
+      - MajorityClassPercentage
   MajorityClassSize:
-    provides: MajorityClassSize
+    provides: 
+      - MajorityClassSize
   MaxAttributeEntropy:
-    provides: MaxAttributeEntropy
+    provides: 
+      - MaxAttributeEntropy
   MaxKurtosisOfNumericAtts:
-    provides: MaxKurtosisOfNumericAtts
+    provides: 
+      - MaxKurtosisOfNumericAtts
   MaxMeansOfNumericAtts:
-    provides: MaxMeansOfNumericAtts
+    provides: 
+      - MaxMeansOfNumericAtts
   MaxMutualInformation:
-    provides: MaxMutualInformation
+    provides: 
+      - MaxMutualInformation
   MaxNominalAttDistinctValues:
-    provides: MaxNominalAttDistinctValues
+    provides: 
+      - MaxNominalAttDistinctValues
   MaxSkewnessOfNumericAtts:
-    provides: MaxSkewnessOfNumericAtts
+    provides: 
+      - MaxSkewnessOfNumericAtts
   MaxStdDevOfNumericAtts:
-    provides: MaxStdDevOfNumericAtts
+    provides: 
+      - MaxStdDevOfNumericAtts
   MeanAttributeEntropy:
-    provides: MeanAttributeEntropy
+    provides: 
+      - MeanAttributeEntropy
   MeanKurtosisOfNumericAtts:
-    provides: MeanKurtosisOfNumericAtts
+    provides: 
+      - MeanKurtosisOfNumericAtts
   MeanMeansOfNumericAtts:
-    provides: MeanMeansOfNumericAtts
+    provides: 
+      - MeanMeansOfNumericAtts
   MeanMutualInformation:
-    provides: MeanMutualInformation
+    provides: 
+      - MeanMutualInformation
   MeanNominalAttDistinctValues:
-    provides: MeanNominalAttDistinctValues
+    provides: 
+      - MeanNominalAttDistinctValues
   MeanSkewnessOfNumericAtts:
-    provides: MeanSkewnessOfNumericAtts
+    provides: 
+      - MeanSkewnessOfNumericAtts
   MeanStdDevOfNumericAtts:
-    provides: MeanStdDevOfNumericAtts
+    provides: 
+      - MeanStdDevOfNumericAtts
   MinAttributeEntropy:
-    provides: MinAttributeEntropy
+    provides: 
+      - MinAttributeEntropy
   MinKurtosisOfNumericAtts:
-    provides: MinKurtosisOfNumericAtts
+    provides: 
+      - MinKurtosisOfNumericAtts
   MinMeansOfNumericAtts:
-    provides: MinMeansOfNumericAtts
+    provides: 
+      - MinMeansOfNumericAtts
   MinMutualInformation:
-    provides: MinMutualInformation
+    provides: 
+      - MinMutualInformation
   MinNominalAttDistinctValues:
-    provides: MinNominalAttDistinctValues
+    provides: 
+      - MinNominalAttDistinctValues
   MinorityClassPerentage:
-    provides: MinorityClassPerentage
+    provides: 
+      - MinorityClassPerentage
   MinorityClassSize:
-    provides: MinorityClassSize
+    provides: 
+      - MinorityClassSize
   MinSkewnessOfNumericAtts:
-    provides: MinSkewnessOfNumericAtts
+    provides: 
+      - MinSkewnessOfNumericAtts
   MinStdDevOfNumericAtts:
-    provides: MinStdDevOfNumericAtts
+    provides: 
+      - MinStdDevOfNumericAtts
   NaiveBayesAdwin.changes:
-    provides: NaiveBayesAdwin.changes
+    provides: 
+      - NaiveBayesAdwin.changes
   NaiveBayesAdwin.warnings:
-    provides: NaiveBayesAdwin.warnings
+    provides: 
+      - NaiveBayesAdwin.warnings
   NaiveBayesAUC:
-    provides: NaiveBayesAUC
+    provides: 
+      - NaiveBayesAUC
   NaiveBayesDdm.changes:
-    provides: NaiveBayesDdm.changes
+    provides: 
+      - NaiveBayesDdm.changes
   NaiveBayesDdm.warnings:
-    provides: NaiveBayesDdm.warnings
+    provides: 
+      - NaiveBayesDdm.warnings
   NaiveBayesErrRate:
-    provides: NaiveBayesErrRate
+    provides: 
+      - NaiveBayesErrRate
   NaiveBayesKappa:
-    provides: NaiveBayesKappa
+    provides: 
+      - NaiveBayesKappa
   NoiseToSignalRatio:
-    provides: NoiseToSignalRatio
+    provides: 
+      - NoiseToSignalRatio
   NumberOfBinaryFeatures:
-    provides: NumberOfBinaryFeatures
+    provides: 
+      - NumberOfBinaryFeatures
   NumberOfClasses:
-    provides: NumberOfClasses
+    provides: 
+      - NumberOfClasses
   NumberOfFeatures:
-    provides: NumberOfFeatures
+    provides: 
+      - NumberOfFeatures
   NumberOfInstances:
-    provides: NumberOfInstances
+    provides: 
+      - NumberOfInstances
   NumberOfInstancesWithMissingValues:
-    provides: NumberOfInstancesWithMissingValues
+    provides: 
+      - NumberOfInstancesWithMissingValues
   NumberOfMissingValues:
-    provides: NumberOfMissingValues
+    provides: 
+      - NumberOfMissingValues
   NumberOfNumericFeatures:
-    provides: NumberOfNumericFeatures
+    provides: 
+      - NumberOfNumericFeatures
   NumberOfSymbolicFeatures:
-    provides: NumberOfSymbolicFeatures
+    provides: 
+      - NumberOfSymbolicFeatures
   PercentageOfBinaryFeatures:
-    provides: PercentageOfBinaryFeatures
+    provides: 
+      - PercentageOfBinaryFeatures
   PercentageOfInstancesWithMissingValues:
-    provides: PercentageOfInstancesWithMissingValues
+    provides: 
+      - PercentageOfInstancesWithMissingValues
   PercentageOfMissingValues:
-    provides: PercentageOfMissingValues
+    provides: 
+      - PercentageOfMissingValues
   PercentageOfNumericFeatures:
-    provides: PercentageOfNumericFeatures
+    provides: 
+      - PercentageOfNumericFeatures
   PercentageOfSymbolicFeatures:
-    provides: PercentageOfSymbolicFeatures
+    provides: 
+      - PercentageOfSymbolicFeatures
   Quartile1AttributeEntropy:
-    provides: Quartile1AttributeEntropy
+    provides: 
+      - Quartile1AttributeEntropy
   Quartile1KurtosisOfNumericAtts:
-    provides: Quartile1KurtosisOfNumericAtts
+    provides: 
+      - Quartile1KurtosisOfNumericAtts
   Quartile1MeansOfNumericAtts:
-    provides: Quartile1MeansOfNumericAtts
+    provides: 
+      - Quartile1MeansOfNumericAtts
   Quartile1MutualInformation:
-    provides: Quartile1MutualInformation
+    provides: 
+      - Quartile1MutualInformation
   Quartile1SkewnessOfNumericAtts:
-    provides: Quartile1SkewnessOfNumericAtts
+    provides: 
+      - Quartile1SkewnessOfNumericAtts
   Quartile1StdDevOfNumericAtts:
-    provides: Quartile1StdDevOfNumericAtts
+    provides: 
+      - Quartile1StdDevOfNumericAtts
   Quartile2AttributeEntropy:
-    provides: Quartile2AttributeEntropy
+    provides: 
+      - Quartile2AttributeEntropy
   Quartile2KurtosisOfNumericAtts:
-    provides: Quartile2KurtosisOfNumericAtts
+    provides: 
+      - Quartile2KurtosisOfNumericAtts
   Quartile2MeansOfNumericAtts:
-    provides: Quartile2MeansOfNumericAtts
+    provides: 
+      - Quartile2MeansOfNumericAtts
   Quartile2MutualInformation:
-    provides: Quartile2MutualInformation
+    provides: 
+      - Quartile2MutualInformation
   Quartile2SkewnessOfNumericAtts:
-    provides: Quartile2SkewnessOfNumericAtts
+    provides: 
+      - Quartile2SkewnessOfNumericAtts
   Quartile2StdDevOfNumericAtts:
-    provides: Quartile2StdDevOfNumericAtts
+    provides: 
+      - Quartile2StdDevOfNumericAtts
   Quartile3AttributeEntropy:
-    provides: Quartile3AttributeEntropy
+    provides: 
+      - Quartile3AttributeEntropy
   Quartile3KurtosisOfNumericAtts:
-    provides: Quartile3KurtosisOfNumericAtts
+    provides: 
+      - Quartile3KurtosisOfNumericAtts
   Quartile3MeansOfNumericAtts:
-    provides: Quartile3MeansOfNumericAtts
+    provides: 
+      - Quartile3MeansOfNumericAtts
   Quartile3MutualInformation:
-    provides: Quartile3MutualInformation
+    provides: 
+      - Quartile3MutualInformation
   Quartile3SkewnessOfNumericAtts:
-    provides: Quartile3SkewnessOfNumericAtts
+    provides: 
+      - Quartile3SkewnessOfNumericAtts
   Quartile3StdDevOfNumericAtts:
-    provides: Quartile3StdDevOfNumericAtts
+    provides: 
+      - Quartile3StdDevOfNumericAtts
   RandomTreeDepth1AUC:
-    provides: RandomTreeDepth1AUC
+    provides: 
+      - RandomTreeDepth1AUC
   RandomTreeDepth1ErrRate:
-    provides: RandomTreeDepth1ErrRate
+    provides: 
+      - RandomTreeDepth1ErrRate
   RandomTreeDepth1Kappa:
-    provides: RandomTreeDepth1Kappa
+    provides: 
+      - RandomTreeDepth1Kappa
   RandomTreeDepth2AUC:
-    provides: RandomTreeDepth2AUC
+    provides: 
+      - RandomTreeDepth2AUC
   RandomTreeDepth2ErrRate:
-    provides: RandomTreeDepth2ErrRate
+    provides: 
+      - RandomTreeDepth2ErrRate
   RandomTreeDepth2Kappa:
-    provides: RandomTreeDepth2Kappa
+    provides: 
+      - RandomTreeDepth2Kappa
   RandomTreeDepth3AUC:
-    provides: RandomTreeDepth3AUC
+    provides: 
+      - RandomTreeDepth3AUC
   RandomTreeDepth3ErrRate:
-    provides: RandomTreeDepth3ErrRate
+    provides: 
+      - RandomTreeDepth3ErrRate
   RandomTreeDepth3Kappa:
-    provides: RandomTreeDepth3Kappa
+    provides: 
+      - RandomTreeDepth3Kappa
   REPTreeDepth1AUC:
-    provides: REPTreeDepth1AUC
+    provides: 
+      - REPTreeDepth1AUC
   REPTreeDepth1ErrRate:
-    provides: REPTreeDepth1ErrRate
+    provides: 
+      - REPTreeDepth1ErrRate
   REPTreeDepth1Kappa:
-    provides: REPTreeDepth1Kappa
+    provides: 
+      - REPTreeDepth1Kappa
   REPTreeDepth2AUC:
-    provides: REPTreeDepth2AUC
+    provides: 
+      - REPTreeDepth2AUC
   REPTreeDepth2ErrRate:
-    provides: REPTreeDepth2ErrRate
+    provides: 
+      - REPTreeDepth2ErrRate
   REPTreeDepth2Kappa:
-    provides: REPTreeDepth2Kappa
+    provides: 
+      - REPTreeDepth2Kappa
   REPTreeDepth3AUC:
-    provides: REPTreeDepth3AUC
+    provides: 
+      - REPTreeDepth3AUC
   REPTreeDepth3ErrRate:
-    provides: REPTreeDepth3ErrRate
+    provides: 
+      - REPTreeDepth3ErrRate
   REPTreeDepth3Kappa:
-    provides: REPTreeDepth3Kappa
+    provides: 
+      - REPTreeDepth3Kappa
   StdvNominalAttDistinctValues:
-    provides: StdvNominalAttDistinctValues
+    provides: 
+      - StdvNominalAttDistinctValues
