@@ -1,0 +1,148 @@
+scenario_id: MAXSAT-WPMS-2016
+performance_measures:
+    - PAR10
+maximize:
+    - false
+performance_type:
+    - runtime
+algorithm_cutoff_time: 1800
+algorithm_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_cutoff_memory: '?'
+number_of_feature_steps: 1
+feature_steps:
+    base:
+        provides:
+            - f_1
+            - f_2
+            - f_3
+            - f_4
+            - f_5
+            - f_6
+            - f_7
+            - f_8
+            - f_9
+            - f_10
+            - f_11
+            - f_12
+            - f_13
+            - f_14
+            - f_15
+            - f_16
+            - f_17
+            - f_18
+            - f_19
+            - f_20
+            - f_21
+            - f_22
+            - f_23
+            - f_24
+            - f_25
+            - f_26
+            - f_27
+            - f_28
+            - f_29
+            - f_30
+            - f_31
+            - f_32
+            - f_33
+            - f_34
+            - f_35
+            - f_36
+            - f_37
+default_steps:
+    - base
+features_deterministic:
+    - f_1
+    - f_2
+    - f_3
+    - f_4
+    - f_5
+    - f_6
+    - f_7
+    - f_8
+    - f_9
+    - f_10
+    - f_11
+    - f_12
+    - f_13
+    - f_14
+    - f_15
+    - f_16
+    - f_17
+    - f_18
+    - f_19
+    - f_20
+    - f_21
+    - f_22
+    - f_23
+    - f_24
+    - f_25
+    - f_26
+    - f_27
+    - f_28
+    - f_29
+    - f_30
+    - f_31
+    - f_32
+    - f_33
+    - f_34
+    - f_35
+    - f_36
+    - f_37
+features_stochastic: null
+metainfo_algorithms:
+    CCEHC2akms:
+        configuration: ''
+        deterministic: true
+    CCLS2akms:
+        configuration: ''
+        deterministic: true
+    LMHS-2016:
+        configuration: ''
+        deterministic: true
+    Naps-1.02-ms:
+        configuration: ''
+        deterministic: true
+    Open-WBO16:
+        configuration: ''
+        deterministic: true
+    Optiriss6:
+        configuration: ''
+        deterministic: true
+    QMaxSAT14:
+        configuration: ''
+        deterministic: true
+    QMaxSAT16UC:
+        configuration: ''
+        deterministic: true
+    WMaxSatz+:
+        configuration: ''
+        deterministic: true
+    WMaxSatz09:
+        configuration: ''
+        deterministic: true
+    WPM3-2015-co:
+        configuration: ''
+        deterministic: true
+    ahms-1.70:
+        configuration: ''
+        deterministic: true
+    ahms-ls-1.70:
+        configuration: ''
+        deterministic: true
+    maxhs-b:
+        configuration: ''
+        deterministic: true
+    maxino16-c10:
+        configuration: ''
+        deterministic: true
+    maxino16-dis:
+        configuration: ''
+        deterministic: true
+    mscg2015a:
+        configuration: ''
+        deterministic: true
+    mscg2015b:
+        configuration: ''
+        deterministic: true
