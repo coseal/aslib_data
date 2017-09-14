@@ -1,0 +1,271 @@
+scenario_id: CSP-Minizinc-Time-2016
+performance_measures:
+    - PAR10
+maximize:
+    - false
+performance_type:
+    - runtime
+algorithm_cutoff_time: 1200
+algorithm_cutoff_memory: '?'
+features_cutoff_time: 1200
+features_cutoff_memory: '4096'
+number_of_feature_steps: 1
+feature_steps:
+  base:
+    provides:
+        - c_avg_deg_cons
+        - c_avg_dom_cons
+        - c_avg_domdeg_cons
+        - c_bounds_d
+        - c_bounds_r
+        - c_bounds_z
+        - c_cv_deg_cons
+        - c_cv_dom_cons
+        - c_cv_domdeg_cons
+        - c_domain
+        - c_ent_deg_cons
+        - c_ent_dom_cons
+        - c_ent_domdeg_cons
+        - c_logprod_deg_cons
+        - c_logprod_dom_cons
+        - c_max_deg_cons
+        - c_max_dom_cons
+        - c_max_domdeg_cons
+        - c_min_deg_cons
+        - c_min_dom_cons
+        - c_min_domdeg_cons
+        - c_num_cons
+        - c_priority
+        - c_ratio_cons
+        - c_sum_ari_cons
+        - c_sum_dom_cons
+        - c_sum_domdeg_cons
+        - d_array_cons
+        - d_bool_cons
+        - d_bool_vars
+        - d_float_cons
+        - d_float_vars
+        - d_int_cons
+        - d_int_vars
+        - d_ratio_array_cons
+        - d_ratio_bool_cons
+        - d_ratio_bool_vars
+        - d_ratio_float_cons
+        - d_ratio_float_vars
+        - d_ratio_int_cons
+        - d_ratio_int_vars
+        - d_ratio_set_cons
+        - d_ratio_set_vars
+        - d_set_cons
+        - d_set_vars
+        - gc_diff_globs
+        - gc_global_cons
+        - gc_ratio_diff
+        - gc_ratio_globs
+        - o_deg
+        - o_deg_avg
+        - o_deg_cons
+        - o_deg_std
+        - o_dom
+        - o_dom_avg
+        - o_dom_deg
+        - o_dom_std
+        - s_bool_search
+        - s_first_fail
+        - s_goal
+        - s_indomain_max
+        - s_indomain_min
+        - s_input_order
+        - s_int_search
+        - s_labeled_vars
+        - s_other_val
+        - s_other_var
+        - s_set_search
+        - v_avg_deg_vars
+        - v_avg_dom_vars
+        - v_avg_domdeg_vars
+        - v_cv_deg_vars
+        - v_cv_dom_vars
+        - v_cv_domdeg_vars
+        - v_def_vars
+        - v_ent_deg_vars
+        - v_ent_dom_vars
+        - v_ent_domdeg_vars
+        - v_intro_vars
+        - v_logprod_deg_vars
+        - v_logprod_dom_vars
+        - v_max_deg_vars
+        - v_max_dom_vars
+        - v_max_domdeg_vars
+        - v_min_deg_vars
+        - v_min_dom_vars
+        - v_min_domdeg_vars
+        - v_num_aliases
+        - v_num_consts
+        - v_num_vars
+        - v_ratio_bounded
+        - v_ratio_vars
+        - v_sum_deg_vars
+        - v_sum_dom_vars
+        - v_sum_domdeg_vars
+default_steps:
+    - base
+features_deterministic:
+    - c_avg_deg_cons
+    - c_avg_dom_cons
+    - c_avg_domdeg_cons
+    - c_bounds_d
+    - c_bounds_r
+    - c_bounds_z
+    - c_cv_deg_cons
+    - c_cv_dom_cons
+    - c_cv_domdeg_cons
+    - c_domain
+    - c_ent_deg_cons
+    - c_ent_dom_cons
+    - c_ent_domdeg_cons
+    - c_logprod_deg_cons
+    - c_logprod_dom_cons
+    - c_max_deg_cons
+    - c_max_dom_cons
+    - c_max_domdeg_cons
+    - c_min_deg_cons
+    - c_min_dom_cons
+    - c_min_domdeg_cons
+    - c_num_cons
+    - c_priority
+    - c_ratio_cons
+    - c_sum_ari_cons
+    - c_sum_dom_cons
+    - c_sum_domdeg_cons
+    - d_array_cons
+    - d_bool_cons
+    - d_bool_vars
+    - d_float_cons
+    - d_float_vars
+    - d_int_cons
+    - d_int_vars
+    - d_ratio_array_cons
+    - d_ratio_bool_cons
+    - d_ratio_bool_vars
+    - d_ratio_float_cons
+    - d_ratio_float_vars
+    - d_ratio_int_cons
+    - d_ratio_int_vars
+    - d_ratio_set_cons
+    - d_ratio_set_vars
+    - d_set_cons
+    - d_set_vars
+    - gc_diff_globs
+    - gc_global_cons
+    - gc_ratio_diff
+    - gc_ratio_globs
+    - o_deg
+    - o_deg_avg
+    - o_deg_cons
+    - o_deg_std
+    - o_dom
+    - o_dom_avg
+    - o_dom_deg
+    - o_dom_std
+    - s_bool_search
+    - s_first_fail
+    - s_goal
+    - s_indomain_max
+    - s_indomain_min
+    - s_input_order
+    - s_int_search
+    - s_labeled_vars
+    - s_other_val
+    - s_other_var
+    - s_set_search
+    - v_avg_deg_vars
+    - v_avg_dom_vars
+    - v_avg_domdeg_vars
+    - v_cv_deg_vars
+    - v_cv_dom_vars
+    - v_cv_domdeg_vars
+    - v_def_vars
+    - v_ent_deg_vars
+    - v_ent_dom_vars
+    - v_ent_domdeg_vars
+    - v_intro_vars
+    - v_logprod_deg_vars
+    - v_logprod_dom_vars
+    - v_max_deg_vars
+    - v_max_dom_vars
+    - v_max_domdeg_vars
+    - v_min_deg_vars
+    - v_min_dom_vars
+    - v_min_domdeg_vars
+    - v_num_aliases
+    - v_num_consts
+    - v_num_vars
+    - v_ratio_bounded
+    - v_ratio_vars
+    - v_sum_deg_vars
+    - v_sum_dom_vars
+    - v_sum_domdeg_vars
+features_stochastic: null
+metainfo_algorithms:
+    Choco-free:
+        configuration: ''
+        deterministic: true
+    Chuffed-free:
+        configuration: ''
+        deterministic: true
+    Concrete-free:
+        configuration: ''
+        deterministic: true
+    G12FD-free:
+        configuration: ''
+        deterministic: true
+    Gecode-free:
+        configuration: ''
+        deterministic: true
+    HaifaCSP-free:
+        configuration: ''
+        deterministic: true
+    JaCoP-fd:
+        configuration: ''
+        deterministic: true
+    LCG-Glucose-UC-free:
+        configuration: ''
+        deterministic: true
+    LCG-Glucose-free:
+        configuration: ''
+        deterministic: true
+    MZN/Cbc-free:
+        configuration: ''
+        deterministic: true
+    MZN/CPLEX-free:
+        configuration: ''
+        deterministic: true
+    MZN/Gurobi-free:
+        configuration: ''
+        deterministic: true
+    MZN/SCIP-free:
+        configuration: ''
+        deterministic: true
+    MinisatID-free:
+        configuration: ''
+        deterministic: true
+    Mistral-free:
+        configuration: ''
+        deterministic: true
+    OR-Tools-free:
+        configuration: ''
+        deterministic: true
+    Picat-CP-fd:
+        configuration: ''
+        deterministic: true
+    Picat-SAT-free:
+        configuration: ''
+        deterministic: true
+    SICStus-Prolog-fd:
+        configuration: ''
+        deterministic: true
+    iZplus-free:
+        configuration: ''
+        deterministic: true
+

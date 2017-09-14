@@ -25,19 +25,23 @@ Marius Lindauer -- University of Freiburg, Germany
 # Authors
 
 * Roberto Amadini - University of Bologna
+* David Bergdoll -- University of Freiburg
 * Bernd Bischl - Ludwig-Maximilians-University Munich
 * Barry Hurley - Insight Centre for Data Analytics, Cork, Ireland
 * Pascal Kerschke - University of Münster
 * Lars Kotthoff - University of British Columbia
 * Marius Lindauer - University of Freiburg
 * Yuri Malitsky - IBM Thomas J. Watson Research Center
+* Brandon Malone - NEC Heidelberg
 * Alexandre Frechette - University of British Columbia
 * Holger Hoos - University of British Columbia
 * Frank Hutter - University of Freiburg
 * Kevin Leyton-Brown - University of British Columbia
 * Jacopo Mauro - University of Bologna
 * Kevin Tierney - University of Paderborn
+* Jan N. van Rijn - University of Freiburg
 * Joaquin Vanschoren - Eindhoven University of Technology
+
 
 # License
 

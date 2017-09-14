@@ -1,0 +1,184 @@
+scenario_id: QBF-2016
+performance_measures:
+    - PAR10
+maximize:
+    - false
+performance_type:
+    - runtime
+algorithm_cutoff_time: 1800
+algorithm_cutoff_memory: '?'
+features_cutoff_time: 1800
+features_cutoff_memory: 4096
+number_of_feature_steps: 1
+feature_steps:
+  base:
+    provides:
+        - EXIST_VARS
+        - FORALL_VARS
+        - TOTAL_VARS
+        - CLAUSES
+        - LITERALS
+        - EXIST_SET
+        - FORALL_SET
+        - TOTAL_SET
+        - UNARY_CLAUSES
+        - BINARY_CLAUSES
+        - TERNARY_MORE_CLAUSES
+        - POS_HORN
+        - NEG_HORN
+        - EXIST_LIT_PER_CLAUSE
+        - FORALL_LIT_PER_CLAUSE
+        - EXIST_VARS_PER_SET
+        - FORALL_POS_LITS_PER_CLAUSE
+        - FORALL_NEG_LITS_PER_CLAUSE
+        - OCCS_POS_NO_PER_VAR
+        - OCCS_FORALL_NO_PER_VAR
+        - OCCS_FORALL_POS_NO_PER_VAR
+        - W_OCCS_POS_NO_PER_VAR
+        - W_OCCS_FORALL_NO_PER_VAR
+        - W_OCCS_FORALL_POS_NO_PER_VAR
+        - W_PRODUCTS
+        - LITN_LIT
+        - LITEP_LIT
+        - LITEN_LITE
+        - LITEN_LITN
+        - LITFN_LIT
+        - LITFP_LITFN
+        - OCCP_OCCN
+        - OCCE_OCC
+        - OCCEN_OCC
+        - OCCFP_OCCF
+        - OCCEN_OCCE
+        - OCCEN_OCCN
+        - OCCFP_OCCFN
+        - TERMORE_CLAUSE
+        - NEG_HORN_CLAUSE
+        - WOCCN_WOCC
+        - WOCCEP_WOCC
+        - WOCCFN_WOCC
+        - WOCCEP_WOCCE
+        - WOCCEP_WOCCP
+        - WOCCFN_WOCCN
+default_steps:
+    - base
+features_deterministic:
+    - EXIST_VARS
+    - FORALL_VARS
+    - TOTAL_VARS
+    - CLAUSES
+    - LITERALS
+    - EXIST_SET
+    - FORALL_SET
+    - TOTAL_SET
+    - UNARY_CLAUSES
+    - BINARY_CLAUSES
+    - TERNARY_MORE_CLAUSES
+    - POS_HORN
+    - NEG_HORN
+    - EXIST_LIT_PER_CLAUSE
+    - FORALL_LIT_PER_CLAUSE
+    - EXIST_VARS_PER_SET
+    - FORALL_POS_LITS_PER_CLAUSE
+    - FORALL_NEG_LITS_PER_CLAUSE
+    - OCCS_POS_NO_PER_VAR
+    - OCCS_FORALL_NO_PER_VAR
+    - OCCS_FORALL_POS_NO_PER_VAR
+    - W_OCCS_POS_NO_PER_VAR
+    - W_OCCS_FORALL_NO_PER_VAR
+    - W_OCCS_FORALL_POS_NO_PER_VAR
+    - W_PRODUCTS
+    - LITN_LIT
+    - LITEP_LIT
+    - LITEN_LITE
+    - LITEN_LITN
+    - LITFN_LIT
+    - LITFP_LITFN
+    - OCCP_OCCN
+    - OCCE_OCC
+    - OCCEN_OCC
+    - OCCFP_OCCF
+    - OCCEN_OCCE
+    - OCCEN_OCCN
+    - OCCFP_OCCFN
+    - TERMORE_CLAUSE
+    - NEG_HORN_CLAUSE
+    - WOCCN_WOCC
+    - WOCCEP_WOCC
+    - WOCCFN_WOCC
+    - WOCCEP_WOCCE
+    - WOCCEP_WOCCP
+    - WOCCFN_WOCCN
+features_stochastic: null
+metainfo_algorithms:
+    AIGSolve:
+        configuration: ''
+        deterministic: true
+    aqua-f3v:
+        configuration: ''
+        deterministic: true
+    aqua-s2v:
+        configuration: ''
+        deterministic: true
+    aqua-s3o:
+        configuration: ''
+        deterministic: true
+    caqe-minisat:
+        configuration: ''
+        deterministic: true
+    caqe-picosat:
+        configuration: ''
+        deterministic: true
+    depqbf-v1:
+        configuration: ''
+        deterministic: true
+    depqbf-v2:
+        configuration: ''
+        deterministic: true
+    depqbf-v3:
+        configuration: ''
+        deterministic: true
+    ghostq-cegar:
+        configuration: ''
+        deterministic: true
+    ghostq-plain:
+        configuration: ''
+        deterministic: true
+    hiqqer1:
+        configuration: ''
+        deterministic: true
+    hiqqer1ldsq:
+        configuration: ''
+        deterministic: true
+    hiqqer3:
+        configuration: ''
+        deterministic: true
+    iprover-QBF:
+        configuration: ''
+        deterministic: true
+    iprover-QBF-bloqqer:
+        configuration: ''
+        deterministic: true
+    qesto:
+        configuration: ''
+        deterministic: true
+    qestos:
+        configuration: ''
+        deterministic: true
+    qsts:
+        configuration: ''
+        deterministic: true
+    rareqs:
+        configuration: ''
+        deterministic: true
+    squeezebf+struqs:
+        configuration: ''
+        deterministic: true
+    struqs-10:
+        configuration: ''
+        deterministic: true
+    xb-bid-qsts:
+        configuration: ''
+        deterministic: true
+    xb-qsts:
+        configuration: ''
+        deterministic: true
