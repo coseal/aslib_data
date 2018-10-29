@@ -16,8 +16,8 @@ The ASlib consists of algorithm selection scenarios from a many different domain
 Bernd Bischl -- Ludwig-Maximilians-University Munich, Germany
 <bernd.bischl@stat.uni-muenchen.de>
 
-Lars Kotthoff -- University of British Columbia, Canada
-<larsko@cs.ubc.ca>
+Lars Kotthoff -- University of Wyoming, USA
+<larsko@uwyo.edu>
 
 Marius Lindauer -- University of Freiburg, Germany
 <lindauer@informatik.uni-freiburg.de>
@@ -47,3 +47,20 @@ Marius Lindauer -- University of Freiburg, Germany
 
 GPLv3
 
+If you use ASlib in your research, please cite it:
+
+Bischl, Bernd, Pascal Kerschke, Lars Kotthoff, Marius Lindauer, Yuri Malitsky, Alexandre Fréchette, Holger H. Hoos, et al. "ASlib: A Benchmark Library for Algorithm Selection." Artificial Intelligence Journal (AIJ), no. 237 (2016): 41–58.
+
+Here's a bibtex entry for your convenience:
+```
+@article{bischl_aslib_2016,
+	title = {{ASlib}: {A} {Benchmark} {Library} for {Algorithm} {Selection}},
+	number = {237},
+	journal = {Artificial Intelligence Journal (AIJ)},
+	author = {Bischl, Bernd and Kerschke, Pascal and Kotthoff, Lars and Lindauer, Marius and Malitsky, Yuri and Fréchette, Alexandre and Hoos, Holger H. and Hutter, Frank and Leyton-Brown, Kevin and Tierney, Kevin and Vanschoren, Joaquin},
+	year = {2016},
+	pages = {41--58}
+}
+```
+
+We also have a [DOI](https://doi.org/10.25504/FAIRsharing.ynxB7A).
