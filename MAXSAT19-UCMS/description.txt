@@ -1,0 +1,147 @@
+algorithm_cutoff_memory: '?'
+algorithm_cutoff_time: 3600.0
+algorithms_deterministic: '?'
+algorithms_stochastic: ''
+default_steps: ALL
+feature_steps:
+  ALL:
+    provides:
+    - nvarsOrig
+    - nclausesOrig
+    - nvars
+    - nclauses
+    - reducedVars
+    - reducedClauses
+    - Pre.featuretime
+    - vars.clauses.ratio
+    - POSNEG.RATIO.CLAUSE.mean
+    - POSNEG.RATIO.CLAUSE.coeff.variation
+    - POSNEG.RATIO.CLAUSE.min
+    - POSNEG.RATIO.CLAUSE.max
+    - POSNEG.RATIO.CLAUSE.entropy
+    - VCG.CLAUSE.mean
+    - VCG.CLAUSE.coeff.variation
+    - VCG.CLAUSE.min
+    - VCG.CLAUSE.max
+    - VCG.CLAUSE.entropy
+    - UNARY
+    - BINARY.
+    - TRINARY.
+    - Basic.featuretime
+    - VCG.VAR.mean
+    - VCG.VAR.coeff.variation
+    - VCG.VAR.min
+    - VCG.VAR.max
+    - VCG.VAR.entropy
+    - POSNEG.RATIO.VAR.mean
+    - POSNEG.RATIO.VAR.stdev
+    - POSNEG.RATIO.VAR.min
+    - POSNEG.RATIO.VAR.max
+    - POSNEG.RATIO.VAR.entropy
+    - HORNY.VAR.mean
+    - HORNY.VAR.coeff.variation
+    - HORNY.VAR.min
+    - HORNY.VAR.max
+    - HORNY.VAR.entropy
+    - horn.clauses.fraction
+    - VG.mean
+    - VG.coeff.variation
+    - VG.min
+    - VG.max
+    - KLB.featuretime
+    - CG.mean
+    - CG.coeff.variation
+    - CG.min
+    - CG.max
+    - CG.entropy
+    - cluster.coeff.mean
+    - cluster.coeff.coeff.variation
+    - cluster.coeff.min
+    - cluster.coeff.max
+    - cluster.coeff.entropy
+    - CG.featuretime
+features_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_deterministic:
+- nvarsOrig
+- nclausesOrig
+- nvars
+- nclauses
+- reducedVars
+- reducedClauses
+- Pre.featuretime
+- vars.clauses.ratio
+- POSNEG.RATIO.CLAUSE.mean
+- POSNEG.RATIO.CLAUSE.coeff.variation
+- POSNEG.RATIO.CLAUSE.min
+- POSNEG.RATIO.CLAUSE.max
+- POSNEG.RATIO.CLAUSE.entropy
+- VCG.CLAUSE.mean
+- VCG.CLAUSE.coeff.variation
+- VCG.CLAUSE.min
+- VCG.CLAUSE.max
+- VCG.CLAUSE.entropy
+- UNARY
+- BINARY.
+- TRINARY.
+- Basic.featuretime
+- VCG.VAR.mean
+- VCG.VAR.coeff.variation
+- VCG.VAR.min
+- VCG.VAR.max
+- VCG.VAR.entropy
+- POSNEG.RATIO.VAR.mean
+- POSNEG.RATIO.VAR.stdev
+- POSNEG.RATIO.VAR.min
+- POSNEG.RATIO.VAR.max
+- POSNEG.RATIO.VAR.entropy
+- HORNY.VAR.mean
+- HORNY.VAR.coeff.variation
+- HORNY.VAR.min
+- HORNY.VAR.max
+- HORNY.VAR.entropy
+- horn.clauses.fraction
+- VG.mean
+- VG.coeff.variation
+- VG.min
+- VG.max
+- KLB.featuretime
+- CG.mean
+- CG.coeff.variation
+- CG.min
+- CG.max
+- CG.entropy
+- cluster.coeff.mean
+- cluster.coeff.coeff.variation
+- cluster.coeff.min
+- cluster.coeff.max
+- cluster.coeff.entropy
+- CG.featuretime
+features_stochastic: []
+maximize: no
+metainfo_algorithms:
+  MaxHS:
+    configuration: ''
+    deterministic: 'true'
+  Open.WBO.g:
+    configuration: ''
+    deterministic: 'true'
+  Open.WBO.ms:
+    configuration: ''
+    deterministic: 'true'
+  Open.WBO.ms.pre:
+    configuration: ''
+    deterministic: 'true'
+  QMaxSAT2018:
+    configuration: ''
+    deterministic: 'true'
+  UWrMaxSAT:
+    configuration: ''
+    deterministic: 'true'
+  maxino2018:
+    configuration: ''
+    deterministic: 'true'
+number_of_feature_steps: 1.0
+performance_measures: runtime
+performance_type: runtime
+scenario_id: MAXSAT19-UCMS
