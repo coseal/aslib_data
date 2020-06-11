@@ -3,8 +3,8 @@ authors: Damir Pulatov
 translator in coseal format: Damir Pulatov
 
 Runtimes from MaxSAT Evaluation 2019, unweighted complete track.
-I exluded RC2-2018 solver since it's not obvious how to extract
-algorithmic features for that solver.
+I exluded RC2-2018 solver since it wasn't useful for our 
+experiments. 
 The data does not distinguish between timeout, memout and crashes. 
 
 Instance features were extracted with SATzilla feature computation software: 
