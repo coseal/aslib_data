@@ -8,7 +8,8 @@ algorithms_deterministic:
 - gluHack
 - inIDGlucose
 algorithms_stochastic: ''
-default_steps: ALL
+default_steps: 
+- ALL
 feature_steps:
   ALL:
     provides:
@@ -116,7 +117,8 @@ features_deterministic:
 - cluster.coeff.max
 - cluster.coeff.entropy
 features_stochastic: []
-maximize: no
+maximize: 
+- no
 metainfo_algorithms:
   inIDGlucose:
     configuration: ''
@@ -143,6 +145,8 @@ metainfo_algorithms:
     configuration: ''
     deterministic: yes
 number_of_feature_steps: 1.0
-performance_measures: runtime
-performance_type: runtime
+performance_measures: 
+- runtime
+performance_type: 
+- runtime
 scenario_id: GLUHACK-18

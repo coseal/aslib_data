@@ -2,7 +2,8 @@ algorithm_cutoff_memory: '?'
 algorithm_cutoff_time: 3600.0
 algorithms_deterministic: '?'
 algorithms_stochastic: ''
-default_steps: ALL
+default_steps: 
+- ALL
 feature_steps:
   ALL:
     provides:
@@ -118,7 +119,8 @@ features_deterministic:
 - cluster.coeff.entropy
 - CG.featuretime
 features_stochastic: []
-maximize: no
+maximize: 
+- no
 metainfo_algorithms:
   MaxHS:
     configuration: ''
@@ -142,6 +144,8 @@ metainfo_algorithms:
     configuration: ''
     deterministic: 'true'
 number_of_feature_steps: 1.0
-performance_measures: runtime
-performance_type: runtime
+performance_measures: 
+- runtime
+performance_type: 
+- runtime
 scenario_id: MAXSAT19-UCMS
