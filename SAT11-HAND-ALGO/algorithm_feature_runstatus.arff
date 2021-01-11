@@ -1,0 +1,19 @@
+@RELATION ALGORITHM_FEATURE_RUNSTATUS
+
+@ATTRIBUTE algorithm STRING
+@ATTRIBUTE repetition NUMERIC
+@ATTRIBUTE code {ok, timeout, memout, not_applicable, crash, other}
+@ATTRIBUTE AST {ok, timeout, memout, not_applicable, crash, other}
+
+@DATA
+clasp_2.0.R4092.crafted,1,ok,ok
+CryptoMiniSat_Strange.Night2.st_fixed_,1,ok,ok
+glucose_2,1,ok,ok
+MPhaseSAT_2011.02.15,1,ok,ok
+PicoSAT_941,1,ok,ok
+QuteRSat_2011.05.12_fixed_,1,ok,ok
+RestartSAT_B95,1,ok,ok
+SApperloT2010_2011.05.15_fixed_,1,ok,ok
+SAT07referencesolverminisat_SAT2007,1,ok,ok
+SAT09referencesolverclasp_1.2.0.SAT09.32,1,ok,ok
+sathys_2011.04.01,1,ok,ok
