@@ -1,0 +1,313 @@
+algorithm_cutoff_memory: '?'
+algorithm_cutoff_time: 5000.0
+algorithms_deterministic:
+- GHackCOMSPS_drup
+- glu_mix
+- Glucose_Hack_Kiel_fastBVE
+- glucose3.0
+- gluHack
+- inIDGlucose
+algorithms_stochastic: ''
+default_steps: 
+- ALL
+- code
+- AST
+feature_steps:
+  ALL:
+    provides:
+    - nvarsOrig
+    - nclausesOrig
+    - nvars
+    - nclauses
+    - reducedVars
+    - reducedClauses
+    - vars.clauses.ratio
+    - POSNEG.RATIO.CLAUSE.mean
+    - POSNEG.RATIO.CLAUSE.coeff.variation
+    - POSNEG.RATIO.CLAUSE.min
+    - POSNEG.RATIO.CLAUSE.max
+    - POSNEG.RATIO.CLAUSE.entropy
+    - VCG.CLAUSE.mean
+    - VCG.CLAUSE.coeff.variation
+    - VCG.CLAUSE.min
+    - VCG.CLAUSE.max
+    - VCG.CLAUSE.entropy
+    - UNARY
+    - BINARY.
+    - TRINARY.
+    - VCG.VAR.mean
+    - VCG.VAR.coeff.variation
+    - VCG.VAR.min
+    - VCG.VAR.max
+    - VCG.VAR.entropy
+    - POSNEG.RATIO.VAR.mean
+    - POSNEG.RATIO.VAR.stdev
+    - POSNEG.RATIO.VAR.min
+    - POSNEG.RATIO.VAR.max
+    - POSNEG.RATIO.VAR.entropy
+    - HORNY.VAR.mean
+    - HORNY.VAR.coeff.variation
+    - HORNY.VAR.min
+    - HORNY.VAR.max
+    - HORNY.VAR.entropy
+    - horn.clauses.fraction
+    - VG.mean
+    - VG.coeff.variation
+    - VG.min
+    - VG.max
+    - CG.mean
+    - CG.coeff.variation
+    - CG.min
+    - CG.max
+    - CG.entropy
+    - cluster.coeff.mean
+    - cluster.coeff.coeff.variation
+    - cluster.coeff.min
+    - cluster.coeff.max
+    - cluster.coeff.entropy
+algorithm_feature_steps:
+  code:
+    provides:
+    - Lines..Average. 
+    - Lines..Total. 
+    - Size..Average. 
+    - Size..Total. 
+    - Number.of.files 
+    - Cyclomatic..Average. 
+    - Cyclomatic..Total. 
+    - Max.Indent..Average. 
+    - Max.Indent..Total. 
+  AST:
+    provides:
+    - nb_nodes 
+    - nb_edges 
+    - degree_min 
+    - degree_max 
+    - degree_mean 
+    - degree_variance 
+    - degree_entropy 
+    - transitivity 
+    - clustering_min 
+    - clustering_max 
+    - clustering_mean 
+    - clustering_variance 
+    - path_min 
+    - paths_max 
+    - path_mean 
+    - path_variance 
+    - path_entropy 
+    - Stmt 
+    - Type 
+    - Decl 
+    - Attribute 
+    - Operator 
+    - Literal 
+    - edge_ss 
+    - edge_st 
+    - edge_sd 
+    - edge_sa 
+    - edge_so 
+    - edge_sl 
+    - edge_ts 
+    - edge_tt 
+    - edge_td 
+    - edge_ta 
+    - edge_to 
+    - edge_tl 
+    - edge_ds 
+    - edge_dt 
+    - edge_dd 
+    - edge_da 
+    - edge_do 
+    - edge_dl 
+    - edge_as 
+    - edge_at 
+    - edge_ad 
+    - edge_aa 
+    - edge_ao 
+    - edge_al 
+    - edge_os 
+    - edge_ot 
+    - edge_od 
+    - edge_oa 
+    - edge_oo 
+    - edge_ol 
+    - edge_ls 
+    - edge_lt 
+    - edge_ld 
+    - edge_la 
+    - edge_lo 
+    - edge_ll 
+    - op_short 
+    - op_int 
+    - op_long 
+    - op_long_long 
+    - op_float 
+    - op_double 
+    - op_bit 
+features_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_deterministic:
+- nvarsOrig
+- nclausesOrig
+- nvars
+- nclauses
+- reducedVars
+- reducedClauses
+- vars.clauses.ratio
+- POSNEG.RATIO.CLAUSE.mean
+- POSNEG.RATIO.CLAUSE.coeff.variation
+- POSNEG.RATIO.CLAUSE.min
+- POSNEG.RATIO.CLAUSE.max
+- POSNEG.RATIO.CLAUSE.entropy
+- VCG.CLAUSE.mean
+- VCG.CLAUSE.coeff.variation
+- VCG.CLAUSE.min
+- VCG.CLAUSE.max
+- VCG.CLAUSE.entropy
+- UNARY
+- BINARY.
+- TRINARY.
+- VCG.VAR.mean
+- VCG.VAR.coeff.variation
+- VCG.VAR.min
+- VCG.VAR.max
+- VCG.VAR.entropy
+- POSNEG.RATIO.VAR.mean
+- POSNEG.RATIO.VAR.stdev
+- POSNEG.RATIO.VAR.min
+- POSNEG.RATIO.VAR.max
+- POSNEG.RATIO.VAR.entropy
+- HORNY.VAR.mean
+- HORNY.VAR.coeff.variation
+- HORNY.VAR.min
+- HORNY.VAR.max
+- HORNY.VAR.entropy
+- horn.clauses.fraction
+- VG.mean
+- VG.coeff.variation
+- VG.min
+- VG.max
+- CG.mean
+- CG.coeff.variation
+- CG.min
+- CG.max
+- CG.entropy
+- cluster.coeff.mean
+- cluster.coeff.coeff.variation
+- cluster.coeff.min
+- cluster.coeff.max
+- cluster.coeff.entropy
+features_stochastic: []
+algorithm_features_cutoff_memory: '?'
+algorithm_features_cutoff_time: '?'
+algorithm_features_deterministic: 
+- Lines..Average. 
+- Lines..Total. 
+- Size..Average. 
+- Size..Total. 
+- Number.of.files 
+- Cyclomatic..Average. 
+- Cyclomatic..Total. 
+- Max.Indent..Average. 
+- Max.Indent..Total. 
+- nb_nodes 
+- nb_edges 
+- degree_min 
+- degree_max 
+- degree_mean 
+- degree_variance 
+- degree_entropy 
+- transitivity 
+- clustering_min 
+- clustering_max 
+- clustering_mean 
+- clustering_variance 
+- path_min 
+- paths_max 
+- path_mean 
+- path_variance 
+- path_entropy 
+- Stmt 
+- Type 
+- Decl 
+- Attribute 
+- Operator 
+- Literal 
+- edge_ss 
+- edge_st 
+- edge_sd 
+- edge_sa 
+- edge_so 
+- edge_sl 
+- edge_ts 
+- edge_tt 
+- edge_td 
+- edge_ta 
+- edge_to 
+- edge_tl 
+- edge_ds 
+- edge_dt 
+- edge_dd 
+- edge_da 
+- edge_do 
+- edge_dl 
+- edge_as 
+- edge_at 
+- edge_ad 
+- edge_aa 
+- edge_ao 
+- edge_al 
+- edge_os 
+- edge_ot 
+- edge_od 
+- edge_oa 
+- edge_oo 
+- edge_ol 
+- edge_ls 
+- edge_lt 
+- edge_ld 
+- edge_la 
+- edge_lo 
+- edge_ll 
+- op_short 
+- op_int 
+- op_long 
+- op_long_long 
+- op_float 
+- op_double 
+- op_bit 
+algorithm_features_stochastic: []
+maximize: 
+- no
+metainfo_algorithms:
+  inIDGlucose:
+    configuration: ''
+    deterministic: yes
+  glu_mix:
+    configuration: ''
+    deterministic: yes
+  gluHack:
+    configuration: ''
+    deterministic: yes
+  Glucose_Hack_Kiel_fastBVE:
+    configuration: ''
+    deterministic: yes
+  glucose.3.0_PADC_3:
+    configuration: ''
+    deterministic: yes
+  glucose.3.0_PADC_10:
+    configuration: ''
+    deterministic: yes
+  GHackCOMSPS_drup:
+    configuration: ''
+    deterministic: yes
+  glucose3.0:
+    configuration: ''
+    deterministic: yes
+number_of_feature_steps: 3.0
+performance_measures: 
+- runtime
+performance_type: 
+- runtime
+scenario_id: GLUHACK-18-ALGO

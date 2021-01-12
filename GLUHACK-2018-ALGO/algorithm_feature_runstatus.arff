@@ -1,0 +1,16 @@
+@relation R_data_frame
+
+@attribute algorithm string
+@attribute repetition numeric
+@attribute code {ok, timeout, memout, not_applicable, crash, other}
+@attribute AST {ok, timeout, memout, not_applicable, crash, other}
+
+@data
+inIDGlucose,1,ok,ok
+glu_mix,1,ok,ok
+gluHack,1,ok,ok
+Glucose_Hack_Kiel_fastBVE,1,ok,ok
+glucose.3.0_PADC_3,1,ok,ok
+glucose.3.0_PADC_10,1,ok,ok
+GHackCOMSPS_drup,1,ok,ok
+glucose3.0,1,ok,ok
