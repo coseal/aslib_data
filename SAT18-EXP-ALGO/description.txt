@@ -420,7 +420,7 @@ metainfo_algorithms:
   Sparrow2Riss-2018-fixfix:
     configuration: ''
     deterministic: yes
-number_of_feature_steps: 1
+number_of_feature_steps: 2
 performance_measures:
 - runtime
 performance_type:
