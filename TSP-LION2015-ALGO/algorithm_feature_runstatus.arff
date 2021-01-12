@@ -1,0 +1,12 @@
+@RELATION ALGORITHM_FEATURE_RUNSTATUS
+
+@ATTRIBUTE algorithm STRING
+@ATTRIBUTE repetition NUMERIC
+@ATTRIBUTE code {ok, timeout, memout, not_applicable, crash, other}
+@ATTRIBUTE AST {ok, timeout, memout, not_applicable, crash, other}
+
+@DATA
+eax,1,ok,ok
+lkh,1,ok,ok
+eax.restart,1,ok,ok
+lkh.restart,1,ok,ok
