@@ -1,0 +1,250 @@
+algorithm_cutoff_memory: '?'
+algorithm_cutoff_time: 0
+metainfo_algorithms:
+  X2361_weka.OneR:
+    configuration: ''
+    deterministic: true
+  X2362_weka.J48:
+    configuration: ''
+    deterministic: true
+  X2364_weka.IBk:
+    configuration: ''
+    deterministic: true
+  X2367_weka.REPTree:
+    configuration: ''
+    deterministic: true
+  X2368_weka.RandomTree:
+    configuration: ''
+    deterministic: true
+  X2369_weka.RandomForest:
+    configuration: ''
+    deterministic: true
+  X2370_weka.LMT:
+    configuration: ''
+    deterministic: true
+  X2373_weka.JRip:
+    configuration: ''
+    deterministic: true
+  X2381_weka.NaiveBayes:
+    configuration: ''
+    deterministic: true
+  X2647_weka.Logistic:
+    configuration: ''
+    deterministic: true
+  X2869_weka.SMO_PolyKernel:
+    configuration: ''
+    deterministic: true
+  X2891_weka.HyperPipes:
+    configuration: ''
+    deterministic: true
+  X2893_weka.OLM:
+    configuration: ''
+    deterministic: true
+  X2897_weka.ConjunctiveRule:
+    configuration: ''
+    deterministic: true
+  X2898_weka.SimpleCart:
+    configuration: ''
+    deterministic: true
+  X2900_weka.LADTree:
+    configuration: ''
+    deterministic: true
+  X2903_weka.AdaBoostM1_DecisionStump:
+    configuration: ''
+    deterministic: true
+  X2906_weka.Bagging_REPTree:
+    configuration: ''
+    deterministic: true
+  X6250_weka.DecisionTable:
+    configuration: ''
+    deterministic: true
+  X6352_weka.BayesNet:
+    configuration: ''
+    deterministic: true
+  X6378_weka.LogitBoost_DecisionStump:
+    configuration: ''
+    deterministic: true
+algorithms_stochastic: ''
+default_steps:
+- ALL
+- code
+- AST
+feature_steps:
+  ALL:
+    provides: &id001
+    - MeanAttributeEntropy
+    - NaiveBayesAdwin.warnings
+    - NoiseToSignalRatio
+    - NumberOfNumericFeatures
+    - NumberOfBinaryFeatures
+    - DecisionStumpKappa
+    - Quartile3SkewnessOfNumericAtts
+    - NumberOfMissingValues
+    - J48.001.ErrRate
+    - HoeffdingAdwin.changes
+    - PercentageOfNumericFeatures
+    - MeanSkewnessOfNumericAtts
+    - MinStdDevOfNumericAtts
+    - NaiveBayesErrRate
+    - MinMutualInformation
+    - MajorityClassPercentage
+    - NumberOfSymbolicFeatures
+    - J48.00001.ErrRate
+    - MaxNominalAttDistinctValues
+    - PercentageOfMissingValues
+    - MinKurtosisOfNumericAtts
+    - MaxKurtosisOfNumericAtts
+    - EquivalentNumberOfAtts
+    - DecisionStumpErrRate
+    - RandomTreeDepth3ErrRate
+    - MaxStdDevOfNumericAtts
+    - NaiveBayesAdwin.changes
+    - Quartile3AttributeEntropy
+    - MeanKurtosisOfNumericAtts
+    - MinorityClassPerentage
+    - J48.00001.Kappa
+    - REPTreeDepth2ErrRate
+    - Quartile2KurtosisOfNumericAtts
+    - REPTreeDepth3AUC
+    - RandomTreeDepth2ErrRate
+    - Quartile1AttributeEntropy
+    - MeanMeansOfNumericAtts
+    - MeanStdDevOfNumericAtts
+    - REPTreeDepth1Kappa
+    - Dimensionality
+    - REPTreeDepth2AUC
+    - MinAttributeEntropy
+    - NaiveBayesDdm.changes
+    - MinNominalAttDistinctValues
+    - MinorityClassSize
+    - Quartile2AttributeEntropy
+    - Quartile1SkewnessOfNumericAtts
+    - Quartile3StdDevOfNumericAtts
+    - Quartile1MutualInformation
+    - Quartile2SkewnessOfNumericAtts
+    - MajorityClassSize
+    - REPTreeDepth3ErrRate
+    - MaxAttributeEntropy
+    - RandomTreeDepth2Kappa
+    - HoeffdingDDM.changes
+    - Quartile3KurtosisOfNumericAtts
+    - NaiveBayesKappa
+    - HoeffdingDDM.warnings
+    - Quartile2StdDevOfNumericAtts
+    - MeanNominalAttDistinctValues
+    - REPTreeDepth1ErrRate
+    - MaxMeansOfNumericAtts
+    - NumberOfInstances
+    - RandomTreeDepth1Kappa
+    - J48.001.AUC
+    - MaxSkewnessOfNumericAtts
+    - J48.0001.AUC
+    - RandomTreeDepth3AUC
+    - MeanMutualInformation
+    - RandomTreeDepth1ErrRate
+    - RandomTreeDepth2AUC
+    - MinMeansOfNumericAtts
+    - PercentageOfBinaryFeatures
+    - NumberOfFeatures
+    - NaiveBayesAUC
+    - DefaultAccuracy
+    - NaiveBayesDdm.warnings
+    - Quartile3MeansOfNumericAtts
+    - REPTreeDepth1AUC
+    - MaxMutualInformation
+    - HoeffdingAdwin.warnings
+    - RandomTreeDepth1AUC
+    - J48.0001.Kappa
+    - Quartile1MeansOfNumericAtts
+    - RandomTreeDepth3Kappa
+    - Quartile1StdDevOfNumericAtts
+    - REPTreeDepth2Kappa
+    - Quartile2MeansOfNumericAtts
+    - J48.00001.AUC
+    - Quartile2MutualInformation
+    - J48.001.Kappa
+    - PercentageOfInstancesWithMissingValues
+    - NumberOfClasses
+    - StdvNominalAttDistinctValues
+    - ClassEntropy
+    - Quartile1KurtosisOfNumericAtts
+    - Quartile3MutualInformation
+    - MinSkewnessOfNumericAtts
+    - PercentageOfSymbolicFeatures
+    - J48.0001.ErrRate
+    - NumberOfInstancesWithMissingValues
+    - REPTreeDepth3Kappa
+    - DecisionStumpAUC
+algorithm_feature_steps:
+  code: 
+    provides:
+    - Lines..Average. 
+    - Lines..Total. 
+    - Size..Average. 
+    - Size..Total. 
+    - Number.of.files 
+    - Cyclomatic..Average. 
+    - Cyclomatic..Total. 
+    - Max.Indent..Average. 
+    - Max.Indent..Total. 
+  AST:
+    provides:
+    - nb_nodes 
+    - nb_edges 
+    - degree_min 
+    - degree_max 
+    - degree_mean 
+    - degree_variance 
+    - degree_entropy 
+    - transitivity 
+    - clustering_min 
+    - clustering_max 
+    - clustering_mean 
+    - clustering_variance 
+    - path_min 
+    - paths_max 
+    - path_mean 
+    - path_variance 
+    - path_entropy 
+features_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_deterministic: *id001
+features_stochastic: ''
+algorithm_features_cutoff_memory: '?'
+algorithm_features_cutoff_time: '?'
+algorithm_features_deterministic: 
+- Lines..Average. 
+- Lines..Total. 
+- Size..Average. 
+- Size..Total. 
+- Number.of.files 
+- Cyclomatic..Average. 
+- Cyclomatic..Total. 
+- Max.Indent..Average. 
+- Max.Indent..Total. 
+- nb_nodes 
+- nb_edges 
+- degree_min 
+- degree_max 
+- degree_mean 
+- degree_variance 
+- degree_entropy 
+- transitivity 
+- clustering_min 
+- clustering_max 
+- clustering_mean 
+- clustering_variance 
+- path_min 
+- paths_max 
+- path_mean 
+- path_variance 
+- path_entropy 
+algorithm_features_stochastic: ''
+maximize:
+- true
+number_of_feature_steps: 3
+performance_measures:
+- predictive_accuracy
+performance_type:
+- solution_quality
+scenario_id: OPENML-WEKA-2017-ALGO
