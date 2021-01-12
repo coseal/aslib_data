@@ -1,4 +1,4 @@
-@RELATION SAT11-INDU-Ground-Truth
+@RELATION SAT11-INDU-ALGO-Ground-Truth
 
 @ATTRIBUTE instance_id STRING
 @ATTRIBUTE satunsat {SAT,UNSAT}

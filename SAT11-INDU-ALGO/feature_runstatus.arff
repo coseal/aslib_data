@@ -1,4 +1,4 @@
-@relation FEATURE_RUNSTATUSSAT11-INDU
+@relation FEATURE_RUNSTATUSSAT11-INDU-ALGO
 
 @attribute instance_id string
 @attribute repetition numeric

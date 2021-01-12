@@ -1,4 +1,4 @@
-@RELATION SAT11-INDU-FeatureRuntime
+@RELATION SAT11-INDU-ALGO-FeatureRuntime
 
 @ATTRIBUTE instance_id STRING
 @ATTRIBUTE repetition NUMERIC
