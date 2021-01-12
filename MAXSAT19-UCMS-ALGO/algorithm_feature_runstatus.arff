@@ -1,7 +1,7 @@
 @relation R_data_frame
 
-@attribute algorithm STRING
-@attribute repetition NUMERIC
+@attribute algorithm string
+@attribute repetition numeric
 @attribute code {ok, timeout, memout, not_applicable, crash, other}
 @attribute AST {ok, timeout, memout, not_applicable, crash, other}
 
