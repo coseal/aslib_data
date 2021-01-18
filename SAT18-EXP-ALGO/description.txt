@@ -425,4 +425,4 @@ performance_measures:
 - runtime
 performance_type:
 - runtime
-scenario_id: SAT18-EXP
+scenario_id: SAT18-EXP-ALGO
