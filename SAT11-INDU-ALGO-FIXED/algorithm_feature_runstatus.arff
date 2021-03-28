@@ -1,0 +1,25 @@
+@RELATION ALGORITHM_FEATURE_RUNSTATUS
+
+@ATTRIBUTE algorithm STRING
+@ATTRIBUTE repetition NUMERIC
+@ATTRIBUTE code {ok, timeout, memout, not_applicable, crash, other}
+@ATTRIBUTE AST {ok, timeout, memout, not_applicable, crash, other}
+
+@DATA
+CryptoMiniSat_Strange-Night2-st_fixed_,1,ok,ok
+EBGlucose_1.0,1,ok,ok
+MPhaseSAT64_2011-05-14_fixed_,1,ok,ok
+QuteRSat_2011-05-12_fixed_,1,ok,ok
+RestartSAT_B95,1,ok,ok
+SAT09referencesolverglucose_1.0,1,ok,ok
+SAT09referencesolverprecosat_236,1,ok,ok
+glucose_2,1,ok,ok
+glueminisat_2.2.5,1,ok,ok
+minisathackEBMiniSAT_2011-03-02,1,ok,ok
+minisathackLR_GL_SHR_2011-03-02,1,ok,ok
+minisathackMiniSAT_2.2.0-agile-26,1,ok,ok
+minisathackcir_minisat_2011-05-13_simp_,1,ok,ok
+minisathackcontrasat_2011-03-02,1,ok,ok
+minisathackminisat_psm_2011-04-01,1,ok,ok
+minisathackreferenceminisat_2.2.0,1,ok,ok
+rcl_2011-04-01,1,ok,ok
