@@ -1,0 +1,29 @@
+@RELATION ALGORITHM_FEATURE_RUNSTATUS
+
+@ATTRIBUTE algorithm STRING
+@ATTRIBUTE repetition NUMERIC
+@ATTRIBUTE code {ok, timeout, memout, not_applicable, crash, other}
+@ATTRIBUTE AST {ok, timeout, memout, not_applicable, crash, other}
+
+@DATA
+X2361_weka.OneR,1,ok,ok
+X2362_weka.J48,1,ok,ok
+X2364_weka.IBk,1,ok,ok
+X2367_weka.REPTree,1,ok,ok
+X2368_weka.RandomTree,1,ok,ok
+X2369_weka.RandomForest,1,ok,ok
+X2370_weka.LMT,1,ok,ok
+X2373_weka.JRip,1,ok,ok
+X2381_weka.NaiveBayes,1,ok,ok
+X2647_weka.Logistic,1,ok,ok
+X2869_weka.SMO_PolyKernel,1,ok,ok
+X2891_weka.HyperPipes,1,ok,ok
+X2893_weka.OLM,1,ok,ok
+X2897_weka.ConjunctiveRule,1,ok,ok
+X2898_weka.SimpleCart,1,ok,ok
+X2900_weka.LADTree,1,ok,ok
+X2903_weka.AdaBoostM1_DecisionStump,1,ok,ok
+X2906_weka.Bagging_REPTree,1,ok,ok
+X6250_weka.DecisionTable,1,ok,ok
+X6352_weka.BayesNet,1,ok,ok
+X6378_weka.LogitBoost_DecisionStump,1,ok,ok

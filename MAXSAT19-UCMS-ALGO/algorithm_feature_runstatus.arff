@@ -1,0 +1,15 @@
+@relation R_data_frame
+
+@attribute algorithm string
+@attribute repetition numeric
+@attribute code {ok, timeout, memout, not_applicable, crash, other}
+@attribute AST {ok, timeout, memout, not_applicable, crash, other}
+
+@DATA
+MaxHS,1,ok,ok
+Open.WBO.g,1,ok,ok
+Open.WBO.ms,1,ok,ok
+Open.WBO.ms.pre,1,ok,ok
+QMaxSAT2018,1,ok,ok
+UWrMaxSAT,1,ok,ok
+maxino2018,1,ok,ok

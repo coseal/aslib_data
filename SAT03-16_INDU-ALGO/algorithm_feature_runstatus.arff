@@ -1,0 +1,16 @@
+@RELATION ALGORITHM_FEATURE_RUNSTATUS
+
+@ATTRIBUTE algorithm STRING
+@ATTRIBUTE repetition NUMERIC
+@ATTRIBUTE code {ok, timeout, memout, not_applicable, crash, other}
+@ATTRIBUTE AST {ok, timeout, memout, not_applicable, crash, other}
+
+@DATA
+beans_and_eggs,1,ok,ok
+glucose_kiel,1,ok,ok
+maple_glucose,1,ok,ok
+maplecms,1,ok,ok
+maplecomsps,1,ok,ok
+maplecomsps_lrb,1,ok,ok
+scavel_sat,1,ok,ok
+splatz,1,ok,ok
