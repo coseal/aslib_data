@@ -1,0 +1,498 @@
+algorithm_cutoff_memory: '?'
+algorithm_cutoff_time: 5000.0
+algorithms_deterministic:
+- CTSat+default
+- CTSat_noproof+default
+- CaDiCaL-sc2020+default
+- DurianSat+default
+- ExMapleLCMDistChronoBT+PADC_DL
+- ExMapleLCMDistChronoBT+PADC_DL_OVAU_Exp
+- ExMapleLCMDistChronoBT+PADC_DL_OVAU_Lin
+- ExMapleLCMDistChronoBT+PSIDS_DL
+- GlucoseEsbpSel+default
+- Kissat-sc2020-default+default
+- Kissat-sc2020-sat+default
+- Kissat-sc2020-unsat+default
+- MLCMDCHRONOBT-DL-V2.2SCAVELRFV+default
+- MLCMDChronoBT-DL-Scavel+default
+- Maple-LCM-Dist-alluip-trail+default
+- MapleCOMSPS_LRB_VSIDS_2+LRB_VSIDS_2_init
+- MapleCOMSPS_LRB_VSIDS_2+default_drup
+- MapleLCMDistChronoBT-DL-Scavel01+default
+- MapleLCMDistChronoBT-DL-Scavel02+default
+- MapleLCMDistChronoBT-DL-f2trc+default
+- MapleLCMDistChronoBT-DL-v3+default
+- MapleLCMDistChronoBT-f2trc+default
+- MapleLCMDistChronoBT-f2trc-s+default
+- Maple_CM+dist+default
+- Maple_CM+dist+sattime2s+-+default
+- Maple_CM+dist+simp2--+default
+- Maple_CMused+dist+default
+- Maple_mix+default
+- Maple_simp+default
+- ParaFROST+default
+- ParaFROST_ALL+default
+- ParaFROST_CBT+default
+- ParaFROST_HRE+default
+- PauSat+default
+- PauSat_noproof+default
+- PauSat_noproof+noproof
+- Relaxed_LCMDCBDL+default
+- Relaxed_LCMDCBDL_newTech+default
+- Relaxed_LCMDCBDL_noTimePara+default
+- Riss+NOUNSAT_proof-fixed
+- Riss+default_proof
+- Riss-nolimit+NOLIMIT
+- SLIME+default
+- SLIME+default-no-drup
+- Top16-Undominated-LC-MapleLCMDiscChronoBT-DL+default
+- Top24-Undominated-LC-MapleLCMDiscChronoBT-DL+default
+- Top36-Undominated-LC-MapleLCMDiscChronoBT-DL+default
+- Undominated-LC-MapleLCMDiscChronoBT-DL+default
+- abcdsat_n20+default
+- cadical-alluip+default
+- cadical-alluip-trail+default
+- cadical-trail+default
+- cryptominisat-ccnr+default
+- cryptominisat-ccnr-lsids+default
+- cryptominisat-ccnr-lsids-nolimits+default
+- cryptominisat-ccnr-nolimits+default
+- cryptominisat-walksat+default
+- cryptominisat-walksat-nolimits+default
+- exp_L_MLD_CBT_DL+default
+- exp_V_LGB_MLD_CBT_DL+default
+- exp_V_L_MLD_CBT_DL+default
+- exp_V_MLD_CBT_DL+default
+- glucose-3.0-inprocess+default
+- glucose3.0+proofs
+- mergesat+default
+- optsat_m20+default
+- upGlucose-3.0_PADC+default
+algorithms_stochastic: ''
+default_steps:
+- ALL
+feature_steps:
+  ALL:
+    provides:
+    - instance_id
+    - repetition
+    - nvarsOrig
+    - nclausesOrig
+    - nvars
+    - nclauses
+    - reducedVars
+    - reducedClauses
+    - vars-clauses-ratio
+    - POSNEG-RATIO-CLAUSE-mean
+    - POSNEG-RATIO-CLAUSE-coeff-variation
+    - POSNEG-RATIO-CLAUSE-min
+    - POSNEG-RATIO-CLAUSE-max
+    - POSNEG-RATIO-CLAUSE-entropy
+    - VCG-CLAUSE-mean
+    - VCG-CLAUSE-coeff-variation
+    - VCG-CLAUSE-min
+    - VCG-CLAUSE-max
+    - VCG-CLAUSE-entropy
+    - UNARY
+    - BINARY+
+    - TRINARY+
+    - VCG-VAR-mean
+    - VCG-VAR-coeff-variation
+    - VCG-VAR-min
+    - VCG-VAR-max
+    - VCG-VAR-entropy
+    - POSNEG-RATIO-VAR-mean
+    - POSNEG-RATIO-VAR-stdev
+    - POSNEG-RATIO-VAR-min
+    - POSNEG-RATIO-VAR-max
+    - POSNEG-RATIO-VAR-entropy
+    - HORNY-VAR-mean
+    - HORNY-VAR-coeff-variation
+    - HORNY-VAR-min
+    - HORNY-VAR-max
+    - HORNY-VAR-entropy
+    - horn-clauses-fraction
+    - VG-mean
+    - VG-coeff-variation
+    - VG-min
+    - VG-max
+    - CG-mean
+    - CG-coeff-variation
+    - CG-min
+    - CG-max
+    - CG-entropy
+    - cluster-coeff-mean
+    - cluster-coeff-coeff-variation
+    - cluster-coeff-min
+    - cluster-coeff-max
+    - cluster-coeff-entropy
+    - DIAMETER-mean
+    - DIAMETER-coeff-variation
+    - DIAMETER-min
+    - DIAMETER-max
+    - DIAMETER-entropy
+    - saps_BestSolution_Mean
+    - saps_BestSolution_CoeffVariance
+    - saps_FirstLocalMinStep_Mean
+    - saps_FirstLocalMinStep_CoeffVariance
+    - saps_FirstLocalMinStep_Median
+    - saps_FirstLocalMinStep_Q.10
+    - saps_FirstLocalMinStep_Q.90
+    - saps_BestAvgImprovement_Mean
+    - saps_BestAvgImprovement_CoeffVariance
+    - saps_FirstLocalMinRatio_Mean
+    - saps_FirstLocalMinRatio_CoeffVariance
+    - gsat_BestSolution_Mean
+    - gsat_BestSolution_CoeffVariance
+    - gsat_FirstLocalMinStep_Mean
+    - gsat_FirstLocalMinStep_CoeffVariance
+    - gsat_FirstLocalMinStep_Median
+    - gsat_FirstLocalMinStep_Q.10
+    - gsat_FirstLocalMinStep_Q.90
+    - gsat_BestAvgImprovement_Mean
+    - gsat_BestAvgImprovement_CoeffVariance
+    - gsat_FirstLocalMinRatio_Mean
+    - gsat_FirstLocalMinRatio_CoeffVariance
+    - SP-bias-mean
+    - SP-bias-coeff-variation
+    - SP-bias-min
+    - SP-bias-max
+    - SP-bias-q90
+    - SP-bias-q10
+    - SP-bias-q75
+    - SP-bias-q25
+    - SP-bias-q50
+    - SP-unconstraint-mean
+    - SP-unconstraint-coeff-variation
+    - SP-unconstraint-min
+    - SP-unconstraint-max
+    - SP-unconstraint-q90
+    - SP-unconstraint-q10
+    - SP-unconstraint-q75
+    - SP-unconstraint-q25
+    - SP-unconstraint-q50
+    - vars-reduced-depth-1
+    - vars-reduced-depth-4
+    - vars-reduced-depth-16
+    - vars-reduced-depth-64
+    - vars-reduced-depth-256
+    - lobjois-mean-depth-over-vars
+    - lobjois-log-num-nodes-over-vars
+features_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_deterministic:
+- instance_id
+- repetition
+- nvarsOrig
+- nclausesOrig
+- nvars
+- nclauses
+- reducedVars
+- reducedClauses
+- vars-clauses-ratio
+- POSNEG-RATIO-CLAUSE-mean
+- POSNEG-RATIO-CLAUSE-coeff-variation
+- POSNEG-RATIO-CLAUSE-min
+- POSNEG-RATIO-CLAUSE-max
+- POSNEG-RATIO-CLAUSE-entropy
+- VCG-CLAUSE-mean
+- VCG-CLAUSE-coeff-variation
+- VCG-CLAUSE-min
+- VCG-CLAUSE-max
+- VCG-CLAUSE-entropy
+- UNARY
+- BINARY+
+- TRINARY+
+- VCG-VAR-mean
+- VCG-VAR-coeff-variation
+- VCG-VAR-min
+- VCG-VAR-max
+- VCG-VAR-entropy
+- POSNEG-RATIO-VAR-mean
+- POSNEG-RATIO-VAR-stdev
+- POSNEG-RATIO-VAR-min
+- POSNEG-RATIO-VAR-max
+- POSNEG-RATIO-VAR-entropy
+- HORNY-VAR-mean
+- HORNY-VAR-coeff-variation
+- HORNY-VAR-min
+- HORNY-VAR-max
+- HORNY-VAR-entropy
+- horn-clauses-fraction
+- VG-mean
+- VG-coeff-variation
+- VG-min
+- VG-max
+- CG-mean
+- CG-coeff-variation
+- CG-min
+- CG-max
+- CG-entropy
+- cluster-coeff-mean
+- cluster-coeff-coeff-variation
+- cluster-coeff-min
+- cluster-coeff-max
+- cluster-coeff-entropy
+- DIAMETER-mean
+- DIAMETER-coeff-variation
+- DIAMETER-min
+- DIAMETER-max
+- DIAMETER-entropy
+- saps_BestSolution_Mean
+- saps_BestSolution_CoeffVariance
+- saps_FirstLocalMinStep_Mean
+- saps_FirstLocalMinStep_CoeffVariance
+- saps_FirstLocalMinStep_Median
+- saps_FirstLocalMinStep_Q.10
+- saps_FirstLocalMinStep_Q.90
+- saps_BestAvgImprovement_Mean
+- saps_BestAvgImprovement_CoeffVariance
+- saps_FirstLocalMinRatio_Mean
+- saps_FirstLocalMinRatio_CoeffVariance
+- gsat_BestSolution_Mean
+- gsat_BestSolution_CoeffVariance
+- gsat_FirstLocalMinStep_Mean
+- gsat_FirstLocalMinStep_CoeffVariance
+- gsat_FirstLocalMinStep_Median
+- gsat_FirstLocalMinStep_Q.10
+- gsat_FirstLocalMinStep_Q.90
+- gsat_BestAvgImprovement_Mean
+- gsat_BestAvgImprovement_CoeffVariance
+- gsat_FirstLocalMinRatio_Mean
+- gsat_FirstLocalMinRatio_CoeffVariance
+- SP-bias-mean
+- SP-bias-coeff-variation
+- SP-bias-min
+- SP-bias-max
+- SP-bias-q90
+- SP-bias-q10
+- SP-bias-q75
+- SP-bias-q25
+- SP-bias-q50
+- SP-unconstraint-mean
+- SP-unconstraint-coeff-variation
+- SP-unconstraint-min
+- SP-unconstraint-max
+- SP-unconstraint-q90
+- SP-unconstraint-q10
+- SP-unconstraint-q75
+- SP-unconstraint-q25
+- SP-unconstraint-q50
+- vars-reduced-depth-1
+- vars-reduced-depth-4
+- vars-reduced-depth-16
+- vars-reduced-depth-64
+- vars-reduced-depth-256
+- lobjois-mean-depth-over-vars
+- lobjois-log-num-nodes-over-vars
+features_stochastic: ''
+maximize:
+- false
+metainfo_algorithms:
+  CTSat+default:
+    configuration: ''
+    deterministic: yes
+  CTSat_noproof+default:
+    configuration: ''
+    deterministic: yes
+  CaDiCaL-sc2020+default:
+    configuration: ''
+    deterministic: yes
+  DurianSat+default:
+    configuration: ''
+    deterministic: yes
+  ExMapleLCMDistChronoBT+PADC_DL:
+    configuration: ''
+    deterministic: yes
+  ExMapleLCMDistChronoBT+PADC_DL_OVAU_Exp:
+    configuration: ''
+    deterministic: yes
+  ExMapleLCMDistChronoBT+PADC_DL_OVAU_Lin:
+    configuration: ''
+    deterministic: yes
+  ExMapleLCMDistChronoBT+PSIDS_DL:
+    configuration: ''
+    deterministic: yes
+  GlucoseEsbpSel+default:
+    configuration: ''
+    deterministic: yes
+  Kissat-sc2020-default+default:
+    configuration: ''
+    deterministic: yes
+  Kissat-sc2020-sat+default:
+    configuration: ''
+    deterministic: yes
+  Kissat-sc2020-unsat+default:
+    configuration: ''
+    deterministic: yes
+  MLCMDCHRONOBT-DL-V2.2SCAVELRFV+default:
+    configuration: ''
+    deterministic: yes
+  MLCMDChronoBT-DL-Scavel+default:
+    configuration: ''
+    deterministic: yes
+  Maple-LCM-Dist-alluip-trail+default:
+    configuration: ''
+    deterministic: yes
+  MapleCOMSPS_LRB_VSIDS_2+LRB_VSIDS_2_init:
+    configuration: ''
+    deterministic: yes
+  MapleCOMSPS_LRB_VSIDS_2+default_drup:
+    configuration: ''
+    deterministic: yes
+  MapleLCMDistChronoBT-DL-Scavel01+default:
+    configuration: ''
+    deterministic: yes
+  MapleLCMDistChronoBT-DL-Scavel02+default:
+    configuration: ''
+    deterministic: yes
+  MapleLCMDistChronoBT-DL-f2trc+default:
+    configuration: ''
+    deterministic: yes
+  MapleLCMDistChronoBT-DL-v3+default:
+    configuration: ''
+    deterministic: yes
+  MapleLCMDistChronoBT-f2trc+default:
+    configuration: ''
+    deterministic: yes
+  MapleLCMDistChronoBT-f2trc-s+default:
+    configuration: ''
+    deterministic: yes
+  Maple_CM+dist+default:
+    configuration: ''
+    deterministic: yes
+  Maple_CM+dist+sattime2s+-+default:
+    configuration: ''
+    deterministic: yes
+  Maple_CM+dist+simp2--+default:
+    configuration: ''
+    deterministic: yes
+  Maple_CMused+dist+default:
+    configuration: ''
+    deterministic: yes
+  Maple_mix+default:
+    configuration: ''
+    deterministic: yes
+  Maple_simp+default:
+    configuration: ''
+    deterministic: yes
+  ParaFROST+default:
+    configuration: ''
+    deterministic: yes
+  ParaFROST_ALL+default:
+    configuration: ''
+    deterministic: yes
+  ParaFROST_CBT+default:
+    configuration: ''
+    deterministic: yes
+  ParaFROST_HRE+default:
+    configuration: ''
+    deterministic: yes
+  PauSat+default:
+    configuration: ''
+    deterministic: yes
+  PauSat_noproof+default:
+    configuration: ''
+    deterministic: yes
+  PauSat_noproof+noproof:
+    configuration: ''
+    deterministic: yes
+  Relaxed_LCMDCBDL+default:
+    configuration: ''
+    deterministic: yes
+  Relaxed_LCMDCBDL_newTech+default:
+    configuration: ''
+    deterministic: yes
+  Relaxed_LCMDCBDL_noTimePara+default:
+    configuration: ''
+    deterministic: yes
+  Riss+NOUNSAT_proof-fixed:
+    configuration: ''
+    deterministic: yes
+  Riss+default_proof:
+    configuration: ''
+    deterministic: yes
+  Riss-nolimit+NOLIMIT:
+    configuration: ''
+    deterministic: yes
+  SLIME+default:
+    configuration: ''
+    deterministic: yes
+  SLIME+default-no-drup:
+    configuration: ''
+    deterministic: yes
+  Top16-Undominated-LC-MapleLCMDiscChronoBT-DL+default:
+    configuration: ''
+    deterministic: yes
+  Top24-Undominated-LC-MapleLCMDiscChronoBT-DL+default:
+    configuration: ''
+    deterministic: yes
+  Top36-Undominated-LC-MapleLCMDiscChronoBT-DL+default:
+    configuration: ''
+    deterministic: yes
+  Undominated-LC-MapleLCMDiscChronoBT-DL+default:
+    configuration: ''
+    deterministic: yes
+  abcdsat_n20+default:
+    configuration: ''
+    deterministic: yes
+  cadical-alluip+default:
+    configuration: ''
+    deterministic: yes
+  cadical-alluip-trail+default:
+    configuration: ''
+    deterministic: yes
+  cadical-trail+default:
+    configuration: ''
+    deterministic: yes
+  cryptominisat-ccnr+default:
+    configuration: ''
+    deterministic: yes
+  cryptominisat-ccnr-lsids+default:
+    configuration: ''
+    deterministic: yes
+  cryptominisat-ccnr-lsids-nolimits+default:
+    configuration: ''
+    deterministic: yes
+  cryptominisat-ccnr-nolimits+default:
+    configuration: ''
+    deterministic: yes
+  cryptominisat-walksat+default:
+    configuration: ''
+    deterministic: yes
+  cryptominisat-walksat-nolimits+default:
+    configuration: ''
+    deterministic: yes
+  exp_L_MLD_CBT_DL+default:
+    configuration: ''
+    deterministic: yes
+  exp_V_LGB_MLD_CBT_DL+default:
+    configuration: ''
+    deterministic: yes
+  exp_V_L_MLD_CBT_DL+default:
+    configuration: ''
+    deterministic: yes
+  exp_V_MLD_CBT_DL+default:
+    configuration: ''
+    deterministic: yes
+  glucose-3.0-inprocess+default:
+    configuration: ''
+    deterministic: yes
+  glucose3.0+proofs:
+    configuration: ''
+    deterministic: yes
+  mergesat+default:
+    configuration: ''
+    deterministic: yes
+  optsat_m20+default:
+    configuration: ''
+    deterministic: yes
+  upGlucose-3.0_PADC+default:
+    configuration: ''
+    deterministic: yes
+number_of_feature_steps: 1
+performance_measures:
+- runtime
+performance_type:
+- runtime
+scenario_id: SAT20-MAIN
