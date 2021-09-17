@@ -1,4 +1,4 @@
-algorithm_cutoff_memory: '?'
+algorithm_cutoff_memory: 128000
 algorithm_cutoff_time: 5000.0
 algorithms_deterministic:
 - CTSat+default
