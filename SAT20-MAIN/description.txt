@@ -70,89 +70,90 @@ algorithms_deterministic:
 - upGlucose-3.0_PADC+default
 algorithms_stochastic: ''
 default_steps:
-- ALL
+- DIA
+- LOBJOIS
+- BASE
+- UNIT
+- SP
+- LS
+- LP
 feature_steps:
-  ALL:
+  DIA:
     provides:
-    - instance_id
-    - repetition
-    - nvarsOrig
-    - nclausesOrig
-    - nvars
-    - nclauses
-    - reducedVars
-    - reducedClauses
-    - vars-clauses-ratio
-    - POSNEG-RATIO-CLAUSE-mean
-    - POSNEG-RATIO-CLAUSE-coeff-variation
-    - POSNEG-RATIO-CLAUSE-min
-    - POSNEG-RATIO-CLAUSE-max
-    - POSNEG-RATIO-CLAUSE-entropy
-    - VCG-CLAUSE-mean
-    - VCG-CLAUSE-coeff-variation
-    - VCG-CLAUSE-min
-    - VCG-CLAUSE-max
-    - VCG-CLAUSE-entropy
-    - UNARY
-    - BINARY+
-    - TRINARY+
-    - VCG-VAR-mean
-    - VCG-VAR-coeff-variation
-    - VCG-VAR-min
-    - VCG-VAR-max
-    - VCG-VAR-entropy
-    - POSNEG-RATIO-VAR-mean
-    - POSNEG-RATIO-VAR-stdev
-    - POSNEG-RATIO-VAR-min
-    - POSNEG-RATIO-VAR-max
-    - POSNEG-RATIO-VAR-entropy
-    - HORNY-VAR-mean
-    - HORNY-VAR-coeff-variation
-    - HORNY-VAR-min
-    - HORNY-VAR-max
-    - HORNY-VAR-entropy
-    - horn-clauses-fraction
-    - VG-mean
-    - VG-coeff-variation
-    - VG-min
-    - VG-max
-    - CG-mean
-    - CG-coeff-variation
-    - CG-min
-    - CG-max
-    - CG-entropy
-    - cluster-coeff-mean
-    - cluster-coeff-coeff-variation
-    - cluster-coeff-min
-    - cluster-coeff-max
-    - cluster-coeff-entropy
     - DIAMETER-mean
     - DIAMETER-coeff-variation
     - DIAMETER-min
     - DIAMETER-max
     - DIAMETER-entropy
-    - saps_BestSolution_Mean
-    - saps_BestSolution_CoeffVariance
-    - saps_FirstLocalMinStep_Mean
-    - saps_FirstLocalMinStep_CoeffVariance
-    - saps_FirstLocalMinStep_Median
-    - saps_FirstLocalMinStep_Q.10
-    - saps_FirstLocalMinStep_Q.90
-    - saps_BestAvgImprovement_Mean
-    - saps_BestAvgImprovement_CoeffVariance
-    - saps_FirstLocalMinRatio_Mean
-    - saps_FirstLocalMinRatio_CoeffVariance
-    - gsat_BestSolution_Mean
-    - gsat_BestSolution_CoeffVariance
-    - gsat_FirstLocalMinStep_Mean
-    - gsat_FirstLocalMinStep_CoeffVariance
-    - gsat_FirstLocalMinStep_Median
-    - gsat_FirstLocalMinStep_Q.10
-    - gsat_FirstLocalMinStep_Q.90
-    - gsat_BestAvgImprovement_Mean
-    - gsat_BestAvgImprovement_CoeffVariance
-    - gsat_FirstLocalMinRatio_Mean
-    - gsat_FirstLocalMinRatio_CoeffVariance
+
+  LOBJOIS:
+    provides:
+    - LOBJOIS-lobjois-mean-depth-over-vars
+    - LOBJOIS-lobjois-log-num-nodes-over-vars
+
+  BASE:
+    provides:
+    - BASE-nvarsOrig
+    - BASE-nclausesOrig
+    - BASE-nvars
+    - BASE-nclauses
+    - BASE-reducedVars
+    - BASE-reducedClauses
+    - BASE-vars-clauses-ratio
+    - BASE-POSNEG-RATIO-CLAUSE-mean
+    - BASE-POSNEG-RATIO-CLAUSE-coeff-variation
+    - BASE-POSNEG-RATIO-CLAUSE-min
+    - BASE-POSNEG-RATIO-CLAUSE-max
+    - BASE-POSNEG-RATIO-CLAUSE-entropy
+    - BASE-VCG-CLAUSE-mean
+    - BASE-VCG-CLAUSE-coeff-variation
+    - BASE-VCG-CLAUSE-min
+    - BASE-VCG-CLAUSE-max
+    - BASE-VCG-CLAUSE-entropy
+    - BASE-UNARY
+    - BASE-BINARY+
+    - BASE-TRINARY+
+    - BASE-VCG-VAR-mean
+    - BASE-VCG-VAR-coeff-variation
+    - BASE-VCG-VAR-min
+    - BASE-VCG-VAR-max
+    - BASE-VCG-VAR-entropy
+    - BASE-POSNEG-RATIO-VAR-mean
+    - BASE-POSNEG-RATIO-VAR-stdev
+    - BASE-POSNEG-RATIO-VAR-min
+    - BASE-POSNEG-RATIO-VAR-max
+    - BASE-POSNEG-RATIO-VAR-entropy
+    - BASE-HORNY-VAR-mean
+    - BASE-HORNY-VAR-coeff-variation
+    - BASE-HORNY-VAR-min
+    - BASE-HORNY-VAR-max
+    - BASE-HORNY-VAR-entropy
+    - BASE-horn-clauses-fraction
+    - BASE-VG-mean
+    - BASE-VG-coeff-variation
+    - BASE-VG-min
+    - BASE-VG-max
+    - BASE-CG-mean
+    - BASE-CG-coeff-variation
+    - BASE-CG-min
+    - BASE-CG-max
+    - BASE-CG-entropy
+    - BASE-cluster-coeff-mean
+    - BASE-cluster-coeff-coeff-variation
+    - BASE-cluster-coeff-min
+    - BASE-cluster-coeff-max
+    - BASE-cluster-coeff-entropy
+
+  UNIT:
+    provides:
+    - UNIT-vars-reduced-depth-1
+    - UNIT-vars-reduced-depth-4
+    - UNIT-vars-reduced-depth-16
+    - UNIT-vars-reduced-depth-64
+    - UNIT-vars-reduced-depth-256
+
+  SP:
+    provides:
     - SP-bias-mean
     - SP-bias-coeff-variation
     - SP-bias-min
@@ -171,95 +172,103 @@ feature_steps:
     - SP-unconstraint-q75
     - SP-unconstraint-q25
     - SP-unconstraint-q50
-    - vars-reduced-depth-1
-    - vars-reduced-depth-4
-    - vars-reduced-depth-16
-    - vars-reduced-depth-64
-    - vars-reduced-depth-256
-    - lobjois-mean-depth-over-vars
-    - lobjois-log-num-nodes-over-vars
-features_cutoff_memory: '?'
-features_cutoff_time: '?'
+
+  LS:
+    provides:
+    - LS-saps_BestSolution_Mean
+    - LS-saps_BestSolution_CoeffVariance
+    - LS-saps_FirstLocalMinStep_Mean
+    - LS-saps_FirstLocalMinStep_CoeffVariance
+    - LS-saps_FirstLocalMinStep_Median
+    - LS-saps_FirstLocalMinStep_Q.10
+    - LS-saps_FirstLocalMinStep_Q.90
+    - LS-saps_BestAvgImprovement_Mean
+    - LS-saps_BestAvgImprovement_CoeffVariance
+    - LS-saps_FirstLocalMinRatio_Mean
+    - LS-saps_FirstLocalMinRatio_CoeffVariance
+    - LS-gsat_BestSolution_Mean
+    - LS-gsat_BestSolution_CoeffVariance
+    - LS-gsat_FirstLocalMinStep_Mean
+    - LS-gsat_FirstLocalMinStep_CoeffVariance
+    - LS-gsat_FirstLocalMinStep_Median
+    - LS-gsat_FirstLocalMinStep_Q.10
+    - LS-gsat_FirstLocalMinStep_Q.90
+    - LS-gsat_BestAvgImprovement_Mean
+    - LS-gsat_BestAvgImprovement_CoeffVariance
+    - LS-gsat_FirstLocalMinRatio_Mean
+    - LS-gsat_FirstLocalMinRatio_CoeffVariance
+
+  LP:
+    provides:
+    - LP_OBJ
+    - LPSLack-mean
+    - LPSLack-coeff-variation
+    - LPSLack-min
+    - LPSLack-max
+    - LP-lpIntRatio
 features_deterministic:
-- instance_id
-- repetition
-- nvarsOrig
-- nclausesOrig
-- nvars
-- nclauses
-- reducedVars
-- reducedClauses
-- vars-clauses-ratio
-- POSNEG-RATIO-CLAUSE-mean
-- POSNEG-RATIO-CLAUSE-coeff-variation
-- POSNEG-RATIO-CLAUSE-min
-- POSNEG-RATIO-CLAUSE-max
-- POSNEG-RATIO-CLAUSE-entropy
-- VCG-CLAUSE-mean
-- VCG-CLAUSE-coeff-variation
-- VCG-CLAUSE-min
-- VCG-CLAUSE-max
-- VCG-CLAUSE-entropy
-- UNARY
-- BINARY+
-- TRINARY+
-- VCG-VAR-mean
-- VCG-VAR-coeff-variation
-- VCG-VAR-min
-- VCG-VAR-max
-- VCG-VAR-entropy
-- POSNEG-RATIO-VAR-mean
-- POSNEG-RATIO-VAR-stdev
-- POSNEG-RATIO-VAR-min
-- POSNEG-RATIO-VAR-max
-- POSNEG-RATIO-VAR-entropy
-- HORNY-VAR-mean
-- HORNY-VAR-coeff-variation
-- HORNY-VAR-min
-- HORNY-VAR-max
-- HORNY-VAR-entropy
-- horn-clauses-fraction
-- VG-mean
-- VG-coeff-variation
-- VG-min
-- VG-max
-- CG-mean
-- CG-coeff-variation
-- CG-min
-- CG-max
-- CG-entropy
-- cluster-coeff-mean
-- cluster-coeff-coeff-variation
-- cluster-coeff-min
-- cluster-coeff-max
-- cluster-coeff-entropy
 - DIAMETER-mean
 - DIAMETER-coeff-variation
 - DIAMETER-min
 - DIAMETER-max
 - DIAMETER-entropy
-- saps_BestSolution_Mean
-- saps_BestSolution_CoeffVariance
-- saps_FirstLocalMinStep_Mean
-- saps_FirstLocalMinStep_CoeffVariance
-- saps_FirstLocalMinStep_Median
-- saps_FirstLocalMinStep_Q.10
-- saps_FirstLocalMinStep_Q.90
-- saps_BestAvgImprovement_Mean
-- saps_BestAvgImprovement_CoeffVariance
-- saps_FirstLocalMinRatio_Mean
-- saps_FirstLocalMinRatio_CoeffVariance
-- gsat_BestSolution_Mean
-- gsat_BestSolution_CoeffVariance
-- gsat_FirstLocalMinStep_Mean
-- gsat_FirstLocalMinStep_CoeffVariance
-- gsat_FirstLocalMinStep_Median
-- gsat_FirstLocalMinStep_Q.10
-- gsat_FirstLocalMinStep_Q.90
-- gsat_BestAvgImprovement_Mean
-- gsat_BestAvgImprovement_CoeffVariance
-- gsat_FirstLocalMinRatio_Mean
-- gsat_FirstLocalMinRatio_CoeffVariance
+- LOBJOIS-lobjois-mean-depth-over-vars
+- LOBJOIS-lobjois-log-num-nodes-over-vars
+- BASE-nvarsOrig
+- BASE-nclausesOrig
+- BASE-nvars
+- BASE-nclauses
+- BASE-reducedVars
+- BASE-reducedClauses
+- BASE-vars-clauses-ratio
+- BASE-POSNEG-RATIO-CLAUSE-mean
+- BASE-POSNEG-RATIO-CLAUSE-coeff-variation
+- BASE-POSNEG-RATIO-CLAUSE-min
+- BASE-POSNEG-RATIO-CLAUSE-max
+- BASE-POSNEG-RATIO-CLAUSE-entropy
+- BASE-VCG-CLAUSE-mean
+- BASE-VCG-CLAUSE-coeff-variation
+- BASE-VCG-CLAUSE-min
+- BASE-VCG-CLAUSE-max
+- BASE-VCG-CLAUSE-entropy
+- BASE-UNARY
+- BASE-BINARY+
+- BASE-TRINARY+
+- BASE-VCG-VAR-mean
+- BASE-VCG-VAR-coeff-variation
+- BASE-VCG-VAR-min
+- BASE-VCG-VAR-max
+- BASE-VCG-VAR-entropy
+- BASE-POSNEG-RATIO-VAR-mean
+- BASE-POSNEG-RATIO-VAR-stdev
+- BASE-POSNEG-RATIO-VAR-min
+- BASE-POSNEG-RATIO-VAR-max
+- BASE-POSNEG-RATIO-VAR-entropy
+- BASE-HORNY-VAR-mean
+- BASE-HORNY-VAR-coeff-variation
+- BASE-HORNY-VAR-min
+- BASE-HORNY-VAR-max
+- BASE-HORNY-VAR-entropy
+- BASE-horn-clauses-fraction
+- BASE-VG-mean
+- BASE-VG-coeff-variation
+- BASE-VG-min
+- BASE-VG-max
+- BASE-CG-mean
+- BASE-CG-coeff-variation
+- BASE-CG-min
+- BASE-CG-max
+- BASE-CG-entropy
+- BASE-cluster-coeff-mean
+- BASE-cluster-coeff-coeff-variation
+- BASE-cluster-coeff-min
+- BASE-cluster-coeff-max
+- BASE-cluster-coeff-entropy
+- UNIT-vars-reduced-depth-1
+- UNIT-vars-reduced-depth-4
+- UNIT-vars-reduced-depth-16
+- UNIT-vars-reduced-depth-64
+- UNIT-vars-reduced-depth-256
 - SP-bias-mean
 - SP-bias-coeff-variation
 - SP-bias-min
@@ -278,13 +287,35 @@ features_deterministic:
 - SP-unconstraint-q75
 - SP-unconstraint-q25
 - SP-unconstraint-q50
-- vars-reduced-depth-1
-- vars-reduced-depth-4
-- vars-reduced-depth-16
-- vars-reduced-depth-64
-- vars-reduced-depth-256
-- lobjois-mean-depth-over-vars
-- lobjois-log-num-nodes-over-vars
+- LS-saps_BestSolution_Mean
+- LS-saps_BestSolution_CoeffVariance
+- LS-saps_FirstLocalMinStep_Mean
+- LS-saps_FirstLocalMinStep_CoeffVariance
+- LS-saps_FirstLocalMinStep_Median
+- LS-saps_FirstLocalMinStep_Q.10
+- LS-saps_FirstLocalMinStep_Q.90
+- LS-saps_BestAvgImprovement_Mean
+- LS-saps_BestAvgImprovement_CoeffVariance
+- LS-saps_FirstLocalMinRatio_Mean
+- LS-saps_FirstLocalMinRatio_CoeffVariance
+- LS-gsat_BestSolution_Mean
+- LS-gsat_BestSolution_CoeffVariance
+- LS-gsat_FirstLocalMinStep_Mean
+- LS-gsat_FirstLocalMinStep_CoeffVariance
+- LS-gsat_FirstLocalMinStep_Median
+- LS-gsat_FirstLocalMinStep_Q.10
+- LS-gsat_FirstLocalMinStep_Q.90
+- LS-gsat_BestAvgImprovement_Mean
+- LS-gsat_BestAvgImprovement_CoeffVariance
+- LS-gsat_FirstLocalMinRatio_Mean
+- LS-gsat_FirstLocalMinRatio_CoeffVariance
+- LP_OBJ
+- LPSLack-mean
+- LPSLack-coeff-variation
+- LPSLack-min
+- LPSLack-max
+- LP-lpIntRatio
+
 features_stochastic: ''
 maximize:
 - false
