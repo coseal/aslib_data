@@ -60,7 +60,7 @@ feature_steps:
     - cluster.coeff.min
     - cluster.coeff.max
     - cluster.coeff.entropy
-    - "CG.featuretime\r"
+    - CG.featuretime
 features_cutoff_memory: '?'
 features_cutoff_time: '?'
 features_deterministic:
@@ -117,7 +117,7 @@ features_deterministic:
 - cluster.coeff.min
 - cluster.coeff.max
 - cluster.coeff.entropy
-- "CG.featuretime\r"
+- CG.featuretime
 features_stochastic: ''
 maximize:
 - false
