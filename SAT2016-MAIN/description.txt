@@ -202,4 +202,4 @@ performance_measures:
 - runtime
 performance_type:
 - runtime
-scenario_id: 'teton-SAT2016-25-solvers-solo'
+scenario_id: 'SAT2016-Main'
