@@ -1,12 +1,12 @@
-@RELATION ALGORITHM_FEATURE_RUNSTATUS
+@relation R_data_frame
 
-@ATTRIBUTE algorithm STRING
-@ATTRIBUTE repetition NUMERIC
-@ATTRIBUTE code {ok, timeout, memout, not_applicable, crash, other}
-@ATTRIBUTE AST {ok, timeout, memout, not_applicable, crash, other}
+@attribute algorithm string
+@attribute repetition numeric
+@attribute code {ok,timeout,memout,crash,other,unknown}
+@attribute AST {ok,timeout,memout,crash,other,unknown}
 
-@DATA
+@data
+glasgow2,1,ok,ok
 lad,1,ok,ok
 supplementallad,1,ok,ok
 vf2,1,ok,ok
-glasgow2,1,ok,ok

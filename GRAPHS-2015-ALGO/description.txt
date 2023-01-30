@@ -36,96 +36,96 @@ features_deterministic:
 - lad.values.removed.max
 - lad.time
 features_stochastic: []
-algorithm_features_deterministic: 
-- Lines..Average. 
-- Lines..Total. 
-- Size..Average. 
-- Size..Total. 
-- Number.of.files 
-- Cyclomatic..Average. 
-- Cyclomatic..Total. 
-- Max.Indent..Average. 
-- Max.Indent..Total. 
-- nb_nodes 
-- nb_edges 
-- degree_min 
-- degree_max 
-- degree_mean 
-- degree_variance 
-- degree_entropy 
-- transitivity 
-- clustering_min 
-- clustering_max 
-- clustering_mean 
-- clustering_variance 
-- path_min 
-- paths_max 
-- path_mean 
-- path_variance 
-- path_entropy 
-- Stmt 
-- Type 
-- Decl 
-- Attribute 
-- Operator 
-- Literal 
-- edge_ss 
-- edge_st 
-- edge_sd 
-- edge_sa 
-- edge_so 
-- edge_sl 
-- edge_ts 
-- edge_tt 
-- edge_td 
-- edge_ta 
-- edge_to 
-- edge_tl 
-- edge_ds 
-- edge_dt 
-- edge_dd 
-- edge_da 
-- edge_do 
-- edge_dl 
-- edge_as 
-- edge_at 
-- edge_ad 
-- edge_aa 
-- edge_ao 
-- edge_al 
-- edge_os 
-- edge_ot 
-- edge_od 
-- edge_oa 
-- edge_oo 
-- edge_ol 
-- edge_ls 
-- edge_lt 
-- edge_ld 
-- edge_la 
-- edge_lo 
-- edge_ll 
-- op_short 
-- op_int 
-- op_long 
-- op_long_long 
-- op_float 
-- op_double 
-- op_bit 
-algorithm_features_stochastic: [] 
+algorithm_features_deterministic:
+- Lines..Average.
+- Lines..Total.
+- Size..Average.
+- Size..Total.
+- Number.of.files
+- Cyclomatic..Average.
+- Cyclomatic..Total.
+- Max.Indent..Average.
+- Max.Indent..Total.
+- nb_nodes
+- nb_edges
+- degree_min
+- degree_max
+- degree_mean
+- degree_variance
+- degree_entropy
+- transitivity
+- clustering_min
+- clustering_max
+- clustering_mean
+- clustering_variance
+- path_min
+- paths_max
+- path_mean
+- path_variance
+- path_entropy
+- Stmt
+- Type
+- Decl
+- Attribute
+- Operator
+- Literal
+- edge_ss
+- edge_st
+- edge_sd
+- edge_sa
+- edge_so
+- edge_sl
+- edge_ts
+- edge_tt
+- edge_td
+- edge_ta
+- edge_to
+- edge_tl
+- edge_ds
+- edge_dt
+- edge_dd
+- edge_da
+- edge_do
+- edge_dl
+- edge_as
+- edge_at
+- edge_ad
+- edge_aa
+- edge_ao
+- edge_al
+- edge_os
+- edge_ot
+- edge_od
+- edge_oa
+- edge_oo
+- edge_ol
+- edge_ls
+- edge_lt
+- edge_ld
+- edge_la
+- edge_lo
+- edge_ll
+- op_short
+- op_int
+- op_long
+- op_long_long
+- op_float
+- op_double
+- op_bit
+algorithm_features_stochastic: []
 metainfo_algorithms:
   lad:
-    configuration: ""
-    deterministic: true
+    configuration: ''
+    deterministic: yes
   supplementallad:
-    configuration: ""
-    deterministic: true
+    configuration: ''
+    deterministic: yes
   vf2:
-    configuration: ""
-    deterministic: true
+    configuration: ''
+    deterministic: yes
   glasgow2:
-    configuration: ""
-    deterministic: true
+    configuration: ''
+    deterministic: yes
 performance_measures: runtime
 performance_type: runtime
 maximize: no
@@ -135,7 +135,7 @@ features_cutoff_time: '?'
 features_cutoff_memory: '?'
 algorithm_features_cutoff_memory: '?'
 algorithm_features_cutoff_time: '?'
-number_of_feature_steps: 7
+number_of_feature_steps: 7.0
 default_steps:
 - cheap_pattern
 - cheap_target
@@ -193,80 +193,80 @@ feature_steps:
 algorithm_feature_steps:
   code:
     provides:
-    - Lines..Average. 
-    - Lines..Total. 
-    - Size..Average. 
-    - Size..Total. 
-    - Number.of.files 
-    - Cyclomatic..Average. 
-    - Cyclomatic..Total. 
-    - Max.Indent..Average. 
-    - Max.Indent..Total. 
+    - Lines..Average.
+    - Lines..Total.
+    - Size..Average.
+    - Size..Total.
+    - Number.of.files
+    - Cyclomatic..Average.
+    - Cyclomatic..Total.
+    - Max.Indent..Average.
+    - Max.Indent..Total.
   AST:
     provides:
-    - nb_nodes 
-    - nb_edges 
-    - degree_min 
-    - degree_max 
-    - degree_mean 
-    - degree_variance 
-    - degree_entropy 
-    - transitivity 
-    - clustering_min 
-    - clustering_max 
-    - clustering_mean 
-    - clustering_variance 
-    - path_min 
-    - paths_max 
-    - path_mean 
-    - path_variance 
-    - path_entropy 
-    - Stmt 
-    - Type 
-    - Decl 
-    - Attribute 
-    - Operator 
-    - Literal 
-    - edge_ss 
-    - edge_st 
-    - edge_sd 
-    - edge_sa 
-    - edge_so 
-    - edge_sl 
-    - edge_ts 
-    - edge_tt 
-    - edge_td 
-    - edge_ta 
-    - edge_to 
-    - edge_tl 
-    - edge_ds 
-    - edge_dt 
-    - edge_dd 
-    - edge_da 
-    - edge_do 
-    - edge_dl 
-    - edge_as 
-    - edge_at 
-    - edge_ad 
-    - edge_aa 
-    - edge_ao 
-    - edge_al 
-    - edge_os 
-    - edge_ot 
-    - edge_od 
-    - edge_oa 
-    - edge_oo 
-    - edge_ol 
-    - edge_ls 
-    - edge_lt 
-    - edge_ld 
-    - edge_la 
-    - edge_lo 
-    - edge_ll 
-    - op_short 
-    - op_int 
-    - op_long 
-    - op_long_long 
-    - op_float 
-    - op_double 
-    - op_bit 
+    - nb_nodes
+    - nb_edges
+    - degree_min
+    - degree_max
+    - degree_mean
+    - degree_variance
+    - degree_entropy
+    - transitivity
+    - clustering_min
+    - clustering_max
+    - clustering_mean
+    - clustering_variance
+    - path_min
+    - paths_max
+    - path_mean
+    - path_variance
+    - path_entropy
+    - Stmt
+    - Type
+    - Decl
+    - Attribute
+    - Operator
+    - Literal
+    - edge_ss
+    - edge_st
+    - edge_sd
+    - edge_sa
+    - edge_so
+    - edge_sl
+    - edge_ts
+    - edge_tt
+    - edge_td
+    - edge_ta
+    - edge_to
+    - edge_tl
+    - edge_ds
+    - edge_dt
+    - edge_dd
+    - edge_da
+    - edge_do
+    - edge_dl
+    - edge_as
+    - edge_at
+    - edge_ad
+    - edge_aa
+    - edge_ao
+    - edge_al
+    - edge_os
+    - edge_ot
+    - edge_od
+    - edge_oa
+    - edge_oo
+    - edge_ol
+    - edge_ls
+    - edge_lt
+    - edge_ld
+    - edge_la
+    - edge_lo
+    - edge_ll
+    - op_short
+    - op_int
+    - op_long
+    - op_long_long
+    - op_float
+    - op_double
+    - op_bit
