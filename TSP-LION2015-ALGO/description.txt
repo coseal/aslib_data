@@ -228,6 +228,8 @@ metainfo_algorithms:
 number_of_feature_steps: 6
 default_steps: 
      - ubc_cheap
+     - code
+     - AST
 feature_steps:
     ubc_cheap:
         provides: 
