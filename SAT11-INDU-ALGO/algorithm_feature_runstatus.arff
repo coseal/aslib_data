@@ -15,6 +15,7 @@ SAT09referencesolverglucose_1.0,1,ok,ok
 SAT09referencesolverprecosat_236,1,ok,ok
 glucose_2,1,ok,ok
 glueminisat_2.2.5,1,ok,ok
+Lingeling_587f_fixed_,1,ok,ok
 minisathackEBMiniSAT_2011-03-02,1,ok,ok
 minisathackLR_GL_SHR_2011-03-02,1,ok,ok
 minisathackMiniSAT_2.2.0-agile-26,1,ok,ok
