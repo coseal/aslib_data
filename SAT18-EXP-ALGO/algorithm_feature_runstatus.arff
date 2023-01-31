@@ -2,43 +2,44 @@
 
 @ATTRIBUTE algorithm STRING
 @ATTRIBUTE repetition NUMERIC
-@ATTRIBUTE software {ok, timeout, memout, not_applicable, crash, other}
+@attribute code {ok, timeout, memout, not_applicable, crash, other}
+@attribute AST {ok, timeout, memout, not_applicable, crash, other}
 
 @DATA
-abcdsat_r18,1,ok
-CaDiCaL,1,ok
-Candy,1,ok
-cms55.main.all4fixed,1,ok
-COMiniSatPS_Pulsar_drup,1,ok
-expGlucose,1,ok
-YalSAT,1,ok
-smallsat,1,ok
-Maple_LCM_Scavel_200_fix2,1,ok
-Maple_LCM_Scavel_fix2,1,ok
-Maple_LCM_M1,1,ok
-Maple_LCM.BCrestart_M1,1,ok
-Maple_LCM.BCrestart,1,ok
-Maple_CM_ordUIP.,1,ok
-Maple_CM_ordUIP,1,ok
-Maple_CM_Dist,1,ok
-Maple_CM,1,ok
-MapleLCMDistChronoBT,1,ok
-Lingeling,1,ok
-inIDGlucose,1,ok
-glu_mix,1,ok
-gluHack,1,ok
-Glucose_Hack_Kiel_fastBVE,1,ok
-glucose.3.0_PADC_3,1,ok
-glucose.3.0_PADC_10,1,ok
-glucose4.2.1,1,ok
-expMC_VSIDS_LRB_Switch_2500,1,ok
-expMC_LRB_VSIDS_Switch_2500,1,ok
-expMC_LRB_VSIDS_Switch,1,ok
-GHackCOMSPS_drup,1,ok
-glucose3.0,1,ok
-MapleCOMSPS_CHB_VSIDS_drup,1,ok
-MapleCOMSPS_LRB_VSIDS_2_fix,1,ok
-MapleCOMSPS_LRB_VSIDS_drup,1,ok
-Minisat.v2.2.0.106.ge2dd095,1,ok
-Riss7.1.fix,1,ok
-Sparrow2Riss.2018.fixfix,1,ok
+abcdsat_r18,1,ok,ok
+CaDiCaL,1,ok,ok
+Candy,1,ok,ok
+cms55.main.all4fixed,1,ok,ok
+COMiniSatPS_Pulsar_drup,1,ok,ok
+expGlucose,1,ok,ok
+YalSAT,1,ok,ok
+smallsat,1,ok,ok
+Maple_LCM_Scavel_200_fix2,1,ok,ok
+Maple_LCM_Scavel_fix2,1,ok,ok
+Maple_LCM_M1,1,ok,ok
+Maple_LCM.BCrestart_M1,1,ok,ok
+Maple_LCM.BCrestart,1,ok,ok
+Maple_CM_ordUIP.,1,ok,ok
+Maple_CM_ordUIP,1,ok,ok
+Maple_CM_Dist,1,ok,ok
+Maple_CM,1,ok,ok
+MapleLCMDistChronoBT,1,ok,ok
+Lingeling,1,ok,ok
+inIDGlucose,1,ok,ok
+glu_mix,1,ok,ok
+gluHack,1,ok,ok
+Glucose_Hack_Kiel_fastBVE,1,ok,ok
+glucose.3.0_PADC_3,1,ok,ok
+glucose.3.0_PADC_10,1,ok,ok
+glucose4.2.1,1,ok,ok
+expMC_VSIDS_LRB_Switch_2500,1,ok,ok
+expMC_LRB_VSIDS_Switch_2500,1,ok,ok
+expMC_LRB_VSIDS_Switch,1,ok,ok
+GHackCOMSPS_drup,1,ok,ok
+glucose3.0,1,ok,ok
+MapleCOMSPS_CHB_VSIDS_drup,1,ok,ok
+MapleCOMSPS_LRB_VSIDS_2_fix,1,ok,ok
+MapleCOMSPS_LRB_VSIDS_drup,1,ok,ok
+Minisat.v2.2.0.106.ge2dd095,1,ok,ok
+Riss7.1.fix,1,ok,ok
+Sparrow2Riss.2018.fixfix,1,ok,ok

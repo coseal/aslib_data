@@ -41,7 +41,8 @@ algorithms_deterministic:
 algorithms_stochastic: ''
 default_steps:
 - instance
-- software
+- code 
+- AST
 feature_steps:
   instance:
     provides:
@@ -96,7 +97,7 @@ feature_steps:
     - cluster.coeff.max
     - cluster.coeff.entropy
 algorithm_feature_steps:
-  software:
+  code:
     provides:
     - Lines..Average. 
     - Lines..Total. 
@@ -107,6 +108,8 @@ algorithm_feature_steps:
     - Cyclomatic..Total. 
     - Max.Indent..Average. 
     - Max.Indent..Total. 
+  AST:
+    provides:
     - nb_nodes 
     - nb_edges 
     - degree_min 
