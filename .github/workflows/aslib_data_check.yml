@@ -24,9 +24,18 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Navigate to data_check_tool_python and run the script for all the scenarios
+    - name: Find changed directories
+      run: echo "DIRS=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '/.*$' | sed -E 's@(.*)/@\1@' | sort -u)" >> $GITHUB_ENV
+
+    - name: Run script on changed directories
       run: |
         echo "Current directory:"
         echo $(pwd)
         ls
-        cd /usr/src/app/data_check_tool_python 
+        echo $DIRS
+
+        for dir in $DIRS; do
+          if [ -d "$dir" ]; then
+            /usr/src/app/data_check_tool_python/src/main.py --dir "$dir"
+          fi
+        done
