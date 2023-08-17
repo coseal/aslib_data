@@ -23,7 +23,15 @@ jobs:
       image: haniyeka/aslib_data_check:latest
     steps:
     - uses: actions/checkout@v3
-
+    - uses: Stockopedia/action-get-changed-files@v1
+      id: get_changed
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        ignore: "**/*.js" # glob
+        foldersOnly: true # to only include folders in the output
+        format: json # either json, csv or newline
+    - name: Echo changed directories
+      run: echo ${{ steps.get_changed.outputs.changed }}
 #    - name: Find changed directories
  #     run: 
     - name: Find directories containing description.txt
