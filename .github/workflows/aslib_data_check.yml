@@ -17,10 +17,10 @@ on:
 jobs:
   ASLIB_data_check_tool:
     runs-on: ubuntu-latest
-    container:
+    #container:
       # Docker image that includes python2.7, and libraries like liac-arff, pyyaml, and typing
       # This docker also includes files from https://github.com/coseal/aslib-spec/tree/master/data_check_tool_python in /usr/src/app/data_check_tool_python
-      image: haniyeka/aslib_data_check:latest
+      #image: haniyeka/aslib_data_check:latest
     steps:
     - uses: actions/checkout@v3
     - uses: Stockopedia/action-get-changed-files@v1
