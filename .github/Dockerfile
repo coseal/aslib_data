@@ -9,3 +9,6 @@ RUN pip install liac-arff pyyaml typing
 
 COPY ./data_check_tool_python/ /usr/src/app/data_check_tool_python/
 
+RUN chmod +x /usr/src/app/data_check_tool_python/src/*
+
+RUN chmod +x /usr/src/app/data_check_tool_python/src/**/*

@@ -28,12 +28,14 @@ jobs:
  #     run: 
     - name: Find directories containing description.txt
       run: |
-        dirs=$(find . -type f -name 'description.txt' -exec dirname {} \; | tr '\n' ' ')
+        dirs=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '/.*$' | sed -E 's@(.*)/@\1@' | sort -u | tr '\n' ' ')
+        #dirs=$(find . -type f -name 'description.txt' -exec dirname {} \; | tr '\n' ' ')
+        echo $dirs
         echo "DIRS=${dirs}" >> $GITHUB_ENV
       shell: bash
     
       #echo "DIRS=$(find . -type f -name 'description.txt' -exec dirname {} \;)" >> $GITHUB_ENV
-      #run: echo "DIRS=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '/.*$' | sed -E 's@(.*)/@\1@' | sort -u)" >> $GITHUB_ENV
+      #run: echo "DIRS=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '/.*$' | sed -E 's@(.*)/@\1@' | sort -u | tr '\n' ' ')" >> $GITHUB_ENV
 
     - name: Run script on changed directories
       run: |

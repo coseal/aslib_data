@@ -674,4 +674,4 @@ performance_measures:
 - runtime
 performance_type:
 - runtime
-scenario_id: IPC2018
+scenario_id: IPC2018 
