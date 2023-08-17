@@ -39,7 +39,7 @@ jobs:
       run: |
         echo "Current directory:"
         echo $(pwd)
-        ls
+        ls /usr/src/app/data_check_tool_python/src/
         echo $DIRS
 
         for dir in $DIRS; do
