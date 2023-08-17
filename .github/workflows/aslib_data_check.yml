@@ -44,6 +44,6 @@ jobs:
 
         for dir in $DIRS; do
           if [ -d "$dir" ]; then
-            /usr/src/app/data_check_tool_python/src/main.py --dir "$dir"
+            python /usr/src/app/data_check_tool_python/src/main.py --dir "$dir"
           fi
         done
