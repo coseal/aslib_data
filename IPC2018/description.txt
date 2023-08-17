@@ -1,0 +1,677 @@
+algorithm_cutoff_memory: '?'
+algorithm_cutoff_time: 1800.0
+algorithms_deterministic: '?'
+algorithms_stochastic: ''
+default_steps:
+- ALL
+feature_steps:
+  ALL:
+    provides:
+    - MpSAT.BINARY.
+    - MpSAT.CG.coeff.variation
+    - MpSAT.CG.entropy
+    - MpSAT.CG.max
+    - MpSAT.CG.mean
+    - MpSAT.CG.min
+    - MpSAT.DIAMETER.coeff.variation
+    - MpSAT.DIAMETER.entropy
+    - MpSAT.DIAMETER.max
+    - MpSAT.DIAMETER.mean
+    - MpSAT.DIAMETER.min
+    - MpSAT.HORNY.VAR.coeff.variation
+    - MpSAT.HORNY.VAR.entropy
+    - MpSAT.HORNY.VAR.max
+    - MpSAT.HORNY.VAR.mean
+    - MpSAT.HORNY.VAR.min
+    - MpSAT.POSNEG.RATIO.CLAUSE.coeff.variation
+    - MpSAT.POSNEG.RATIO.CLAUSE.entropy
+    - MpSAT.POSNEG.RATIO.CLAUSE.max
+    - MpSAT.POSNEG.RATIO.CLAUSE.mean
+    - MpSAT.POSNEG.RATIO.CLAUSE.min
+    - MpSAT.POSNEG.RATIO.VAR.entropy
+    - MpSAT.POSNEG.RATIO.VAR.max
+    - MpSAT.POSNEG.RATIO.VAR.mean
+    - MpSAT.POSNEG.RATIO.VAR.min
+    - MpSAT.POSNEG.RATIO.VAR.stdev
+    - MpSAT.SP.bias.coeff.variation
+    - MpSAT.SP.bias.max
+    - MpSAT.SP.bias.mean
+    - MpSAT.SP.bias.min
+    - MpSAT.SP.bias.q10
+    - MpSAT.SP.bias.q25
+    - MpSAT.SP.bias.q50
+    - MpSAT.SP.bias.q75
+    - MpSAT.SP.bias.q90
+    - MpSAT.SP.unconstraint.coeff.variation
+    - MpSAT.SP.unconstraint.max
+    - MpSAT.SP.unconstraint.mean
+    - MpSAT.SP.unconstraint.min
+    - MpSAT.SP.unconstraint.q10
+    - MpSAT.SP.unconstraint.q25
+    - MpSAT.SP.unconstraint.q50
+    - MpSAT.SP.unconstraint.q75
+    - MpSAT.SP.unconstraint.q90
+    - MpSAT.TRINARY.
+    - MpSAT.UNARY
+    - MpSAT.VCG.CLAUSE.coeff.variation
+    - MpSAT.VCG.CLAUSE.entropy
+    - MpSAT.VCG.CLAUSE.max
+    - MpSAT.VCG.CLAUSE.mean
+    - MpSAT.VCG.CLAUSE.min
+    - MpSAT.VCG.VAR.coeff.variation
+    - MpSAT.VCG.VAR.entropy
+    - MpSAT.VCG.VAR.max
+    - MpSAT.VCG.VAR.mean
+    - MpSAT.VCG.VAR.min
+    - MpSAT.VG.coeff.variation
+    - MpSAT.VG.max
+    - MpSAT.VG.mean
+    - MpSAT.VG.min
+    - MpSAT.cl.num.coeff.variation
+    - MpSAT.cl.num.max
+    - MpSAT.cl.num.mean
+    - MpSAT.cl.num.min
+    - MpSAT.cl.num.q10
+    - MpSAT.cl.num.q25
+    - MpSAT.cl.num.q50
+    - MpSAT.cl.num.q75
+    - MpSAT.cl.num.q90
+    - MpSAT.cl.size.coeff.variation
+    - MpSAT.cl.size.max
+    - MpSAT.cl.size.mean
+    - MpSAT.cl.size.min
+    - MpSAT.cl.size.q10
+    - MpSAT.cl.size.q25
+    - MpSAT.cl.size.q50
+    - MpSAT.cl.size.q75
+    - MpSAT.cl.size.q90
+    - MpSAT.cluster.coeff.coeff.variation
+    - MpSAT.cluster.coeff.entropy
+    - MpSAT.cluster.coeff.max
+    - MpSAT.cluster.coeff.mean
+    - MpSAT.cluster.coeff.min
+    - MpSAT.gsat_BestAvgImprovement_CoeffVariance
+    - MpSAT.gsat_BestAvgImprovement_Mean
+    - MpSAT.gsat_BestSolution_CoeffVariance
+    - MpSAT.gsat_BestSolution_Mean
+    - MpSAT.gsat_FirstLocalMinRatio_CoeffVariance
+    - MpSAT.gsat_FirstLocalMinRatio_Mean
+    - MpSAT.gsat_FirstLocalMinStep_CoeffVariance
+    - MpSAT.gsat_FirstLocalMinStep_Mean
+    - MpSAT.gsat_FirstLocalMinStep_Median
+    - MpSAT.gsat_FirstLocalMinStep_Q.10
+    - MpSAT.gsat_FirstLocalMinStep_Q.90
+    - MpSAT.horn.clauses.fraction
+    - MpSAT.lobjois.log.num.nodes.over.vars
+    - MpSAT.lobjois.mean.depth.over.vars
+    - MpSAT.nclauses
+    - MpSAT.nclausesOrig
+    - MpSAT.nvars
+    - MpSAT.nvarsOrig
+    - MpSAT.reducedClauses
+    - MpSAT.reducedVars
+    - MpSAT.saps_BestAvgImprovement_CoeffVariance
+    - MpSAT.saps_BestAvgImprovement_Mean
+    - MpSAT.saps_BestSolution_CoeffVariance
+    - MpSAT.saps_BestSolution_Mean
+    - MpSAT.saps_FirstLocalMinRatio_CoeffVariance
+    - MpSAT.saps_FirstLocalMinRatio_Mean
+    - MpSAT.saps_FirstLocalMinStep_CoeffVariance
+    - MpSAT.saps_FirstLocalMinStep_Mean
+    - MpSAT.saps_FirstLocalMinStep_Median
+    - MpSAT.saps_FirstLocalMinStep_Q.10
+    - MpSAT.saps_FirstLocalMinStep_Q.90
+    - MpSAT.vars.clauses.ratio
+    - fdProbingFinalHeuristicDen
+    - fdProbingFinalHeuristicGValue
+    - fdProbingFinalHeuristicNum
+    - fdProbingFinalStatesEvaluated
+    - fdProbingGoalLandmarks
+    - fdProbingInitialGValue
+    - fdProbingInitialHeuristicDen
+    - fdProbingInitialHeuristicNum
+    - fdProbingInitialLandmarks
+    - fdProbingLandmarksDiscovered
+    - fdProbingLandmarksPercentageConjunctive
+    - fdProbingLandmarksPercentageDisjunctive
+    - fdProbingNumEdges
+    - fdProbingPercentageImprovementNum
+    - fdProbingRatioGoalLandmarksOverInitialLandmarks
+    - fdProbingReasonableOrdersRemoved
+    - lpgProbingNumActions
+    - lpgProbingNumConditionalActions
+    - lpgProbingNumFacts
+    - lpgProbingNumFactsIndividual
+    - lpgProbingNumMutex
+    - lpgProbingNumOps
+    - meta.success.MpSAT
+    - meta.success.fd.probing
+    - meta.success.lpg.probing
+    - meta.success.sas
+    - meta.success.simple.pddl
+    - meta.success.torchlight
+    - meta.time.MpSAT
+    - meta.time.MpSAT.Basic.featuretime
+    - meta.time.MpSAT.CG.featuretime
+    - meta.time.MpSAT.DIAMETER.featuretime
+    - meta.time.MpSAT.KLB.featuretime
+    - meta.time.MpSAT.Pre.featuretime
+    - meta.time.MpSAT.cl.featuretime
+    - meta.time.MpSAT.lobjois.featuretime
+    - meta.time.MpSAT.ls.gsat.featuretime
+    - meta.time.MpSAT.ls.saps.featuretime
+    - meta.time.MpSAT.sp.featuretime
+    - meta.time.fd.probing
+    - meta.time.lpg.probing
+    - meta.time.sas
+    - meta.time.simple.pddl
+    - meta.time.torchlight
+    - pddlHasTypes
+    - pddlMarksTotalNumActions
+    - pddlMaxNegationsPerEffect
+    - pddlMaxParamsPerPredicate
+    - pddlMaxPredicatesPerEffect
+    - pddlMaxPredicatesPerPrecondition
+    - pddlMeanNegationsPerEffect
+    - pddlMeanParamsPerPredicate
+    - pddlMeanPredicatesPerEffect
+    - pddlMeanPredicatesPerPrecondition
+    - pddlMinNegationsPerEffect
+    - pddlMinParamsPerPredicate
+    - pddlMinPredicatesPerEffect
+    - pddlMinPredicatesPerPrecondition
+    - pddlNumActions
+    - pddlNumConstants
+    - pddlNumConstantsAndObjects
+    - pddlNumEqualityInitialConditions
+    - pddlNumFunctionAssignmentsInInitialConditions
+    - pddlNumGoals
+    - pddlNumInitialConditions
+    - pddlNumObjects
+    - pddlNumPredicates
+    - pddlNumTypes
+    - pddlRatioActionsWithNegativeEffectsOverActions
+    - pddlRequiresADL
+    - pddlRequiresActionCosts
+    - pddlRequiresConditionalEffects
+    - pddlRequiresConstraints
+    - pddlRequiresContinuousEffects
+    - pddlRequiresDerivedPredicates
+    - pddlRequiresDisjunctivePreconditions
+    - pddlRequiresDomainAxioms
+    - pddlRequiresDurationInequalities
+    - pddlRequiresDurativeActions
+    - pddlRequiresEquality
+    - pddlRequiresExistentialPreconditions
+    - pddlRequiresFluents
+    - pddlRequiresNegation
+    - pddlRequiresNegativePreconditions
+    - pddlRequiresNumericFluents
+    - pddlRequiresObjectFluents
+    - pddlRequiresPreferences
+    - pddlRequiresQuantifiedPreconditions
+    - pddlRequiresSafetyConstraints
+    - pddlRequiresStrips
+    - pddlRequiresTimedInitialLiterals
+    - pddlRequiresTyping
+    - pddlRequiresUniversalPreconditions
+    - sasAuxiliaryAtoms
+    - sasCenamorCGMaxIncomingEdgeWeightSumPerHighLevelVariable
+    - sasCenamorCGMaxIncomingEdgeWeightSumPerVariable
+    - sasCenamorCGMaxIncomingEdgesPerHighLevelVariable
+    - sasCenamorCGMaxIncomingEdgesPerVariable
+    - sasCenamorCGMaxOutgoingEdgeWeightSumPerVariable
+    - sasCenamorCGMaxOutgoingEdgesPerVariable
+    - sasCenamorCGMeanIncomingEdgeWeightSumPerHighLevelVariable
+    - sasCenamorCGMeanIncomingEdgeWeightSumPerVariable
+    - sasCenamorCGMeanIncomingEdgesPerHighLevelVariable
+    - sasCenamorCGMeanIncomingEdgesPerVariable
+    - sasCenamorCGMeanOutgoingEdgeWeightSumPerVariable
+    - sasCenamorCGMeanOutgoingEdgesPerVariable
+    - sasCenamorCGNumEdges
+    - sasCenamorCGRatioNumHighLevelToTotalVariables
+    - sasCenamorCGRatioSumOfWeightsToTotalEdges
+    - sasCenamorCGRatioSumOfWeightsToTotalVariables
+    - sasCenamorCGRatioTotalVariablesToTotalEdges
+    - sasCenamorCGStddevIncomingEdgeWeightSumPerHighLevelVariable
+    - sasCenamorCGStddevIncomingEdgeWeightSumPerVariable
+    - sasCenamorCGStddevIncomingEdgesPerHighLevelVariable
+    - sasCenamorCGStddevIncomingEdgesPerVariable
+    - sasCenamorCGStddevOutgoingEdgeWeightSumPerVariable
+    - sasCenamorCGStddevOutgoingEdgesPerVariable
+    - sasCenamorCGSumOfEdgeWeights
+    - sasCenamorDTGMaxIncomingEdgeWeightSumPerVertex
+    - sasCenamorDTGMaxIncomingEdgesPerVertex
+    - sasCenamorDTGMaxOutgoingEdgeWeightSumPerVertex
+    - sasCenamorDTGMaxOutgoingEdgesPerVertex
+    - sasCenamorDTGMeanIncomingEdgeWeightSumPerVertex
+    - sasCenamorDTGMeanIncomingEdgesPerVertex
+    - sasCenamorDTGMeanOutgoingEdgeWeightSumPerVertex
+    - sasCenamorDTGMeanOutgoingEdgesPerVertex
+    - sasCenamorDTGStddevIncomingEdgeWeightSumPerVertex
+    - sasCenamorDTGStddevIncomingEdgesPerVertex
+    - sasCenamorDTGStddevOutgoingEdgeWeightSumPerVertex
+    - sasCenamorDTGStddevOutgoingEdgesPerVertex
+    - sasCenamorDTGSumOfEdgeWeights
+    - sasCenamorDTGTotalNumberOfEdges
+    - sasCenamorDTGTotalNumberOfVertices
+    - sasCenamorNumHighLevelVariables
+    - sasCenamorTotalNumVariables
+    - sasEffectConditionsSimplified
+    - sasFileHasMetric
+    - sasFileMaxConditionsPerAxiom
+    - sasFileMaxEffectsPerOperator
+    - sasFileMaxPrevailConditionsPerOperator
+    - sasFileMaxVariableDomainSize
+    - sasFileMeanConditionsPerAxiom
+    - sasFileMeanEffectsPerOperator
+    - sasFileMeanPrevailConditionsPerOperator
+    - sasFileMeanVariableDomainSize
+    - sasFileMinConditionsPerAxiom
+    - sasFileMinEffectsPerOperator
+    - sasFileMinPrevailConditionsPerOperator
+    - sasFileMinVariableDomainSize
+    - sasFileNumAxioms
+    - sasFileNumGoalPairs
+    - sasFileNumOperators
+    - sasFileNumVariables
+    - sasFileRatioGoalPairsOverNumVariables
+    - sasFileVersion
+    - sasFinalQueueLength
+    - sasImpliedEffectsRemoved
+    - sasImpliedPreconditionsAdded
+    - sasInitialInvariantCandidates
+    - sasOperatorsRemoved
+    - sasPreprocessingDeemedPolytimeSolvable
+    - sasPreprocessingDerivedVariables
+    - sasPreprocessingNumFacts
+    - sasPreprocessingPercentageAxiomRulesDeemedNecessary
+    - sasPreprocessingPercentageMutexGroupsDeemedNecessary
+    - sasPreprocessingPercentageOperatorsDeemedNecessary
+    - sasPreprocessingPercentageVariablesDeemedNecessary
+    - sasPreprocessingTaskSize
+    - sasPropositionsRemoved
+    - sasRelevantAtoms
+    - sasRules
+    - sasTotalQueuePushes
+    - sasTranslatorDerivedVariables
+    - sasTranslatorFacts
+    - sasTranslatorMutexGroups
+    - sasTranslatorOperators
+    - sasTranslatorTaskSize
+    - sasTranslatorTotalMutexGroupsSize
+    - sasTranslatorVariables
+    - sasUncoveredFacts
+    - torchlight.deadEndPercentage
+    - torchlight.easyActionTemplates
+    - torchlight.exitDistanceMax
+    - torchlight.exitDistanceMean
+    - torchlight.exitDistanceMin
+    - torchlight.hardActionTemplates
+    - torchlight.reachabilityActions
+    - torchlight.reachabilityFacts
+    - torchlight.relevantFacts
+    - torchlight.successPercentage
+features_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_deterministic:
+- MpSAT.BINARY.
+- MpSAT.CG.coeff.variation
+- MpSAT.CG.entropy
+- MpSAT.CG.max
+- MpSAT.CG.mean
+- MpSAT.CG.min
+- MpSAT.DIAMETER.coeff.variation
+- MpSAT.DIAMETER.entropy
+- MpSAT.DIAMETER.max
+- MpSAT.DIAMETER.mean
+- MpSAT.DIAMETER.min
+- MpSAT.HORNY.VAR.coeff.variation
+- MpSAT.HORNY.VAR.entropy
+- MpSAT.HORNY.VAR.max
+- MpSAT.HORNY.VAR.mean
+- MpSAT.HORNY.VAR.min
+- MpSAT.POSNEG.RATIO.CLAUSE.coeff.variation
+- MpSAT.POSNEG.RATIO.CLAUSE.entropy
+- MpSAT.POSNEG.RATIO.CLAUSE.max
+- MpSAT.POSNEG.RATIO.CLAUSE.mean
+- MpSAT.POSNEG.RATIO.CLAUSE.min
+- MpSAT.POSNEG.RATIO.VAR.entropy
+- MpSAT.POSNEG.RATIO.VAR.max
+- MpSAT.POSNEG.RATIO.VAR.mean
+- MpSAT.POSNEG.RATIO.VAR.min
+- MpSAT.POSNEG.RATIO.VAR.stdev
+- MpSAT.SP.bias.coeff.variation
+- MpSAT.SP.bias.max
+- MpSAT.SP.bias.mean
+- MpSAT.SP.bias.min
+- MpSAT.SP.bias.q10
+- MpSAT.SP.bias.q25
+- MpSAT.SP.bias.q50
+- MpSAT.SP.bias.q75
+- MpSAT.SP.bias.q90
+- MpSAT.SP.unconstraint.coeff.variation
+- MpSAT.SP.unconstraint.max
+- MpSAT.SP.unconstraint.mean
+- MpSAT.SP.unconstraint.min
+- MpSAT.SP.unconstraint.q10
+- MpSAT.SP.unconstraint.q25
+- MpSAT.SP.unconstraint.q50
+- MpSAT.SP.unconstraint.q75
+- MpSAT.SP.unconstraint.q90
+- MpSAT.TRINARY.
+- MpSAT.UNARY
+- MpSAT.VCG.CLAUSE.coeff.variation
+- MpSAT.VCG.CLAUSE.entropy
+- MpSAT.VCG.CLAUSE.max
+- MpSAT.VCG.CLAUSE.mean
+- MpSAT.VCG.CLAUSE.min
+- MpSAT.VCG.VAR.coeff.variation
+- MpSAT.VCG.VAR.entropy
+- MpSAT.VCG.VAR.max
+- MpSAT.VCG.VAR.mean
+- MpSAT.VCG.VAR.min
+- MpSAT.VG.coeff.variation
+- MpSAT.VG.max
+- MpSAT.VG.mean
+- MpSAT.VG.min
+- MpSAT.cl.num.coeff.variation
+- MpSAT.cl.num.max
+- MpSAT.cl.num.mean
+- MpSAT.cl.num.min
+- MpSAT.cl.num.q10
+- MpSAT.cl.num.q25
+- MpSAT.cl.num.q50
+- MpSAT.cl.num.q75
+- MpSAT.cl.num.q90
+- MpSAT.cl.size.coeff.variation
+- MpSAT.cl.size.max
+- MpSAT.cl.size.mean
+- MpSAT.cl.size.min
+- MpSAT.cl.size.q10
+- MpSAT.cl.size.q25
+- MpSAT.cl.size.q50
+- MpSAT.cl.size.q75
+- MpSAT.cl.size.q90
+- MpSAT.cluster.coeff.coeff.variation
+- MpSAT.cluster.coeff.entropy
+- MpSAT.cluster.coeff.max
+- MpSAT.cluster.coeff.mean
+- MpSAT.cluster.coeff.min
+- MpSAT.gsat_BestAvgImprovement_CoeffVariance
+- MpSAT.gsat_BestAvgImprovement_Mean
+- MpSAT.gsat_BestSolution_CoeffVariance
+- MpSAT.gsat_BestSolution_Mean
+- MpSAT.gsat_FirstLocalMinRatio_CoeffVariance
+- MpSAT.gsat_FirstLocalMinRatio_Mean
+- MpSAT.gsat_FirstLocalMinStep_CoeffVariance
+- MpSAT.gsat_FirstLocalMinStep_Mean
+- MpSAT.gsat_FirstLocalMinStep_Median
+- MpSAT.gsat_FirstLocalMinStep_Q.10
+- MpSAT.gsat_FirstLocalMinStep_Q.90
+- MpSAT.horn.clauses.fraction
+- MpSAT.lobjois.log.num.nodes.over.vars
+- MpSAT.lobjois.mean.depth.over.vars
+- MpSAT.nclauses
+- MpSAT.nclausesOrig
+- MpSAT.nvars
+- MpSAT.nvarsOrig
+- MpSAT.reducedClauses
+- MpSAT.reducedVars
+- MpSAT.saps_BestAvgImprovement_CoeffVariance
+- MpSAT.saps_BestAvgImprovement_Mean
+- MpSAT.saps_BestSolution_CoeffVariance
+- MpSAT.saps_BestSolution_Mean
+- MpSAT.saps_FirstLocalMinRatio_CoeffVariance
+- MpSAT.saps_FirstLocalMinRatio_Mean
+- MpSAT.saps_FirstLocalMinStep_CoeffVariance
+- MpSAT.saps_FirstLocalMinStep_Mean
+- MpSAT.saps_FirstLocalMinStep_Median
+- MpSAT.saps_FirstLocalMinStep_Q.10
+- MpSAT.saps_FirstLocalMinStep_Q.90
+- MpSAT.vars.clauses.ratio
+- fdProbingFinalHeuristicDen
+- fdProbingFinalHeuristicGValue
+- fdProbingFinalHeuristicNum
+- fdProbingFinalStatesEvaluated
+- fdProbingGoalLandmarks
+- fdProbingInitialGValue
+- fdProbingInitialHeuristicDen
+- fdProbingInitialHeuristicNum
+- fdProbingInitialLandmarks
+- fdProbingLandmarksDiscovered
+- fdProbingLandmarksPercentageConjunctive
+- fdProbingLandmarksPercentageDisjunctive
+- fdProbingNumEdges
+- fdProbingPercentageImprovementNum
+- fdProbingRatioGoalLandmarksOverInitialLandmarks
+- fdProbingReasonableOrdersRemoved
+- lpgProbingNumActions
+- lpgProbingNumConditionalActions
+- lpgProbingNumFacts
+- lpgProbingNumFactsIndividual
+- lpgProbingNumMutex
+- lpgProbingNumOps
+- meta.success.MpSAT
+- meta.success.fd.probing
+- meta.success.lpg.probing
+- meta.success.sas
+- meta.success.simple.pddl
+- meta.success.torchlight
+- meta.time.MpSAT
+- meta.time.MpSAT.Basic.featuretime
+- meta.time.MpSAT.CG.featuretime
+- meta.time.MpSAT.DIAMETER.featuretime
+- meta.time.MpSAT.KLB.featuretime
+- meta.time.MpSAT.Pre.featuretime
+- meta.time.MpSAT.cl.featuretime
+- meta.time.MpSAT.lobjois.featuretime
+- meta.time.MpSAT.ls.gsat.featuretime
+- meta.time.MpSAT.ls.saps.featuretime
+- meta.time.MpSAT.sp.featuretime
+- meta.time.fd.probing
+- meta.time.lpg.probing
+- meta.time.sas
+- meta.time.simple.pddl
+- meta.time.torchlight
+- pddlHasTypes
+- pddlMarksTotalNumActions
+- pddlMaxNegationsPerEffect
+- pddlMaxParamsPerPredicate
+- pddlMaxPredicatesPerEffect
+- pddlMaxPredicatesPerPrecondition
+- pddlMeanNegationsPerEffect
+- pddlMeanParamsPerPredicate
+- pddlMeanPredicatesPerEffect
+- pddlMeanPredicatesPerPrecondition
+- pddlMinNegationsPerEffect
+- pddlMinParamsPerPredicate
+- pddlMinPredicatesPerEffect
+- pddlMinPredicatesPerPrecondition
+- pddlNumActions
+- pddlNumConstants
+- pddlNumConstantsAndObjects
+- pddlNumEqualityInitialConditions
+- pddlNumFunctionAssignmentsInInitialConditions
+- pddlNumGoals
+- pddlNumInitialConditions
+- pddlNumObjects
+- pddlNumPredicates
+- pddlNumTypes
+- pddlRatioActionsWithNegativeEffectsOverActions
+- pddlRequiresADL
+- pddlRequiresActionCosts
+- pddlRequiresConditionalEffects
+- pddlRequiresConstraints
+- pddlRequiresContinuousEffects
+- pddlRequiresDerivedPredicates
+- pddlRequiresDisjunctivePreconditions
+- pddlRequiresDomainAxioms
+- pddlRequiresDurationInequalities
+- pddlRequiresDurativeActions
+- pddlRequiresEquality
+- pddlRequiresExistentialPreconditions
+- pddlRequiresFluents
+- pddlRequiresNegation
+- pddlRequiresNegativePreconditions
+- pddlRequiresNumericFluents
+- pddlRequiresObjectFluents
+- pddlRequiresPreferences
+- pddlRequiresQuantifiedPreconditions
+- pddlRequiresSafetyConstraints
+- pddlRequiresStrips
+- pddlRequiresTimedInitialLiterals
+- pddlRequiresTyping
+- pddlRequiresUniversalPreconditions
+- sasAuxiliaryAtoms
+- sasCenamorCGMaxIncomingEdgeWeightSumPerHighLevelVariable
+- sasCenamorCGMaxIncomingEdgeWeightSumPerVariable
+- sasCenamorCGMaxIncomingEdgesPerHighLevelVariable
+- sasCenamorCGMaxIncomingEdgesPerVariable
+- sasCenamorCGMaxOutgoingEdgeWeightSumPerVariable
+- sasCenamorCGMaxOutgoingEdgesPerVariable
+- sasCenamorCGMeanIncomingEdgeWeightSumPerHighLevelVariable
+- sasCenamorCGMeanIncomingEdgeWeightSumPerVariable
+- sasCenamorCGMeanIncomingEdgesPerHighLevelVariable
+- sasCenamorCGMeanIncomingEdgesPerVariable
+- sasCenamorCGMeanOutgoingEdgeWeightSumPerVariable
+- sasCenamorCGMeanOutgoingEdgesPerVariable
+- sasCenamorCGNumEdges
+- sasCenamorCGRatioNumHighLevelToTotalVariables
+- sasCenamorCGRatioSumOfWeightsToTotalEdges
+- sasCenamorCGRatioSumOfWeightsToTotalVariables
+- sasCenamorCGRatioTotalVariablesToTotalEdges
+- sasCenamorCGStddevIncomingEdgeWeightSumPerHighLevelVariable
+- sasCenamorCGStddevIncomingEdgeWeightSumPerVariable
+- sasCenamorCGStddevIncomingEdgesPerHighLevelVariable
+- sasCenamorCGStddevIncomingEdgesPerVariable
+- sasCenamorCGStddevOutgoingEdgeWeightSumPerVariable
+- sasCenamorCGStddevOutgoingEdgesPerVariable
+- sasCenamorCGSumOfEdgeWeights
+- sasCenamorDTGMaxIncomingEdgeWeightSumPerVertex
+- sasCenamorDTGMaxIncomingEdgesPerVertex
+- sasCenamorDTGMaxOutgoingEdgeWeightSumPerVertex
+- sasCenamorDTGMaxOutgoingEdgesPerVertex
+- sasCenamorDTGMeanIncomingEdgeWeightSumPerVertex
+- sasCenamorDTGMeanIncomingEdgesPerVertex
+- sasCenamorDTGMeanOutgoingEdgeWeightSumPerVertex
+- sasCenamorDTGMeanOutgoingEdgesPerVertex
+- sasCenamorDTGStddevIncomingEdgeWeightSumPerVertex
+- sasCenamorDTGStddevIncomingEdgesPerVertex
+- sasCenamorDTGStddevOutgoingEdgeWeightSumPerVertex
+- sasCenamorDTGStddevOutgoingEdgesPerVertex
+- sasCenamorDTGSumOfEdgeWeights
+- sasCenamorDTGTotalNumberOfEdges
+- sasCenamorDTGTotalNumberOfVertices
+- sasCenamorNumHighLevelVariables
+- sasCenamorTotalNumVariables
+- sasEffectConditionsSimplified
+- sasFileHasMetric
+- sasFileMaxConditionsPerAxiom
+- sasFileMaxEffectsPerOperator
+- sasFileMaxPrevailConditionsPerOperator
+- sasFileMaxVariableDomainSize
+- sasFileMeanConditionsPerAxiom
+- sasFileMeanEffectsPerOperator
+- sasFileMeanPrevailConditionsPerOperator
+- sasFileMeanVariableDomainSize
+- sasFileMinConditionsPerAxiom
+- sasFileMinEffectsPerOperator
+- sasFileMinPrevailConditionsPerOperator
+- sasFileMinVariableDomainSize
+- sasFileNumAxioms
+- sasFileNumGoalPairs
+- sasFileNumOperators
+- sasFileNumVariables
+- sasFileRatioGoalPairsOverNumVariables
+- sasFileVersion
+- sasFinalQueueLength
+- sasImpliedEffectsRemoved
+- sasImpliedPreconditionsAdded
+- sasInitialInvariantCandidates
+- sasOperatorsRemoved
+- sasPreprocessingDeemedPolytimeSolvable
+- sasPreprocessingDerivedVariables
+- sasPreprocessingNumFacts
+- sasPreprocessingPercentageAxiomRulesDeemedNecessary
+- sasPreprocessingPercentageMutexGroupsDeemedNecessary
+- sasPreprocessingPercentageOperatorsDeemedNecessary
+- sasPreprocessingPercentageVariablesDeemedNecessary
+- sasPreprocessingTaskSize
+- sasPropositionsRemoved
+- sasRelevantAtoms
+- sasRules
+- sasTotalQueuePushes
+- sasTranslatorDerivedVariables
+- sasTranslatorFacts
+- sasTranslatorMutexGroups
+- sasTranslatorOperators
+- sasTranslatorTaskSize
+- sasTranslatorTotalMutexGroupsSize
+- sasTranslatorVariables
+- sasUncoveredFacts
+- torchlight.deadEndPercentage
+- torchlight.easyActionTemplates
+- torchlight.exitDistanceMax
+- torchlight.exitDistanceMean
+- torchlight.exitDistanceMin
+- torchlight.hardActionTemplates
+- torchlight.reachabilityActions
+- torchlight.reachabilityFacts
+- torchlight.relevantFacts
+- torchlight.successPercentage
+features_stochastic: ''
+maximize:
+- false
+metainfo_algorithms:
+  Complementary1:
+    configuration: ''
+    deterministic: 'true'
+  Complementary2:
+    configuration: ''
+    deterministic: 'true'
+  DecStar:
+    configuration: ''
+    deterministic: 'true'
+  Delfi1:
+    configuration: ''
+    deterministic: 'true'
+  Delfi2:
+    configuration: ''
+    deterministic: 'true'
+  FDMS1:
+    configuration: ''
+    deterministic: 'true'
+  FDMS2:
+    configuration: ''
+    deterministic: 'true'
+  Metis1:
+    configuration: ''
+    deterministic: 'true'
+  Metis2:
+    configuration: ''
+    deterministic: 'true'
+  Planning-PDBs:
+    configuration: ''
+    deterministic: 'true'
+  Scorpion:
+    configuration: ''
+    deterministic: 'true'
+  Symple-1:
+    configuration: ''
+    deterministic: 'true'
+  Symple-2:
+    configuration: ''
+    deterministic: 'true'
+  blind:
+    configuration: ''
+    deterministic: 'true'
+  symbolic-bidirectional:
+    configuration: ''
+    deterministic: 'true'
+number_of_feature_steps: 1
+performance_measures:
+- runtime
+performance_type:
+- runtime
+scenario_id: IPC2018
