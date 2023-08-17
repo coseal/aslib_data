@@ -28,13 +28,24 @@ jobs:
         fetch-depth: 0
 #    - name: Find changed directories
  #     run: 
-    - name: Find directories containing description.txt
+    - name: Get changed directories
+      id: get-changes
       run: |
-        dirs=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '/.*$' | sed -E 's@(.*)/@\1@' | sort -u | tr '\n' ' ')
-        #dirs=$(find . -type f -name 'description.txt' -exec dirname {} \; | tr '\n' ' ')
-        echo $dirs
-        echo "DIRS=${dirs}" >> $GITHUB_ENV
-      shell: bash
+        dirs=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | \
+             grep '/.*$' | \
+             sed -E 's@(.*)/@\1@' | \
+             sort -u | \
+             tr '\n' ' ')
+        echo "Changed directories: $dirs"
+        echo "DIRS=$dirs" >> $GITHUB_ENV
+
+    #- name: Find directories containing description.txt
+    #  run: |
+     #   dirs=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '/.*$' | sed -E 's@(.*)/@\1@' | sort -u | tr '\n' ' ')
+      #  #dirs=$(find . -type f -name 'description.txt' -exec dirname {} \; | tr '\n' ' ')
+       # echo $dirs
+        #echo "DIRS=${dirs}" >> $GITHUB_ENV
+      #shell: bash
     
       #echo "DIRS=$(find . -type f -name 'description.txt' -exec dirname {} \;)" >> $GITHUB_ENV
       #run: echo "DIRS=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '/.*$' | sed -E 's@(.*)/@\1@' | sort -u | tr '\n' ' ')" >> $GITHUB_ENV
