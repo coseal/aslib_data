@@ -22,7 +22,10 @@ jobs:
       # This docker also includes files from https://github.com/coseal/aslib-spec/tree/master/data_check_tool_python in /usr/src/app/data_check_tool_python
       #image: haniyeka/aslib_data_check:latest
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
 #    - name: Find changed directories
  #     run: 
     - name: Find directories containing description.txt
