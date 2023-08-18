@@ -33,6 +33,7 @@ jobs:
       run: |
         git diff 
         echo  ${{ github.event.before }} 
+        echo "$GITHUB_CONTEXT"| jq '.event.commits[].id' | tail -2 | head -1 |sed 's/\"//g'
         echo ${{ github.sha }}
         dirs=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | \
              grep '/.*$' | \
