@@ -52,7 +52,17 @@ jobs:
     - name: Run on workflow dispatch
       if: github.event_name == 'workflow_dispatch'
       run: echo "This workflow was manually triggered."
-    
+
+    - name: Check for files starting with dot
+      run: |
+        dirs=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})
+        dot_files=$(echo "$dirs" | grep '^\./')
+        if [ ! -z "$dot_files" ]; then
+          echo "Error: Found files starting with a dot!"
+          echo "$dot_files"
+          exit 1
+        fi
+
     - name: Run data check tool script on changed directories
       run: |
         echo "Current directory:"
