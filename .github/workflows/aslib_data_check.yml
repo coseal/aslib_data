@@ -27,7 +27,7 @@ jobs:
       with:
         fetch-depth: 2
     - name: Run on push
-      id: get-changes
+      id: get-changes-push
       if: github.event_name == 'push'
       run: |
         echo "This is a push to the main branch."
@@ -46,12 +46,34 @@ jobs:
         echo "DIRS=$dirs" >> $GITHUB_ENV
 
     - name: Run on pull request
+      id: get-changes-pull-request
       if: github.event_name == 'pull_request'
-      run: echo "This is a pull request to the main branch."
+      run: |
+        echo "This is a pull request to the main branch."
+        echo "Source branch:"
+        echo ${{ github.event.pull_request.head.ref }}
+        echo "Target branch:"
+        echo ${{ github.event.pull_request.base.ref }}
+        echo "Get changed directories:"
+        git fetch origin ${{ github.event.pull_request.base.ref }} # Fetch the target branch
+        dirs=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | \
+             grep -v '^\.github/' | \
+             grep '/.*$' | \
+             sed -E 's@(.*)/[^/]*$@\1@' | \
+             sort -u | \
+             tr '\n' ' ')
+        echo "Changed directories: $dirs"
+        echo "DIRS=$dirs" >> $GITHUB_ENV
 
     - name: Run on workflow dispatch
+      id: all-dirs-workflow-dispatch
       if: github.event_name == 'workflow_dispatch'
-      run: echo "This workflow was manually triggered."
+      run: |
+        echo "This workflow was manually triggered."
+        echo "Get all directories except .git and .github:"
+        dirs=$(find . -maxdepth 1 -type d \( ! -name . \) \( ! -name .git \) \( ! -name .github \) | sed 's@^\./@@' | tr '\n' ' ')
+        echo "Directories to check: $dirs"
+        echo "DIRS=$dirs" >> $GITHUB_ENV
 
     - name: Run data check tool script on changed directories
       run: |
