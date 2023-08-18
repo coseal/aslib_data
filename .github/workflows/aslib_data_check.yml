@@ -82,6 +82,10 @@ jobs:
         echo $(pwd)
         echo "Scenarios:"
         echo $DIRS
+        if [ -z "$DIRS" ]; then
+          echo "No scenario is changed or added."
+          exit 0
+        fi
         docker run -v $(pwd):/workspace -e DIRS="$DIRS" haniyeka/aslib_data_check:latest \
           bash -c "
             ls /usr/src/app/data_check_tool_python/src/
