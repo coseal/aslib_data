@@ -8,13 +8,12 @@ name: aslib_data_check
 on:
   push:
     branches:
-      - workflow
+      - main
   pull_request:
     branches:
-      - workflow
+      - main
   workflow_dispatch:
-    branches: 
-      - workflow
+
 jobs:
   ASLIB_data_check_tool:
     runs-on: ubuntu-latest
