@@ -37,10 +37,12 @@ jobs:
         echo ${{ github.sha }}
         echo "Get changed directories:"
         dirs=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | \
-             grep '/.*$' | \
-             sed -E 's@(.*)/@\1@' | \
-             sort -u | \
-             tr '\n' ' ')
+            grep -v '^\.github/' | \
+            grep '/.*$' | \
+            sed -E 's@(.*)/[^/]*$@\1@' | \
+            sort -u | \
+            tr '\n' ' ')
+            
         echo "Changed directories: $dirs"
         echo "DIRS=$dirs" >> $GITHUB_ENV
 
