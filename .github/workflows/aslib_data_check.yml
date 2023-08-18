@@ -65,9 +65,10 @@ jobs:
             echo \$DIRS
             for dir in \$DIRS; do
               if [ -d \"/workspace/\$dir\" ]; then
-                if ls \"/workspace/\$dir/\".* 1> /dev/null 2>&1; then
+                hidden_files=\$(find \"/workspace/\$dir/\" -name '.*' -type f)
+                if [ ! -z \"\$hidden_files\" ]; then
                   echo 'Error: Hidden files found in' \$dir
-                  echo 'Please remove them and push again'
+                  echo 'Please remove them and try again!'
                   exit 1
                 fi
                 python /usr/src/app/data_check_tool_python/src/main.py --dir \"/workspace/\$dir\"
