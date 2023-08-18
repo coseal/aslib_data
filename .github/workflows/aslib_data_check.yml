@@ -59,7 +59,7 @@ jobs:
         echo $(pwd)
         echo "Scenarios:"
         echo $DIRS
-        docker run -v $(pwd):/workspace -e DIRS="${{ DIRS }}" haniyeka/aslib_data_check:latest \
+        docker run -v $(pwd):/workspace -e DIRS="$DIRS" haniyeka/aslib_data_check:latest \
           bash -c "
             ls /usr/src/app/data_check_tool_python/src/
             echo \$DIRS
