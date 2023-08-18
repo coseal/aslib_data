@@ -13,7 +13,8 @@ on:
     branches:
       - workflow
   workflow_dispatch:
-
+    branches: 
+      - workflow
 jobs:
   ASLIB_data_check_tool:
     runs-on: ubuntu-latest
