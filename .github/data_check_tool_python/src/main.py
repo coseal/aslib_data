@@ -5,6 +5,7 @@ Created on Feb 28, 2014
 
 '''
 
+import glob
 import sys
 import argparse
 import os
@@ -33,6 +34,14 @@ class Checker(object):
         
         args_ = parser.parse_args(sys.argv[1:])
         
+        # Check for temporary files starting with ".*"
+        temp_files = glob.glob(args_.dir_ + '/.*')
+        if temp_files:
+            print("Error: Temporary files (starting with a dot) found in the directory. Please remove the following files and try again:")
+            for file in temp_files:
+                print(file)
+            sys.exit(1)  # Exit with error code
+
         # dummy parameter
         args_.feat_time = -1
         args_.feature_steps = None
