@@ -56,6 +56,7 @@ jobs:
     - name: Check for files starting with dot
       run: |
         dot_files=$(echo "$DIRS" | grep '^\./')
+        echo $dot_files
         if [ ! -z "$dot_files" ]; then
           echo "Error: Found files starting with a dot!"
           echo "$dot_files"
