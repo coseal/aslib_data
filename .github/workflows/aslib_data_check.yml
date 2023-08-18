@@ -31,7 +31,7 @@ jobs:
     - name: Get changed directories
       id: get-changes
       run: |
-        git diff --name-only ${{ github.event.before }} ${{ github.sha }}
+        git diff 
         echo  ${{ github.event.before }} 
         echo ${{ github.sha }}
         dirs=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | \
