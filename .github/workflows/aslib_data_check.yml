@@ -31,7 +31,7 @@ jobs:
     - name: Get changed directories
       id: get-changes
       run: |
-        git diff 
+        echo ${{ github.event.pull_request.head.sha }}
         echo  ${{ github.event.before }} 
         echo "$GITHUB_CONTEXT"| jq '.event.commits[].id' | tail -2 | head -1 |sed 's/\"//g'
         echo ${{ github.sha }}
