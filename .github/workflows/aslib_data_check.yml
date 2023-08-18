@@ -37,7 +37,7 @@ jobs:
         echo ${{ github.sha }}
         echo "Get changed directories:"
         dirs=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | \
-             grep '^[^/]\+/$' | \
+             grep '/.*$' | \
              sed -E 's@(.*)/@\1@' | \
              sort -u | \
              tr '\n' ' ')
