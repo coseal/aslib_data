@@ -2,8 +2,6 @@
 @attribute instance_id string
 @attribute repetition numeric
 @attribute fold numeric
-
-
 @data
 petri-net-alignment_p09.pddl,1,2
 caldera_p14.pddl,1,3
