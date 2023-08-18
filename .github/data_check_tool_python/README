@@ -1,0 +1,6 @@
+Requirements:
+	* python2.7
+	* package: liac-arff (https://pypi.python.org/pypi/liac-arff/1.1)
+	
+Usage:
+	see python2.7 src/main.py -h
