@@ -1,3 +1,8 @@
+# Author: Haniye Kashgarani
+# Affiliation: University of Wyoming
+# Date: 2023-08-17T15:39:37+00:00
+# Github: haniyeka
+
 # Use an official Python 2.7 image
 FROM python:2.7-slim-buster
 
