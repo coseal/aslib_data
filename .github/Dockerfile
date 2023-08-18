@@ -13,5 +13,3 @@ RUN chmod +x /usr/src/app/data_check_tool_python/src/*
 
 RUN chmod +x /usr/src/app/data_check_tool_python/src/**/*
 
-RUN apt-get update && apt-get install -y git
-
