@@ -55,8 +55,7 @@ jobs:
 
     - name: Check for files starting with dot
       run: |
-        dirs=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})
-        dot_files=$(echo "$dirs" | grep '^\./')
+        dot_files=$(echo "$DIRS" | grep '^\./')
         if [ ! -z "$dot_files" ]; then
           echo "Error: Found files starting with a dot!"
           echo "$dot_files"
