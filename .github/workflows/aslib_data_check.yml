@@ -53,16 +53,6 @@ jobs:
       if: github.event_name == 'workflow_dispatch'
       run: echo "This workflow was manually triggered."
 
-    - name: Check for files starting with dot
-      run: |
-        dot_files=$(echo "$DIRS" | grep '^\./')
-        echo $dot_files
-        if [ ! -z "$dot_files" ]; then
-          echo "Error: Found files starting with a dot!"
-          echo "$dot_files"
-          exit 1
-        fi
-
     - name: Run data check tool script on changed directories
       run: |
         echo "Current directory:"
@@ -75,6 +65,11 @@ jobs:
             echo \$DIRS
             for dir in \$DIRS; do
               if [ -d \"/workspace/\$dir\" ]; then
+                if ls \"/workspace/\$dir/\".* 1> /dev/null 2>&1; then
+                  echo 'Error: Hidden files found in' \$dir
+                  echo 'Please remove them and push again'
+                  exit 1
+                fi
                 python /usr/src/app/data_check_tool_python/src/main.py --dir \"/workspace/\$dir\"
               fi
             done
