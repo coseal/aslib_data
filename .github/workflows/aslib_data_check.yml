@@ -41,8 +41,7 @@ jobs:
             grep '/.*$' | \
             sed -E 's@(.*)/[^/]*$@\1@' | \
             sort -u | \
-            tr '\n' ' ')
-            
+            tr '\n' ' ') 
         echo "Changed directories: $dirs"
         echo "DIRS=$dirs" >> $GITHUB_ENV
 
@@ -58,7 +57,9 @@ jobs:
       run: |
         echo "Current directory:"
         echo $(pwd)
-        docker run -v $(pwd):/workspace my_docker_image:tag \
+        echo "Scenarios:"
+        echo $DIRS
+        docker run -v $(pwd):/workspace haniyeka/aslib_data_check:latest \
           bash -c "
             ls /usr/src/app/data_check_tool_python/src/
             echo $DIRS
