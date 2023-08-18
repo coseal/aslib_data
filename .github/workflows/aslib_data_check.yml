@@ -20,48 +20,49 @@ jobs:
     #container:
       # Docker image that includes python2.7, and libraries like liac-arff, pyyaml, and typing
       # This docker also includes files from https://github.com/coseal/aslib-spec/tree/master/data_check_tool_python in /usr/src/app/data_check_tool_python
-      #image: haniyeka/aslib_data_check:latest
+      # image: haniyeka/aslib_data_check:latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
       with:
         fetch-depth: 2
-#    - name: Find changed directories
- #     run: 
-    - name: Get changed directories
+    - name: Run on push
       id: get-changes
+      if: github.event_name == 'push'
       run: |
+        echo "This is a push to the main branch."
+        echo "Previous commit SHA:"
         echo ${{ github.event.before }}
+        echo "Current commit SHA:"
         echo ${{ github.sha }}
-        echo $(git diff --name-only ${{ github.event.before }} ${{ github.sha }})
+        echo "Get changed directories:"
         dirs=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | \
-             grep '/.*$' | \
+             grep '^[^/]\+/$' | \
              sed -E 's@(.*)/@\1@' | \
              sort -u | \
              tr '\n' ' ')
         echo "Changed directories: $dirs"
         echo "DIRS=$dirs" >> $GITHUB_ENV
 
-    #- name: Find directories containing description.txt
-    #  run: |
-     #   dirs=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '/.*$' | sed -E 's@(.*)/@\1@' | sort -u | tr '\n' ' ')
-      #  #dirs=$(find . -type f -name 'description.txt' -exec dirname {} \; | tr '\n' ' ')
-       # echo $dirs
-        #echo "DIRS=${dirs}" >> $GITHUB_ENV
-      #shell: bash
-    
-      #echo "DIRS=$(find . -type f -name 'description.txt' -exec dirname {} \;)" >> $GITHUB_ENV
-      #run: echo "DIRS=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '/.*$' | sed -E 's@(.*)/@\1@' | sort -u | tr '\n' ' ')" >> $GITHUB_ENV
+    - name: Run on pull request
+      if: github.event_name == 'pull_request'
+      run: echo "This is a pull request to the main branch."
 
-    - name: Run script on changed directories
+    - name: Run on workflow dispatch
+      if: github.event_name == 'workflow_dispatch'
+      run: echo "This workflow was manually triggered."
+    
+    - name: Run data check tool script on changed directories
       run: |
         echo "Current directory:"
         echo $(pwd)
-        ls /usr/src/app/data_check_tool_python/src/
-        echo $DIRS
-
-        for dir in $DIRS; do
-          if [ -d "$dir" ]; then
-            python /usr/src/app/data_check_tool_python/src/main.py --dir "$dir"
-          fi
-        done
+        docker run -v $(pwd):/workspace my_docker_image:tag \
+          bash -c "
+            ls /usr/src/app/data_check_tool_python/src/
+            echo $DIRS
+            for dir in $DIRS; do
+              if [ -d \"/workspace/$dir\" ]; then
+                python /usr/src/app/data_check_tool_python/src/main.py --dir \"/workspace/$dir\"
+              fi
+            done
+          "
