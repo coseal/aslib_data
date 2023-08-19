@@ -75,7 +75,7 @@ jobs:
         echo "Directories to check: $dirs"
         echo "DIRS=$dirs" >> $GITHUB_ENV
 
-    - name: Run data check tool script on changed directories
+    - name: Run data check tool script on directories
       run: |
         echo "Current directory:"
         echo $(pwd)
