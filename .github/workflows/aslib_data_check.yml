@@ -1,0 +1,103 @@
+# Author: Haniye Kashgarani
+# Affiliation: University of Wyoming
+# Date: 2023-08-17T15:39:37+00:00
+# Github: haniyeka
+
+name: aslib_data_check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  ASLIB_data_check_tool:
+    runs-on: ubuntu-latest
+    #container:
+      # Docker image that includes python2.7, and libraries like liac-arff, pyyaml, and typing
+      # This docker also includes files from https://github.com/coseal/aslib-spec/tree/master/data_check_tool_python in /usr/src/app/data_check_tool_python
+      # image: haniyeka/aslib_data_check:latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 2
+    - name: Run on push
+      id: get-changes-push
+      if: github.event_name == 'push'
+      run: |
+        echo "This is a push to the main branch."
+        echo "Previous commit SHA:"
+        echo ${{ github.event.before }}
+        echo "Current commit SHA:"
+        echo ${{ github.sha }}
+        echo "Get changed directories:"
+        dirs=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | \
+            grep -v '^\.github/' | \
+            grep '/.*$' | \
+            sed -E 's@(.*)/[^/]*$@\1@' | \
+            sort -u | \
+            tr '\n' ' ') 
+        echo "Changed directories: $dirs"
+        echo "DIRS=$dirs" >> $GITHUB_ENV
+
+    - name: Run on pull request
+      id: get-changes-pull-request
+      if: github.event_name == 'pull_request'
+      run: |
+        echo "This is a pull request to the main branch."
+        echo "Source branch:"
+        echo ${{ github.event.pull_request.head.ref }}
+        echo "Target branch:"
+        echo ${{ github.event.pull_request.base.ref }}
+        echo "Get changed directories:"
+        git fetch origin ${{ github.event.pull_request.base.ref }} # Fetch the target branch
+        dirs=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | \
+             grep -v '^\.github/' | \
+             grep '/.*$' | \
+             sed -E 's@(.*)/[^/]*$@\1@' | \
+             sort -u | \
+             tr '\n' ' ')
+        echo "Changed directories: $dirs"
+        echo "DIRS=$dirs" >> $GITHUB_ENV
+
+    - name: Run on workflow dispatch
+      id: all-dirs-workflow-dispatch
+      if: github.event_name == 'workflow_dispatch'
+      run: |
+        echo "This workflow was manually triggered."
+        echo "Get all directories except .git and .github:"
+        dirs=$(find . -maxdepth 1 -type d \( ! -name . \) \( ! -name .git \) \( ! -name .github \) | sed 's@^\./@@' | tr '\n' ' ')
+        echo "Directories to check: $dirs"
+        echo "DIRS=$dirs" >> $GITHUB_ENV
+
+    - name: Run data check tool script on changed directories
+      run: |
+        echo "Current directory:"
+        echo $(pwd)
+        echo "Scenarios:"
+        echo $DIRS
+        if [ -z "$DIRS" ]; then
+          echo "No scenario is changed or added."
+          exit 0
+        fi
+        docker run -v $(pwd):/workspace -e DIRS="$DIRS" haniyeka/aslib_data_check:latest \
+          bash -c "
+            ls /usr/src/app/data_check_tool_python/src/
+            echo \$DIRS
+            for dir in \$DIRS; do
+              if [ -d \"/workspace/\$dir\" ]; then
+                hidden_files=\$(find \"/workspace/\$dir/\" -name '.*' -type f)
+                if [ ! -z \"\$hidden_files\" ]; then
+                  echo 'Error: Hidden files found in' \$dir
+                  echo 'Please remove them and try again!'
+                  exit 1
+                fi
+                python /usr/src/app/data_check_tool_python/src/main.py --dir \"/workspace/\$dir\"
+              fi
+            done
+          "
