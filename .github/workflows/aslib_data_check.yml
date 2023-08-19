@@ -87,6 +87,7 @@ jobs:
         fi
         docker run -v $(pwd):/workspace -e DIRS="$DIRS" haniyeka/aslib_data_check:latest \
           bash -c "
+            set -e
             ls /usr/src/app/data_check_tool_python/src/
             echo \$DIRS
             for dir in \$DIRS; do
