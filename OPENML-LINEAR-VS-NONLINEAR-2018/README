@@ -1,0 +1,28 @@
+source: https://openml.org/s/123
+authors: Benjamin Strang, Peter van der Putten, Jan N. van Rijn and Frank Hutter
+
+Results from the paper "Don't Rule Out Simple Models Prematurely: A Large Scale
+Benchmark Comparing Linear and Non-linear Classifiers in OpenML". For many
+datasets in the OpenML100, linear models are compared against non-linear models.
+This scenario contains for each dataset the following runs:
+- SVM (Linear vs. Rbf-kernel)
+- Neural Network (Perceptron vs. MultiLayerPerceptron)
+- Decision Tree (Stump vs. Tree)
+Hyperparameters were optimizid using Random Search. If it did not terminate
+within 5 days, the run was excluded. 
+
+In our study, we compared classifiers from a single class against each other
+(e.g., Perceptron vs. MultiLayerPerceptron). To reproduce these results, the
+scenario should be subsampled. Of course, it is also valid to select the best
+across all 6 classifiers. 
+
+Bibtex:
+@inproceedings{strang2018dont,
+  title={Don't Rule Out Simple Models Prematurely: A Large Scale Benchmark Comparing Linear and Non-linear Classifiers in OpenML},
+  author={Strang, Benjamin and van der Putten, Peter and van Rijn, Jan N and Hutter, Frank},
+  booktitle={International Symposium on Intelligent Data Analysis},
+  pages={303--315},
+  year={2018},
+  organization={Springer}
+}
+

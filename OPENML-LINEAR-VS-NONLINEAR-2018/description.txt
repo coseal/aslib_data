@@ -1,0 +1,62 @@
+algorithm_cutoff_memory: '?'
+algorithm_cutoff_time: 0
+algorithms_deterministic:
+  linear_ann:
+    configuration: ''
+    desterministic: true
+    version: '1'
+  linear_dt:
+    configuration: ''
+    desterministic: true
+    version: '1'
+  linear_svm:
+    configuration: ''
+    desterministic: true
+    version: '1'
+  nonlinear_ann:
+    configuration: ''
+    desterministic: true
+    version: '1'
+  nonlinear_dt:
+    configuration: ''
+    desterministic: true
+    version: '1'
+  nonlinear_svm:
+    configuration: ''
+    desterministic: true
+    version: '1'
+algorithms_stochastic: ''
+default_steps:
+- ALL
+feature_steps:
+  ALL:
+    provides: &id001
+    - NumberOfFeatures
+    - NumberOfInstances
+    - Dimensionality
+    - NumberOfMissingValues
+    - PercentageOfMissingValues
+    - MajorityClassPercentage
+    - PercentageOfNumericFeatures
+    - MajorityClassSize
+    - PercentageOfBinaryFeatures
+    - PercentageOfSymbolicFeatures
+    - MinorityClassSize
+    - PercentageOfInstancesWithMissingValues
+    - NumberOfNumericFeatures
+    - NumberOfInstancesWithMissingValues
+    - NumberOfSymbolicFeatures
+    - NumberOfBinaryFeatures
+    - NumberOfClasses
+features_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_deterministic: *id001
+features_stochastic: ''
+maximize:
+- true
+number_of_feature_steps: 1
+performance_measures:
+- predictive_accuracy
+performance_type:
+- predictive_accuracy
+scenario_id: OpenML_Study_123
