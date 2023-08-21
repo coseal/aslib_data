@@ -2,6 +2,7 @@
 @attribute instance_id string
 @attribute repetition numeric
 @attribute fold numeric
+
 @data
 sat/f1000.cnf,1,9
 sat/mulhs064.cnf,1,1
