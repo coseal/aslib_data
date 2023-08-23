@@ -1,0 +1,612 @@
+scenario_id: OPENML-2017
+features_deterministic:
+- CfsSubsetEval_DecisionStumpAUC
+- CfsSubsetEval_DecisionStumpErrRate
+- CfsSubsetEval_DecisionStumpKappa
+- CfsSubsetEval_kNN1NAUC
+- CfsSubsetEval_kNN1NErrRate
+- CfsSubsetEval_kNN1NKappa
+- CfsSubsetEval_NaiveBayesAUC
+- CfsSubsetEval_NaiveBayesErrRate
+- CfsSubsetEval_NaiveBayesKappa
+- ClassEntropy
+- DecisionStumpAUC
+- DecisionStumpErrRate
+- DecisionStumpKappa
+- DefaultAccuracy
+- Dimensionality
+- EquivalentNumberOfAtts
+- HoeffdingAdwin.changes
+- HoeffdingAdwin.warnings
+- HoeffdingDDM.changes
+- HoeffdingDDM.warnings
+- J48.00001.AUC
+- J48.00001.ErrRate
+- J48.00001.Kappa
+- J48.0001.AUC
+- J48.0001.ErrRate
+- J48.0001.Kappa
+- J48.001.AUC
+- J48.001.ErrRate
+- J48.001.Kappa
+- kNN1NAUC
+- kNN1NErrRate
+- kNN1NKappa
+- MajorityClassPercentage
+- MajorityClassSize
+- MaxAttributeEntropy
+- MaxKurtosisOfNumericAtts
+- MaxMeansOfNumericAtts
+- MaxMutualInformation
+- MaxNominalAttDistinctValues
+- MaxSkewnessOfNumericAtts
+- MaxStdDevOfNumericAtts
+- MeanAttributeEntropy
+- MeanKurtosisOfNumericAtts
+- MeanMeansOfNumericAtts
+- MeanMutualInformation
+- MeanNominalAttDistinctValues
+- MeanSkewnessOfNumericAtts
+- MeanStdDevOfNumericAtts
+- MinAttributeEntropy
+- MinKurtosisOfNumericAtts
+- MinMeansOfNumericAtts
+- MinMutualInformation
+- MinNominalAttDistinctValues
+- MinorityClassPerentage
+- MinorityClassSize
+- MinSkewnessOfNumericAtts
+- MinStdDevOfNumericAtts
+- NaiveBayesAdwin.changes
+- NaiveBayesAdwin.warnings
+- NaiveBayesAUC
+- NaiveBayesDdm.changes
+- NaiveBayesDdm.warnings
+- NaiveBayesErrRate
+- NaiveBayesKappa
+- NoiseToSignalRatio
+- NumberOfBinaryFeatures
+- NumberOfClasses
+- NumberOfFeatures
+- NumberOfInstances
+- NumberOfInstancesWithMissingValues
+- NumberOfMissingValues
+- NumberOfNumericFeatures
+- NumberOfSymbolicFeatures
+- PercentageOfBinaryFeatures
+- PercentageOfInstancesWithMissingValues
+- PercentageOfMissingValues
+- PercentageOfNumericFeatures
+- PercentageOfSymbolicFeatures
+- Quartile1AttributeEntropy
+- Quartile1KurtosisOfNumericAtts
+- Quartile1MeansOfNumericAtts
+- Quartile1MutualInformation
+- Quartile1SkewnessOfNumericAtts
+- Quartile1StdDevOfNumericAtts
+- Quartile2AttributeEntropy
+- Quartile2KurtosisOfNumericAtts
+- Quartile2MeansOfNumericAtts
+- Quartile2MutualInformation
+- Quartile2SkewnessOfNumericAtts
+- Quartile2StdDevOfNumericAtts
+- Quartile3AttributeEntropy
+- Quartile3KurtosisOfNumericAtts
+- Quartile3MeansOfNumericAtts
+- Quartile3MutualInformation
+- Quartile3SkewnessOfNumericAtts
+- Quartile3StdDevOfNumericAtts
+- RandomTreeDepth1AUC
+- RandomTreeDepth1ErrRate
+- RandomTreeDepth1Kappa
+- RandomTreeDepth2AUC
+- RandomTreeDepth2ErrRate
+- RandomTreeDepth2Kappa
+- RandomTreeDepth3AUC
+- RandomTreeDepth3ErrRate
+- RandomTreeDepth3Kappa
+- REPTreeDepth1AUC
+- REPTreeDepth1ErrRate
+- REPTreeDepth1Kappa
+- REPTreeDepth2AUC
+- REPTreeDepth2ErrRate
+- REPTreeDepth2Kappa
+- REPTreeDepth3AUC
+- REPTreeDepth3ErrRate
+- REPTreeDepth3Kappa
+- StdvNominalAttDistinctValues
+features_stochastic: []
+metainfo_algorithms:
+  1068_.trees.J48_1:
+    configuration: -- -C 0.25 -M 2
+    deterministic: yes
+  1069_.rules.ZeroR_2:
+    configuration: ''
+    deterministic: yes
+  1070_.rules.Ridor_3:
+    configuration: -- -F 3 -S 1 -N 2.0
+    deterministic: yes
+  1071_.rules.OneR_4:
+    configuration: -- -B 6
+    deterministic: yes
+  1073_.rules.PART_5:
+    configuration: -- -M 2 -C 0.25 -Q 1
+    deterministic: yes
+  1074_.rules.OLM_6:
+    configuration: -- -R 0 -C 1 -U 0
+    deterministic: yes
+  1075_.rules.NNge_7:
+    configuration: -- -G 5 -I 5
+    deterministic: yes
+  1076_.trees.SimpleCart_8:
+    configuration: -- -M 2.0 -N 5 -C 1.0 -S 1
+    deterministic: yes
+  1077_.trees.REPTree_9:
+    configuration: -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    deterministic: yes
+  1078_.trees.RandomTree_10:
+    configuration: -- -K 0 -M 1.0 -V 0.001 -S 1
+    deterministic: yes
+  1080_.trees.NBTree_11:
+    configuration: ''
+    deterministic: yes
+  1082_.trees.LMT_12:
+    configuration: -- -I -1 -M 15 -W 0.0
+    deterministic: yes
+  1084_.trees.J48graft_13:
+    configuration: -- -C 0.25 -M 2
+    deterministic: yes
+  1087_.trees.HoeffdingTree_14:
+    configuration: -- -L 2 -S 1 -E 1.0E-7 -H 0.05 -M 0.01 -G 200.0 -N 0.0
+    deterministic: yes
+  1088_.trees.FT_15:
+    configuration: -- -I 15 -F 0 -M 15 -W 0.0
+    deterministic: yes
+  1090_.trees.DecisionStump_16:
+    configuration: ''
+    deterministic: yes
+  1091_.trees.BFTree_17:
+    configuration: -- -M 2 -N 5 -C 1.0 -P POSTPRUNED -S 1
+    deterministic: yes
+  1094_.rules.JRip_18:
+    configuration: -- -F 3 -N 2.0 -O 2 -S 1
+    deterministic: yes
+  1096_.rules.DecisionTable_19:
+    configuration: -- -X 1 -S \weka.attributeSelection.BestFirst -D 1 -N 5\
+    deterministic: yes
+  1098_.rules.ConjunctiveRule_20:
+    configuration: -- -N 3 -M 2.0 -P -1 -S 1
+    deterministic: yes
+  1099_.misc.CHIRP_21:
+    configuration: -- -V 7 -S 1
+    deterministic: yes
+  1100_.misc.HyperPipes_22:
+    configuration: ''
+    deterministic: yes
+  1101_.misc.InputMappedClassifier_23:
+    configuration: -- -I -trim -W weka.classifiers.rules.ZeroR
+    deterministic: yes
+  1103_.misc.VFI_24:
+    configuration: -- -B 0.6
+    deterministic: yes
+  1104_.lazy.IB1_25:
+    configuration: ''
+    deterministic: yes
+  1105_.lazy.IBk_26:
+    configuration: -- -K 1 -W 0 -A \weka.core.neighboursearch.LinearNNSearch -A \\\weka.core.EuclideanDistance
+      -R first-last\\\\
+    deterministic: yes
+  1105_.lazy.IBk_27:
+    configuration: -- -K 3 -W 0 -A \weka.core.neighboursearch.LinearNNSearch -A \\\weka.core.EuclideanDistance
+      -R first-last\\\\
+    deterministic: yes
+  1105_.lazy.IBk_28:
+    configuration: -- -K 5 -W 0 -A \weka.core.neighboursearch.LinearNNSearch -A \\\weka.core.EuclideanDistance
+      -R first-last\\\\
+    deterministic: yes
+  1106_.lazy.KStar_29:
+    configuration: -- -B 20 -M a
+    deterministic: yes
+  1108_.lazy.LWL_30:
+    configuration: -- -U 0 -K -1 -A \weka.core.neighboursearch.LinearNNSearch -A \\\weka.core.EuclideanDistance
+      -R first-last\\\\ -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1111_.functions.KernelLogisticRegression_31:
+    configuration: -- -S 1 -K \weka.classifiers.functions.supportVector.PolyKernel
+      -E 1.0 -C 250007\ -L 0.01 -P 1 -E 1
+    deterministic: yes
+  1112_.functions.LibLINEAR_32:
+    configuration: -- -S 1 -C 1.0 -E 0.001 -B 1.0
+    deterministic: yes
+  1112_.functions.LibLINEAR_33:
+    configuration: -- -S 1 -C 1.0 -E 0.01 -B 1.0
+    deterministic: yes
+  1114_.functions.Logistic_34:
+    configuration: -- -R 1.0E-8 -M -1
+    deterministic: yes
+  1117_.functions.RBFClassifier_35:
+    configuration: -- -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 1
+    deterministic: yes
+  1120_.functions.SGD_36:
+    configuration: -- -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S 1
+    deterministic: yes
+  1154_.bayes.NaiveBayes_37:
+    configuration: ''
+    deterministic: yes
+  1155_.meta.FilteredClassifier_38:
+    configuration: -- -F \weka.filters.unsupervised.attribute.Standardize \ -W weka.classifiers.bayes.NaiveBayes
+    deterministic: yes
+  1160_.meta.AttributeSelectedClassifier_39:
+    configuration: -- -E \weka.attributeSelection.PrincipalComponents -R 0.95 -A 5\
+      -S \weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1\ -W weka.classifiers.trees.J48
+      -- -C 0.25 -M 2
+    deterministic: yes
+  1163_.meta.FilteredClassifier_40:
+    configuration: -- -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 0.95 -A 5 -M -1\ -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+    deterministic: yes
+  1165_.bayes.AveragedNDependenceEstimators.A1DE_41:
+    configuration: -- -F 1 -M 1.0
+    deterministic: yes
+  1166_.bayes.AveragedNDependenceEstimators.A2DE_42:
+    configuration: -- -F 1 -M 1.0
+    deterministic: yes
+  1168_.bayes.BayesNet_43:
+    configuration: -- -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S
+      BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+    deterministic: yes
+  1172_.functions.LibSVM_44:
+    configuration: -- -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001
+      -P 0.1 -model /Users/joa/Downloads/weka-3-7-12 -seed 1
+    deterministic: yes
+  1174_.functions.KernelLogisticRegression_45:
+    configuration: -- -S 1 -K \weka.classifiers.functions.supportVector.RBFKernel
+      -G 0.01 -C 250007\ -L 0.01 -P 1 -E 1
+    deterministic: yes
+  1177_.functions.SimpleLogistic_46:
+    configuration: -- -I 0 -M 500 -H 50 -W 0.0
+    deterministic: yes
+  1178_.functions.SMO_47:
+    configuration: -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K \weka.classifiers.functions.supportVector.PolyKernel
+      -E 1.0 -C 250007\
+    deterministic: yes
+  1179_.functions.SMO_48:
+    configuration: -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K \weka.classifiers.functions.supportVector.RBFKernel
+      -G 0.01 -C 250007\
+    deterministic: yes
+  1180_.functions.SPegasos_49:
+    configuration: -- -F 0 -L 1.0E-4 -E 500
+    deterministic: yes
+  1182_.meta.AdaBoostM1_50:
+    configuration: -- -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1182_.meta.AdaBoostM1_51:
+    configuration: -- -P 100 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1182_.meta.AdaBoostM1_52:
+    configuration: -- -P 100 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1182_.meta.AdaBoostM1_53:
+    configuration: -- -P 100 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1182_.meta.AdaBoostM1_54:
+    configuration: -- -P 100 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1183_.meta.AttributeSelectedClassifier_55:
+    configuration: -- -E \weka.attributeSelection.CfsSubsetEval -P 1 -E 1\ -S \weka.attributeSelection.BestFirst
+      -D 1 -N 5\ -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+    deterministic: yes
+  1185_.meta.Bagging_56:
+    configuration: -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    deterministic: yes
+  1185_.meta.Bagging_57:
+    configuration: -- -P 100 -S 1 -num-slots 1 -I 160 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    deterministic: yes
+  1185_.meta.Bagging_58:
+    configuration: -- -P 100 -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    deterministic: yes
+  1185_.meta.Bagging_59:
+    configuration: -- -P 100 -S 1 -num-slots 1 -I 40 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    deterministic: yes
+  1185_.meta.Bagging_60:
+    configuration: -- -P 100 -S 1 -num-slots 1 -I 80 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    deterministic: yes
+  1186_.meta.Dagging_61:
+    configuration: -- -F 10 -S 1 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1187_.meta.Decorate_62:
+    configuration: -- -E 15 -R 1.0 -S 1 -I 50 -W weka.classifiers.trees.J48 -- -C
+      0.25 -M 2
+    deterministic: yes
+  1188_.meta.END_63:
+    configuration: -- -S 1 -I 10 -W weka.classifiers.meta.nestedDichotomies.ND --
+      -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+    deterministic: yes
+  1190_.meta.Grading_64:
+    configuration: -- -X 10 -M \weka.classifiers.rules.ZeroR \ -S 1 -num-slots 1 -B
+      \weka.classifiers.rules.ZeroR \
+    deterministic: yes
+  1191_.meta.LogitBoost_65:
+    configuration: -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S
+      1 -I 10 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1191_.meta.LogitBoost_66:
+    configuration: -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S
+      1 -I 160 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1191_.meta.LogitBoost_67:
+    configuration: -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S
+      1 -I 20 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1191_.meta.LogitBoost_68:
+    configuration: -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S
+      1 -I 40 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1191_.meta.LogitBoost_69:
+    configuration: -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S
+      1 -I 80 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1192_.meta.MultiBoostAB_70:
+    configuration: -- -C 3 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1192_.meta.MultiBoostAB_71:
+    configuration: -- -C 3 -P 100 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1192_.meta.MultiBoostAB_72:
+    configuration: -- -C 3 -P 100 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1192_.meta.MultiBoostAB_73:
+    configuration: -- -C 3 -P 100 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1192_.meta.MultiBoostAB_74:
+    configuration: -- -C 3 -P 100 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1193_.meta.RacedIncrementalLogitBoost_75:
+    configuration: -- -C 500 -M 2000 -V 1000 -P 1 -S 1 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1194_.meta.RandomSubSpace_76:
+    configuration: -- -P 0.5 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    deterministic: yes
+  1194_.meta.RandomSubSpace_77:
+    configuration: -- -P 0.5 -S 1 -num-slots 1 -I 160 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    deterministic: yes
+  1194_.meta.RandomSubSpace_78:
+    configuration: -- -P 0.5 -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    deterministic: yes
+  1194_.meta.RandomSubSpace_79:
+    configuration: -- -P 0.5 -S 1 -num-slots 1 -I 40 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    deterministic: yes
+  1194_.meta.RandomSubSpace_80:
+    configuration: -- -P 0.5 -S 1 -num-slots 1 -I 80 -W weka.classifiers.trees.REPTree
+      -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+    deterministic: yes
+  1195_.meta.RealAdaBoost_81:
+    configuration: -- -P 100 -H 1.0 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1195_.meta.RealAdaBoost_82:
+    configuration: -- -P 100 -H 1.0 -S 1 -I 160 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1195_.meta.RealAdaBoost_83:
+    configuration: -- -P 100 -H 1.0 -S 1 -I 20 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1195_.meta.RealAdaBoost_84:
+    configuration: -- -P 100 -H 1.0 -S 1 -I 40 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1195_.meta.RealAdaBoost_85:
+    configuration: -- -P 100 -H 1.0 -S 1 -I 80 -W weka.classifiers.trees.DecisionStump
+    deterministic: yes
+  1196_.meta.RotationForest_86:
+    configuration: -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.J48 --
+      -C 0.25 -M 2
+    deterministic: yes
+  1196_.meta.RotationForest_87:
+    configuration: -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 160 -W weka.classifiers.trees.J48 --
+      -C 0.25 -M 2
+    deterministic: yes
+  1196_.meta.RotationForest_88:
+    configuration: -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 20 -W weka.classifiers.trees.J48 --
+      -C 0.25 -M 2
+    deterministic: yes
+  1196_.meta.RotationForest_89:
+    configuration: -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 40 -W weka.classifiers.trees.J48 --
+      -C 0.25 -M 2
+    deterministic: yes
+  1196_.meta.RotationForest_90:
+    configuration: -- -G 3 -H 3 -P 50 -F \weka.filters.unsupervised.attribute.PrincipalComponents
+      -R 1.0 -A 5 -M -1\ -S 1 -num-slots 1 -I 80 -W weka.classifiers.trees.J48 --
+      -C 0.25 -M 2
+    deterministic: yes
+  1197_.rules.FURIA_91:
+    configuration: -- -F 3 -N 2.0 -O 2 -S 1 -p 0 -s 0
+    deterministic: yes
+  1199_.trees.ADTree_92:
+    configuration: -- -B 10 -E -3 -S 1
+    deterministic: yes
+  1200_.trees.LADTree_93:
+    configuration: -- -B 10
+    deterministic: yes
+  1244_.meta.FilteredClassifier_94:
+    configuration: -- -F \weka.filters.supervised.attribute.Discretize -R first-last
+      -precision 6\ -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+    deterministic: yes
+performance_measures:
+- acc
+performance_type:
+- solution_quality
+maximize:
+- yes
+algorithm_cutoff_time: '?'
+algorithm_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_cutoff_memory: '?'
+number_of_feature_steps: 13
+default_steps:
+- CfsSubsetEval
+- DecisionStump
+- DefaultAccuracy
+- EquivalentNumberOfAtts
+- Hoeffding
+- J48
+- kNN1
+- Statistics
+- NaiveBayes
+- NoiseToSignalRatio
+- Counting
+- RandomTree
+- REPTree
+feature_steps:
+  CfsSubsetEval:
+    provides: 
+      - CfsSubsetEval_DecisionStumpAUC
+      - CfsSubsetEval_DecisionStumpErrRate
+      - CfsSubsetEval_DecisionStumpKappa
+      - CfsSubsetEval_kNN1NAUC
+      - CfsSubsetEval_kNN1NErrRate
+      - CfsSubsetEval_kNN1NKappa
+      - CfsSubsetEval_NaiveBayesAUC
+      - CfsSubsetEval_NaiveBayesErrRate
+      - CfsSubsetEval_NaiveBayesKappa
+  DecisionStump:
+    provides: 
+      - DecisionStumpAUC
+      - DecisionStumpErrRate
+      - DecisionStumpKappa
+  DefaultAccuracy:
+    provides: 
+      - DefaultAccuracy
+  EquivalentNumberOfAtts:
+    provides: 
+      - EquivalentNumberOfAtts
+  Hoeffding:
+    provides: 
+      - HoeffdingAdwin.changes
+      - HoeffdingAdwin.warnings
+      - HoeffdingDDM.changes
+      - HoeffdingDDM.warnings
+  J48:
+    provides: 
+      - J48.00001.AUC
+      - J48.00001.ErrRate
+      - J48.00001.Kappa
+      - J48.0001.AUC
+      - J48.0001.ErrRate
+      - J48.0001.Kappa
+      - J48.001.AUC
+      - J48.001.ErrRate
+      - J48.001.Kappa
+  kNN1:
+    provides: 
+      - kNN1NAUC
+      - kNN1NErrRate
+      - kNN1NKappa
+  Statistics:
+    provides: 
+      - ClassEntropy
+      - MaxAttributeEntropy
+      - MaxKurtosisOfNumericAtts
+      - MaxMeansOfNumericAtts
+      - MaxMutualInformation
+      - MaxNominalAttDistinctValues
+      - MaxSkewnessOfNumericAtts
+      - MaxStdDevOfNumericAtts
+      - MeanAttributeEntropy
+      - MeanKurtosisOfNumericAtts
+      - MeanMeansOfNumericAtts
+      - MeanMutualInformation
+      - MeanNominalAttDistinctValues
+      - MeanSkewnessOfNumericAtts
+      - MeanStdDevOfNumericAtts
+      - MinAttributeEntropy
+      - MinKurtosisOfNumericAtts
+      - MinMeansOfNumericAtts
+      - MinMutualInformation
+      - MinNominalAttDistinctValues
+      - MinorityClassPerentage
+      - MinorityClassSize
+      - MinSkewnessOfNumericAtts
+      - MinStdDevOfNumericAtts
+      - Quartile1AttributeEntropy
+      - Quartile1KurtosisOfNumericAtts
+      - Quartile1MeansOfNumericAtts
+      - Quartile1MutualInformation
+      - Quartile1SkewnessOfNumericAtts
+      - Quartile1StdDevOfNumericAtts
+      - Quartile2AttributeEntropy
+      - Quartile2KurtosisOfNumericAtts
+      - Quartile2MeansOfNumericAtts
+      - Quartile2MutualInformation
+      - Quartile2SkewnessOfNumericAtts
+      - Quartile2StdDevOfNumericAtts
+      - Quartile3AttributeEntropy
+      - Quartile3KurtosisOfNumericAtts
+      - Quartile3MeansOfNumericAtts
+      - Quartile3MutualInformation
+      - Quartile3SkewnessOfNumericAtts
+      - Quartile3StdDevOfNumericAtts
+      - StdvNominalAttDistinctValues
+      - MajorityClassSize
+      - MajorityClassPercentage
+  NaiveBayes:
+    provides: 
+      - NaiveBayesAdwin.changes
+      - NaiveBayesAdwin.warnings
+      - NaiveBayesAUC
+      - NaiveBayesDdm.changes
+      - NaiveBayesDdm.warnings
+      - NaiveBayesErrRate
+      - NaiveBayesKappa
+  NoiseToSignalRatio:
+    provides: 
+      - NoiseToSignalRatio
+  Counting:
+    provides:
+      - Dimensionality 
+      - NumberOfBinaryFeatures
+      - NumberOfClasses
+      - NumberOfFeatures
+      - NumberOfInstances
+      - NumberOfInstancesWithMissingValues
+      - NumberOfMissingValues
+      - NumberOfNumericFeatures
+      - NumberOfSymbolicFeatures
+      - PercentageOfBinaryFeatures
+      - PercentageOfInstancesWithMissingValues
+      - PercentageOfMissingValues
+      - PercentageOfNumericFeatures
+      - PercentageOfSymbolicFeatures
+  RandomTree:
+    provides: 
+      - RandomTreeDepth1AUC
+      - RandomTreeDepth1ErrRate
+      - RandomTreeDepth1Kappa
+      - RandomTreeDepth2AUC
+      - RandomTreeDepth2ErrRate
+      - RandomTreeDepth2Kappa
+      - RandomTreeDepth3AUC
+      - RandomTreeDepth3ErrRate
+      - RandomTreeDepth3Kappa
+  REPTree:
+    provides: 
+      - REPTreeDepth1AUC
+      - REPTreeDepth1ErrRate
+      - REPTreeDepth1Kappa
+      - REPTreeDepth2AUC
+      - REPTreeDepth2ErrRate
+      - REPTreeDepth2Kappa
+      - REPTreeDepth3AUC
+      - REPTreeDepth3ErrRate
+      - REPTreeDepth3Kappa
+      
